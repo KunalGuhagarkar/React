@@ -1,3 +1,4 @@
+/* 2. Card */
 .card {
   border: 1px solid rgb(188, 188, 188);
   border-radius: 10px;
@@ -25,4 +26,14 @@
 .card .card-text {
   font-family: Arial, Helvetica, sans-serif;
   color: hsl(0, 0%, 30%);
+}
+
+/*3. Button */
+.button {
+  background-color: hsl(200, 100%, 50%);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }
