@@ -1,6 +1,6 @@
-import Header from "./Basics/Header";
-import Food from "./Basics/Food";
-import Footer from "./Basics/Footer";
+import Header from "./React-Components/Header";
+import Food from "./React-Components/Food";
+import Footer from "./React-Components/Footer";
 
 function App() {
   return (
