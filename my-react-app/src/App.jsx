@@ -1,6 +1,6 @@
-import Header from "./Header";
-import Food from "./Food";
-import Footer from "./Footer";
+import Header from "./Basics/Header";
+import Food from "./Basics/Food";
+import Footer from "./Basics/Footer";
 
 function App() {
   return (
