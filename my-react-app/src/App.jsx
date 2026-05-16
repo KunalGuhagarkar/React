@@ -6,13 +6,11 @@
 // import Food from "./1-React-Components/Food";
 // import Footer from "./1-React-Components/Footer";
 
-
 // ======================================================
 // 2. Card Component
 // ======================================================
 
 // import Card from "./2-Card/Card";
-
 
 // ======================================================
 // 3. CSS Styles
@@ -20,13 +18,11 @@
 
 // import Button from "./3-CSS-styles/Button";
 
-
 // ======================================================
 // 4. Props
 // ======================================================
 
 // import Student from "./4-Props/Student";
-
 
 // ======================================================
 // 5. Conditional Rendering
@@ -34,17 +30,20 @@
 
 // import UserGreeting from "./5-Conditonal-Rendering/UserGreeting";
 
-
 // ======================================================
 // 6. Render List
 // ======================================================
 
 // import List from "./6-Render-List/List";
 
+// ======================================================
+// 7. Click Events
+// ======================================================
 
+// import Button from "./7-Click-Events/Button";
+// import ProfilePicture from "./7-Click-Events/ProfilePicture";
 
 function App() {
-
   // ======================================================
   // 6. Render List Data
   // ======================================================
@@ -73,10 +72,8 @@ function App() {
   //   // { id: 15, name: "Bags", calorie: 167 },
   // ];
 
-
   return (
     <>
-
       {/* ======================================================
           1. React Components
       ====================================================== */}
@@ -89,8 +86,6 @@ function App() {
       <Footer />
       */}
 
-
-
       {/* ======================================================
           2. Card Component
       ====================================================== */}
@@ -100,8 +95,6 @@ function App() {
       <Card />
       <Card />
       */}
-
-
 
       {/* ======================================================
           3. Add CSS Styles
@@ -118,8 +111,6 @@ function App() {
       {/*
       <Button />
       */}
-
-
 
       {/* ======================================================
           4. Props
@@ -153,8 +144,6 @@ function App() {
       />
       */}
 
-
-
       {/* ======================================================
           5. Conditional Rendering
       ====================================================== */}
@@ -176,8 +165,6 @@ function App() {
         username="Kunal"
       />
       */}
-
-
 
       {/* ======================================================
           6. Render List
@@ -208,11 +195,17 @@ function App() {
       <List />
       */}
 
+      {/* ======================================================
+          7. Click Events
+      ====================================================== */}
 
+      {/*
+        Click Event = An interaction when a user clicks on a specific element
+        We can respond to clicks by passing a callback to a onClick event handler.
+      */}
 
-      
-
-
+      {/* <Button /> */}
+      {/* <ProfilePicture /> */}
     </>
   );
 }
