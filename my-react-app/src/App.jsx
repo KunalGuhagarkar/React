@@ -9,6 +9,9 @@
 // // 3. Button
 // import Button from "./3-CSS-styles/Button";
 
+// 4. Props (Student Component)
+import Student from "./4-Props/Student";
+
 function App() {
   return (
     <>
@@ -18,18 +21,28 @@ function App() {
       <Food />
       <Food />
       <Footer />  */}
-     
-     {/* 2. Card Component
+
+      {/* 2. Card Component
       <Card />
       <Card />
       <Card />  */}
-      
+
       {/* 3. add CSS styles
         How to Style React Components with CSS
           1. External
           2. Modules
           3. Inline
       <Button /> */}
+
+      {/* 4. Props
+          read-only properties that are shared between commponents. A parent component can send data to a child component.
+          <Component key=value /> 
+
+          propTypes = a mechanism that ensures that the passed value is of the correct datatype.
+          age : PropTypes.number
+      */}
+      <Student name="Kunal" age={22} isStudent={true} />
+      <Student name="Spongebob" age="51" isStudent={false} />
     </>
   );
 }
