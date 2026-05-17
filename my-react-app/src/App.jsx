@@ -66,7 +66,7 @@
 // 11. Updater Function
 // ======================================================
 
-
+import Counter from "./11-Updater-Function/Counter";
 
 
 function App() {
@@ -268,8 +268,16 @@ function App() {
       {/* ======================================================
           11. Updater Function
       ====================================================== */}  
+       {/*
+        Updater Function is a function passed as an argument to setState() usually 
+        ex. setYear(year + 1) -> setYear(updater function) better practice use (arrow function)
+        setYear(y => y + 1)
+        Allow for safe updates based on previous state
+        Used with multiple state updates and asynchronous functions
+        Good practice to use updater functions
+       */}
 
-
+        <Counter />
 
     </>
   );
