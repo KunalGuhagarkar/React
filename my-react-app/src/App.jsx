@@ -44,12 +44,17 @@
 // import ProfilePicture from "./7-Click-Events/ProfilePicture";
 
 // ======================================================
-// 7. React hook useState()
+// 8. React hook useState()
 // ======================================================
 
 // import MyComponent from "./8-Hooks/MyComponent";
 // import Counter from "./8-Hooks/Counter";
 
+// ======================================================
+// 9. onChange Event Handler
+// ======================================================
+
+// import MyComponent from "./9-onChange/MyComponent";
 
 function App() {
   // ======================================================
@@ -216,7 +221,7 @@ function App() {
       {/* <ProfilePicture /> */}
 
       {/* ======================================================
-          7. React Hook useState
+          8. React Hook useState
       ====================================================== */}
 
       {/*
@@ -229,6 +234,17 @@ function App() {
 
       {/* <MyComponent /> */}
       {/* <Counter /> */}
+
+      {/* ======================================================
+          9. onChange Event Handler
+      ====================================================== */}
+
+      {/* 
+        onChange event handler user primarily with form elements
+        Triggers a function everytime the value of the input changes
+      */}
+
+      {/* <MyComponent /> */}
     </>
   );
 }
