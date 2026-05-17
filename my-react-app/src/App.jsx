@@ -43,6 +43,14 @@
 // import Button from "./7-Click-Events/Button";
 // import ProfilePicture from "./7-Click-Events/ProfilePicture";
 
+// ======================================================
+// 7. React hook useState()
+// ======================================================
+
+// import MyComponent from "./8-Hooks/MyComponent";
+// import Counter from "./8-Hooks/Counter";
+
+
 function App() {
   // ======================================================
   // 6. Render List Data
@@ -206,6 +214,21 @@ function App() {
 
       {/* <Button /> */}
       {/* <ProfilePicture /> */}
+
+      {/* ======================================================
+          7. React Hook useState
+      ====================================================== */}
+
+      {/*
+        React Hook
+          Special function that allows functional components to use React features without writing class components
+          
+          useState() = A React hook that allows the creation of a stateful variable AND a setter function to update its value in the Virtual DOM. 
+          [name, setName]
+      */}
+
+      {/* <MyComponent /> */}
+      {/* <Counter /> */}
     </>
   );
 }
