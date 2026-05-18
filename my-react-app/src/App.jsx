@@ -109,7 +109,7 @@
 // 18. useContext() Hook
 // ======================================================
 
-import MyComponent from "./18-useRef-Hook/MyComponent";
+// import MyComponent from "./18-useRef-Hook/MyComponent";
 
 function App() {
   // ======================================================
@@ -409,7 +409,7 @@ function App() {
         3. Managing Timers and Intervals
       */}
 
-      <MyComponent />
+      {/* <MyComponent /> */}
 
     </>
   );
