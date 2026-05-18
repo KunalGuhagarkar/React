@@ -146,3 +146,8 @@
   font-weight: 800;
   text-align: center;
 }
+
+.box {
+  border: 3px solid;
+  padding: 25px;
+}

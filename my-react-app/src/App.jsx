@@ -99,6 +99,12 @@
 // import MyComponent from "./16-useEffect-Hook/MyComponent";
 // import MyComponentTwo from "./16-useEffect-Hook/MyComponentTwo";
 
+// ======================================================
+// 17. useContext() Hook
+// ======================================================
+
+// import ComponentA from "./17-useContext-Hook/ComponentA";
+
 function App() {
   // ======================================================
   // 6. Render List Data
@@ -357,9 +363,32 @@ function App() {
           #5 Clean up when a component unmounts
       */}
 
-        {/* <MyComponent /> */}
-        {/* <MyComponentTwo /> */}
+      {/* <MyComponent /> */}
+      {/* <MyComponentTwo /> */}
 
+      {/* ======================================================
+          17. useContext() Hook
+      ====================================================== */}
+
+      {/*
+        React Hook that allows you to share values between multiple levels of components without passing props through each level
+
+        Provider Component
+        1. import {createContext} from 'react';
+        2. export const MyContext = createContext();
+        3. <MyContext.Provider value={value}>
+              <Child />
+           </MyContext.Provider>
+        
+        Consumer Component
+        1. import React, { useContext } from 'react';
+           import { MyContext } from './ComponentA';
+        2. const value = useContext(MyContext);
+        
+        without useContext() Hook We'd have to pass props withing each individual component
+      */}
+
+      {/* <ComponentA /> */}
     </>
   );
 }
