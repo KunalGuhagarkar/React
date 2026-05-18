@@ -66,7 +66,17 @@
 // 11. Updater Function
 // ======================================================
 
-import Counter from "./11-Updater-Function/Counter";
+// import Counter from "./11-Updater-Function/Counter";
+
+// ======================================================
+// 12. update OBJECTS in state
+// ======================================================
+
+// import UpdateObjects from "./12-update-Objects/updateObjects";
+
+// ======================================================
+// 13. 
+// ======================================================
 
 
 function App() {
@@ -262,13 +272,13 @@ function App() {
       {/* ======================================================
           10. Color Picker
       ====================================================== */}
-      
+
       {/* <Color /> */}
 
       {/* ======================================================
           11. Updater Function
-      ====================================================== */}  
-       {/*
+      ====================================================== */}
+      {/*
         Updater Function is a function passed as an argument to setState() usually 
         ex. setYear(year + 1) -> setYear(updater function) better practice use (arrow function)
         setYear(y => y + 1)
@@ -277,8 +287,17 @@ function App() {
         Good practice to use updater functions
        */}
 
-        <Counter />
+      {/* <Counter /> */}
 
+      {/* ======================================================
+          12. update OBJECTS in state
+      ====================================================== */}
+      
+      {/* <UpdateObjects /> */}
+
+      {/* ======================================================
+          13. 
+      ====================================================== */}
     </>
   );
 }
