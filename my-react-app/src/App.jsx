@@ -96,6 +96,9 @@
 // 16. useEffect() Hook
 // ======================================================
 
+// import MyComponent from "./16-useEffect-Hook/MyComponent";
+// import MyComponentTwo from "./16-useEffect-Hook/MyComponentTwo";
+
 function App() {
   // ======================================================
   // 6. Render List Data
@@ -333,7 +336,30 @@ function App() {
       {/* ======================================================
           16. useEffect() Hook
       ====================================================== */}
-      
+
+      {/*
+        React hook that tells React DO SOME CODE WHEN (pick one):
+          - This component re-renders
+          - This component mounts
+          - The state of a value
+
+        useEffect(function, [dependencies])
+
+        1. useEffect(() => {}) -> Runs after every re-render
+        2. useEffect(() => {}, []) -> Runs only on mount
+        3. useEffect(() => {}, [value]) -> Runs on mount + when value changes
+
+        USES:
+          #1 Event Listeners
+          #2 DOM Manipulation
+          #3 Subscription (real-time updates)
+          #4 Fetching Data from an API
+          #5 Clean up when a component unmounts
+      */}
+
+        {/* <MyComponent /> */}
+        {/* <MyComponentTwo /> */}
+
     </>
   );
 }
