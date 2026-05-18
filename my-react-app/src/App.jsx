@@ -80,6 +80,12 @@
 
 // import UpdateArray from "./13-Update-Array/UpdateArray";
 
+// ======================================================
+// 14. update Array of Objects in state
+// ======================================================
+
+// import ArrayObjects from "./14-Array-Objects/ArrayObjects";
+
 function App() {
   // ======================================================
   // 6. Render List Data
@@ -301,6 +307,13 @@ function App() {
       ====================================================== */}
 
       {/* <UpdateArray /> */}
+
+      {/* ======================================================
+          14. update Array of Objects in state
+      ====================================================== */}
+
+      {/* <ArrayObjects />   */}
+
     </>
   );
 }
