@@ -75,13 +75,23 @@
           <ChatMessage message={chat.message} sender={chat.sender} />
         )); */
 
-        return chatMessages.map((chat) => (
-          <ChatComponent
-            message={chat.message}
-            sender={chat.sender}
-            key={chat.id}
-          />
-        ));
+        function sendMessage() {
+          console.log("send message");
+        }
+
+        return (
+          <>
+            <button onClick={sendMessage}>Send Message</button>
+
+            {chatMessages.map((chat) => (
+              <ChatComponent
+                message={chat.message}
+                sender={chat.sender}
+                key={chat.id}
+              />
+            ))}
+          </>
+        );
       }
 
       function App() {
