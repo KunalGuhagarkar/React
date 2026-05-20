@@ -1,0 +1,45 @@
+<!--
+  Question:
+  Add 2 text boxes above the buttons with the placeholders "Email" and "Password".
+    1. Lay out the textboxes on seperate lines using <div>
+    2. Try adding the attribute type="password" to the password textbox. This will cover up the text as you type  
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const root = document.getElementById("root");
+
+      function App() {
+        return (
+          <>
+            <p>Hello, welcome to my website</p>
+            <input type="email" placeholder="Enter Email" />
+            <input type="password" placeholder="Enter Password" />
+            <button>Login</button>
+            <button>Sign Up</button>
+          </>
+        );
+      }
+
+      ReactDOM.createRoot(root).render(<App />);
+    </script>
+  </body>
+</html>
