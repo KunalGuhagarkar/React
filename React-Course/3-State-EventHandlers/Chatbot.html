@@ -71,8 +71,11 @@
           },
         ]);
 
-        const chatMessages = array[0];
-        const setChatMessages = array[1];
+        // Array Destructuring Shortcut
+        const [chatMessages, setChatMessages] = array;
+        
+        // const chatMessages = array[0]; // Current data
+        // const setChatMessages = array[1]; // Updater Function
 
         /* const chatMessagesComponent = chatMessages.map((chat) => (
           <ChatMessage message={chat.message} sender={chat.sender} />
