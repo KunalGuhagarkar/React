@@ -23,7 +23,12 @@
       const root = document.getElementById("root");
 
       function ChatInput() {
-        return <input type="text" placeholder="Enter Your Input" />;
+        return (
+          <>
+            <input type="text" placeholder="Enter Your Input" />
+            <button>Send</button>
+          </>
+        );
       }
 
       const div = (
