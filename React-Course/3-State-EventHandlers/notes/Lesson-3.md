@@ -11,3 +11,6 @@ Run a function when we interact with the website
 ### State
 Data that is connected to the HTML
 When we update the data, it will update the HTML
+
+Lifting the state up
+share state with multiple components
