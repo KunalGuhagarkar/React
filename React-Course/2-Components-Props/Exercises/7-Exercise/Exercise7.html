@@ -33,6 +33,7 @@
             <p>{product}</p>
             {discountPrice && <del><p>Price: ${price}</p></del>}
             {!discountPrice && <p>Price: ${price}</p>}
+            {discountPrice && <p>Discount Price: ${discountPrice}</p>}
             <button>Add To Cart</button>
           </div>
         );
