@@ -2,3 +2,5 @@
 
 ## State and Event Handlers
 
+key:
+Key helps track changes in the array.
