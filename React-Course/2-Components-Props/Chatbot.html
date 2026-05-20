@@ -37,14 +37,19 @@
 
       function ChatMessage(props) {
         const message = props.message;
-        let image;
+        let imageSrc;
         if (props.sender == "user") {
-          image = <img src="notes\assets\user.png" alt="Profile Image" width="50px" />;
+          imageSrc = "notes/assets/user.png";
         } else {
-          image = <img src="notes\assets\robot.png" alt="Profile Image" width="50px" />;
+          imageSrc = "notes/assets/robot.png";
         }
 
-        return <div>{message}</div>;
+        return (
+          <div>
+            {message}
+            <img src={imageSrc} alt="Profile Image" width="50" />
+          </div>
+        );
       }
 
       const app = (
