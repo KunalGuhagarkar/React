@@ -26,13 +26,20 @@
       const root = document.getElementById("root");
 
       function ProductDetails({ product, price, discountPrice }) {
+        
+        const discountPriceResult = discountPrice ? (
+          <div>
+            <del><p>Price: ${price}</p></del>
+            <p>Discount Price: ${discountPrice}</p>
+          </div>
+        ) : (
+          <p>Price: ${price}</p>
+        );
+
         return (
           <div>
             <p>{product}</p>
-            {if }
-            {discountPrice && <del><p>Price: ${price}</p></del>}
-            {!discountPrice && <p>Price: ${price}</p>}
-            {discountPrice && <p>Discount Price: ${discountPrice}</p>}
+            {discountPriceResult}
             <button>Add To Cart</button>
           </div>
         );
