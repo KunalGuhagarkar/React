@@ -24,13 +24,19 @@ React can be used in different places:
 2. Mobile Apps
 
 ```html
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react@18/umd/react.development.js"
+></script>
 ```
 
 React = shared features
 
 ```html
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
 ```
 
 ReactDOM = features specific to websites
@@ -53,12 +59,17 @@ JSX = JavaScript XML
 
 same as JavaScript, but we can directly write HTML in our JavaScript code.
 
-
 React CDN
 
 ```html
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react@18/umd/react.development.js"
+></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 ```
 
@@ -73,12 +84,18 @@ Local Code:
     <title>Root</title>
   </head>
   <body>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <div id="root"></div>
-    
+
     <script type="text/babel">
       const root = document.getElementById("root");
       ReactDOM.createRoot(root).render(<h1>Hello From React</h1>);
@@ -88,7 +105,11 @@ Local Code:
 ```
 
 ```JavaScript
+<script type="text/babel">
+  const button = <button>Click Me</button>;
 
+  const root = document.getElementById("root");
 
-
+  ReactDOM.createRoot(root).render(button);
+</script>
 ```
