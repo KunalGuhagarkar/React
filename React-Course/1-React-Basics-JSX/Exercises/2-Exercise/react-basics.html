@@ -1,6 +1,6 @@
 <!-- 
 Question: 
-  Using React, display a paragraph with the text 'My Name is [NAME]' on the webstie (replace [NAME] with your name). 
+  Using React, display a paragraph with the text 'My Name is [NAME]' on the website (replace [NAME] with your name). 
 -->
 
 <!doctype html>
@@ -24,13 +24,12 @@ Question:
     ></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      ReactDOM.createRoot(root).render(<button>Good Job!</button>);
+      const name = "Kunal";
+
+      ReactDOM.createRoot(root).render(<p>My name is {name}</p>);
     </script>
-
-
   </body>
 </html>
