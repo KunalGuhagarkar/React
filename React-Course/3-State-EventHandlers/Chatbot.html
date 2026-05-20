@@ -48,7 +48,8 @@
       }
 
       function ChatMessages() {
-        const chatMessages = [
+
+        React.useState([
           {
             id: "id1",
             message: "hello Chatbot",
@@ -69,7 +70,8 @@
             message: "Today is May 20",
             sender: "robot",
           },
-        ];
+        ]);
+
 
         /* const chatMessagesComponent = chatMessages.map((chat) => (
           <ChatMessage message={chat.message} sender={chat.sender} />
