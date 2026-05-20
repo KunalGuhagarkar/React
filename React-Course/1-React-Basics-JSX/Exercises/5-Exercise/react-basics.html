@@ -45,7 +45,7 @@ Question:
 
       ReactDOM.createRoot(root).render(
         setInterval(() => {
-          <p>{currentTime}</p>
+          <p>{dayjs().format('HH:mm:ss')}</p>
         }, 1000)
       );
     </script>
