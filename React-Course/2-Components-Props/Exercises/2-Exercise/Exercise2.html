@@ -28,7 +28,13 @@
       const root = document.getElementById("root");
 
       function App() {
-        return <p>Hello, welcome to my website</p>
+        return (
+          <>
+            <p>Hello, welcome to my website</p>
+            <button>Login</button>
+            <button>Sign Up</button>
+          </>
+        );
       }
 
       ReactDOM.createRoot(root).render(<App />);
