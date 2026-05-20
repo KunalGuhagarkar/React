@@ -1,4 +1,4 @@
-![alt text](image.png)
+![alt text](assets/image.png)
 
 [React_Cheatsheet_Zero_To_Mastery_V1.02.pdf](attachment:3567a192-5182-4dc4-a8c3-44b8c5411836:React_Cheatsheet_Zero_To_Mastery_V1.02.pdf)
 
@@ -86,3 +86,5 @@ Local Code:
   </body>
 </html>
 ```
+
+This is Something new
