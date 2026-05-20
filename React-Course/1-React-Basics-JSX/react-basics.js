@@ -4,4 +4,4 @@ console.log("This is an External Library.");
 const button2 = document.createElement("button");
 button2.textContent = "VanillaJS Button";
 
-document.getElementById("vanilla-container").appendChild(button2);
+document.getElementById("root").appendChild(button2);
