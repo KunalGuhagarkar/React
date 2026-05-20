@@ -79,8 +79,9 @@
           chatMessages.push({
             message: "test",
             sender: "user",
-            id: "id5",
+            id: crypto.randomUUID(),
           });
+          console.log(chatMessages);
         }
 
         return (
