@@ -39,7 +39,11 @@
         return (
           <div>
             {props.message}
-            <img src="notes\assets\user.png" alt="Profile Image" width="50px" />
+            if (props.sender == "user") {
+              <img src="notes\assets\user.png" alt="Profile Image" width="50px" />
+            } else {
+              <img src="notes\assets\robot.png" alt="Profile Image" width="50px" />
+            }
           </div>
         );
       }
