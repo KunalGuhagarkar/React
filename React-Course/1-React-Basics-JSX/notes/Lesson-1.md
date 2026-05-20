@@ -4,6 +4,8 @@
 
 ## Lesson 1:
 
+## Reacts Basics and JSX
+
 ### What is React?
 
 React is an external library that helps create websites easier.
