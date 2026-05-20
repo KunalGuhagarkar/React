@@ -72,3 +72,11 @@ React CDN
 ></script>
 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 ```
+
+### Problem with JSX?
+
+Web Brower doesn't understand JSX.
+
+In order to use Use JSX -> Need to translate JSX into JavaScript
+
+Babel = translates JSX into JavaScript
