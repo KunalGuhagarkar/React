@@ -36,9 +36,20 @@ Question:
 
       const productCost = socksPrice + (2 * tshirtPrice);
 
+      const shippingCost = 5;
+
+      const totalCost = productCost + shippingCost;
+
       console.log(productCost);
 
-      ReactDOM.createRoot(root).render(<p>Product cost: ${productCost}</p>);
+      const div = (
+        <div>
+          <p>Product cost: ${productCost}</p>
+          <p>Shipping cost: ${}</p>
+        </div>
+      );
+
+      ReactDOM.createRoot(root).render();
     </script>
   </body>
 </html>
