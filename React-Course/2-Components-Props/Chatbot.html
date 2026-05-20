@@ -39,15 +39,16 @@
         // const message = props.message;
         // Shortcut
         // const { message, sender } = props;
-        let imageSrc;
-        if (sender == "user") {
-          imageSrc = "notes/assets/user.png";
-        } else {
-          imageSrc = "notes/assets/robot.png";
-        }
+        // let imageSrc;
+        // if (sender == "user") {
+        //   imageSrc = "notes/assets/user.png";
+        // } else {
+        //   imageSrc = "notes/assets/robot.png";
+        // }
 
         return (
           <div>
+            {sender == 'robot' && <img src="notes/assets/robot.png" />}
             {message}
             <img src={imageSrc} alt="Profile Image" width="50" />
           </div>
