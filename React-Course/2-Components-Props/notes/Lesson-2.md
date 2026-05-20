@@ -11,3 +11,5 @@ When Building Websites:
 2. So we can work on a small piece of website at a time.
 
 I React the Component must start with a Capital Letter
+PascalCase = Each word starts with a capital letter: ChatInput
+
