@@ -34,10 +34,11 @@ Question:
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      console.log(dayjs().format('MMMM D'));
-      const today = dayjs().format('MMMM D');
-
-      const currentTime = dayjs().format('HH:mm:ss');
+      function updateFunction() {
+        console.log(dayjs().format('MMMM D'));
+        const today = dayjs().format('MMMM D');
+        const currentTime = dayjs().format('HH:mm:ss');
+      }
 
       ReactDOM.createRoot(root).render(
         <>
