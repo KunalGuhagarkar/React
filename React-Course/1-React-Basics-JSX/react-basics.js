@@ -1,7 +1,7 @@
 console.log("This is an External Library.");
 
 // Creating Traditional Element using Vanilla JS
-const button = document.createElement("button");
-button.textContent = "VanillaJS Button";
+const button2 = document.createElement("button");
+button2.textContent = "VanillaJS Button";
 
-document.getElementById("root").appendChild(button);
+document.getElementById("vanilla-container").appendChild(button2);
