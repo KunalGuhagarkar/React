@@ -44,16 +44,14 @@ Question:
       const p2 = <p>Current Time: {currentTime}</p>
 
       setInterval(() => {
-        console.log(currentTime);
+        <p>{currentTime}</p>
       }, 1000)
 
-      console.log(liveTime);
 
       ReactDOM.createRoot(root).render(
         <>
           {p}
           {p2}
-          {liveTime}
         </>
       );
     </script>
