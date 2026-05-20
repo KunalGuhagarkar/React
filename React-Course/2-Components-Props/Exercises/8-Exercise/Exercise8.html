@@ -1,8 +1,6 @@
 <!--
   Question:
-  Add prop to <ProductDetails> called discount (if it exists).
-  
-  if product has discountPrice 
+  Use Ternary Operator
 -->
 <!doctype html>
 <html lang="en">
@@ -31,6 +29,7 @@
         return (
           <div>
             <p>{product}</p>
+            {if }
             {discountPrice && <del><p>Price: ${price}</p></del>}
             {!discountPrice && <p>Price: ${price}</p>}
             {discountPrice && <p>Discount Price: ${discountPrice}</p>}
