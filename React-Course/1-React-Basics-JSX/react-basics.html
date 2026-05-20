@@ -6,15 +6,32 @@
     <title>Root</title>
   </head>
   <body>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <div id="root"></div>
-    
+
+   <!--  <script>
+      console.log("hello");
+    </script> -->
+
+    <script src="react-basics.js"></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
     <script type="text/babel">
+
+      const button = <button>Click Me</button>
+
       const root = document.getElementById("root");
-      ReactDOM.createRoot(root).render(<h1>Hello From React</h1>);
+      
+      ReactDOM.createRoot(root).render(button);
     </script>
   </body>
 </html>
