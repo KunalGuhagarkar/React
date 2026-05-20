@@ -24,8 +24,10 @@
 
       function ChatInput() {
 
+        const [message, setMessage] = React.useState("");
+
         function saveInputText(e) {
-          console.log(e.target.value);
+          setMessage(e.target.value);
         }
 
         return (
