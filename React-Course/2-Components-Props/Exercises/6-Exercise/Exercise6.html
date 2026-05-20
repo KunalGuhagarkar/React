@@ -25,12 +25,22 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
+      function ProductDetails({ product, price }) {
+        return (
+          <div>
+            <p>{product}</p>
+            <p>Price: ${price}</p>
+            <button>Add To Cart</button>
+          </div>
+        );
+      }
+
       function App() {
         return (
           <>
-            <p>Cotton Socks</p>
-            <p>Price: $10.90</p>
-            <button>Add To Cart</button>
+            <ProductDetails product="Cotton socks" price={10.9} />
+            <ProductDetails product="Tennis balls" price={6.0} />
+            <ProductDetails product="Plain T-Shirt" price={7.99} />
           </>
         );
       }
