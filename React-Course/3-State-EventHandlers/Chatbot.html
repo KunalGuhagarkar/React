@@ -23,12 +23,18 @@
       const root = document.getElementById("root");
 
       function ChatInput() {
+
+        function saveInputText(e) {
+          console.log(e.target.value);
+        }
+
         return (
           <>
             <input
               type="text"
               placeholder="Send a message to Chatbot"
               size="30"
+              onChange={saveInputText}
             />
             <button>Send</button>
           </>
@@ -48,7 +54,8 @@
       }
 
       function ChatMessages() {
-        const array = React.useState([
+
+        const [chatMessages, setChatMessages] = React.useState([
           {
             id: "id1",
             message: "hello Chatbot",
@@ -71,9 +78,32 @@
           },
         ]);
 
+        /* const array = React.useState([
+          {
+            id: "id1",
+            message: "hello Chatbot",
+            sender: "user",
+          },
+          {
+            id: "id2",
+            message: "Hello! How can I help you?",
+            sender: "robot",
+          },
+          {
+            id: "id3",
+            message: "can you get me today's date?",
+            sender: "user",
+          },
+          {
+            id: "id4",
+            message: "Today is May 20",
+            sender: "robot",
+          },
+        ]); */
+
         // Array Destructuring Shortcut
-        const [chatMessages, setChatMessages] = array;
-        
+        // const [chatMessages, setChatMessages] = array;
+
         // const chatMessages = array[0]; // Current data
         // const setChatMessages = array[1]; // Updater Function
 
