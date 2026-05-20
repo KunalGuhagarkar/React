@@ -1,0 +1,77 @@
+<!-- Learning Components and Props by making a Chatbot -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const root = document.getElementById("root");
+
+      function ChatInput() {
+        return (
+          <>
+            <input
+              type="text"
+              placeholder="Send a message to Chatbot"
+              size="30"
+            />
+            <button>Send</button>
+          </>
+        );
+      }
+
+      function ChatMessage({ message, sender }) {
+        // const message = props.message;
+        // Shortcut
+        // const { message, sender } = props;
+        // let imageSrc;
+        // if (sender == "user") {
+        //   imageSrc = "notes/assets/user.png";
+        // } else {
+        //   imageSrc = "notes/assets/robot.png";
+        // }
+
+        return (
+          <div>
+            {sender == "robot" && (
+              <img src="notes/assets/robot.png" width="50" />
+            )}
+            {message}
+            {sender == "robot" && (
+              <img src="notes/assets/user.png" width="50" />
+            )}
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <ChatInput />
+            <ChatMessage message="hello Chatbot" sender="user" />
+            <ChatMessage message="Hello! How can I help you?" sender="robot" />
+            <ChatMessage message="can you get me today's date?" sender="user" />
+            <ChatMessage message="Today is May 20" sender="robot" />
+          </>
+        );
+      }
+
+      ReactDOM.createRoot(root).render(<App />);
+    </script>
+  </body>
+</html>
