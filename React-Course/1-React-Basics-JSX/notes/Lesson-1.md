@@ -1,6 +1,6 @@
 ![alt text](assets/image.png)
 
-[React_Cheatsheet_Zero_To_Mastery_V1.02.pdf](attachment:3567a192-5182-4dc4-a8c3-44b8c5411836:React_Cheatsheet_Zero_To_Mastery_V1.02.pdf)
+[React_Cheatsheet_Zero_To_Mastery_V1.02.pdf](https://file.notion.so/f/f/57e12b3a-61bc-81b9-a51f-0003f3409948/3567a192-5182-4dc4-a8c3-44b8c5411836/React_Cheatsheet_Zero_To_Mastery_V1.02.pdf?table=block&id=36212b3a-61bc-804b-aa07-e62515fe2c00&spaceId=57e12b3a-61bc-81b9-a51f-0003f3409948&expirationTimestamp=1779321600000&signature=ZUo5ecwO4Ke9UmagNqf2gjwvUdHqDPi6Du1XlXrFuI8&downloadName=React_Cheatsheet_Zero_To_Mastery_V1.02.pdf)
 
 ## Lesson 1:
 
