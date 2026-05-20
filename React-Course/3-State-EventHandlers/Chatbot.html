@@ -69,7 +69,7 @@
 
       function ChatMessages() {
         // Move this is <App /> Component -> Lifting the state up
-        const [chatMessages, setChatMessages] = React.useState([
+        /* const [chatMessages, setChatMessages] = React.useState([
           {
             id: "id1",
             message: "hello Chatbot",
@@ -90,7 +90,7 @@
             message: "Today is May 20",
             sender: "robot",
           },
-        ]);
+        ]); */
 
         /* const array = React.useState([
           {
@@ -140,6 +140,29 @@
       }
 
       function App() {
+        const [chatMessages, setChatMessages] = React.useState([
+          {
+            id: "id1",
+            message: "hello Chatbot",
+            sender: "user",
+          },
+          {
+            id: "id2",
+            message: "Hello! How can I help you?",
+            sender: "robot",
+          },
+          {
+            id: "id3",
+            message: "can you get me today's date?",
+            sender: "user",
+          },
+          {
+            id: "id4",
+            message: "Today is May 20",
+            sender: "robot",
+          },
+        ]);
+        
         return (
           <>
             <ChatInput />
