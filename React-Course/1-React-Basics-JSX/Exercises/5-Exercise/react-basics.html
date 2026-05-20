@@ -11,47 +11,77 @@ Question:
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 1</title>
-  </head>
-  <body>
-    <div id="root"></div>
 
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"
-    ></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
 
-    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <script type="text/babel">
-      const root = document.getElementById("root");
+  <title>Exercise 1</title>
+</head>
 
-      function updateFunction() {
-        console.log(dayjs().format('MMMM D'));
-        const today = dayjs().format('MMMM D');
-        const currentTime = dayjs().format('HH:mm:ss');
+<body>
 
-        return (
-          <>
-            <p>Today is {today}</p>
-            <p>Current Time is {currentTime}</p>
-          </>
-        );
-      }
+  <div id="root"></div>
 
-      ReactDOM.createRoot(root).render(
+  <!-- React -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react@18/umd/react.development.js"
+  ></script>
+
+  <!-- ReactDOM -->
+  <script
+    crossorigin
+    src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+  ></script>
+
+  <!-- Babel -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- DayJS -->
+  <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+  <script type="text/babel">
+
+    const root = ReactDOM.createRoot(
+      document.getElementById("root")
+    );
+
+    function updateFunction() {
+
+      // Current Date
+      const today = dayjs().format("MMMM D");
+
+      // Current Time
+      const currentTime = dayjs().format("HH:mm:ss");
+
+      // Display in console
+      console.log(today);
+
+      // Render to Website
+      root.render(
         <>
-          {setInterval(updateFunction, 1000)};
+          <p>Today is {today}</p>
+
+          <p>
+            Current Time: {currentTime}
+          </p>
         </>
       );
-    </script>
-  </body>
+    }
+
+    // Initial Render
+    updateFunction();
+
+    // Update every second
+    setInterval(updateFunction, 1000);
+
+  </script>
+
+</body>
+
 </html>
