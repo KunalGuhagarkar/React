@@ -35,7 +35,7 @@
         );
       }
 
-      function ChatMessage({ message, sender }) {
+      function ChatComponent({ message, sender }) {
         return (
           <div>
             {sender == "robot" && (
@@ -76,7 +76,7 @@
         )); */
 
         return chatMessages.map((chat) => (
-          <ChatMessage
+          <ChatComponent
             message={chat.message}
             sender={chat.sender}
             key={chat.id}
