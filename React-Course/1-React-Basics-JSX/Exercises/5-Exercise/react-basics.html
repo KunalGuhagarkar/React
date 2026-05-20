@@ -30,8 +30,11 @@ Question:
       const root = document.getElementById("root");
 
       console.log(dayjs().format('MMMM D'));
+      const today = dayjs().format('MMMM D');
 
-      ReactDOM.createRoot(root).render();
+      const p = <p>Today is {today}</p>
+
+      ReactDOM.createRoot(root).render(p);
     </script>
   </body>
 </html>
