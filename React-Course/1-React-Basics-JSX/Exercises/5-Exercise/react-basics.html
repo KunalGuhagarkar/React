@@ -37,16 +37,12 @@ Question:
       console.log(dayjs().format('MMMM D'));
       const today = dayjs().format('MMMM D');
 
-      const p = <p>Today is {today}</p>
-
       const currentTime = dayjs().format('HH:mm:ss');
-      const p2 = <p>Current Time: {currentTime}</p>
-
 
       ReactDOM.createRoot(root).render(
-        setInterval(() => {
-          <p>{dayjs().format('HH:mm:ss')}</p>
-        }, 1000)
+        <>
+
+        </>
       );
     </script>
   </body>
