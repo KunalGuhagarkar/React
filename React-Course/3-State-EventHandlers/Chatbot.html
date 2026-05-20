@@ -125,26 +125,8 @@
           <ChatMessage message={chat.message} sender={chat.sender} />
         )); */
 
-        function sendMessage() {
-          /* chatMessages.push({
-            message: "test",
-            sender: "user",
-            id: crypto.randomUUID(),
-          });
-          console.log(chatMessages); */
-          setChatMessages([
-            ...chatMessages,
-            {
-              message: "test",
-              sender: "user",
-              id: crypto.randomUUID(),
-            },
-          ]);
-        }
-
         return (
           <>
-            <button onClick={sendMessage}>Send Message</button>
 
             {chatMessages.map((chat) => (
               <ChatComponent
