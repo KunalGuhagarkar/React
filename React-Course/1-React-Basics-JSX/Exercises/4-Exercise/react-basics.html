@@ -1,6 +1,6 @@
 <!-- 
 Question: 
-  You 
+  You buy 1 pack of socks for $10 and 2 T-shirts for $8 each. Using JavaScript, calculate the total cost of this order, save it in a variable named productCost, and display it in the Console.
 -->
 
 <!doctype html>
@@ -27,13 +27,12 @@ Question:
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      const div = (
-        <div>
-          <p>Cotton Socks</p>
-          <p>Price: $10</p>
-          <button>Add To Cart</button>  
-        </div>
-      );
+      const socksPrice = 10;
+      const tshirtPrice = 8;
+
+      const productCost = socksPrice + (2 * tshirtPrice);
+
+      console.log(productCost);
 
       ReactDOM.createRoot(root).render(div);
     </script>
