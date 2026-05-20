@@ -43,11 +43,15 @@ Question:
       const currentTime = dayjs().format('HH:mm:ss');
       const p2 = <p>Current Time: {currentTime}</p>
 
+      const liveTime = setInterval(() => {
+        currentTime;
+      }, 1000)
+
       ReactDOM.createRoot(root).render(
         <>
           {p}
           {p2}
-          {setInterval(() => {currentTime}, 1000)}
+          {liveTime}
         </>
       );
     </script>
