@@ -39,8 +39,14 @@ Question:
       const p = <p>Today is {today}</p>
 
       const currentTime = dayjs().format('HH:mm:ss');
+      const p2 = <p>Current Time: {currentTime}</p>
 
-      ReactDOM.createRoot(root).render(p);
+      ReactDOM.createRoot(root).render(
+        <>
+          {p}
+          {p2}
+        </>
+      );
     </script>
   </body>
 </html>
