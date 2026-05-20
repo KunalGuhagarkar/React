@@ -59,3 +59,12 @@ In React use <div> for layout purposes.
 props = properties
 
 Props make our component reusable
+
+### Adding If-statement in JSX
+
+Guard Operator(&&):
+```Javascript
+const result = value1 && value2;
+```
+1. If value1 is true, the result will be value2
+2. This works just like an if-statement
