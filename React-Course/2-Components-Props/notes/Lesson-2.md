@@ -13,3 +13,5 @@ When Building Websites:
 I React the Component must start with a Capital Letter
 PascalCase = Each word starts with a capital letter: ChatInput
 
+### Main Idea of React
+We can create our own HTML elements.
