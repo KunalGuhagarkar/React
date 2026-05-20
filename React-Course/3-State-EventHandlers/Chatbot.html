@@ -30,6 +30,10 @@
           setMessage(e.target.value);
         }
 
+        function sendMessage() {
+          
+        }
+
         return (
           <>
             <input
@@ -38,7 +42,7 @@
               size="30"
               onChange={saveInputText}
             />
-            <button>Send</button>
+            <button onClick={sendMessage}>Send</button>
           </>
         );
       }
