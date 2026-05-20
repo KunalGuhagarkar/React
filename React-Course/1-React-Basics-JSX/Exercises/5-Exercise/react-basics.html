@@ -38,6 +38,13 @@ Question:
         console.log(dayjs().format('MMMM D'));
         const today = dayjs().format('MMMM D');
         const currentTime = dayjs().format('HH:mm:ss');
+
+        return (
+          <>
+            <p>Today is {today}</p>
+            <p>Current Time is {currentTime}</p>
+          </>
+        );
       }
 
       ReactDOM.createRoot(root).render(
