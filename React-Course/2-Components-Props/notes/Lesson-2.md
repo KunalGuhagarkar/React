@@ -41,3 +41,11 @@ ReactDOM.createRoot(root).render(div);
 ### Fragment(<></>)
 Allows to group elements together without creating an extra <div>
 
+Example:
+```html
+<>
+  <input type="text" placeholder="Enter Your Input" />
+  <button>Send</button>
+</>
+```
+
