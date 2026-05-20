@@ -38,3 +38,6 @@ const div = (
 ReactDOM.createRoot(root).render(div);
 ```
 
+### Fragment(<></>)
+Allows to group elements together without creating an extra <div>
+
