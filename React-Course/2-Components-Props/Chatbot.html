@@ -26,7 +26,13 @@
         return <input type="text" placeholder="Enter Your Input" />;
       }
 
-      ReactDOM.createRoot(root).render();
+      const div = (
+        <div>
+          <ChatInput />  
+        </div>
+      )
+
+      ReactDOM.createRoot(root).render(div);
     </script>
   </body>
 </html>
