@@ -31,10 +31,10 @@
         );
       }
 
-      function ChatMessage() {
+      function ChatMessage(props) {
         return (
           <div>
-            hello Chatbot
+            {props.message}
             <img src="notes\assets\user.png" alt="Profile Image" width="50px" />
           </div>
         );
@@ -43,7 +43,7 @@
       const app = (
         <>
           <ChatInput />
-          <ChatMessage />
+          <ChatMessage message="hello Chatbot" />
         </>
       )
 
