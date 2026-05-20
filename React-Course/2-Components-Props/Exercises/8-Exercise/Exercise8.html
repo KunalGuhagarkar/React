@@ -43,7 +43,7 @@
 
         return (
           <div>
-            <img src={imgPath} alt="" />
+            <img src={imgPath} alt={product} width="100px" />
             <p>{product}</p>
             {discountPriceResult}
             <button>Add To Cart</button>
@@ -61,10 +61,17 @@
               imgSrc="cotton-socks.png"
             />
             <br />
-            <ProductDetails product="Tennis balls" price={6.0} imgSrc="tennis-balls.png" />
+            <ProductDetails
+              product="Tennis balls"
+              price={6.0}
+              imgSrc="tennis-balls.png"
+            />
             <br />
-            <ProductDetails product="Plain T-Shirt" price={7.99} 
-            imgSrc="plain-t-shirt.png" />
+            <ProductDetails
+              product="Plain T-Shirt"
+              price={7.99}
+              imgSrc="plain-t-shirt.png"
+            />
           </>
         );
       }
