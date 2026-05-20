@@ -42,7 +42,15 @@
           ]);
 
           const response = Chatbot.getResponse(message)
-          console.log(response);
+          
+          setChatMessages([
+            ...newChatMessages,
+            {
+              message: response,
+              sender: "robot",
+              id: crypto.randomUUID(),
+            },
+          ]);
 
           setMessage("");
         }
