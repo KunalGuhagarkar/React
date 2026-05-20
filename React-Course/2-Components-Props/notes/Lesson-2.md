@@ -15,3 +15,26 @@ PascalCase = Each word starts with a capital letter: ChatInput
 
 ### Main Idea of React
 We can create our own HTML elements.
+
+Example:
+```Javascript
+function ChatInput() {
+  return (
+    <>
+      <input type="text" placeholder="Enter Your Input" />
+      <button>Send</button>
+    </>
+  );
+}
+
+const div = (
+  <div>
+    {ChatInput()} 
+    <ChatInput></ChatInput>
+    <ChatInput />  
+  </div>
+)
+
+ReactDOM.createRoot(root).render(div);
+```
+
