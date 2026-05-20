@@ -68,3 +68,7 @@ const result = value1 && value2;
 ```
 1. If value1 is true, the result will be value2
 2. This works just like an if-statement
+
+
+Best Practice:
+Use a Component (App) to create the website
