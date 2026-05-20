@@ -22,7 +22,7 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ChatInput() {
+      function ChatInput({chatMessages, setChatMessages}) {
 
         const [message, setMessage] = React.useState("");
 
