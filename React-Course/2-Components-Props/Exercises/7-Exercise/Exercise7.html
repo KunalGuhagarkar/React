@@ -27,12 +27,12 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ProductDetails({ product, price, discount }) {
+      function ProductDetails({ product, price, discountPrice }) {
         return (
           <div>
             <p>{product}</p>
-            <p>Price: ${price}</p>
-            {discount && <p>Discount: {discount}</p>}
+            {discountPrice && <del><p>Price: ${price}</p></del>}
+            {discountPrice && <p>Discount: {discountPrice}</p>}
             <button>Add To Cart</button>
           </div>
         );
@@ -41,7 +41,7 @@
       function App() {
         return (
           <>
-            <ProductDetails product="Cotton socks" price={10.9} discount={5.45} />
+            <ProductDetails product="Cotton socks" price={10.9} discountPrice={5.45} />
             <ProductDetails product="Tennis balls" price={6.0} />
             <ProductDetails product="Plain T-Shirt" price={7.99} />
           </>
