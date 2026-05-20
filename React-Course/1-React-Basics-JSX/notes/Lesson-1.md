@@ -87,3 +87,8 @@ Babel = translates JSX into JavaScript
 <script type="text/babel"></script>
 
 ```
+
+### Advantages of Using React?
+1. Creating Websites with React feels natural
+2. JSX lets us find errors easier
+3. We can insert values inside JSX elements
