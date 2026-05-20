@@ -22,8 +22,7 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ChatInput({chatMessages, setChatMessages}) {
-
+      function ChatInput({ chatMessages, setChatMessages }) {
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
@@ -67,7 +66,7 @@
         );
       }
 
-      function ChatMessages() {
+      function ChatMessages({ chatMessages }) {
         // Move this is <App /> Component -> Lifting the state up
         /* const [chatMessages, setChatMessages] = React.useState([
           {
@@ -127,7 +126,6 @@
 
         return (
           <>
-
             {chatMessages.map((chat) => (
               <ChatComponent
                 message={chat.message}
@@ -165,8 +163,11 @@
 
         return (
           <>
-            <ChatInput chatMessages={chatMessages} setChatMessages={setChatMessages} />
-            <ChatMessages />
+            <ChatInput
+              chatMessages={chatMessages}
+              setChatMessages={setChatMessages}
+            />
+            <ChatMessages chatMessages={chatMessages} />
           </>
         );
       }
