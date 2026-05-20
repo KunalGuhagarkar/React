@@ -30,7 +30,12 @@
       const button = <button>Click Me</button>;
       const p = <p>This is a paragraph</p>
 
-      const div = <div>{button}{p}</div>
+      const div = (
+        <div>
+          {button}
+          {p}
+        </div>
+      );
 
       const root = document.getElementById("root");
 
