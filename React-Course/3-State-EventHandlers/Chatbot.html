@@ -41,8 +41,11 @@
             },
           ]);
 
+          const response = Chatbot.getResponse(message)
+          console.log(response);
+
           setMessage("");
-        } 
+        }
 
         return (
           <>
