@@ -32,8 +32,7 @@
           <div>
             <p>{product}</p>
             {discountPrice && <del><p>Price: ${price}</p></del>}
-            {!discountPrice && <del><p>Price: ${price}</p></del>}
-            {discountPrice && <p>Discount: {discountPrice}</p>}
+            {!discountPrice && <p>Price: ${price}</p>}
             <button>Add To Cart</button>
           </div>
         );
@@ -43,7 +42,9 @@
         return (
           <>
             <ProductDetails product="Cotton socks" price={10.9} discountPrice={5.45} />
+            <br />
             <ProductDetails product="Tennis balls" price={6.0} />
+            <br />
             <ProductDetails product="Plain T-Shirt" price={7.99} />
           </>
         );
