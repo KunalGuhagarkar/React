@@ -50,18 +50,22 @@
       function App() {
         const chatMessages = [
           {
+            id: "id1",
             message: "hello Chatbot",
             sender: "user",
           },
           {
+            id: "id2",
             message: "Hello! How can I help you?",
             sender: "robot",
           },
           {
+            id: "id3",
             message: "can you get me today's date?",
             sender: "user",
           },
           {
+            id: "id4",
             message: "Today is May 20",
             sender: "robot",
           },
@@ -75,7 +79,7 @@
           <>
             <ChatInput />
             {chatMessages.map((chat) => (
-              <ChatMessage message={chat.message} sender={chat.sender} />
+              <ChatMessage message={chat.message} sender={chat.sender} key={chat.id} />
             ))}
           </>
         );
