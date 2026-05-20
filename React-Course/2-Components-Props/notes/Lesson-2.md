@@ -54,6 +54,7 @@ Block Element takes up an entire line by itself
 
 In React use <div> for layout purposes.
 
+### Props
 
 props = properties
 

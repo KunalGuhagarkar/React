@@ -25,7 +25,11 @@
       function ChatInput() {
         return (
           <>
-            <input type="text" placeholder="Send a message to Chatbot" size="30" />
+            <input
+              type="text"
+              placeholder="Send a message to Chatbot"
+              size="30"
+            />
             <button>Send</button>
           </>
         );
@@ -45,8 +49,10 @@
           <ChatInput />
           <ChatMessage message="hello Chatbot" />
           <ChatMessage message="Hello! How can I help you?" />
+          <ChatMessage message="can you get me today's date?" />
+          <ChatMessage message="Today is May 20" />
         </>
-      )
+      );
 
       ReactDOM.createRoot(root).render(app);
     </script>
