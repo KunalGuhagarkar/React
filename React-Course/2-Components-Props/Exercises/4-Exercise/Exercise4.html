@@ -27,14 +27,22 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function App() {
+      function LoginForm() {
         return (
-          <>
+          <div>
             <p>Hello, welcome to my website</p>
             <input type="email" placeholder="Enter Email" />
             <input type="password" placeholder="Enter Password" />
             <button>Login</button>
             <button>Sign Up</button>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <LoginForm />
           </>
         );
       }
