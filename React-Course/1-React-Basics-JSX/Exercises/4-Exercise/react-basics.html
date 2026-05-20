@@ -45,11 +45,13 @@ Question:
       const div = (
         <div>
           <p>Product cost: ${productCost}</p>
-          <p>Shipping cost: ${}</p>
+          <p>Shipping cost: ${shippingCost}</p>
+          <p>Total cost: ${totalCost}</p>
+          <button>Place your order</button>
         </div>
       );
 
-      ReactDOM.createRoot(root).render();
+      ReactDOM.createRoot(root).render(div);
     </script>
   </body>
 </html>
