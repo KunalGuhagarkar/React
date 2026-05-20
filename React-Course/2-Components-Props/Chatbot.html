@@ -35,10 +35,10 @@
         );
       }
 
-      function ChatMessage(props) {
+      function ChatMessage({message, sender}) {
         // const message = props.message;
         // Shortcut
-        const { message, sender } = props;
+        // const { message, sender } = props;
         let imageSrc;
         if (sender == "user") {
           imageSrc = "notes/assets/user.png";
