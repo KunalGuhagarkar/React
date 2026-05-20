@@ -32,8 +32,7 @@
         }
 
         function sendMessage() {
-          console.log(message);
-          setChatMessages([
+          const newChatMessages = setChatMessages([
             ...chatMessages,
             {
               message: message,
