@@ -57,3 +57,4 @@ In React use <div> for layout purposes.
 
 props = properties
 
+Props make our component reusable
