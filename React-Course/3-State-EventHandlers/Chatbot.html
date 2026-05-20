@@ -42,9 +42,7 @@
               <img src="notes/assets/robot.png" width="50" />
             )}
             {message}
-            {sender == "user" && (
-              <img src="notes/assets/user.png" width="50" />
-            )}
+            {sender == "user" && <img src="notes/assets/user.png" width="50" />}
           </div>
         );
       }
@@ -69,14 +67,16 @@
           },
         ];
 
-        const chatMessagesComponent = chatMessages.map((chat) => (
+        /* const chatMessagesComponent = chatMessages.map((chat) => (
           <ChatMessage message={chat.message} sender={chat.sender} />
-        ));
+        )); */
 
         return (
           <>
             <ChatInput />
-            <ChatMessagesComponent />
+            {chatMessages.map((chat) => (
+              <ChatMessage message={chat.message} sender={chat.sender} />
+            ))}
           </>
         );
       }
