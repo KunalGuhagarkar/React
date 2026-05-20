@@ -27,19 +27,23 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ProductDetails({ product, price, discountPrice }) {
-        
+      function ProductDetails({ product, price, discountPrice, imgSrc }) {
         const discountPriceResult = discountPrice ? (
           <div>
-            <del><p>Price: ${price}</p></del>
+            <del>
+              <p>Price: ${price}</p>
+            </del>
             <p>Discount Price: ${discountPrice}</p>
           </div>
         ) : (
           <p>Price: ${price}</p>
         );
 
+        const imgPath = `https://supersimple.dev/images/${imgSrc}`;
+
         return (
           <div>
+            <img src={imgPath} alt="" />
             <p>{product}</p>
             {discountPriceResult}
             <button>Add To Cart</button>
@@ -50,11 +54,17 @@
       function App() {
         return (
           <>
-            <ProductDetails product="Cotton socks" price={10.9} discountPrice={5.45} />
+            <ProductDetails
+              product="Cotton socks"
+              price={10.9}
+              discountPrice={5.45}
+              imgSrc="cotton-socks.png"
+            />
             <br />
-            <ProductDetails product="Tennis balls" price={6.0} />
+            <ProductDetails product="Tennis balls" price={6.0} imgSrc="tennis-balls.png" />
             <br />
-            <ProductDetails product="Plain T-Shirt" price={7.99} />
+            <ProductDetails product="Plain T-Shirt" price={7.99} 
+            imgSrc="plain-t-shirt.png" />
           </>
         );
       }
