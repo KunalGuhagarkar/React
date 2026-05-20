@@ -1,6 +1,6 @@
 <!--
   Question:
-  Add prop to <ProductDetails> 
+  Add prop to <ProductDetails> called discount (if it exists).
 -->
 <!doctype html>
 <html lang="en">
@@ -25,11 +25,12 @@
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ProductDetails({ product, price }) {
+      function ProductDetails({ product, price, discount }) {
         return (
           <div>
             <p>{product}</p>
             <p>Price: ${price}</p>
+            {discount && <p>Discount: {discount}</p>}
             <button>Add To Cart</button>
           </div>
         );
