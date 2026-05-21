@@ -33,6 +33,7 @@ Question:
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
+          e.target.value && (document.querySelector("button").disabled=false);
           setMessage(e.target.value);
         }
 
