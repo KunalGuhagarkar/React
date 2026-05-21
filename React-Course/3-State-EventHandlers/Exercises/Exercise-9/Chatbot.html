@@ -212,7 +212,7 @@ Question:
         ]);
 
         function handleLoading(loading) {
-          console.log(loading);
+          loading.message == 'loading...' && document.querySelector("input").disabled;
         }
 
         return (
