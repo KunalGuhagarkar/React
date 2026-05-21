@@ -29,6 +29,7 @@ Save a count. The count should have a initial value of 0, and React.useState() s
       
       function handleClick() {
         setCount(count + 1);
+        console.log(count);
       }
 
       function App() {
@@ -37,7 +38,7 @@ Save a count. The count should have a initial value of 0, and React.useState() s
 
         return (
           <>
-            <button>Clicked {count} times</button>
+            <button onClick={handleClick}>Clicked {count} times</button>
           </>
         )
       }
