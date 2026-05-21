@@ -38,15 +38,17 @@ Question:
 
       function App() {
 
-        const [buttonToggle, setButtonToggle] = React.useState(false);
+        const [isButtonOn, setIsButtonON] = React.useState(false);
 
-        function isButtonOn() {
-          setButtonToggle(!buttonToggle);
-          console.log(buttonToggle);
+        function handleButtonClick() {
+          setIsButtonON(!isButtonOn);
+          console.log(isButtonOn);
         }
         
         return (
-          <button onClick={isButtonOn}>ON</button>
+          <button onClick={handleButtonClick}>
+            {isButtonOn ? "ON" : "OFF"}  
+          </button>
         );
       }
 
