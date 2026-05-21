@@ -59,7 +59,7 @@ Question:
 
           setChatMessages(loading);
 
-          await isLoading(loading[loading.length-1])
+          await isLoading(loading[loading.length - 1]);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -71,7 +71,7 @@ Question:
             },
           ]);
 
-          await isLoading(loading[loading.length-1])
+          await isLoading(loading[loading.length - 1]);
 
           setMessage("");
         }
@@ -212,8 +212,9 @@ Question:
         ]);
 
         function handleLoading(loading) {
-          loading.message == 'loading...' && (document.querySelector("input").disabled=true);
-          loading.message !== 'loading...' && (document.querySelector("input").disabled=false);
+          loading.message == "loading..."
+            ? (document.querySelector("input").disabled = true)
+            : (document.querySelector("input").disabled = false);
         }
 
         return (
