@@ -58,7 +58,7 @@
         }
 
         function handleEnterKey(e) {
-          console.log(typeof e.key);
+          e.key == 'Enter' && sendMessage();
         }
 
         return (
