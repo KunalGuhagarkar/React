@@ -213,8 +213,10 @@ Question:
 
         function handleLoading(loading) {
           loading.message == "loading..."
-            ? (document.querySelector("input").disabled = true)
-            : (document.querySelector("input").disabled = false);
+            ? ((document.querySelector("input").disabled = true),
+              (document.querySelector("button").disabled = true))
+            : ((document.querySelector("input").disabled = false),
+              (document.querySelector("button").disabled = false));
         }
 
         return (
