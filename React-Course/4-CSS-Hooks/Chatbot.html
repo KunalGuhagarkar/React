@@ -139,7 +139,7 @@ Question:
 
       function ChatComponent({ message, sender }) {
         return (
-          <div>
+          <div className={sender === 'user' ? }>
             {sender == "robot" && (
               <img
                 src="\React-Course\3-State-EventHandlers\notes\assets\robot.png"
