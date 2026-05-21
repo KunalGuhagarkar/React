@@ -12,8 +12,12 @@ Question:
     <title>Chatbot</title>
     <style>
 
-      button {
+      .green-btn {
         background-color: rgb(25, 135, 84);
+      }
+
+      .red-btn {
+        background-color: rgb(220, 53, 69);
       }
       
 
@@ -46,7 +50,10 @@ Question:
         }
         
         return (
-          <button onClick={handleButtonClick}>
+          <button 
+            onClick={handleButtonClick}
+            className={isButtonOn ? "green-btn" : "red-btn"}
+          >
             {isButtonOn ? "ON" : "OFF"}  
           </button>
         );
