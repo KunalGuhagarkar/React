@@ -1,6 +1,6 @@
 <!-- 
 Question:
-TBC.... 
+Create a button with the text "Clicked 0 times". When clicked display "clicked" in the console
 -->
 <!doctype html>
 <html lang="en">
@@ -25,7 +25,13 @@ TBC....
     <script type="text/babel">
       const root = document.getElementById("root");
       
-      function App() {}
+      function App() {
+        return (
+          <>
+            <button>Clicked 0 times</button>
+          </>
+        )
+      }
 
       ReactDOM.createRoot(root).render(<App />);
     </script>
