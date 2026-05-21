@@ -46,9 +46,7 @@ Question:
             },
           ];
 
-          setChatMessages(newChatMessages);
-
-          isLoading();
+          setChatMessages(newChatMessages);     
           
           setChatMessages([
             ...newChatMessages,
@@ -58,6 +56,8 @@ Question:
               id: crypto.randomUUID(),
             },
           ]);
+
+          isLoading(newChatMessages);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -207,8 +207,8 @@ Question:
           },
         ]);
 
-        function handleLoading() {
-          console.log(chatMessages);
+        function handleLoading(newChatMessages) {
+          console.log(newChatMessages);
         }
 
         return (
