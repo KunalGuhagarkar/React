@@ -53,6 +53,10 @@ Question:
 
         const [showPassword, setShowPassword] = React.useState(false);
         
+        function handleClick() {
+          setShowPassword(!showPassword);
+        }
+
         return (
           <div>
             <h1>Hello, Welcome To My Website</h1>
@@ -60,7 +64,7 @@ Question:
             <input type="text" placeholder="Enter Username" />
             <br />
             <input type={showPassword ? "text" : "password"} placeholder="Enter Password" />
-            <button>Show</button>
+            <button onClick={handleClick}>Show</button>
             <br />
             <button>Login</button>
             <button>Sign Up</button>
