@@ -44,6 +44,10 @@ Create a Reset button that sets the count to 0 for all buttons
       function App() {
         const [count, setCount] = React.useState(0);
 
+        function handleReset() {
+          setCount(0);
+        }
+
         return (
           <>
             <CounterComponent count={count} setCount={setCount} />
