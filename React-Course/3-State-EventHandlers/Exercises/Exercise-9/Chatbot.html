@@ -48,16 +48,18 @@ Question:
 
           setChatMessages(newChatMessages);
 
-          const loading = setChatMessages([
+          const loading = [
             ...newChatMessages,
             {
               message: "loading...",
               sender: "robot",
               id: crypto.randomUUID(),
             },
-          ]);
+          ];
 
-          // setChatMessages(loading);
+          setChatMessages(loading);
+
+          console.log(loading[loading.length-1]);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
