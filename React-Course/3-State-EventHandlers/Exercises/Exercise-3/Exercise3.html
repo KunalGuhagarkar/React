@@ -1,6 +1,6 @@
 <!-- 
 Question:
-If count is equal to 1, the text should be "Clicked 1 time" 
+If count is equal to 1, the text should be "Clicked 1 time" instead of "Clicked 1 times"
 -->
 <!doctype html>
 <html lang="en">
@@ -34,7 +34,11 @@ If count is equal to 1, the text should be "Clicked 1 time"
 
         return (
           <>
-            <button onClick={handleClick}>Clicked {count} times</button>
+            {count == 1 ? (
+              <button onClick={handleClick}>Clicked {count} time</button>
+            ) : (
+              <button onClick={handleClick}>Clicked {count} times</button>
+            )}
           </>
         );
       }
