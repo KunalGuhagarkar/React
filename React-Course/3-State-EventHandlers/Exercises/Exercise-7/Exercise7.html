@@ -25,9 +25,7 @@ Start with an empty React websites and create an <input> and a <p>. As you type 
     <script type="text/babel">
       const root = document.getElementById("root");
 
-
       function App() {
-
         const [name, setName] = React.useState("");
 
         function inputChange(e) {
@@ -36,7 +34,11 @@ Start with an empty React websites and create an <input> and a <p>. As you type 
 
         return (
           <>
-            <input type="text" onChange={inputChange} />
+            <input
+              type="text"
+              onChange={inputChange}
+              placeholder="Enter Name"
+            />
             <p>Hello {name}</p>
           </>
         );
