@@ -29,7 +29,7 @@ Question:
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ChatInput({ chatMessages, setChatMessages, isLoading }) {
+      function ChatInput({ chatMessages, setChatMessages }) {
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
@@ -57,9 +57,7 @@ Question:
             },
           ]);
 
-          async function isLoading(loading) {
-            await console.log(loading);
-          }
+          setChatMessages(loading);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -209,16 +207,11 @@ Question:
           },
         ]);
 
-        function handleLoading(loading) {
-          console.log(loading);
-        }
-
         return (
           <>
             <ChatInput
               chatMessages={chatMessages}
               setChatMessages={setChatMessages}
-              isLoading={handleLoading}
             />
             <ChatMessages chatMessages={chatMessages} />
           </>
