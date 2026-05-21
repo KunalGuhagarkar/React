@@ -1,6 +1,6 @@
 <!-- 
 Question:
-Seperate the counter into a Component. Then, use this component to create 2 counters on the website.
+Seperate the counter into a Component. Then, use this component to create 2 counters on the website. Each counter can have different counts
 -->
 <!doctype html>
 <html lang="en">
@@ -25,7 +25,7 @@ Seperate the counter into a Component. Then, use this component to create 2 coun
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function App() {
+      function CounterComponent() {
         const [count, setCount] = React.useState(0);
 
         function handleClick() {
@@ -34,11 +34,21 @@ Seperate the counter into a Component. Then, use this component to create 2 coun
 
         return (
           <>
-            {count == 1 ? (
+          {count == 1 ? (
               <button onClick={handleClick}>Clicked {count} time</button>
             ) : (
               <button onClick={handleClick}>Clicked {count} times</button>
             )}
+          </>
+        );
+
+      }
+
+      function App() {
+
+        return (
+          <>
+            
           </>
         );
       }
