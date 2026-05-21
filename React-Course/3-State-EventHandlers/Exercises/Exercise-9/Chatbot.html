@@ -29,7 +29,7 @@ Question:
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function ChatInput({ chatMessages, setChatMessages }) {
+      function ChatInput({ chatMessages, setChatMessages, handleLoading }) {
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
