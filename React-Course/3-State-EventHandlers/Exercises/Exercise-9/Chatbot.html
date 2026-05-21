@@ -1,6 +1,7 @@
 <!-- 
 Question:
-Send message by pressing the Enter Key. 
+1. Send message by pressing the Enter Key.
+2. Clear input by pressing the Esc Key. 
 -->
 <!doctype html>
 <html lang="en">
@@ -62,6 +63,7 @@ Send message by pressing the Enter Key.
 
         function handleEnterKey(e) {
           e.key == 'Enter' && sendMessage();
+          e.key == 'Escape' && setMessage("");
         }
 
         return (
