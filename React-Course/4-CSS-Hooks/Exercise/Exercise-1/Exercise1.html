@@ -1,0 +1,65 @@
+<!-- 
+Question:
+1. Create a Button using React and CSS
+2. Toggle Button text ON/OFF
+3. Change Color of green when ON and red when OFF
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+    <style>
+
+      .green-btn {
+        background-color: rgb(25, 135, 84);
+      }
+
+      .red-btn {
+        background-color: rgb(220, 53, 69);
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const root = document.getElementById("root");
+
+
+      function App() {
+
+        const [isButtonOn, setIsButtonON] = React.useState(false);
+
+        function handleButtonClick() {
+          setIsButtonON(!isButtonOn);
+          console.log(isButtonOn);
+        }
+        
+        return (
+          <button 
+            onClick={handleButtonClick}
+            className={isButtonOn ? "green-btn" : "red-btn"}
+          >
+            {isButtonOn ? "ON" : "OFF"}  
+          </button>
+        );
+      }
+
+      ReactDOM.createRoot(root).render(<App />);
+    </script>
+  </body>
+</html>

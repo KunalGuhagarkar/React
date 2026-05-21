@@ -1,25 +1,16 @@
 <!-- 
 Question:
-1. Send message by pressing the Enter Key.
-2. Clear input by pressing the Esc Key.
-3. Add async and await
+1. Create a Button using React and CSS
+2. Toggle Button text ON/OFF
+3. Change Color of green when ON and red when OFF
 -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatbot</title>
+    <title>Exercise 1</title>
     <style>
-
-      .green-btn {
-        background-color: rgb(25, 135, 84);
-      }
-
-      .red-btn {
-        background-color: rgb(220, 53, 69);
-      }
-      
 
     </style>
   </head>
@@ -42,21 +33,16 @@ Question:
 
       function App() {
 
-        const [isButtonOn, setIsButtonON] = React.useState(false);
-
-        function handleButtonClick() {
-          setIsButtonON(!isButtonOn);
-          console.log(isButtonOn);
-        }
         
         return (
-          <button 
-            onClick={handleButtonClick}
-            className={isButtonOn ? "green-btn" : "red-btn"}
-          >
-            {isButtonOn ? "ON" : "OFF"}  
-          </button>
-        );
+          <>
+            <h1>Hello, Welcome To My Website</h1>
+            <input type="text" />
+            <input type="password" />
+            <button>Login</button>
+            <button>Sign Up</button>
+          </>
+        )
       }
 
       ReactDOM.createRoot(root).render(<App />);
