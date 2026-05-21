@@ -11,7 +11,7 @@ Question:
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
     <style>
-      button {
+      .send-btn {
         background-color: green;
       }
     </style>
@@ -97,6 +97,7 @@ Question:
               onKeyDown={handleKeyPress}
             />
             <button
+              className="send-btn"
               onClick={
                 message.length > 0 ? sendMessage : console.log("Field is Empty")
               }
