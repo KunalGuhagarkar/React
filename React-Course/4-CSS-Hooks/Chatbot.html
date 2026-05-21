@@ -37,6 +37,10 @@ Question:
         display: flex;
       }
 
+      .app-container {
+        max-width: 100;
+      }
+
     </style>
   </head>
   <body>
@@ -255,14 +259,14 @@ Question:
         }
 
         return (
-          <>
+          <div className="app-container">
             <ChatInput
               chatMessages={chatMessages}
               setChatMessages={setChatMessages}
               isLoading={handleLoading}
             />
             <ChatMessages chatMessages={chatMessages} />
-          </>
+          </div>
         );
       }
 
