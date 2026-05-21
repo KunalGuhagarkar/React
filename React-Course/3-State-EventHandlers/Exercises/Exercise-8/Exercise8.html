@@ -34,14 +34,22 @@ Add 2 buttons Reset and Example:
           setName(e.target.value);
         }
 
+        function handleReset() {
+          setName("");
+        }
+
         return (
           <>
             <input
               type="text"
               onChange={inputChange}
               placeholder="Enter Name"
+              value={name}
             />
+            <button onClick={handleReset}>Reset</button>
+            <button onClick={handleExample}>Example</button>
             <p>Hello {name}</p>
+
           </>
         );
       }
