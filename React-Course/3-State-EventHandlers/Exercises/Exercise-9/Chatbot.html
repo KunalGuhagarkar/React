@@ -35,7 +35,7 @@ Question:
           setMessage(e.target.value);
         }
 
-        function sendMessage() {
+        async function sendMessage() {
           const newChatMessages = [
             ...chatMessages,
             {
@@ -45,11 +45,11 @@ Question:
             },
           ];
 
-          setChatMessages(newChatMessages);
+          await setChatMessages(newChatMessages);
 
           const response = Chatbot.getResponseAsync(message);
 
-          setChatMessages([
+          await setChatMessages([
             ...newChatMessages,
             {
               message: response,
@@ -58,7 +58,7 @@ Question:
             },
           ]);
 
-          setMessage("");
+          await setMessage("");
         }
 
         function handleKeyPress(e) {
