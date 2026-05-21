@@ -48,13 +48,11 @@ Question:
 
           setChatMessages(newChatMessages);
 
-          const [loadingtext, setLoadingtext] = React.useState("loading...")
           const response = await Chatbot.getResponseAsync(message);
-          setLoadingtext(response);
           setChatMessages([
             ...newChatMessages,
             {
-              message: loadingtext,
+              message: response,
               sender: "robot",
               id: crypto.randomUUID(),
             },
