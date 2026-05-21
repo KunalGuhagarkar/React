@@ -47,7 +47,7 @@ Question:
 
           setChatMessages(newChatMessages);
 
-          const response = Chatbot.getResponse(message);
+          const response = Chatbot.getResponseAsync(message);
 
           setChatMessages([
             ...newChatMessages,
