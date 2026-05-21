@@ -28,8 +28,16 @@ Start with an empty React websites and create an <input> and a <p>. As you type 
 
       function App() {
 
+        const [name, setName] = React.useState("");
+
+        function inputChange(e) {
+
+        }
+
         return (
           <>
+            <input type="text" onChange={inputChange} />
+            <p>Hello {name}</p>
           </>
         );
       }
