@@ -33,6 +33,7 @@ Question:
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
+          console.log(message);
           setMessage(e.target.value);
         }
 
