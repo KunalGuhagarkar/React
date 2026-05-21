@@ -27,10 +27,14 @@ Question:
       }
 
       .chat-input {
-        width: 80%;
         padding: 12px 15px;
         border-radius: 10px;
         font-size: 15px;
+        flex-grow: 1;
+      }
+
+      .chat-input-container {
+        display: flex;
       }
 
     </style>
@@ -106,7 +110,7 @@ Question:
         }
 
         return (
-          <div>
+          <div className="chat-input-container">
             <input
               type="text"
               placeholder="Send a message to Chatbot"
