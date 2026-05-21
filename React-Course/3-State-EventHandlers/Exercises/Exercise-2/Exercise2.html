@@ -26,21 +26,19 @@ Save a count. The count should have a initial value of 0, and React.useState() s
 
     <script type="text/babel">
       const root = document.getElementById("root");
-      
-      function handleClick() {
-        setCount(count + 1);
-        console.log(count);
-      }
 
       function App() {
-
         const [count, setCount] = React.useState(0);
+
+        function handleClick() {
+          setCount(count + 1);
+        }
 
         return (
           <>
             <button onClick={handleClick}>Clicked {count} times</button>
           </>
-        )
+        );
       }
 
       ReactDOM.createRoot(root).render(<App />);
