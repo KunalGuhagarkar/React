@@ -27,13 +27,13 @@ Save a count. The count should have a initial value of 0, and React.useState() s
     <script type="text/babel">
       const root = document.getElementById("root");
       
-      // function handleClick() {
-      //   setCount(count + 1);
-      // }
+      function handleClick() {
+        setCount(count + 1);
+      }
 
       function App() {
 
-        // const [count, setCount] = useState(0);
+        const [count, setCount] = React.useState(0);
 
         return (
           <>
