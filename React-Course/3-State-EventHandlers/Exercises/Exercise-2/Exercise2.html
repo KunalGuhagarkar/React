@@ -1,6 +1,8 @@
 <!-- 
 Question:
-Create a button with the text "Clicked 0 times". When clicked display "Clicked" in the console 
+Save a count. The count should have a initial value of 0, and React.useState() should have 2 values:
+  1. Update the text in the button so it displays the count instead of 0.
+  2. When clicking the button, use the update function to increase the count by 1.
 -->
 <!doctype html>
 <html lang="en">
@@ -30,9 +32,12 @@ Create a button with the text "Clicked 0 times". When clicked display "Clicked" 
       }
 
       function App() {
+
+        const [count, setCount] = useState(0);
+
         return (
           <>
-            <button onClick={handleClick}>Clicked 0 times</button>
+            <button onClick={handleClick}>Clicked {count} times</button>
           </>
         )
       }
