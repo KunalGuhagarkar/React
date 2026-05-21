@@ -51,6 +51,7 @@ Question:
 
       function App() {
 
+        const [showPassword, setShowPassword] = React.useState(false);
         
         return (
           <div>
@@ -58,7 +59,7 @@ Question:
             <br />
             <input type="text" placeholder="Enter Username" />
             <br />
-            <input type="password" placeholder="Enter Password" />
+            <input type={showPassword ? "text" : "password"} placeholder="Enter Password" />
             <button>Show</button>
             <br />
             <button>Login</button>
