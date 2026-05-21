@@ -91,7 +91,13 @@ Question:
               value={message}
               onKeyDown={handleKeyPress}
             />
-            <button onClick={message.length > 0 ? sendMessage : console.log("Field is Empty")}>Send</button>
+            <button
+              onClick={
+                message.length > 0 ? sendMessage : console.log("Field is Empty")
+              }
+            >
+              Send
+            </button>
           </>
         );
       }
