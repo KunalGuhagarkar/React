@@ -40,13 +40,13 @@ Question:
 
         const [buttonToggle, setButtonToggle] = React.useState(false);
 
-        function handleToggle() {
+        function isButtonOn() {
           setButtonToggle(!buttonToggle);
           console.log(buttonToggle);
         }
         
         return (
-          <button onClick={handleToggle} >ON</button>
+          <button onClick={isButtonOn}>ON</button>
         );
       }
 
