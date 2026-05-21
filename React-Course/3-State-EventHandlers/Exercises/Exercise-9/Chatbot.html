@@ -57,7 +57,9 @@ Question:
             },
           ]);
 
-          isLoading(loading);
+          async function isLoading(loading) {
+            await console.log(loading);
+          }
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -68,8 +70,6 @@ Question:
               id: crypto.randomUUID(),
             },
           ]);
-
-          console.log(message);
 
           setMessage("");
         }
