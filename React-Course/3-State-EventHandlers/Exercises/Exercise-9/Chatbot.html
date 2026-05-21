@@ -32,11 +32,10 @@ Question:
       function ChatInput({ chatMessages, setChatMessages, isLoading }) {
         const [message, setMessage] = React.useState("");
 
-        message.length > 0
-          ? (document.querySelector("button").disabled = false)
-          : (document.querySelector("button").disabled = true);
-
         function saveInputText(e) {
+          e.target.value
+            ? (document.querySelector("button").disabled = false)
+            : (document.querySelector("button").disabled = true);
           setMessage(e.target.value);
         }
 
