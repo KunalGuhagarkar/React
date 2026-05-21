@@ -46,12 +46,15 @@ Question:
       .chat-message-user {
         display: flex;
         justify-content: flex-end;
-        text
       }
 
       .chat-message-robot {
         display: flex;
         justify-content: flex-start;
+      }
+
+      .message-text {
+        background-color: gray;
       }
 
     </style>
@@ -157,7 +160,7 @@ Question:
                 width="50"
               />
             )}
-            <p>{message}</p>
+            <p className="message-text">{message}</p>
             {sender == "user" && (
               <img
                 src="\React-Course\3-State-EventHandlers\notes\assets\user.png"
