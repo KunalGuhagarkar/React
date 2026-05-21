@@ -57,10 +57,6 @@ Question:
             },
           ]);
 
-          function handleLoading() {
-            console.log(chatMessages);
-          }
-
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
             ...newChatMessages,
@@ -208,6 +204,10 @@ Question:
             sender: "robot",
           },
         ]);
+
+        function handleLoading() {
+          console.log(chatMessages);
+        }
 
         return (
           <>
