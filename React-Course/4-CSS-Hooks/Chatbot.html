@@ -66,6 +66,10 @@ Question:
         max-width: 300px;
       }
 
+      .chat-message-profile-img {
+        width: 50px;
+      }
+
     </style>
   </head>
   <body>
@@ -166,14 +170,14 @@ Question:
             {sender == "robot" && (
               <img
                 src="\React-Course\3-State-EventHandlers\notes\assets\robot.png"
-                width="50"
+                className="chat-message-profile-img"
               />
             )}
             <p className="message-text">{message}</p>
             {sender == "user" && (
               <img
                 src="\React-Course\3-State-EventHandlers\notes\assets\user.png"
-                width="50"
+                className="chat-message-profile-img"
               />
             )}
           </div>
