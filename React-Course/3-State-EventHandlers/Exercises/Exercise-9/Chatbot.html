@@ -48,7 +48,7 @@ Question:
 
           setChatMessages(newChatMessages);     
           
-          setChatMessages([
+          const loading = setChatMessages([
             ...newChatMessages,
             {
               message: "loading...",
@@ -57,7 +57,7 @@ Question:
             },
           ]);
 
-          isLoading(newChatMessages);
+          isLoading(loading);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -207,8 +207,8 @@ Question:
           },
         ]);
 
-        function handleLoading(newChatMessages) {
-          console.log(newChatMessages);
+        function handleLoading(loading) {
+          console.log(loading);
         }
 
         return (
