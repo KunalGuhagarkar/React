@@ -59,7 +59,7 @@ Question:
 
           setChatMessages(loading);
 
-          isLoading(loading[loading.length-1])
+          await isLoading(loading[loading.length-1])
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
