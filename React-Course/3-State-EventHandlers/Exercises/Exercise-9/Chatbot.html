@@ -71,7 +71,7 @@ Question:
             },
           ]);
 
-          console.log(newChatMessages);
+          await isLoading(loading[loading.length-1])
 
           setMessage("");
         }
@@ -213,6 +213,7 @@ Question:
 
         function handleLoading(loading) {
           loading.message == 'loading...' && (document.querySelector("input").disabled=true);
+          loading.message !== 'loading...' && (document.querySelector("input").disabled=false);
         }
 
         return (
