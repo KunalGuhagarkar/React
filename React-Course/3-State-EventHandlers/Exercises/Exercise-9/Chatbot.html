@@ -47,6 +47,19 @@ Question:
           ];
 
           setChatMessages(newChatMessages);
+          
+          setChatMessages([
+            ...newChatMessages,
+            {
+              message: "loading...",
+              sender: "robot",
+              id: crypto.randomUUID(),
+            },
+          ]);
+
+          function handleLoading() {
+            console.log(chatMessages);
+          }
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
@@ -201,6 +214,7 @@ Question:
             <ChatInput
               chatMessages={chatMessages}
               setChatMessages={setChatMessages}
+              isLoading={handleLoading}
             />
             <ChatMessages chatMessages={chatMessages} />
           </>
