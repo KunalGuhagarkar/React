@@ -46,8 +46,8 @@ Question:
             },
           ];
 
-          setChatMessages(newChatMessages);     
-          
+          setChatMessages(newChatMessages);
+
           const loading = setChatMessages([
             ...newChatMessages,
             {
@@ -57,7 +57,7 @@ Question:
             },
           ]);
 
-          setChatMessages(loading);
+          // setChatMessages(loading);
 
           const response = await Chatbot.getResponseAsync(message);
           setChatMessages([
