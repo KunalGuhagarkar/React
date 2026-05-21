@@ -36,44 +36,48 @@ Question:
           setMessage(e.target.value);
         }
 
-        async function sendMessage() {
-          const newChatMessages = [
-            ...chatMessages,
-            {
-              message: message,
-              sender: "user",
-              id: crypto.randomUUID(),
-            },
-          ];
+        if (message.length > 0) {
+          async function sendMessage() {
+            const newChatMessages = [
+              ...chatMessages,
+              {
+                message: message,
+                sender: "user",
+                id: crypto.randomUUID(),
+              },
+            ];
 
-          setChatMessages(newChatMessages);
+            setChatMessages(newChatMessages);
 
-          const loading = [
-            ...newChatMessages,
-            {
-              message: "loading...",
-              sender: "robot",
-              id: crypto.randomUUID(),
-            },
-          ];
+            const loading = [
+              ...newChatMessages,
+              {
+                message: "loading...",
+                sender: "robot",
+                id: crypto.randomUUID(),
+              },
+            ];
 
-          setChatMessages(loading);
+            setChatMessages(loading);
 
-          await isLoading(loading[loading.length - 1]);
+            await isLoading(loading[loading.length - 1]);
 
-          const response = await Chatbot.getResponseAsync(message);
-          setChatMessages([
-            ...newChatMessages,
-            {
-              message: response,
-              sender: "robot",
-              id: crypto.randomUUID(),
-            },
-          ]);
+            const response = await Chatbot.getResponseAsync(message);
+            setChatMessages([
+              ...newChatMessages,
+              {
+                message: response,
+                sender: "robot",
+                id: crypto.randomUUID(),
+              },
+            ]);
 
-          await isLoading(newChatMessages[newChatMessages.length - 1]);
+            await isLoading(newChatMessages[newChatMessages.length - 1]);
 
-          setMessage("");
+            setMessage("");
+          }
+        } else {
+          console.log("Enter something")
         }
 
         function handleKeyPress(e) {
