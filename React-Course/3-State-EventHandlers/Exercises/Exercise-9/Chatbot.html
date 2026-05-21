@@ -33,9 +33,6 @@ Question:
         const [message, setMessage] = React.useState("");
 
         function saveInputText(e) {
-          e.target.value
-            ? (document.querySelector("button").disabled = false)
-            : (document.querySelector("button").disabled = true);
           setMessage(e.target.value);
         }
 
@@ -94,7 +91,7 @@ Question:
               value={message}
               onKeyDown={handleKeyPress}
             />
-            <button onClick={sendMessage}>Send</button>
+            <button onClick={sendMessage} disabled>Send</button>
           </>
         );
       }
