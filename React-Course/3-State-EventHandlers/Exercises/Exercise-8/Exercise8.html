@@ -1,13 +1,15 @@
 <!-- 
 Question:
-Create a Reset button that sets the count to 0 for all buttons
+Add 2 buttons Reset and Example:
+  1. When clicking the Reset button, it removes the text in the <input>
+  2. When clicking Example, it sets an example text in the <input>
 -->
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 6</title>
+    <title>Exercise 8</title>
   </head>
   <body>
     <div id="root"></div>
@@ -25,34 +27,21 @@ Create a Reset button that sets the count to 0 for all buttons
     <script type="text/babel">
       const root = document.getElementById("root");
 
-      function CounterComponent({ count, setCount }) {
-        function handleClick() {
-          setCount(count + 1);
-        }
-
-        return (
-          <>
-            {count == 1 ? (
-              <button onClick={handleClick}>Clicked {count} time</button>
-            ) : (
-              <button onClick={handleClick}>Clicked {count} times</button>
-            )}
-          </>
-        );
-      }
-
       function App() {
-        const [count, setCount] = React.useState(0);
+        const [name, setName] = React.useState("");
 
-        function handleReset() {
-          setCount(0);
+        function inputChange(e) {
+          setName(e.target.value);
         }
 
         return (
           <>
-            <CounterComponent count={count} setCount={setCount} />
-            <CounterComponent count={count} setCount={setCount} />
-            <button onClick={handleReset}>Reset</button>
+            <input
+              type="text"
+              onChange={inputChange}
+              placeholder="Enter Name"
+            />
+            <p>Hello {name}</p>
           </>
         );
       }
