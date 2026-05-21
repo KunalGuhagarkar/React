@@ -25,6 +25,11 @@ Question:
         cursor: pointer;
         background-color: rgb(46, 211, 117);
       }
+
+      .chat-input {
+        
+      }
+
     </style>
   </head>
   <body>
@@ -106,6 +111,7 @@ Question:
               onChange={saveInputText}
               value={message}
               onKeyDown={handleKeyPress}
+              className="chat-input"
             />
             <button
               className="send-btn"
