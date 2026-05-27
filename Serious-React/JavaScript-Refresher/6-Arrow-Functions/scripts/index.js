@@ -18,3 +18,9 @@ const arrFuncOne = username => {
 }
 
 console.log(arrFuncOne("Kunal"));
+
+// Omitting Function curly braces
+// if arrow function contains only return statement, we can omit the {} and return keyword
+const arrFuncTwo = () => "Oink";
+
+console.log(arrFuncTwo());
