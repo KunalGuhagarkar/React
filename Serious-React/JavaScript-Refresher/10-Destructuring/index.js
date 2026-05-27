@@ -23,3 +23,13 @@ const userObj = {
 const user = userObj.user;
 const email = userObj.email;
 console.log(user, email);
+
+// Alternative way
+
+const {user2, email2} = {
+  user2: "Kunal the Great",
+  email2: "ktg@gmail.com"
+}
+
+console.log(user2);
+console.log(email2);
