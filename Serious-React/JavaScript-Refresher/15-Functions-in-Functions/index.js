@@ -8,4 +8,5 @@ function init() {
     greet();
 }
 
-greet()
+// greet(); // outside scope -> Error (not defined)
+init();
