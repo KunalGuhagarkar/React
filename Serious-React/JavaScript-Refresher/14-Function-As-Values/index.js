@@ -13,3 +13,9 @@ setTimeout(handleTimeout2, 2000);
 setTimeout(() => {
     console.log("More timing out...")
 }, 4000);
+
+function greeter(greetFn) {
+    greetFn();
+}
+
+greeter(() => console.log("Hi"));
