@@ -1,5 +1,6 @@
 // Destructuring
 
+// Array Destructuring
 const username = ["Kunal", "Guhagarkar"];
 
 const firstName = username[0];
@@ -11,3 +12,14 @@ console.log(firstName, lastName);
 const [userOne, userTwo] = ["Kunaladzzz", "KTG"];
 console.log(userOne);
 console.log(userTwo);
+
+
+// Object Destructuring
+const userObj = {
+  user: "Kunal",
+  email: "K@gmail.com",
+};
+
+const user = userObj.user;
+const email = userObj.email;
+console.log(user, email);
