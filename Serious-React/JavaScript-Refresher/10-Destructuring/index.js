@@ -45,6 +45,13 @@ console.log(userName, userEmail);
 
 // Destructuring in Function Parameter Lists
 
+function normalDesFun(obj) {
+  console.log(obj.name);
+  console.log(obj.email);
+}
+
+normalDesFun({name: 'kun', email: 'kun@gmail.com'});
+
 function destructureFunc ({user, email}) {
   console.log(user);
   console.log(email);
