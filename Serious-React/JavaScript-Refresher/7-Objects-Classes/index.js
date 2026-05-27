@@ -3,12 +3,12 @@
 const user = {
   name: "Kunal",
   age: 22,
-  greet() {
-    console.log("Hello " + user.name + "!");
+  greet(name) {
+    console.log("Hello " + name + "!");
   }
 }
 
 console.log(user);
 console.log(user.name);
 console.log(user.age);
-user.greet()
+user.greet(user.name);
