@@ -6,8 +6,7 @@ console.log(hobbies[1]);
 hobbies.push("Working");
 console.log(hobbies);
 
-const index = hobbies.findIndex(item => {
-  return item == "Reading";
-});
-
+const index = hobbies.findIndex(item => item == "Reading");
 console.log(index);
+
+
