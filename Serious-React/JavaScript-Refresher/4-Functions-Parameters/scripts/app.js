@@ -11,8 +11,9 @@ console.log(greet());
 // console.log(greet());
 
 // Parameters
-function greet(username, message) {
+function greetWithParameters(username, message) {
   return `Hello, ${username} and ${message}`;
 }
 
-console.log(greet("Kunal", "have a great day"));
+console.log(greetWithParameters("Kunal", "have a great day"));
+console.log(greetWithParameters("Sid", "How are you?"));
