@@ -14,3 +14,7 @@ console.log(arrFindIndex);
 
 const arrfilter = arr2.filter(item => item > 10);
 console.log(arrfilter);
+
+const initialValue = 0;
+const arrReducer = arr2.reduce((accumilator, currentValue) => accumilator + currentValue, initialValue);
+console.log(arrReducer);
