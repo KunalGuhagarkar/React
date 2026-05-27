@@ -42,3 +42,19 @@ const {user3: userName, email: userEmail} = {
 }
 
 console.log(userName, userEmail);
+
+// Destructuring in Function Parameter Lists
+
+function destructureFunc ({user, email}) {
+  console.log(user);
+  console.log(email);
+}
+
+destructureFunc({user: "Kunal Guhagarkar", email: "ktg7@gmail.com"});
+
+const objFun = {
+  user: 'kkk',
+  email: 'k@outlook.com'
+};
+
+destructureFunc(objFun);
