@@ -10,3 +10,6 @@ const handleTimeout2 = () => {
 
 setTimeout(handleTimeout, 1000);
 setTimeout(handleTimeout2, 2000);
+setTimeout(() => {
+    console.log("More timing out...")
+}, 4000);
