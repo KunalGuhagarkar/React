@@ -5,6 +5,7 @@ const user = {
   age: 22,
   greet(name) {
     console.log("Hello " + name + "!");
+    console.log(this.age);
   }
 }
 
