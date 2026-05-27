@@ -22,3 +22,9 @@ console.log(arrReducer);
 const arrConcat = arr.concat(arr2);
 console.log(arrConcat);
 
+const arrSlice = arrConcat.slice(2, 5);
+console.log(arrSlice);
+
+const arrSplice = arrConcat.splice(2, 2);
+console.log(arrSplice);
+console.log(arrConcat);
