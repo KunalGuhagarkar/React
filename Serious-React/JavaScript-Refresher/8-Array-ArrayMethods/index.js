@@ -16,3 +16,6 @@ console.log(notIndex);
 // map
 const hobbiesMap = hobbies.map(item => item + '!');
 console.log(hobbiesMap);
+
+const hobbiesMap2 = hobbies.map(item => ({text: item}));
+console.log(hobbiesMap2);
