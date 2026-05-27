@@ -17,3 +17,11 @@ function greetWithParameters(username, message) {
 
 console.log(greetWithParameters("Kunal", "have a great day"));
 console.log(greetWithParameters("Sid", "How are you?"));
+
+// default values to Parameters
+function defaultFunc(username = "Guest", message = "Hello") {
+  return `Hi, ${username} and ${message}`;
+}
+
+console.log(defaultFunc());
+console.log(defaultFunc("Kanak", "Oink!!"));
