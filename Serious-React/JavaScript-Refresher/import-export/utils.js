@@ -1,1 +1,3 @@
-export let apiKey = "SampleAPIKey";
+// export let apiKey = "SampleAPIKey";
+
+export default 'SampleAPIKeyDefault';
