@@ -2,7 +2,7 @@
 
 const hobbies = ['Reading', 'Sports'];
 
-const hobbies2 = ['Watching'];
+const hobbies2 = ['Cooking'];
 
 const mergedHobbies = [...hobbies, ...hobbies2];
 
