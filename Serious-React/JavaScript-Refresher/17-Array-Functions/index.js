@@ -12,3 +12,5 @@ console.log(arrFind);
 const arrFindIndex = arr2.findIndex(item => item === 130);
 console.log(arrFindIndex);
 
+const arrfilter = arr2.filter(item => item > 10);
+console.log(arrfilter);
