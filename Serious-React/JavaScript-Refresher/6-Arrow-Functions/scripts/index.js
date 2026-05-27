@@ -7,3 +7,14 @@ import util from './utils.js';
 
 const greetingNew = util("Kunal", "Hello bro!");
 console.log(greetingNew);
+
+// More on Arrow Function
+
+// Omitting paramter list
+
+const arrFuncOne = username => {
+  const greet = "Hello " + username;
+  return greet;
+}
+
+console.log(arrFuncOne("Kunal"));
