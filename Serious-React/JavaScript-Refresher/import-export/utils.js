@@ -7,5 +7,10 @@
 // export default 'SampleAPIKeyDefault2';
 
 // Import mulitple things
-export let key1 = "Key 1";
-export let key2 = "Key 2";
+// export let key1 = "Key 1";
+// export let key2 = "Key 2";
+
+// Mixing
+export default "Oink";
+export let keyOne = "Key One";
+export let keyTwo = "Key Two";
