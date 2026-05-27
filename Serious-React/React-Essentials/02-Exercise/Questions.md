@@ -1,4 +1,5 @@
-Building & Using a Component
+## Building & Using a Component
+
 Your task is to create a new MainGoal component which outputs a paragraph of text that describes your main course goal (e.g., "My main goal: Learn React in-depth and from the ground up").
 
 You'll have to create this new component from scratch and then use it inside the App component's JSX code.
