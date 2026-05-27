@@ -6,3 +6,6 @@ console.log(hobbies[1]);
 hobbies.push("Working");
 console.log(hobbies);
 
+hobbies.findIndex(item => {
+  return item == "Reading";
+});
