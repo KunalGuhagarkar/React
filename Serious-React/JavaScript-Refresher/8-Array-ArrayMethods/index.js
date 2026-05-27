@@ -1,3 +1,3 @@
 // Arrays and Array Methods
 
-const hobbies = [];
+const hobbies = ["Sports", "Cooking", "Reading"];
