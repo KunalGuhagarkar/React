@@ -24,3 +24,6 @@ console.log(arrFuncOne("Kunal"));
 const arrFuncTwo = () => "Oink";
 
 console.log(arrFuncTwo());
+
+// incase of js objects
+const arrFuncThree = () => {name: 'Kunal', age: 22} // Error
