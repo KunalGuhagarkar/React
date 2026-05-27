@@ -18,3 +18,7 @@ console.log(arrfilter);
 const initialValue = 0;
 const arrReducer = arr2.reduce((accumilator, currentValue) => accumilator + currentValue, initialValue);
 console.log(arrReducer);
+
+const arrConcat = arr.concat(arr2);
+console.log(arrConcat);
+
