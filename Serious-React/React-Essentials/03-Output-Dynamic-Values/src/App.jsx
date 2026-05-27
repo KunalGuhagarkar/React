@@ -1,3 +1,9 @@
+const reactDescriptions = ['Fundamental', 'Crucial', 'Core'];
+
+function genRandomInt(max) {
+  return Math.floor(Math.random())
+}
+
 function HeaderComponent() {
   return (
     <header>
