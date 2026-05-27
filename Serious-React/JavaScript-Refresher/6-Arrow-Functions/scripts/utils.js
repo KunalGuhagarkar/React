@@ -5,6 +5,12 @@
 // }
 
 // using arrow functions
-export default () => {
-  console.log("From Anonymous Arrow Function");
-}
+// export default () => {
+//   console.log("From Anonymous Arrow Function");
+// }
+
+// Using parameters
+export default (username, message) => {
+  console.log("Hello");
+  return username + " " + message;
+};
