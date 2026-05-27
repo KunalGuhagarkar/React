@@ -2,5 +2,5 @@
 // This works only when the live server is setup
 // console.log(apiKey);
 
-import "./utils.js";
-console.
+import apikey from "./utils.js";
+console.log(apikey);
