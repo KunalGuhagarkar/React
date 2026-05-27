@@ -33,3 +33,12 @@ const {user2, email2} = {
 
 console.log(user2);
 console.log(email2);
+
+// using aliases
+
+const {user3: userName, email: userEmail} = {
+  user3: "simpCity",
+  email: "simp@gmail.com"
+}
+
+console.log(userName, userEmail);
