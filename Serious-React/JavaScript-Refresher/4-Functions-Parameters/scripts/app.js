@@ -25,3 +25,7 @@ function defaultFunc(username = "Guest", message = "Hello") {
 
 console.log(defaultFunc());
 console.log(defaultFunc("Kanak", "Oink!!"));
+
+// returning to variable
+const greetingOne = defaultFunc();
+console.log(greetingOne);
