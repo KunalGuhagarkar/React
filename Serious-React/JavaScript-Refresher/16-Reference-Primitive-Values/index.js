@@ -6,6 +6,7 @@ userMessage = userMessage.concat("!!!!");
 console.log(userMessage);
 
 // but arrays its another story
-let hobbies = ['Sports', 'Cooking'];
+const hobbies = ['Sports', 'Cooking'];
 hobbies.push('Reading');
 console.log(hobbies);
+
