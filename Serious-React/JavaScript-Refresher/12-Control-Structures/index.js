@@ -10,3 +10,9 @@ if (password === 'Hello') {
 } else {
     console.log("Access Denied");
 }
+
+const hobbies = ['Sports', 'Cooking'];
+
+for (const hobby of hobbies) {
+    console.log(hobby);
+}
