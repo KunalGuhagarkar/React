@@ -1,4 +1,4 @@
-function ComponentOne() {
+function HeaderComponent() {
   return (
     <header>
       <img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
@@ -14,7 +14,7 @@ function ComponentOne() {
 function App() {
   return (
     <div>
-      <ComponentOne />
+      <HeaderComponent />
       <main>
         <h2>Time to get started!</h2>
       </main>
