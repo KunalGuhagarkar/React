@@ -27,6 +27,8 @@ console.log(arrFuncTwo());
 
 // incase of js objects
 // const arrFuncThree = () => {name: 'Kunal', age: 22} // Error
+// wrap with extra pair of '()'
 const arrFuncThree = () => ({name: 'Kunal', age: 22});
 
-console.log(arrFuncThree().name);
+console.log(arrFuncThree());
+console.log(arrFuncThree().name, arrFuncThree().age);
