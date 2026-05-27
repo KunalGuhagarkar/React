@@ -1,3 +1,3 @@
 // Control Structures
 
-const password = prompt("");
+const password = prompt("Your password");
