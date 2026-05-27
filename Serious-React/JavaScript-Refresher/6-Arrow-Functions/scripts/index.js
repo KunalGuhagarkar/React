@@ -11,7 +11,7 @@ console.log(greetingNew);
 // More on Arrow Function
 
 // Omitting paramter list
-
+// if only one parameter no need for '()'
 const arrFuncOne = username => {
   const greet = "Hello " + username;
   return greet;
