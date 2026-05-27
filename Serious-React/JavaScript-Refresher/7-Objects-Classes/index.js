@@ -2,7 +2,10 @@
 
 const user = {
   name: "Kunal",
-  age: 22
+  age: 22,
+  greet() {
+    console.log("Hello!");
+  }
 }
 
 console.log(user);
