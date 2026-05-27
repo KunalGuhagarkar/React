@@ -24,7 +24,7 @@
 // console.log(util.keyTwo);
 
 
-// Using alias
+// Using aliases
 import d, {keyOne as k1, keyTwo as k2} from './utils.js';
 console.log(d);
 console.log(k1);
