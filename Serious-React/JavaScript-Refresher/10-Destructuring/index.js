@@ -52,6 +52,8 @@ function normalDesFun(obj) {
 
 normalDesFun({name: 'kun', email: 'kun@gmail.com'});
 
+// Alternative way
+
 function destructureFunc ({user, email}) {
   console.log(user);
   console.log(email);
