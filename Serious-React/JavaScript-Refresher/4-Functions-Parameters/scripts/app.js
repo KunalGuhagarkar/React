@@ -7,3 +7,5 @@ function greet() {
 
 // calling function
 console.log(greet());
+console.log(greet());
+console.log(greet());
