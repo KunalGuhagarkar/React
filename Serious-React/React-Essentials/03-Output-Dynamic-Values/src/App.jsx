@@ -4,7 +4,7 @@ function genRandomInt(max) {
   return Math.floor(Math.random() * (max + 1));
 }
 
-console.log(genRandomInt(reactDescriptions.length));
+console.log(genRandomInt(reactDescriptions.length-1));
 
 function HeaderComponent() {
   return (
