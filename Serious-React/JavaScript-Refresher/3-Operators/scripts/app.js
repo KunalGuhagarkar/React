@@ -12,3 +12,9 @@ console.log(10 * 5);
 
 // Divison
 console.log(10 / 5);
+
+// ===
+// returns Boolean
+console.log(10 === 5); 
+console.log(10 === 10);
+console.log(10 == '10');
