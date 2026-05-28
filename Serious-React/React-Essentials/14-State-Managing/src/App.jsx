@@ -12,8 +12,8 @@ function App() {
   */
   const [selectedTopic, setSelectedTopic] = useState("Please Click a Button");
 
-  function handleSelect({title, description}) {
-    setSelectedTopic(description);
+  function handleSelect({title, description, code}) {
+    setSelectedTopic({title, description, code});
   }
 
   return (
@@ -45,7 +45,11 @@ function App() {
           <div id="tab-content">
               <h3></h3>
               <p></p>
-              
+              <pre>
+                <code>
+
+                </code>
+              </pre>
           </div>
           {selectedTopic}
         </section>
