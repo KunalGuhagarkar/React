@@ -4,11 +4,7 @@ import componentImg from "./assets/components.png";
 import { CORE_CONCEPTS } from "./data.js";
 import HeaderComponent from "./components/HeaderComponent.jsx";
 
-const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
-function genRandomInt(max) {
-  return Math.floor(Math.random() * (max + 1));
-}
 
 function CoreConcept({image, title, description}) {
   return (

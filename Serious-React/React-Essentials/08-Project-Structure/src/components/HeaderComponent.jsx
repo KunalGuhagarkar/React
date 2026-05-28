@@ -1,3 +1,9 @@
+const reactDescriptions = ["Fundamental", "Crucial", "Core"];
+
+function genRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+
 function HeaderComponent() {
   const description =
     reactDescriptions[genRandomInt(reactDescriptions.length - 1)];
