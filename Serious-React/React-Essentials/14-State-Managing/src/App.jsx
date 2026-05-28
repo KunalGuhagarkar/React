@@ -42,6 +42,11 @@ function App() {
             <TabButton onSelect={() => handleSelect(EXAMPLES.props)}>Props</TabButton>
             <TabButton onSelect={() => handleSelect(EXAMPLES.state)}>State</TabButton>
           </menu>
+          <div id="tab-content">
+              <h3></h3>
+              <p></p>
+              
+          </div>
           {selectedTopic}
         </section>
       </main>
