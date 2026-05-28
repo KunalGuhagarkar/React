@@ -1,4 +1,5 @@
 Reacting to Events
+
 Your task is to work on a "User Login" component that has already been prepared by a colleague.
 
 The goal is to update the data stored in the already existing user object with some dummy data once the "Login" button in the App component is pressed.
