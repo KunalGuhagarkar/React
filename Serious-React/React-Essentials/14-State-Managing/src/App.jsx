@@ -12,8 +12,8 @@ function App() {
   */
   const [selectedTopic, setSelectedTopic] = useState("Please Click a Button");
 
-  function handleSelect(selectedButton) {
-    console.log(selectedButton);
+  function handleSelect({title, description}) {
+    setSelectedTopic(description);
   }
 
   return (
