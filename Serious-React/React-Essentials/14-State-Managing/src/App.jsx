@@ -13,17 +13,7 @@ function App() {
   const [selectedTopic, setSelectedTopic] = useState("Please Click a Button");
 
   function handleSelect(selectedButton) {
-    if (selectedButton === "component") {
-      setSelectedTopic("This is component information");
-    }
-    else if (selectedButton === "jsx") {
-      setSelectedTopic("This is jsx information");
-    }
-    else if (selectedButton === "props") {
-      setSelectedTopic("This is props information");
-    } else {
-      setSelectedTopic("This is state information");
-    }
+    console.log(selectedButton);
   }
 
   return (
@@ -47,10 +37,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect('component')}>Component</TabButton>
-            <TabButton onSelect={() => handleSelect('jsx')}>JSX</TabButton>
-            <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
-            <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.components)}>Component</TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.jsx)}>JSX</TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.props)}>Props</TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.state)}>State</TabButton>
           </menu>
           {selectedTopic}
         </section>
