@@ -45,8 +45,8 @@ function App() {
           <ul>
             <CoreConcept
               title={CORE_CONCEPTS[0].title}
-              description="The Core of UI Building Blocks"
-              img={componentImg}
+              description={CORE_CONCEPTS[0].description}
+              img={CORE_CONCEPTS[0].image}
             />
             <CoreConcept />
             <CoreConcept />
