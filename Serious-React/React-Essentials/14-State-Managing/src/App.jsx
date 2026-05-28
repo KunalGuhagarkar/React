@@ -3,6 +3,8 @@ import HeaderComponent from "./components/HeaderComponent/HeaderComponent.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
 
+import { useState } from "react";
+
 function App() {
   function handleSelect(selectedButton) {
     console.log(selectedButton);
