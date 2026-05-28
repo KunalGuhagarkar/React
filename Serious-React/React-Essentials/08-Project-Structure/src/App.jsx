@@ -6,6 +6,9 @@ import CoreConcept from "./components/CoreConcept.jsx";
 function App() {
   return (
     <div>
+      <header>
+        <h1>Hello World</h1>
+      </header>
       <HeaderComponent />
       <main>
         <section id="core-concepts">
