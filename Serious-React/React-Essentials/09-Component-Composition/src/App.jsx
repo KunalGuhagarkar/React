@@ -29,7 +29,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
+              {/* Using children */}
               <TabButton>Component</TabButton>
+              {/* Using attributes */}
+              <TabButton label="Component" />
           </menu>
         </section>
       </main>
