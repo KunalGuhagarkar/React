@@ -52,9 +52,7 @@ function App() {
             <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
-          <div>
-            {selectedTopic}
-          </div>
+          {selectedTopic}
         </section>
       </main>
     </div>
