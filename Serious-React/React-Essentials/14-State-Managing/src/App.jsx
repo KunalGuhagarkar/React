@@ -10,19 +10,19 @@ function App() {
     Rule 1: Only call hooks inside of Component Function
     Rule 2: Only call hooks on the top level
   */
-  const [info, setInfo] = useState("Please Click a Button");
+  const [selectedTopic, setSelectedTopic] = useState("Please Click a Button");
 
   function handleSelect(selectedButton) {
     if (selectedButton === "component") {
-      setInfo("This is component information");
+      setSelectedTopic("This is component information");
     }
     else if (selectedButton === "jsx") {
-      setInfo("This is jsx information");
+      setSelectedTopic("This is jsx information");
     }
     else if (selectedButton === "props") {
-      setInfo("This is props information");
+      setSelectedTopic("This is props information");
     } else {
-      setInfo("This is state information");
+      setSelectedTopic("This is state information");
     }
   }
 
@@ -53,7 +53,7 @@ function App() {
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
           <div>
-            {info}
+            {selectedTopic}
           </div>
         </section>
       </main>
