@@ -6,8 +6,13 @@ import TabButton from "./components/TabButton.jsx";
 import { useState } from "react";
 
 function App() {
+
+  const [info, setInfo] = useState("");
+
   function handleSelect(selectedButton) {
-    console.log(selectedButton);
+    if (selectedButton === "component") {
+      setInfo("This is component information");
+    }
   }
 
   return (
@@ -31,7 +36,7 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect('Component')}>Component</TabButton>
+            <TabButton onSelect={() => handleSelect('component')}>Component</TabButton>
             <TabButton onSelect={() => handleSelect('jsx')}>JSX</TabButton>
             <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
