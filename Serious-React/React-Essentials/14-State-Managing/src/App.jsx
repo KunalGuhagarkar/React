@@ -10,7 +10,7 @@ function App() {
     Rule 1: Only call hooks inside of Component Function
     Rule 2: Only call hooks on the top level
   */
-  const [info, setInfo] = useState("");
+  const [info, setInfo] = useState("Please Click a Button");
 
   function handleSelect(selectedButton) {
     if (selectedButton === "component") {
