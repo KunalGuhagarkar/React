@@ -42,6 +42,9 @@ function App() {
           <h2>Core Concept</h2>
           <ul>
             <CoreConcept />
+            <CoreConcept />
+            <CoreConcept />
+            <CoreConcept />
           </ul>
         </section>
         <h2>Time to get started!</h2>
