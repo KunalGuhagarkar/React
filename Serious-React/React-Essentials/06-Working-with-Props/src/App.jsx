@@ -38,7 +38,12 @@ function App() {
     <div>
       <HeaderComponent />
       <main>
-        <section id="core-concepts"></section>
+        <section id="core-concepts">
+          <h2>Core Concept</h2>
+          <ul>
+            <CoreConcept />
+          </ul>
+        </section>
         <h2>Time to get started!</h2>
       </main>
     </div>
