@@ -1,12 +1,12 @@
 // Using children
 
-// export default function TabButton({children}) {
-//   return (
-//     <li>
-//       <button>{children}</button>
-//     </li>
-//   );
-// }
+export default function TabButton({children}) {
+  return (
+    <li>
+      <button>{children}</button>
+    </li>
+  );
+}
 
 // Alternatives
 
@@ -21,10 +21,10 @@
 // }
 
 // Using Attributes
-export default function TabButton({label}) {
-  return (
-    <li>
-      <button>{label}</button>
-    </li>
-  )
-}
+// export default function TabButton({label}) {
+//   return (
+//     <li>
+//       <button>{label}</button>
+//     </li>
+//   )
+// }

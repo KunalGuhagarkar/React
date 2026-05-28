@@ -31,8 +31,11 @@ function App() {
           <menu>
               {/* Using children */}
               <TabButton>Component</TabButton>
+              <TabButton>JSX</TabButton>
+              <TabButton>Props</TabButton>
+              <TabButton>State</TabButton>
               {/* Using attributes */}
-              <TabButton label="Component" />
+              {/* <TabButton label="Component" /> */}
           </menu>
         </section>
       </main>
