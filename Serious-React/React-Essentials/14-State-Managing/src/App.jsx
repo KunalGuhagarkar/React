@@ -13,6 +13,14 @@ function App() {
     if (selectedButton === "component") {
       setInfo("This is component information");
     }
+    else if (selectedButton === "jsx") {
+      setInfo("This is jsx information");
+    }
+    else if (selectedButton === "props") {
+      setInfo("This is props information");
+    } else {
+      setInfo("This is state information");
+    }
   }
 
   return (
