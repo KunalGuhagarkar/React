@@ -1,5 +1,6 @@
 // Import image
 import reactImg from "./assets/react-core-concepts.png";
+import componentImg from "./assets/components.png";
 
 const reactDescriptions = ["Fundamental", "Crucial", "Core"];
 
@@ -41,7 +42,11 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concept</h2>
           <ul>
-            <CoreConcept />
+            <CoreConcept
+              title="Components"
+              description="The Core of UI Building Blocks"
+              img={componentImg}
+            />
             <CoreConcept />
             <CoreConcept />
             <CoreConcept />
