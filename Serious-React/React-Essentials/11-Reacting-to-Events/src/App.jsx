@@ -3,7 +3,6 @@ import HeaderComponent from "./components/HeaderComponent/HeaderComponent.jsx";
 import CoreConcept from "./components/CoreConcept.jsx";
 import TabButton from "./components/TabButton.jsx";
 
-
 function App() {
   return (
     <div>
@@ -29,13 +28,10 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-              {/* Using children */}
-              <TabButton>Component</TabButton>
-              <TabButton>JSX</TabButton>
-              <TabButton>Props</TabButton>
-              <TabButton>State</TabButton>
-              {/* Using attributes */}
-              {/* <TabButton label="Component" /> */}
+            <TabButton>Component</TabButton>
+            <TabButton>JSX</TabButton>
+            <TabButton>Props</TabButton>
+            <TabButton>State</TabButton>
           </menu>
         </section>
       </main>
