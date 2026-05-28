@@ -6,7 +6,10 @@ import TabButton from "./components/TabButton.jsx";
 import { useState } from "react";
 
 function App() {
-
+  /*
+    Rule 1: Only call hooks inside of Component Function
+    Rule 2: Only call hooks on the top level
+  */
   const [info, setInfo] = useState("");
 
   function handleSelect(selectedButton) {
