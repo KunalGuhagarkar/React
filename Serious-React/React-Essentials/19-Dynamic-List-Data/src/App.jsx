@@ -26,7 +26,9 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concept</h2>
           <ul>
-            {CORE_CONCEPTS.map(item => <CoreConcept key={Math.random() * 100} {...item} />)}
+            {CORE_CONCEPTS.map((item) => (
+              <CoreConcept {...item} />
+            ))}
           </ul>
         </section>
         <section id="examples">
