@@ -10,10 +10,12 @@ function App() {
     Rule 1: Only call hooks inside of Component Function
     Rule 2: Only call hooks on the top level
   */
-  const [selectedTopic, setSelectedTopic] = useState({description: "Please select a topic"});
+  const [selectedTopic, setSelectedTopic] = useState({
+    description: "Please select a topic",
+  });
 
-  function handleSelect({title, description, code}) {
-    setSelectedTopic({title, description, code});
+  function handleSelect({ title, description, code }) {
+    setSelectedTopic({ title, description, code });
   }
 
   return (
@@ -37,19 +39,25 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton onSelect={() => handleSelect(EXAMPLES.components)}>Component</TabButton>
-            <TabButton onSelect={() => handleSelect(EXAMPLES.jsx)}>JSX</TabButton>
-            <TabButton onSelect={() => handleSelect(EXAMPLES.props)}>Props</TabButton>
-            <TabButton onSelect={() => handleSelect(EXAMPLES.state)}>State</TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.components)}>
+              Component
+            </TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.jsx)}>
+              JSX
+            </TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.props)}>
+              Props
+            </TabButton>
+            <TabButton onSelect={() => handleSelect(EXAMPLES.state)}>
+              State
+            </TabButton>
           </menu>
           <div id="tab-content">
-              <h3>{selectedTopic.title}</h3>
-              <p>{selectedTopic.description}</p>
-              <pre>
-                <code>
-                  {selectedTopic.code}
-                </code>
-              </pre>
+            <h3>{selectedTopic.title}</h3>
+            <p>{selectedTopic.description}</p>
+            <pre>
+              <code>{selectedTopic.code}</code>
+            </pre>
           </div>
         </section>
       </main>
