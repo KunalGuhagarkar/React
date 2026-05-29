@@ -1,3 +1,6 @@
+import { EXAMPLES } from "../data";
+import TabButton from "./TabButton"; 
+
 function Examples() {
   return (
     <section id="examples">
