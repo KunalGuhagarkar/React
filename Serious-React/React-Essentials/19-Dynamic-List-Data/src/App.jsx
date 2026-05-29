@@ -26,7 +26,7 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concept</h2>
           <ul>
-            {CORE_CONCEPTS.map(item => <CORE_CONCEPTS {...item} />)}
+            {CORE_CONCEPTS.map(item => <CoreConcept {...item} />)}
           </ul>
         </section>
         <section id="examples">
