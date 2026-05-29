@@ -13,9 +13,10 @@ function App() {
   const [selectedTopic, setSelectedTopic] = useState();
   const [active, setActive] = useState(false);
 
+  console.log(selectedTopic);
+
   function handleSelect({ title, description, code }) {
     setSelectedTopic({ title, description, code });
-    setActive(true);
   }
 
   return (
@@ -39,16 +40,28 @@ function App() {
         <section id="examples">
           <h2>Examples</h2>
           <menu>
-            <TabButton isActive={active} onSelect={() => handleSelect(EXAMPLES.components)}>
+            <TabButton
+              isActive={selectedTopic === "components"}
+              onSelect={() => handleSelect(EXAMPLES.components)}
+            >
               Component
             </TabButton>
-            <TabButton isActive={active} onSelect={() => handleSelect(EXAMPLES.jsx)}>
+            <TabButton
+              isActive={active}
+              onSelect={() => handleSelect(EXAMPLES.jsx)}
+            >
               JSX
             </TabButton>
-            <TabButton isActive={active} onSelect={() => handleSelect(EXAMPLES.props)}>
+            <TabButton
+              isActive={active}
+              onSelect={() => handleSelect(EXAMPLES.props)}
+            >
               Props
             </TabButton>
-            <TabButton isActive={active} onSelect={() => handleSelect(EXAMPLES.state)}>
+            <TabButton
+              isActive={active}
+              onSelect={() => handleSelect(EXAMPLES.state)}
+            >
               State
             </TabButton>
           </menu>
