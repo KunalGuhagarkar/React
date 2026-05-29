@@ -47,19 +47,19 @@ function App() {
               Component
             </TabButton>
             <TabButton
-              isActive={active}
+              isActive={selectedTopic.title === "JSX"}
               onSelect={() => handleSelect(EXAMPLES.jsx)}
             >
               JSX
             </TabButton>
             <TabButton
-              isActive={active}
+              isActive={selectedTopic.title === "Props"}
               onSelect={() => handleSelect(EXAMPLES.props)}
             >
               Props
             </TabButton>
             <TabButton
-              isActive={active}
+              isActive={selectedTopic.title === "State"}
               onSelect={() => handleSelect(EXAMPLES.state)}
             >
               State
