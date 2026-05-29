@@ -13,7 +13,7 @@ function App() {
   const [selectedTopic, setSelectedTopic] = useState();
   const [active, setActive] = useState(false);
 
-  console.log(selectedTopic);
+  console.log(selectedTopic.title);
 
   function handleSelect({ title, description, code }) {
     setSelectedTopic({ title, description, code });
@@ -41,7 +41,7 @@ function App() {
           <h2>Examples</h2>
           <menu>
             <TabButton
-              isActive={selectedTopic === "components"}
+              isActive={selectedTopic.title === "Components"}
               onSelect={() => handleSelect(EXAMPLES.components)}
             >
               Component
