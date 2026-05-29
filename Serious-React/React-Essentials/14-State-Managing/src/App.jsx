@@ -50,13 +50,16 @@ function App() {
               State
             </TabButton>
           </menu>
-          <div id="tab-content">
-            <h3>{selectedTopic.title}</h3>
-            <p>{selectedTopic.description}</p>
-            <pre>
-              <code>{selectedTopic.code}</code>
-            </pre>
-          </div>
+          {!selectedTopic && <p>Please select a topic</p>}
+          {selectedTopic ? (
+            <div id="tab-content">
+              <h3>{selectedTopic.title}</h3>
+              <p>{selectedTopic.description}</p>
+              <pre>
+                <code>{selectedTopic.code}</code>
+              </pre>
+            </div>
+          ) : null}
         </section>
       </main>
     </div>
