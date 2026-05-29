@@ -1,23 +1,32 @@
-// IMPORTANT: You CAN'T import & use useState like this in this Udemy environment
+import React from 'react';
+
+// IMPORTANT:
+// In this Udemy environment, you CAN'T import & use useState like this:
 // import { useState } from 'react'
 // Instead, import & use it like this:
 // import React from 'react';
-// React.useState();
+// React.useState(...)
 
-import React from 'react';
-
+// don't change the Component name "App"
 export default function App() {
     
-    const [price, setPrice] = React.useState(100);
+    const [show, setShow] = React.useState(false);
     
-    function handlePriceChange() {
-        setPrice(75);
+    const handleClick = () => {
+        setShow(!show);
     }
     
     return (
-        <div>
-            <p data-testid="price">${price}</p>
-            <button onClick={handlePriceChange}>Apply Discount</button>
+      <div>
+      {show ? (
+        <div data-testid="alert" id="alert">
+          <h2>Are you sure?</h2>
+          <p>These changes can't be reverted!</p>
+          <button onClick={handleClick}>Proceed</button>
         </div>
+       ) : 
+        <button onClick={handleClick}>Delete</button>
+      }
+      </div>    
     );
 }
