@@ -10,7 +10,7 @@ function App() {
     Rule 1: Only call hooks inside of Component Function
     Rule 2: Only call hooks on the top level
   */
-  const [selectedTopic, setSelectedTopic] = useState();
+  const [selectedTopic, setSelectedTopic] = useState("");
   const [active, setActive] = useState(false);
 
   console.log(selectedTopic.title);
