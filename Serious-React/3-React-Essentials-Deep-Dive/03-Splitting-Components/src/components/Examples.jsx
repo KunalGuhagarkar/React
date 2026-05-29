@@ -4,7 +4,6 @@ import Section from "./Section";
 import { useState } from "react";
 
 function Examples() {
-
   const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect(selectedButton) {
