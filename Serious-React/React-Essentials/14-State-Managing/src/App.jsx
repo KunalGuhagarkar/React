@@ -10,9 +10,7 @@ function App() {
     Rule 1: Only call hooks inside of Component Function
     Rule 2: Only call hooks on the top level
   */
-  const [selectedTopic, setSelectedTopic] = useState({
-    description: "Please select a topic",
-  });
+  const [selectedTopic, setSelectedTopic] = useState();
 
   function handleSelect({ title, description, code }) {
     setSelectedTopic({ title, description, code });
