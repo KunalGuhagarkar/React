@@ -12,7 +12,9 @@ export default function Player({ name, symbol }) {
   const [isEditing, setIsEditing] = useState(false);
 
   function handleClick() {
-    setIsEditing(!isEditing);
+    // setIsEditing(!isEditing);
+    // Best Practice
+    setIsEditing((e) => !isEditing);
   }
 
   return (
