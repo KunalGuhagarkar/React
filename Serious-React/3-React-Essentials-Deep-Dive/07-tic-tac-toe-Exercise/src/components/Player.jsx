@@ -18,12 +18,8 @@ export default function Player({ name, symbol }) {
   return (
     <li>
       <span className="player">
-        {isEditing && (
-          <>
-            <span className="player-name">{name}</span> 
-            <input />
-          </>
-        )}
+        {isEditing ? <input /> : <span className="player-name">{name}</span>}
+
         <span className="player-symbol">{symbol}</span>
       </span>
       <button onClick={handleClick}>Edit</button>
