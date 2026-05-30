@@ -1,9 +1,6 @@
-import Player from "./components/Player"
-
+import Player from "./components/Player";
 
 function App() {
-  
-
   return (
     <main>
       <div id="game-container">
@@ -15,7 +12,7 @@ function App() {
       </div>
       LOG
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
