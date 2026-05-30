@@ -22,7 +22,7 @@ export default function Player({ name, symbol }) {
 
         <span className="player-symbol">{symbol}</span>
       </span>
-      <button onClick={handleClick}>Edit</button>
+      <button onClick={handleClick}>{isEditing ? "Save" : "Edit"}</button>
     </li>
   );
 }
