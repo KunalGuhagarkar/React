@@ -20,6 +20,7 @@ export default function Player({name, symbol}) {
       <span className="player">
 
         {isEditing && <span className="player-name">{name}</span>}
+        {isEditing && <input />}
         <span className="player-symbol">{symbol}</span>
       </span>
       <button onClick={handleClick}>Edit</button>
