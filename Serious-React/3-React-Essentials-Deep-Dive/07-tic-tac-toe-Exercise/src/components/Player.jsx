@@ -8,7 +8,8 @@
 
 import { useState } from "react";
 
-export default function Player({ name, symbol }) {
+export default function Player({ initialName, symbol }) {
+  const [name, setName] = useState(initialName);
   const [isEditing, setIsEditing] = useState(false);
 
   function handleClick() {
@@ -18,11 +19,15 @@ export default function Player({ name, symbol }) {
     setIsEditing((editing) => !editing);
   }
 
+  function handleChange() {
+    setName((n) => n);
+  }
+
   return (
     <li>
       <span className="player">
         {isEditing ? (
-          <input type="text" required value={name} />
+          <input type="text" required value={name} onChange={handleChange} />
         ) : (
           <span className="player-name">{name}</span>
         )}
