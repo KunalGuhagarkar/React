@@ -15,7 +15,9 @@ export default function GameBoard( { onSelectSquare } ) {
       const updatedBoard = [...prevGameBoard.map(innerArray => [...innerArray])];
       updatedBoard[rowIndex][colIndex] = "X";
       return updatedBoard;
-    })
+    });
+
+    onSelectSquare();
   }
 
   return (
