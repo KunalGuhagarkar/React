@@ -22,7 +22,7 @@ export default function Player({ name, symbol }) {
     <li>
       <span className="player">
         {isEditing ? (
-          <input type="text" required value={name} />
+          <input type="text" required defaultValue={name} />
         ) : (
           <span className="player-name">{name}</span>
         )}
