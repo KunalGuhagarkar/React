@@ -20,7 +20,7 @@ export default function Player({ initialName, symbol }) {
   }
 
   function handleChange() {
-    setName((n) => n);
+    setName(name);
   }
 
   return (
