@@ -24,7 +24,7 @@ export default function Player({ initialName, symbol, isActive }) {
   }
 
   return (
-    <li className={isActive ? 'active' : undefined}>
+    <li className={isActive ? "active" : undefined}>
       <span className="player">
         {isEditing ? (
           <input type="text" required value={name} onChange={handleChange} />
