@@ -19,10 +19,6 @@ export default function Player({ initialName, symbol }) {
     setIsEditing((editing) => !editing);
   }
 
-  function handleChange() {
-    setName(name);
-  }
-
   return (
     <li>
       <span className="player">
