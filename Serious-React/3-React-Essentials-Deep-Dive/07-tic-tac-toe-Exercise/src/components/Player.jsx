@@ -19,11 +19,15 @@ export default function Player({ initialName, symbol }) {
     setIsEditing((editing) => !editing);
   }
 
+  function handleChange(e) {
+    setName(e.target.value);
+  }
+
   return (
     <li>
       <span className="player">
         {isEditing ? (
-          <input type="text" required value={name} />
+          <input type="text" required value={name} onChange={handleChange} />
         ) : (
           <span className="player-name">{name}</span>
         )}
