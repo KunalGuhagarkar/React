@@ -33,8 +33,10 @@ export default function Header() {
   Advantages:
     1. Quick and Easy to add to JSX
     2. Styles only affect the element to which you add them
+    3. Dynamic (conditional styling is simple)
 
   Disadvantages:
     1. You need to know CSS
     2. You need to style every element individually
+    3. No seperation between css and jsx code (person who writes JSX must also add the CSS)
 */
