@@ -24,7 +24,7 @@ export default function AuthInputs() {
     <div id="auth-inputs">
       <div className="controls">
         <p>
-          <label className='label invalid'>Email</label>
+          <label className={`lable ${emailNotValid ? 'invalid' : undefined}`}>Email</label>
           <input
             type="email"
             // Conditonal styling
