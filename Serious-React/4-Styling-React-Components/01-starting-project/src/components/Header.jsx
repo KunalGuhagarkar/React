@@ -26,3 +26,15 @@ export default function Header() {
       1. You need to know CSS
       2. CSS code is not scoped to components -> CSS rules may clash across components (e.g., some CSS class name used in different components for different purposes)
 */
+
+/*
+  Inline Styles Advantages and Disadvantages
+
+  Advantages:
+    1. Quick and Easy to add to JSX
+    2. Styles only affect the element to which you add them
+
+  Disadvantages:
+    1. You need to know CSS
+    2. You need to style every element individually
+*/
