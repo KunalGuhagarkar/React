@@ -21,4 +21,8 @@ export default function Header() {
       2. You know CSS and prefer it.
       3. CSS code can be written by another developer who need only a minimal access to JSX code.
       4. CSS classes are scoped to the component(files) which import them -> No CSS classes name clashes
+
+    Disadvantage:
+      1. Need to know CSS.
+      2. May end up with many css files.
 */
