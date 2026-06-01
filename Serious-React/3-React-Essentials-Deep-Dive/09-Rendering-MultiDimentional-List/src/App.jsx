@@ -35,10 +35,23 @@ function App() {
     gameBoard[row][col] = player;
   }
 
+  let winner;
+
   for (const combination of WINNING_COMBINATIONS) {
-    const firstSqaureSymbol = gameBoard[combination[0].row][combination[0].column];
-    const secondSqaureSymbol = gameBoard[combination[1].row][combination[1].column];
-    const thirdSqaureSymbol = gameBoard[combination[2].row][combination[2].column];
+    const firstSqaureSymbol =
+      gameBoard[combination[0].row][combination[0].column];
+    const secondSqaureSymbol =
+      gameBoard[combination[1].row][combination[1].column];
+    const thirdSqaureSymbol =
+      gameBoard[combination[2].row][combination[2].column];
+
+    if (
+      firstSqaureSymbol &&
+      firstSqaureSymbol === secondSqaureSymbol &&
+      firstSqaureSymbol === thirdSqaureSymbol
+    ) {
+      winner = firstSqaureSymbol;
+    }
   }
 
   function handleSelectSquare(rowIndex, colIndex) {
