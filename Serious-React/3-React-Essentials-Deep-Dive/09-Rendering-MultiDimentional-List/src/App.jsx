@@ -5,12 +5,14 @@ import Log from "./components/Log";
 import { useState } from "react";
 
 function App() {
+  const [gameTurns, setGameTurns] = useState([]);
   const [activePlayer, setActivePlayer] = useState("X");
 
   function handleSelectSquare() {
     setActivePlayer((currActivePlayer) =>
       currActivePlayer === "X" ? "O" : "X",
     );
+    setGame
   }
 
   return (
