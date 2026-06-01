@@ -1,4 +1,6 @@
 import logo from '../assets/logo.png';
+
+// Adding Header Component's CSS
 import './Header.css';
 
 export default function Header() {
