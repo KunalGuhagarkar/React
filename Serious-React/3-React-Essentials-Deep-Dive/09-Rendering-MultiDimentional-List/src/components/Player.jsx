@@ -8,7 +8,12 @@
 
 import { useState } from "react";
 
-export default function Player({ initialName, symbol, isActive, onChangeName }) {
+export default function Player({
+  initialName,
+  symbol,
+  isActive,
+  onChangeName,
+}) {
   const [name, setName] = useState(initialName);
   const [isEditing, setIsEditing] = useState(false);
 
@@ -17,7 +22,7 @@ export default function Player({ initialName, symbol, isActive, onChangeName }) 
     // setIsEditing(!isEditing); // => schedules a state updates to be true
     // Best Practice
     setIsEditing((editing) => !editing);
-    onChangeName(symbol, name);
+    isEditing && onChangeName(symbol, name);
   }
 
   function handleChange(e) {
