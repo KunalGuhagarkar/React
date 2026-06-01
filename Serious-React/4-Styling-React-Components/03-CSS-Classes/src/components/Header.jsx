@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
 
 // Adding Header Component's CSS
-import "./Header.css";
+import "./Header.module.css";
 
 export default function Header() {
   return (
