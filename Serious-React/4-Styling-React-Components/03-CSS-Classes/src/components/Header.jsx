@@ -8,8 +8,7 @@ export default function Header() {
     <header>
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
-      {/* This will style only this (scoped) */}
-      <p style={{ color: "red", textAlign: "left" }}>A community of artists and art-lovers.</p>
+      <p className="paragraph">A community of artists and art-lovers.</p>
     </header>
   );
 }
