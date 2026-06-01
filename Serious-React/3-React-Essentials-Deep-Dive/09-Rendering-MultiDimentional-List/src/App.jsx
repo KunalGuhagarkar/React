@@ -35,10 +35,10 @@ function App() {
     gameBoard[row][col] = player;
   }
 
-  for (const combinations of WINNING_COMBINATIONS) {
-    const firstSqaureSymbol;
-    const secondSqaureSymbol;
-    const thirdSqaureSymbol;
+  for (const combination of WINNING_COMBINATIONS) {
+    const firstSqaureSymbol = gameBoard[combination[0].row][combination[0].column];
+    const secondSqaureSymbol = gameBoard[combination[1].row][combination[1].column];
+    const thirdSqaureSymbol = gameBoard[combination[2].row][combination[2].column];
   }
 
   function handleSelectSquare(rowIndex, colIndex) {
