@@ -48,6 +48,7 @@ export default function AuthInputs() {
         </button>
         <button className='button' onClick={handleLogin}>Sign In</button>
       </div>
+      {/* <p>Some text</p> Not scoped will apply to all */}
     </div>
   );
 }

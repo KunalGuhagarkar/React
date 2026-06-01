@@ -8,6 +8,7 @@ export default function App() {
       <main>
         <AuthInputs />
       </main>
+      {/* <p>Some text</p> */}
     </>
   );
 }

@@ -1,14 +1,15 @@
-import logo from '../assets/logo.png';
+import logo from "../assets/logo.png";
 
 // Adding Header Component's CSS
-import './Header.css';
+import "./Header.css";
 
 export default function Header() {
   return (
     <header>
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
-      <p>A community of artists and art-lovers.</p>
+      {/* This will style only this (scoped) */}
+      <p style={{ color: "red", textAlign: "left" }}>A community of artists and art-lovers.</p>
     </header>
   );
 }
