@@ -4,15 +4,20 @@ import Log from "./components/Log";
 
 import { useState } from "react";
 
-function App() {
-  const [gameTurns, setGameTurns] = useState([]);
-  // const [activePlayer, setActivePlayer] = useState("X");
-
+function deriveActivePlayer(gameTurns) {
   let currentPlayer = "X";
 
   if (prevTurns.length > 0 && prevTurns[0].player === "X") {
     currentPlayer = "O";
   }
+  return currentPlayer;
+}
+
+function App() {
+  const [gameTurns, setGameTurns] = useState([]);
+  // const [activePlayer, setActivePlayer] = useState("X");
+
+  const activePlayer = deriveActivePlayer(gameTurns);
 
   function handleSelectSquare(rowIndex, colIndex) {
     setActivePlayer((currActivePlayer) =>
