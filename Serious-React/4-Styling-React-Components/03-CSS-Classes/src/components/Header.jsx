@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <img src={logo} alt="A canvas" />
       <h1>ReactArt</h1>
-      <p className={styles}>A community of artists and art-lovers.</p>
+      <p className={styles.paragraph}>A community of artists and art-lovers.</p>
     </header>
   );
 }
