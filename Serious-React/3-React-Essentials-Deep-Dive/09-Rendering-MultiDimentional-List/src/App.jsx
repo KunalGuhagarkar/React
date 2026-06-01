@@ -52,7 +52,7 @@ function App() {
       firstSqaureSymbol === secondSqaureSymbol &&
       firstSqaureSymbol === thirdSqaureSymbol
     ) {
-      winner = firstSqaureSymbol;
+      winner = players[firstSqaureSymbol];
     }
   }
 
