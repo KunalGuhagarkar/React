@@ -17,6 +17,7 @@ export default function Player({ initialName, symbol, isActive, onChangeName }) 
     // setIsEditing(!isEditing); // => schedules a state updates to be true
     // Best Practice
     setIsEditing((editing) => !editing);
+    onChangeName(symbol, name);
   }
 
   function handleChange(e) {
