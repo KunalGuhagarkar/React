@@ -1,25 +1,26 @@
-import React from "react";
+import React from 'react';
 
 function App() {
-  const [headingColor, setHeadingColor] = React.useState("white");
-
-  function handleClickColorChangeYes() {
-    setHeadingColor((c) => "green");
+    
+  const [headColor, setHeadColor] = React.useState();
+  
+  function handleColorChangeYes() {
+      setHeadColor('highlight-green');
   }
-
-  function handleClickColorChangeNo() {
-    setHeadingColor((c) => "red");
+  
+  function handleColorChangeNo() {
+      setHeadColor('highlight-red');
   }
-
+    
   return (
     <div id="app">
-      <h1 style={{ color: headingColor }}>CSS is great!</h1>
+      <h1 className={`${headColor === 'highlight-green' ? 'highlight-green' : ''}${headColor === 'highlight-red' ? 'highlight-red' : ''}`}>CSS is great!</h1>
       <menu>
         <li>
-          <button onClick={handleClickColorChangeYes}>Yes</button>
+          <button onClick={handleColorChangeYes}>Yes</button>
         </li>
         <li>
-          <button onClick={handleClickColorChangeNo}>No</button>
+          <button onClick={handleColorChangeNo}>No</button>
         </li>
       </menu>
     </div>
