@@ -20,10 +20,12 @@ function App() {
   const activePlayer = deriveActivePlayer(gameTurns);
 
   function handleSelectSquare(rowIndex, colIndex) {
-    setActivePlayer((currActivePlayer) =>
-      currActivePlayer === "X" ? "O" : "X",
-    );
+    // setActivePlayer((currActivePlayer) =>
+    //   currActivePlayer === "X" ? "O" : "X",
+    // );
     setGameTurns((prevTurns) => {
+      const currentPlayer = deriveActivePlayer(prevTurns);
+
       const updateTurns = [
         { square: { row: rowIndex, col: colIndex }, player: activePlayer },
         ...prevTurns,
