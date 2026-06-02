@@ -13,8 +13,7 @@ export default function App() {
 }
 
 /*
-  Installing Third Party "Styled Components"
+  Installing Tailwind CSS
 
   Command:
-    npm i styled-components
-*/
+    npm install tailwindcss @tailwindcss/vite
