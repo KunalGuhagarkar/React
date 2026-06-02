@@ -5,7 +5,7 @@ export default function Player() {
   const [name, setName] = useState();
 
   function nameSetClickHandler() {
-    
+    setName();
   }
 
   function handleNameChange(e) {
@@ -17,7 +17,7 @@ export default function Player() {
       <h2>Welcome unknown entity</h2>
       <h1>{name}</h1>
       <p>
-        <input type="text" onChange={handleNameChange} />
+        <input type="text" value={name} onChange={handleNameChange} />
         <button onClick={nameSetClickHandler}>Set Name</button>
       </p>
     </section>
