@@ -14,7 +14,7 @@ export default function Player() {
 
   return (
     <section id="player">
-      <h2>Welcome unknown entity</h2>
+      <h2>Welcome {name ? name : 'unknown entity'}</h2>
       <h1>{name}</h1>
       <p>
         <input type="text" value={name} onChange={handleNameChange} />
