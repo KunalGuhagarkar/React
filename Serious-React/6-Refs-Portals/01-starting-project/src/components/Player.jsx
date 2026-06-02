@@ -5,11 +5,11 @@ export default function Player() {
   const [name, setName] = useState();
 
   function nameSetHandler() {
-    setName(name);
+    
   }
 
   function handleNameChange(e) {
-    console.log(e.target.value);
+    setName(e.target.value);
   }
 
   return (
