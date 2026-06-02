@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Player() {
 
-  const [name, setName] = useState();
+  const [name, setName] = useState("Kunal");
 
   function nameSetHandler() {
     setName(name);
