@@ -8,7 +8,13 @@ export default function App() {
       <main>
         <AuthInputs />
       </main>
-      {/* <p>Some text</p> */}
     </>
   );
 }
+
+/*
+  Installing Third Party "Styled Components"
+
+  Command:
+    npm i styled-components
+*/
