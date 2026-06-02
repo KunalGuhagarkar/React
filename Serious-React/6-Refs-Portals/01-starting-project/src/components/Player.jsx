@@ -4,6 +4,10 @@ export default function Player() {
 
   const [name, setName] = useState();
 
+  function nameSetHandler(e) {
+    setName(e.target.value);
+  }
+
   return (
     <section id="player">
       <h2>Welcome unknown entity</h2>
