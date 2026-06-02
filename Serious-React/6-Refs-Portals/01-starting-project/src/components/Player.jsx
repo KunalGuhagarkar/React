@@ -17,7 +17,7 @@ export default function Player() {
     <section id="player">
       <h2>Welcome {submit ? enteredPlayerName : "unknown entity"}</h2>
       <p>
-        <input type="text" value={enteredPlayerName} onChange={handleChange} />
+        <input type="text" onChange={handleChange} value={enteredPlayerName} />
         <button onClick={handleClick}>Set Name</button>
       </p>
     </section>
