@@ -12,8 +12,8 @@ export default function TimerChallenge({ title, targetTime }) {
       console.log("Timer started");
       setTimeout(() => {
         console.log("Timer ended");
+        setChallenge(false);
       }, 1000);
-      setChallenge((c) => !c);
     }
   }
 
