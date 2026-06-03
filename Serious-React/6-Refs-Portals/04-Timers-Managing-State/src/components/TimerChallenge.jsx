@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function TimerChallenge({ title, targetTime }) {
   const [challenge, setChallenge] = useState(false);
+
+  const timerIdRef = useRef(null);
 
   function startClickHandle() {
     setChallenge((c) => !c);
@@ -21,6 +23,10 @@ export default function TimerChallenge({ title, targetTime }) {
           const end = Date.now();
           console.log(`Elapsed time: ${end - start}ms`);
         }, timeDuration);
+      } else {
+        // --- STOP TIMER LOGIC ---
+        console.log("Timer Stopped Manually");
+        clearTimeout(timerIdRef.current);
       }
       return nextChallengeState;
     });
