@@ -15,10 +15,15 @@ import { createRoot } from "react-dom/client";
 // );
 
 // React.createElement()
-import { createElement } from "react";
+// import { createElement } from "react";
 
 const root = createRoot(document.getElementById("root"));
-const reactElement = createElement("h1", null, "Hello from createElement")
+
+// Using createElement()
+// const reactElement = createElement("h1", null, "Hello from createElement")
+
+// Using JSX
+const reactElement = <h1><span>Hello From JSX</span></h1>
 
 console.log(reactElement);
 
