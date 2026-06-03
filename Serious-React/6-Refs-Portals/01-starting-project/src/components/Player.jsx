@@ -1,6 +1,9 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 export default function Player() {
+
+  const playerName = useRef();
+
   const [enteredPlayerName, setEnteredPlayerName] = useState();
   const [submit, setSubmit] = useState(false);
 
