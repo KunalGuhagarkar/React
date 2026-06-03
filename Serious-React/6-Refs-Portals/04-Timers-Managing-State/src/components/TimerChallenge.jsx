@@ -10,7 +10,7 @@ export default function TimerChallenge({ title, targetTime }) {
   function handleStart() {
     if (challenge) {
       console.log("Timer started");
-      console.log(Date.now());
+      const start = Date.now();
       setTimeout(() => {
         console.log("Timer ended");
         setChallenge(!challenge);
