@@ -50,7 +50,8 @@ root.render(
 ); */
 
 const root = document.getElementById("root");
-const headingOne = document.createElement("h1").textContent = "This is a Heading 1";
+const headingOne = document.createElement("h1")
+headingOne.textContent = "This is Heading One";
 headingOne.classList.add("header");
 
 root.appendChild(headingOne);
