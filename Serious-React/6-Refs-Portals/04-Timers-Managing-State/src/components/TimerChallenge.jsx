@@ -3,12 +3,14 @@ import { useState } from "react";
 export default function TimerChallenge({ title, targetTime }) {
   const [challenge, setChallenge] = useState(false);
 
-  function handleTimer() {
-    setChallenge(c => !c);
+  function startClickHandle() {
+    setChallenge(!challenge);
+  }
+
+  function handleStart() {
+    console.log("Timer started");
     setTimeout(() => {
-      
-      setChallenge(c => !c);
-      console.log("Timer Over");
+      console.log("Timer ended");
     }, 5000);
   }
 
@@ -19,7 +21,7 @@ export default function TimerChallenge({ title, targetTime }) {
         {targetTime} second{targetTime > 1 ? "s" : ""};
       </p>
       <p>
-        <button onClick={handleTimer}>
+        <button onClick={startClickHandle}>
           {challenge ? `Stop at ${targetTime}` : "Start Challenge"}
         </button>
       </p>
