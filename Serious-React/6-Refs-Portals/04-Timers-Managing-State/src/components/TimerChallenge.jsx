@@ -12,6 +12,14 @@ export default function TimerChallenge({ title, targetTime }) {
 
     setChallenge((prevChallenge) => {
       const nextChallengeState = !prevChallenge;
+
+      if (nextChallengeState) {
+        console.log("Timer Started");
+        const start = Date.now();
+        setTimeout(() => {
+          
+        })
+      }
     })
   }
 
