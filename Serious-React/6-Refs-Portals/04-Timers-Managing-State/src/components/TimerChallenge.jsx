@@ -7,7 +7,6 @@ export default function TimerChallenge({ title, targetTime }) {
   const [timerExpired, setTimerExpired] = useState(false);
 
   const timer = useRef();
-  
 
   function handleStart() {
     timer.current = setTimeout(() => {
