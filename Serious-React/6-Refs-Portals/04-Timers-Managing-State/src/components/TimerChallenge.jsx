@@ -22,6 +22,7 @@ export default function TimerChallenge({ title, targetTime }) {
           console.log(`Elapsed time: ${end - start}ms`);
         }, timeDuration);
       }
+      return nextChallengeState;
     });
   }
 
