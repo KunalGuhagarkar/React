@@ -51,6 +51,6 @@ root.render(
 
 const root = document.getElementById("root");
 const headingOne = document.createElement("h1").textContent = "This is a Heading 1";
-headingOne.classlist.add("header");
+headingOne.classList.add("header");
 
 root.appendChild(headingOne);
