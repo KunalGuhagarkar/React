@@ -4,3 +4,8 @@
 // importing createRoot from react
 import {createRoot} from 'react-dom/client';
 
+// getting hold of "root" element
+const root = createRoot(document.getElementById("root"));
+
+// rendering h1 Hello, World!
+root.render(<h1>Hello, World!</h1>);
