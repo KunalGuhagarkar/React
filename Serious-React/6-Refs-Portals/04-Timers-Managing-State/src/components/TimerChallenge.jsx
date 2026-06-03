@@ -21,10 +21,12 @@ export default function TimerChallenge({ title, targetTime }) {
       </p>
       <p>
         <button onClick={handleStart}>
-          {timerExpired ? `Stop` : "Start Challenge"}
+          {timerStarted ? `Stop` : "Start Challenge"}
         </button>
       </p>
-      <p>{timerExpired ? "Time is running ..." : "Timer inactive"}</p>
+      <p className={timerStarted ? "active" : undefined}>
+        {timerStarted ? "Time is running ..." : "Timer inactive"}
+      </p>
     </section>
   );
 }
