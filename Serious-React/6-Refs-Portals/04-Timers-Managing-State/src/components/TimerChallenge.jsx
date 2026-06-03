@@ -4,8 +4,9 @@ export default function TimerChallenge({ title, targetTime }) {
   const [challenge, setChallenge] = useState(false);
 
   function handleTimer() {
-    setChallenge(!challenge);
+    setChallenge(c => !c);
     setTimeout(() => {
+      setChallenge(c => !c);
       console.log("Timer Over");
     }, 1000);
   }
