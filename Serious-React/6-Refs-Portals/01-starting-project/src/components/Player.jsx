@@ -13,7 +13,7 @@ export default function Player() {
   }
 
   function handleClick() {
-    console.log(playerName);
+    console.log(playerName.current.value);
   }
 
   return (
