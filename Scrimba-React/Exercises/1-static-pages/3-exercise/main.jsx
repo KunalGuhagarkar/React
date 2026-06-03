@@ -11,7 +11,7 @@ function MainContent() {
   return <h1>React is great!</h1>;
 }
 
-const root = createRoot(document.getElementById("root"));
+const root = createRoot(document.querySelector("root"));
 root.render(
   <div>
     <MainContent />

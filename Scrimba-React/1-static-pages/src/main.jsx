@@ -49,8 +49,8 @@ root.render(
   </div>
 ); */
 
-const root = document.getElementById("root");
-const headingOne = document.createElement("h1")
+const root = document.querySelector("div#root");
+const headingOne = document.createElement("h1");
 headingOne.textContent = "This is Heading One";
 headingOne.classList.add("header");
 
