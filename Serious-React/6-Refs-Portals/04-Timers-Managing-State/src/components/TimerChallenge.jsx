@@ -8,16 +8,11 @@ export default function TimerChallenge({ title, targetTime }) {
   }
 
   function handleStart() {
-    const timer = 1000;
-    if (challenge) {
-      console.log("Timer started");
-      const start = Date.now();
-      setTimeout(() => {
-        setChallenge(!challenge);
-        const end = Date.now();
-        console.log(start - end);
-      }, timer);
-    }
+    const timeDuration = 1000;
+
+    setChallenge((prevChallenge) => {
+      const nextChallengeState = !prevChallenge;
+    })
   }
 
   return (
