@@ -36,15 +36,16 @@ export default function TimerChallenge({ title, targetTime }) {
     <section className="challenge">
       <h2>{title}</h2>
       <p className="challenge-time">
-        {targetTime} second{targetTime > 1 ? "s" : ""};
+        {targetTime} second{targetTime > 1 ? "s" : ""}
       </p>
       <p>
-        <button onClick={startClickHandle}>
-          {challenge ? `Stop at ${targetTime}` : "Start Challenge"}
+        {/* FIX 1: Attach the combined logic function directly to the click handler */}
+        <button onClick={handleToggleChallenge}>
+          {challenge ? `Stop` : "Start Challenge"}
         </button>
-        {handleStart()}
       </p>
-      <p className="">Time is running ... / Timer inactive</p>
+      {/* FIX 2: Conditionally render the text based on the live challenge state */}
+      <p>{challenge ? "Time is running ..." : "Timer inactive"}</p>
     </section>
   );
 }
