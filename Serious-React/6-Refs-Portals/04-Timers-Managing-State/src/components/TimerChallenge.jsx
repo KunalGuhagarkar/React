@@ -1,5 +1,5 @@
 export default function TimerChallenge() {
-  return <section>
-    
+  return <section className="challenge">
+
   </section>
 }
