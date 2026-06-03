@@ -14,6 +14,9 @@ export default function TimerChallenge({ title, targetTime }) {
       const start = Date.now();
       setTimeout(() => {
         setChallenge(!challenge);
+        console.log(start);
+        console.log(Date.now());
+        console.log(start - Date.now());
         console.log((start - Date.now()) - timer);
       }, timer);
     }
