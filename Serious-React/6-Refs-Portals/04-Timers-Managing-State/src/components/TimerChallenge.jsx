@@ -6,12 +6,13 @@ export default function TimerChallenge({ title, targetTime }) {
   function handleStart() {
     setTimeout(() => {
       setTimerExpired(true);
-    }, targetTime * 1000)
+    }, targetTime * 1000);
   }
 
   return (
     <section className="challenge">
       <h2>{title}</h2>
+      {timerExpired && <p>You Lost</p>}
       <p className="challenge-time">
         {targetTime} second{targetTime > 1 ? "s" : ""}
       </p>
