@@ -1,8 +1,12 @@
+import { useState } from "react";
+
 export default function TimerChallenge({ title, targetTime }) {
+
+  const [challenge, setChallenge] = useState(false);
 
   function handleTimer() {
     setTimeout(() => {
-      
+
     }, 1000)
   }
 
@@ -13,8 +17,8 @@ export default function TimerChallenge({ title, targetTime }) {
         {targetTime} second{targetTime > 1 ? 's' : ''};
       </p>
       <p>
-        <button>
-          Start Challenge
+        <button onClick={handleStartClick}>
+          {challenge ? `Stop at ${targetTime}` : 'Start Challenge'}
         </button>
       </p>
       <p className="">
