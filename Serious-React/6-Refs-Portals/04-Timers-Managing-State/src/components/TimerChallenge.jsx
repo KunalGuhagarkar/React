@@ -18,7 +18,7 @@ export default function TimerChallenge({ title, targetTime }) {
   }
 
   function handleStop() {
-    clearTimeout(timer);
+    clearTimeout(timer.current);
   }
 
   return (
