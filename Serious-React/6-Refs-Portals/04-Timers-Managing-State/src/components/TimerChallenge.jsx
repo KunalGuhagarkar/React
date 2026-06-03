@@ -4,6 +4,10 @@ export default function TimerChallenge({ title, targetTime }) {
 
   const [challenge, setChallenge] = useState(false);
 
+  function handleStartClick() {
+    setChallenge(!challenge);
+  }
+
   function handleTimer() {
     setTimeout(() => {
 
