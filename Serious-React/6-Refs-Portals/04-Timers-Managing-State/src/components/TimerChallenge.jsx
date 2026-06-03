@@ -17,10 +17,12 @@ export default function TimerChallenge({ title, targetTime }) {
         console.log("Timer Started");
         const start = Date.now();
         setTimeout(() => {
-          
-        })
+          setChallenge((currentChallenge) => !currentChallenge);
+          const end = Date.now();
+          console.log(`Elapsed time: ${end - start}ms`);
+        }, timeDuration);
       }
-    })
+    });
   }
 
   return (
