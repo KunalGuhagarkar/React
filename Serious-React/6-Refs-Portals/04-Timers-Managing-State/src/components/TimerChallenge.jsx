@@ -4,17 +4,16 @@ export default function TimerChallenge({ title, targetTime }) {
   const [challenge, setChallenge] = useState(false);
 
   function startClickHandle() {
-    setChallenge(c => !c);
-    if (challenge) {
-      handleStart();
-    }
+    setChallenge((c) => !c);
   }
 
   function handleStart() {
-    console.log("Timer started");
-    setTimeout(() => {
-      console.log("Timer ended");
-    }, 5000);
+    if (challenge) {
+      console.log("Timer started");
+      setTimeout(() => {
+        console.log("Timer ended");
+      }, 1000);
+    }
   }
 
   return (
@@ -27,6 +26,7 @@ export default function TimerChallenge({ title, targetTime }) {
         <button onClick={startClickHandle}>
           {challenge ? `Stop at ${targetTime}` : "Start Challenge"}
         </button>
+        {handleStart()}
       </p>
       <p className="">Time is running ... / Timer inactive</p>
     </section>
