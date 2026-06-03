@@ -5,11 +5,8 @@ export default function TimerChallenge({ title, targetTime }) {
 
   const timerIdRef = useRef(null);
 
-  function startClickHandle() {
-    setChallenge((c) => !c);
-  }
 
-  function handleStart() {
+  function handleToggleChallenge() {
     const timeDuration = 1000;
 
     setChallenge((prevChallenge) => {
