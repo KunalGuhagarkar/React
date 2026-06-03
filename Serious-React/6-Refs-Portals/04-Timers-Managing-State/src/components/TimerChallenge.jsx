@@ -6,9 +6,10 @@ export default function TimerChallenge({ title, targetTime }) {
   function handleTimer() {
     setChallenge(c => !c);
     setTimeout(() => {
+      
       setChallenge(c => !c);
       console.log("Timer Over");
-    }, 1000);
+    }, 5000);
   }
 
   return (
