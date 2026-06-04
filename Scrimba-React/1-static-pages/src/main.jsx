@@ -8,17 +8,17 @@ root.render(<h1>Hello React!</h1>); */
 
 
 
-const root = createRoot(document.getElementById("root"));
+/* const root = createRoot(document.getElementById("root"));
 root.render(
   <ol>
     <li>Apple</li>
     <li>Banana</li>
     <li>Cherry</li>
   </ol>
-);
+); */
 
 
-/*
+
 //React.createElement()
 import { createElement } from "react";
 
@@ -28,12 +28,12 @@ const root = createRoot(document.getElementById("root"));
 const reactElement = createElement("h1", null, "Hello from createElement")
 
 // Using JSX
-const reactElement = <h1><span>Hello From JSX</span></h1>
+// const reactElement = <h1><span>Hello From JSX</span></h1>
 
 console.log(reactElement);
 
 root.render(reactElement);
-*/
+
 
 // Using Components
 /* import {createRoot} from 'react-dom/client';
