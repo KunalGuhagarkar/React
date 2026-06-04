@@ -1,13 +1,13 @@
 import { createRoot } from "react-dom/client";
 
 
-// 1. Create a root
+/* // 1. Create a root
 const root = createRoot(document.getElementById('root'));
 // 2. Render some markup to the root
-root.render(<h1>Hello React!</h1>);
+root.render(<h1>Hello React!</h1>); */
 
 
-/*
+
 const root = createRoot(document.getElementById("root"));
 root.render(
   <ol>
@@ -16,7 +16,7 @@ root.render(
     <li>Cherry</li>
   </ol>
 );
-*/
+
 
 /*
 //React.createElement()
