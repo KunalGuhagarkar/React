@@ -1,11 +1,11 @@
-//import { createRoot } from "react-dom/client";
+import { createRoot } from "react-dom/client";
 
-/*
+
 // 1. Create a root
 const root = createRoot(document.getElementById('root'));
 // 2. Render some markup to the root
 root.render(<h1>Hello React!</h1>);
-*/
+
 
 /*
 const root = createRoot(document.getElementById("root"));
@@ -49,9 +49,9 @@ root.render(
   </div>
 ); */
 
-const root = document.querySelector("div#root");
-const headingOne = document.createElement("h1");
-headingOne.textContent = "This is Heading One";
-headingOne.classList.add("header");
+// const root = document.querySelector("div#root");
+// const headingOne = document.createElement("h1");
+// headingOne.textContent = "This is Heading One";
+// headingOne.classList.add("header");
 
-root.appendChild(headingOne);
+// root.appendChild(headingOne);
