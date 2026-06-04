@@ -1,4 +1,4 @@
-import { createRoot } from "react-dom/client";
+// import { createRoot } from "react-dom/client";
 
 
 /* // 1. Create a root
@@ -19,20 +19,20 @@ root.render(
 
 
 
-//React.createElement()
+/* //React.createElement()
 import { createElement } from "react";
 
 const root = createRoot(document.getElementById("root"));
 
 // Using createElement()
-const reactElement = createElement("h1", null, "Hello from createElement")
+// const reactElement = createElement("h1", null, "Hello from createElement")
 
 // Using JSX
-// const reactElement = <h1><span>Hello From JSX</span></h1>
+const reactElement = <h1><span>Hello From JSX</span></h1>
 
 console.log(reactElement);
 
-root.render(reactElement);
+root.render(reactElement); */
 
 
 // Using Components
@@ -49,9 +49,9 @@ root.render(
   </div>
 ); */
 
-// const root = document.querySelector("div#root");
-// const headingOne = document.createElement("h1");
-// headingOne.textContent = "This is Heading One";
-// headingOne.classList.add("header");
+const root = document.querySelector("div#root");
+const headingOne = document.createElement("h1");
+headingOne.textContent = "This is Heading One";
+headingOne.classList.add("header");
 
-// root.appendChild(headingOne);
+root.appendChild(headingOne);
