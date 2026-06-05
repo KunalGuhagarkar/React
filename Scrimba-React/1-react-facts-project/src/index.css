@@ -1,5 +1,12 @@
 
-.inter-navbar-heading {
+.navbar-heading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.main-heading {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
