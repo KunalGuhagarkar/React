@@ -6,7 +6,7 @@ body {
 }
 
 .react-img {
-  width: 60px;
+  width: 100px;
 }
 
 .nav-container {
@@ -18,5 +18,4 @@ body {
 h3 {
   color: rgb(12, 190, 245);
   font-size: 30px;
-  margin-left: 5px;
 }
