@@ -1,14 +1,9 @@
-
-.navbar-heading {
+body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
 }
 
-.main-heading {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.react-img {
+  width: 55px;
 }
