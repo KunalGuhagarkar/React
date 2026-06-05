@@ -91,11 +91,13 @@ root.render(
   </main>
 ); */
 
-import { createRoot } from "react-dom/client";
+/* import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
-function temporaryName() {
+root.render(<TemporaryName />);
+
+function TemporaryName() {
   return (
     <main>
       <img
@@ -114,6 +116,10 @@ function temporaryName() {
       </ul>
     </main>
   );
-}
+} */
 
-root.render(temporaryName());
+
+import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
