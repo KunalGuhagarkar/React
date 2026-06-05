@@ -1,12 +1,9 @@
 // import { createRoot } from "react-dom/client";
 
-
 /* // 1. Create a root
 const root = createRoot(document.getElementById('root'));
 // 2. Render some markup to the root
 root.render(<h1>Hello React!</h1>); */
-
-
 
 /* const root = createRoot(document.getElementById("root"));
 root.render(
@@ -16,8 +13,6 @@ root.render(
     <li>Cherry</li>
   </ol>
 ); */
-
-
 
 /* //React.createElement()
 import { createElement } from "react";
@@ -34,7 +29,6 @@ console.log(reactElement);
 
 root.render(reactElement); */
 
-
 // Using Components
 /* import {createRoot} from 'react-dom/client';
 
@@ -49,9 +43,15 @@ root.render(
   </div>
 ); */
 
-const root = document.querySelector("div#root");
-const headingOne = document.createElement("h1");
-headingOne.textContent = "This is Heading One";
-headingOne.classList.add("header");
+// const root = document.querySelector("div#root");
+// const headingOne = document.createElement("h1");
+// headingOne.textContent = "This is Heading One";
+// headingOne.classList.add("header");
 
-root.appendChild(headingOne);
+// root.appendChild(headingOne);
+
+import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
+root.render(<h1>HouseKeeping Heading One</h1>);
