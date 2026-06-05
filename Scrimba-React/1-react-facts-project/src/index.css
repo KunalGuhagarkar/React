@@ -16,10 +16,11 @@ body {
 }
 
 .react-img {
-  width: 50px;
+  width: 30px;
 }
 
 h3 {
   color: #61DBFB;
   font-size: 25px;
+  margin-left: 5px;
 }
