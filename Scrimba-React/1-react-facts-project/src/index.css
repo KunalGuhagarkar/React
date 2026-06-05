@@ -30,7 +30,10 @@ span {
 
 .main-container {
   margin-left: 20px;
-  background-image: url();
+  background-image: url("/src/assets/react-logo-grey.svg");
+  background-repeat: no-repeat;
+  background-position: 113%;
+  background-size: 20%;
 }
 
 .main-container > h1 {
