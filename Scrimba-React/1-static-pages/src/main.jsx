@@ -66,7 +66,7 @@ root.render(
 //   </main>,
 // );
 
-import { createRoot } from "react-dom/client";
+/* import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
@@ -89,4 +89,31 @@ root.render(
       <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
   </main>
-);
+); */
+
+import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
+function temporaryName() {
+  return (
+    <main>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
+        alt="react-logo"
+        width="40px"
+      />
+
+      <h1>Fun facts about React</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100K stars on GitHub</li>
+        <li>Is maintained by Meta</li>
+        <li>Powers thousands of enterprise apps, including mobile apps</li>
+      </ul>
+    </main>
+  );
+}
+
+root.render(temporaryName());
