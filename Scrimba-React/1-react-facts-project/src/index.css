@@ -13,7 +13,6 @@ body {
   display: flex;
   align-items: center;
   padding: 20px;
-
 }
 
 .react-img {
@@ -21,7 +20,7 @@ body {
 }
 
 span {
-  color: #61DBFB;
+  color: #61dbfb;
   font-size: 25px;
   margin-left: 10px;
   font-weight: 700;
