@@ -33,7 +33,7 @@ span {
   background-image: url("/src/assets/react-logo-grey.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 20%;
+  background-size: 50% auto;
 }
 
 .main-container > h1 {
