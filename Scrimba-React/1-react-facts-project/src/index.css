@@ -28,5 +28,15 @@ span {
   font-weight: 700;
 }
 
-h1 {
+.main-container {
+  margin-left: 20px;
+}
+
+.main-container > h1 {
+  font-size: 40px;
+}
+
+ul > li {
+  margin-bottom: 20px;
+  font-size: 20px;
 }
