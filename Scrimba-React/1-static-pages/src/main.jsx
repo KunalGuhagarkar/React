@@ -66,4 +66,16 @@ root.render(
 //   </main>,
 // );
 
+import { createRoot } from "react-dom/client";
 
+const root = createRoot(document.getElementById("root"));
+
+root.render(
+  <div>
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
+      alt="react-logo"
+      width="40px"
+    />
+  </div>,
+);
