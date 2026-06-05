@@ -71,7 +71,7 @@ import { createRoot } from "react-dom/client";
 const root = createRoot(document.getElementById("root"));
 
 root.render(
-  <div>
+  <main>
     <img
       src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
       alt="react-logo"
@@ -86,5 +86,5 @@ root.render(
       <li>Is maintained by Meta</li>
       <li>Powers thousands of enterprise apps, including mobile apps</li>
     </ul>
-  </div>,
+  </main>
 );
