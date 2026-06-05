@@ -118,8 +118,147 @@ function TemporaryName() {
   );
 } */
 
+/* import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
+function Page() {
+  return (
+    <div>
+      <header>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
+          alt="react-logo"
+          width="50px"
+        />
+      </header>
+      <main>
+        <h1>Reasons I'm excited to learn React</h1>
+        <ol>
+          <li>Getting a Job</li>
+          <li>Earning Money</li>
+          <li>Getting Independent</li>
+        </ol>
+      </main>
+      <footer>© 2026 Kunal Guhagarkar development. All rights reserved.</footer>
+    </div>
+  );
+}
+
+root.render(<Page />); */
+
+// import { createRoot } from "react-dom/client";
+
+// const root = createRoot(document.getElementById("root"));
+
+// function MyComponent() {
+//   return (
+//     <small>I'm tiny text</small>
+//   );
+// }
+
+// root.render(<MyComponent />);
+
+/* import { createRoot } from "react-dom/client";
+import {Fragment} from "react";
+
+const root = createRoot(document.getElementById("root"));
+
+function Page() {
+  return (
+    <Fragment>
+      <header>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
+          alt="react-logo"
+          width="50px"
+        />
+      </header>
+      <main>
+        <h1>Reasons I'm excited to learn React</h1>
+        <ol>
+          <li>Getting a Job</li>
+          <li>Earning Money</li>
+          <li>Getting Independent</li>
+        </ol>
+      </main>
+      <footer>© 2026 Kunal Guhagarkar development. All rights reserved.</footer>
+    </Fragment>
+  );
+}
+
+root.render(<Page />); */
+
+/* import { createRoot } from "react-dom/client";
+
+const root = createRoot(document.getElementById("root"));
+
+function Header() {
+  return (
+    <header className="header-container">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/3840px-React-icon.svg.png"
+        alt="react-logo"
+        className="img"
+      />
+      <nav>
+        <ul className="nav-list">
+          <li className="list-item">Pricing</li>
+          <li className="list-item">About</li>
+          <li className="list-item">Contact</li>
+        </ul>
+      </nav>
+    </header>
+  );
+}
+
+function MainContent() {
+  return (
+    <main>
+      <h1>Reasons I'm excited to learn React</h1>
+      <ol>
+        <li className="main-list-item">Earning Money</li>
+        <li className="main-list-item">Getting Independent</li>
+        <li className="main-list-item">Getting a Job</li>
+      </ol>
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer-container">© 2026 Kunal Guhagarkar development. All rights reserved.</footer>
+  );
+}
+
+function Page() {
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
+  );
+}
+
+root.render(<Page />); */
 
 import { createRoot } from "react-dom/client";
 
 const root = createRoot(document.getElementById("root"));
 
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import Footer from "./components/Footer";
+
+function Page() {
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
+  );
+}
+
+root.render(<Page />);
