@@ -3,6 +3,8 @@ body {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  background-color: rgb(51, 52, 60);
+  color: white;
 }
 
 .header {
@@ -24,4 +26,7 @@ span {
   font-size: 25px;
   margin-left: 10px;
   font-weight: 700;
+}
+
+h1 {
 }
