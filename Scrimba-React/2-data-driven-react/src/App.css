@@ -7,13 +7,14 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .header-container img {
   width: 50px;
-  margin-left: 5px;
 }
 
 .header-container h1 {
   margin-left: 5px;
+  font-weight: 100;
 }
