@@ -48,7 +48,7 @@ body {
   align-items: center;
 }
 
-.location-container > img {
+.location-container img {
   width: 20px;
   height: 30px;
 }
