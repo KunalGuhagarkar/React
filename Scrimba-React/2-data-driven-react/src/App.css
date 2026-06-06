@@ -38,3 +38,7 @@ body {
   height: 500px;
   border-radius: 10%;
 }
+
+.content-container {
+  margin: 50px;
+}
