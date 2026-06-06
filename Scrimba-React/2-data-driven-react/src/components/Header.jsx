@@ -1,3 +1,8 @@
 export default function Header() {
-  return <h1>Header Component</h1>;
+  return (
+    <header className="header-container">
+      
+      <h1>my travel journal</h1>
+    </header>
+  );
 }
