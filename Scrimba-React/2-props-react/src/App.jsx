@@ -10,7 +10,7 @@ function App() {
           <p>(212) 555-1234</p>
         </div>
         <div className="info-group">
-          <img src="./images/mail-icon.png" alt="mail icon" />
+          <img src=".\src\assets\mail.png" alt="mail icon" />
           <p>mr.whiskaz@catnap.meow</p>
         </div>
       </article>
@@ -23,7 +23,7 @@ function App() {
           <p>(212) 555-2345</p>
         </div>
         <div className="info-group">
-          <img src="./images/mail-icon.png" alt="mail icon" />
+          <img src=".\src\assets\mail.png" alt="mail icon" />
           <p>fluff@me.com</p>
         </div>
       </article>
@@ -36,7 +36,7 @@ function App() {
           <p>(212) 555-4567</p>
         </div>
         <div className="info-group">
-          <img src="./images/mail-icon.png" alt="mail icon" />
+          <img src=".\src\assets\mail.png" alt="mail icon" />
           <p>thecat@hotmail.com</p>
         </div>
       </article>
@@ -49,7 +49,7 @@ function App() {
           <p>(0800) CAT KING</p>
         </div>
         <div className="info-group">
-          <img src="./images/mail-icon.png" alt="mail icon" />
+          <img src=".\src\assets\mail.png" alt="mail icon" />
           <p>pumpkin@scrimba.com</p>
         </div>
       </article>
