@@ -5,10 +5,8 @@ body {
 .header-container {
   background-color: #F55A5A;
   color: white;
-  text-align: center;
   display: flex;
   justify-content: center;
-  
 }
 
 .header-container img {
