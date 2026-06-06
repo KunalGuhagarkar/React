@@ -40,7 +40,8 @@ body {
 }
 
 .content-container {
-  margin: 150px;
+  margin: 50px;
+  padding-right: 150px;
 }
 
 .content-container h1 {
