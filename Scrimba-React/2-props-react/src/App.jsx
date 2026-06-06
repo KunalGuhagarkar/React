@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="contacts">
       <article className="contact-card">
-        <img src="./images/mr-whiskerson.png" alt="Photo of Mr. Whiskerson" />
+        <img src=".\src\assets\cat.jpg" alt="Photo of Mr. Whiskerson" />
         
         <h3>Mr. Whiskerson</h3>
         <div className="info-group">
