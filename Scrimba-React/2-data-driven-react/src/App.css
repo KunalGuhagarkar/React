@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
 }
 
@@ -19,5 +20,7 @@ html, body {
   margin-left: 5px;
   font-weight: 500;
   font-size: 0.9rem;
-  font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
