@@ -1,0 +1,26 @@
+html,
+body {
+  margin: 0;
+}
+
+.header-container {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f55a5a;
+  color: white;
+}
+
+.header-container img {
+  width: 24px;
+}
+
+.header-container h1 {
+  margin-left: 5px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
