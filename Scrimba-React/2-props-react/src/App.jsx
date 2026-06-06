@@ -6,7 +6,7 @@ function App() {
         
         <h3>Mr. Whiskerson</h3>
         <div className="info-group">
-          <img src="./images/phone-icon.png" alt="phone icon" />
+          <img src=".\src\assets.phone.png" alt="phone icon" />
           <p>(212) 555-1234</p>
         </div>
         <div className="info-group">
@@ -19,7 +19,7 @@ function App() {
         <img src=".\src\assets\cat.jpg" alt="Photo of Fluffykins" />
         <h3>Fluffykins</h3>
         <div className="info-group">
-          <img src="./images/phone-icon.png" alt="phone icon" />
+          <img src=".\src\assets.phone.png" alt="phone icon" />
           <p>(212) 555-2345</p>
         </div>
         <div className="info-group">
@@ -32,7 +32,7 @@ function App() {
         <img src=".\src\assets\cat.jpg" alt="Photo of Felix" />
         <h3>Felix</h3>
         <div className="info-group">
-          <img src="./images/phone-icon.png" alt="phone icon" />
+          <img src=".\src\assets.phone.png" alt="phone icon" />
           <p>(212) 555-4567</p>
         </div>
         <div className="info-group">
@@ -45,7 +45,7 @@ function App() {
         <img src=".\src\assets\cat.jpg" alt="Photo of Pumpkin" />
         <h3>Pumpkin</h3>
         <div className="info-group">
-          <img src="./images/phone-icon.png" alt="phone icon" />
+          <img src=".\src\assets.phone.png" alt="phone icon" />
           <p>(0800) CAT KING</p>
         </div>
         <div className="info-group">
