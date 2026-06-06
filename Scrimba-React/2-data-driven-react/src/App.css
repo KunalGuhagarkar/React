@@ -42,3 +42,12 @@ body {
 .content-container {
   margin: 50px;
 }
+
+.location-container {
+  display: flex;
+}
+
+.location-container > img {
+  width: 30px;
+  height: 10px
+}
