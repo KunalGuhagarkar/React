@@ -16,7 +16,7 @@ function App() {
       </article>
 
       <article className="contact-card">
-        <img src="./images/fluffykins.png" alt="Photo of Fluffykins" />
+        <img src=".\src\assets\cat.jpgpng" alt="Photo of Fluffykins" />
         <h3>Fluffykins</h3>
         <div className="info-group">
           <img src="./images/phone-icon.png" alt="phone icon" />
@@ -29,7 +29,7 @@ function App() {
       </article>
 
       <article className="contact-card">
-        <img src="./images/felix.png" alt="Photo of Felix" />
+        <img src=".\src\assets\cat.jpgalt="Photo of Felix" />
         <h3>Felix</h3>
         <div className="info-group">
           <img src="./images/phone-icon.png" alt="phone icon" />
@@ -42,7 +42,7 @@ function App() {
       </article>
 
       <article className="contact-card">
-        <img src="./images/pumpkin.png" alt="Photo of Pumpkin" />
+        <img src=".\src\assets\cat.jpg" alt="Photo of Pumpkin" />
         <h3>Pumpkin</h3>
         <div className="info-group">
           <img src="./images/phone-icon.png" alt="phone icon" />
