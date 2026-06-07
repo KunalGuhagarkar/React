@@ -1,10 +1,10 @@
-export default function Contact() {
+export default function Contact({img, name}) {
   return (
     <>
       <article className="contact-card">
-        <img src=".\src\assets\cat.jpg" alt="Photo of Mr. Whiskerson" />
+        <img src={img} alt="Photo of Mr. Whiskerson" />
 
-        <h3>Mr. Whiskerson</h3>
+        <h3>{name}</h3>
         <div className="info-group">
           <img src=".\src\assets\phone.png" alt="phone icon" />
           <p>(212) 555-1234</p>
