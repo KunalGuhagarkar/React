@@ -54,6 +54,10 @@ function App() {
         punchline="I can't wait to see her face light up when she opens it."
         upvotes={22}
         downvotes={10}
+        comments={[
+          { author: "Kunal", text: "What a Joke!" },
+          { author: "Oinku", text: "Oink Oink Oink" },
+        ]}
         isPun={true}
       />
       <Jokes
