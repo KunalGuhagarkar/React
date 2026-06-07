@@ -33,7 +33,6 @@ import App from "./App";
 
 createRoot(document.getElementById("root")).render(<App />);
 
-
 // function Garage() {
 //   return (
 //     <>
@@ -50,3 +49,26 @@ createRoot(document.getElementById("root")).render(<App />);
 // }
 
 // createRoot(document.getElementById("root")).render(<Garage />);
+
+// function User({ name, age = 22, city = "Mumbai" }) {
+//   return (
+//     <h1>
+//       {name}, {age}, {city}
+//     </h1>
+//   );
+// }
+
+// createRoot(document.getElementById("root")).render(<User name="Kunal" />);
+
+// function User({ name, ...props }) {
+//   console.log(props);
+//   return (
+//     <h1>
+//       {name}, {props.age}, {props.city}
+//     </h1>
+//   );
+// }
+
+// createRoot(document.getElementById("root")).render(
+//   <User name="Kunal" age={22} city="Mumbai" />,
+// );
