@@ -16,9 +16,9 @@ export default function Jokes({
       {isPun ? <p>This is a Pun</p> : <p>This aint no Pun</p>}
       <ul>
         {comments.map((comment) => {
-          <p>
+          <li>
             From:{comment.author}, Comment: {comment.text}
-          </p>;
+          </li>;
         })}
       </ul>
       <hr />
