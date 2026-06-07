@@ -15,13 +15,14 @@ export default function Jokes({
       </p>
       {isPun ? <p>This is a Pun</p> : <p>This aint no Pun</p>}
       <ul>
-        {comments && comments.map((comment) => {
-          return (
-            <li key={comment.author}>
-              From:{comment.author}, Comment: {comment.text}
-            </li>
-          );
-        })}
+        {comments &&
+          comments.map((comment) => {
+            return (
+              <li key={comment.author}>
+                From:{comment.author}, Comment: {comment.text}
+              </li>
+            );
+          })}
       </ul>
       <hr />
     </>
