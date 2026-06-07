@@ -52,6 +52,8 @@ function App() {
       <Jokes
         setup="I got my daughter a fridge for her birthday."
         punchline="I can't wait to see her face light up when she opens it."
+        upvotes={22}
+        downvotes={10}
       />
       <Jokes
         setup="How did the hacker escape the police?"
