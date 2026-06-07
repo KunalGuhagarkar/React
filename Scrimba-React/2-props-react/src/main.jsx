@@ -32,3 +32,21 @@ import App from "./App";
 // }
 
 createRoot(document.getElementById("root")).render(<App />);
+
+
+// function Garage() {
+//   return (
+//     <>
+//       <h1>How lives in my Garage</h1>
+//       <Car brand="Ford" model="Mustang" color="red" />
+//     </>
+//   );
+// }
+
+// function Car({brand, model, color}) {
+//   return (
+//     <h2>I'm a {brand}! Model: {model}, Color: {color}</h2>
+//   );
+// }
+
+// createRoot(document.getElementById("root")).render(<Garage />);
