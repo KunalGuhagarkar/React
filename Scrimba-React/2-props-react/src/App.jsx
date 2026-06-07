@@ -4,9 +4,9 @@ function App() {
   return (
     <div className="contacts">
       <Contact img=".\src\assets\cat.jpg" name="Mr. Whiskerson" />
-      <Contact />
-      <Contact />
-      <Contact />
+      <Contact img=".\src\assets\cat.jpg" name="" />
+      <Contact img=".\src\assets\cat.jpg" name="" />
+      <Contact img=".\src\assets\cat.jpg" name="" />
     </div>
   );
 }
