@@ -54,6 +54,7 @@ function App() {
         punchline="I can't wait to see her face light up when she opens it."
         upvotes={22}
         downvotes={10}
+        isPun={true}
       />
       <Jokes
         setup="How did the hacker escape the police?"
