@@ -38,7 +38,10 @@ const person = {
   email: "k@gmail.com"
 };
 
-const {img, name} = person;
-console.log(img, name);
+// const {img, name} = person;
+// console.log(img, name);
+
+const {img: image, name} = person;
+console.log(image, name);
 
 export default App;
