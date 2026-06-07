@@ -31,4 +31,14 @@ function App() {
   );
 }
 
+const person = {
+  img: "image_path",
+  name: "Kunal",
+  phone: 1234567890,
+  email: "k@gmail.com"
+};
+
+const {img, name} = person;
+console.log(img, name);
+
 export default App;
