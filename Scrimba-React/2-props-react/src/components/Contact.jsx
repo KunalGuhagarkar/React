@@ -1,4 +1,4 @@
-export default function Contact({img, name}) {
+export default function Contact({ img, name }) {
   return (
     <>
       <article className="contact-card">
