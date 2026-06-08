@@ -156,13 +156,16 @@
 //   );
 // }
 
-function App() {
+// export default App;
+
+export default function App() {
   const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"];
   return (
-    <>
-      {ninjaTurtles.map(turtle => <p>{turtle}</p>)}
-    </>
-  )
+    <main>
+      {ninjaTurtles.map((turtle) => (
+        <h2>{turtle}</h2>
+      ))}
+    </main>
+  );
 }
 
-export default App;
