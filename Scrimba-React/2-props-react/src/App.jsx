@@ -120,40 +120,49 @@
 
 // export default App;
 
-import Contact from "./components/Contact";
+// import Contact from "./components/Contact";
 
-// Handling static assets
-import catImg from "./assets/cat.jpg";
+// // Handling static assets
+// import catImg from "./assets/cat.jpg";
+
+// function App() {
+//   return (
+//     <div className="contacts">
+//       <Contact
+//         img={catImg}
+//         name="Mr. Whiskerson"
+//         phone="(212) 555-1234"
+//         email="mr.whiskaz@catnap.meow"
+//       />
+//       <Contact
+//         img={catImg}
+//         name="Fluffykins"
+//         phone="(212) 555-2345"
+//         email="fluff@me.com"
+//       />
+//       <Contact
+//         img={catImg}
+//         name="Felix"
+//         phone="(212) 555-4567"
+//         email="thecat@hotmail.com"
+//       />
+//       <Contact
+//         img={catImg}
+//         name="Pumpkin"
+//         phone="(0800) CAT KING"
+//         email="pumpkin@scrimba.com"
+//       />
+//     </div>
+//   );
+// }
 
 function App() {
+  const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"];
   return (
-    <div className="contacts">
-      <Contact
-        img={catImg}
-        name="Mr. Whiskerson"
-        phone="(212) 555-1234"
-        email="mr.whiskaz@catnap.meow"
-      />
-      <Contact
-        img={catImg}
-        name="Fluffykins"
-        phone="(212) 555-2345"
-        email="fluff@me.com"
-      />
-      <Contact
-        img={catImg}
-        name="Felix"
-        phone="(212) 555-4567"
-        email="thecat@hotmail.com"
-      />
-      <Contact
-        img={catImg}
-        name="Pumpkin"
-        phone="(0800) CAT KING"
-        email="pumpkin@scrimba.com"
-      />
-    </div>
-  );
+    <>
+      {ninjaTurtles.map(turtle => <p>{turtle}</p>)}
+    </>
+  )
 }
 
 export default App;
