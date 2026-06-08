@@ -5,10 +5,10 @@ const squaredNums = nums.map(num => num * num);
 
 const names = ["alice", "bob", "charlie", "danielle"]
 
-const firstCapitalLetter = names.map(name => name[0].toUpperCase());
-// console.log(firstCapitalLetter);
+const capitalized = names.map(name => name[0].toUpperCase() + name.slice(1));
+console.log(capitalized);
 
 const pokemon = ["Bulbasaur", "Charmander", "Squirtle"]
 
 const pTagPokemon = pokemon.map(p => `<p>${p}</p>`);
-console.log(pTagPokemon);
+// console.log(pTagPokemon);
