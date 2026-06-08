@@ -44,81 +44,81 @@
 // const {img: image, name} = person;
 // console.log(image, name);
 
-import Jokes from "./components/Jokes";
+// import Jokes from "./components/Jokes";
 
-function App() {
-  return (
-    <>
-      <Jokes
-        setup="I got my daughter a fridge for her birthday."
-        punchline="I can't wait to see her face light up when she opens it."
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={true}
-      />
-      <Jokes
-        setup="How did the hacker escape the police?"
-        punchline="He just ransomware!"
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={true}
-      />
-      <Jokes
-        setup="Why don't pirates travel on mountain roads?"
-        punchline="Scurvy."
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={true}
-      />
-      <Jokes
-        setup="Why do bees stay in the hive in the winter?"
-        punchline="Swarm."
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={true}
-      />
-      <Jokes
-        setup="What's the best thing about Switzerland?"
-        punchline="I don't know, but the flag is a big plus!"
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={false}
-      />
-      <Jokes
-        punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
-        upvotes={22}
-        downvotes={10}
-        comments={[
-          { author: "Kunal", text: "What a Joke!" },
-          { author: "Oinku", text: "Oink Oink Oink" },
-        ]}
-        isPun={true}
-      />
-    </>
-  );
-}
+// function App() {
+//   return (
+//     <>
+//       <Jokes
+//         setup="I got my daughter a fridge for her birthday."
+//         punchline="I can't wait to see her face light up when she opens it."
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={true}
+//       />
+//       <Jokes
+//         setup="How did the hacker escape the police?"
+//         punchline="He just ransomware!"
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={true}
+//       />
+//       <Jokes
+//         setup="Why don't pirates travel on mountain roads?"
+//         punchline="Scurvy."
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={true}
+//       />
+//       <Jokes
+//         setup="Why do bees stay in the hive in the winter?"
+//         punchline="Swarm."
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={true}
+//       />
+//       <Jokes
+//         setup="What's the best thing about Switzerland?"
+//         punchline="I don't know, but the flag is a big plus!"
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={false}
+//       />
+//       <Jokes
+//         punchline="It’s hard to explain puns to kleptomaniacs because they always take things literally."
+//         upvotes={22}
+//         downvotes={10}
+//         comments={[
+//           { author: "Kunal", text: "What a Joke!" },
+//           { author: "Oinku", text: "Oink Oink Oink" },
+//         ]}
+//         isPun={true}
+//       />
+//     </>
+//   );
+// }
 
-export default App;
+// export default App;
 
 // import Contact from "./components/Contact";
 
@@ -169,3 +169,17 @@ export default App;
 //   );
 // }
 
+import Jokes from "./components/Jokes";
+import jokesList from "./data/JokesData";
+
+export default function App() {
+  const joke = jokesList.map((joke) => {
+    return (
+      <>
+        <Jokes setup={joke.setup} punchline={joke.punchline} />
+      </>
+    );
+  });
+
+  return <main>{joke}</main>;
+}
