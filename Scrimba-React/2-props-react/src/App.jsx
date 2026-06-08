@@ -158,14 +158,14 @@
 
 // export default App;
 
-export default function App() {
-  const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"];
-  return (
-    <main>
-      {ninjaTurtles.map((turtle) => (
-        <h2>{turtle}</h2>
-      ))}
-    </main>
-  );
-}
+// export default function App() {
+//   const ninjaTurtles = ["Donatello", "Michaelangelo", "Rafael", "Leonardo"];
+//   return (
+//     <main>
+//       {ninjaTurtles.map((turtle) => (
+//         <h2>{turtle}</h2>
+//       ))}
+//     </main>
+//   );
+// }
 
