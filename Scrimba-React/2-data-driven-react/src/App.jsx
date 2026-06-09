@@ -8,15 +8,17 @@ function App() {
     <>
       <Header />
       {data.map((entry) => {
-        <Entry
-          key={entry.id}
-          img={entry.img}
-          title={entry.title}
-          country={entry.country}
-          googleMapsLink={entry.googleMapsLink}
-          dates={entry.dates}
-          text={entry.text}
-        />;
+        return (
+          <Entry
+            key={entry.id}
+            img={entry.img}
+            title={entry.title}
+            country={entry.country}
+            googleMapsLink={entry.googleMapsLink}
+            dates={entry.dates}
+            text={entry.text}
+          />
+        );
       })}
       {/* <Entry
         img={{
