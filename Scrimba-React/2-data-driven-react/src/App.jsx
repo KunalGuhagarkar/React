@@ -7,7 +7,17 @@ function App() {
   return (
     <>
       <Header />
+
       {data.map((entry) => {
+        return (
+          <Entry
+            key={entry.id}
+            entries={entry}
+          />
+        );
+      })}
+
+      {/* {data.map((entry) => {
         return (
           <Entry
             key={entry.id}
@@ -19,7 +29,8 @@ function App() {
             text={entry.text}
           />
         );
-      })} 
+      })}  */}
+
       {/* <Entry
         img={{
           src: "https://scrimba.com/links/travel-journal-japan-image-url",
