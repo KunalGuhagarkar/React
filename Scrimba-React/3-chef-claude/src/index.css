@@ -25,14 +25,23 @@ body {
   margin-left: 10px;
 }
 
-
 .main-container {
-    margin: 50px;
-    background-color: red;    
+  margin: 10px;
+  background-color: red;
 }
 
 .form-container {
-    text-align: center;
-    background-color: blue;
-    margin: 20px;
+  background-color: blue;
+  margin: 10px;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container > input {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 500px;
+  height: 30px;
+  padding: 5px;  
 }
