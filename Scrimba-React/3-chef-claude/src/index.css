@@ -27,11 +27,12 @@ body {
 
 
 .main-container {
-    margin: 10px;
+    margin: 50px;
     background-color: red;    
 }
 
 .form-container {
-
+    text-align: center;
     background-color: blue;
+    margin: 20px;
 }
