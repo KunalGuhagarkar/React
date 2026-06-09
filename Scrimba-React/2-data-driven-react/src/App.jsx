@@ -9,7 +9,7 @@ function App() {
       <Header />
 
       {data.map((entry) => {
-        return <Entry key={entry.id} entries={entry} />;
+        return <Entry key={entry.id} {...entry} />;
       })}
 
       {/* {data.map((entry) => {
