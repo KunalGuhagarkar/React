@@ -5,11 +5,9 @@ function App() {
         src="https://picsum.photos/640/360"
         alt="Placeholder image from Picsum"
       />
-      <button>Click me</button>
+      <button className="btn">Click me</button>
     </main>
   );
 }
-
-some
 
 export default App;
