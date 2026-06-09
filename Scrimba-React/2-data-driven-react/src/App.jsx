@@ -19,7 +19,7 @@ function App() {
             text={entry.text}
           />
         );
-      })}
+      })} 
       {/* <Entry
         img={{
           src: "https://scrimba.com/links/travel-journal-japan-image-url",
