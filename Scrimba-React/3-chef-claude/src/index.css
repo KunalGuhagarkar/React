@@ -39,7 +39,7 @@ body {
 
 .form-container > input {
   background-color: whitesmoke;
-  border: black;
+  border: 1px solid #D1D5DB;
   border-radius: 5px;
   width: 400px;
   height: 40px;
