@@ -27,11 +27,9 @@ body {
 
 .main-container {
   margin: 10px;
-  background-color: red;
 }
 
 .form-container {
-  background-color: blue;
   margin: 10px;
   padding: 60px;
   display: flex;
