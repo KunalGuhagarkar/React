@@ -1,11 +1,16 @@
 function App() {
   function handleClick() {
-    return console.log("Clicked");
+    console.log("Clicked");
+  }
+
+  function handleMouseEnter() {
+    console.log("Mouse Entered");
   }
 
   return (
     <main className="container">
       <img
+        onMouseEnter={handleMouseEnter}
         src="https://picsum.photos/640/360"
         alt="Placeholder image from Picsum"
       />
