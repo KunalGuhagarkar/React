@@ -1,8 +1,12 @@
-function App () {
+function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
+    <main className="container">
+      <img
+        src="https://picsum.photos/640/360"
+        alt="Placeholder image from Picsum"
+      />
+      <button>Click me</button>
+    </main>
   );
 }
 
