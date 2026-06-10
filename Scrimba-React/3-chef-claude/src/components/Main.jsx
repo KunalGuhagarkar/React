@@ -13,9 +13,9 @@ export default function Main() {
   return (
     <div className="main-container">
       <div className="form-container">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input type="text" placeholder="e.g. oregano" />
-          <button onSubmit={handleSubmit}>+ Add ingredient</button>
+          <button>+ Add ingredient</button>
         </form>
       </div>
       <ul>{ingredientsListItems}</ul>
