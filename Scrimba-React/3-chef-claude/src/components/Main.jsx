@@ -9,7 +9,6 @@ export default function Main() {
     e.preventDefault();
     console.log("Form Submitted!");
     const formData = new FormData(event.currentTarget);
-    console.log(formData);
     const newIngredient = formData.get("ingredient");
     console.log(newIngredient);
   }
