@@ -8,13 +8,14 @@ export default function Main() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Submitted!");
+    console.log(e.target);
   }
 
   return (
     <div className="main-container">
       <div className="form-container">
         <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="e.g. oregano" />
+          <input type="text" placeholder="e.g. oregano" name="ingredient" />
           <button>+ Add ingredient</button>
         </form>
       </div>
