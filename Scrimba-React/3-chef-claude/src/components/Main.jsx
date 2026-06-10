@@ -5,16 +5,17 @@ export default function Main() {
     return <li key={item}>{item}</li>;
   });
 
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault();
     console.log("Form Submitted!");
   }
 
   return (
     <div className="main-container">
       <div className="form-container">
-        <form reload>
+        <form>
           <input type="text" placeholder="e.g. oregano" />
-          <button onClick={handleSubmit}>+ Add ingredient</button>
+          <button onSubmit={() => handleSubmit(event)}>+ Add ingredient</button>
         </form>
       </div>
       <ul>{ingredientsListItems}</ul>
