@@ -8,7 +8,7 @@ export default function Main() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Submitted!");
-    console.log(e.target);
+    console.log(e.currentTarget);
   }
 
   return (
