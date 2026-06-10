@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <div className="main-container">
       <div className="form-container">
-        <form action="">
+        <form action="/">
           <input type="text" placeholder="e.g. oregano" />
           <button onSubmit={handleSubmit}>+ Add ingredient</button>
         </form>
