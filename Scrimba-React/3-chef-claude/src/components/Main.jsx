@@ -8,7 +8,6 @@ export default function Main() {
   function handleSubmit(e) {
     e.preventDefault();
     console.log("Form Submitted!");
-    console.log(e);
     const formData = new FormData(e.currentTarget);
     console.log(formData);
     const newIngredient = formData.get("ingredient");
