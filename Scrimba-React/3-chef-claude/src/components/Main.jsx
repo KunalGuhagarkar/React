@@ -12,9 +12,9 @@ export default function Main() {
   return (
     <div className="main-container">
       <div className="form-container">
-        <form action="/">
+        <form reload>
           <input type="text" placeholder="e.g. oregano" />
-          <button onSubmit={handleSubmit}>+ Add ingredient</button>
+          <button onClick={handleSubmit}>+ Add ingredient</button>
         </form>
       </div>
       <ul>{ingredientsListItems}</ul>
