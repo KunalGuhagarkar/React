@@ -5,8 +5,8 @@ export default function Main() {
     return <li key={item}>{item}</li>;
   });
 
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
     console.log("Form Submitted!");
   }
 
@@ -15,7 +15,7 @@ export default function Main() {
       <div className="form-container">
         <form>
           <input type="text" placeholder="e.g. oregano" />
-          <button onSubmit={() => handleSubmit(event)}>+ Add ingredient</button>
+          <button onSubmit={handleSubmit}>+ Add ingredient</button>
         </form>
       </div>
       <ul>{ingredientsListItems}</ul>
