@@ -1,4 +1,5 @@
 export default function Main() {
+  const ingredients = ["Chicken", "Oregano", "Tomatoes"];
   return (
     <div className="main-container">
       <div className="form-container">
@@ -6,10 +7,12 @@ export default function Main() {
           <input type="text" placeholder="e.g. oregano" />
           <button>+ Add ingredient</button>
         </form>
-        <ul>
-          {/* Render the list here... */}
-        </ul>
       </div>
+      <ul>
+        {ingredients.map((item) => {
+          return <li>{item}</li>;
+        })}
+      </ul>
     </div>
   );
 }
