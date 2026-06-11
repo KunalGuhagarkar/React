@@ -12,6 +12,8 @@ export default function Main() {
     console.log(formData);
     const newIngredient = formData.get("ingredient");
     console.log(newIngredient);
+    ingredients.push(newIngredient);
+    console.log(ingredients);
   }
 
   return (

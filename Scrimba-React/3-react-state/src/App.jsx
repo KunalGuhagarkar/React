@@ -1,21 +1,28 @@
+import { useState } from "react";
+
 function App() {
-  function handleClick() {
-    console.log("Clicked");
+  const [count, setCount] = useState(0);
+
+  function add() {
+    setCount(prevCount => prevCount + 1);
   }
 
-  function handleMouseEnter() {
-    console.log("Mouse Entered");
+  function minus() {
+    setCount(prevCount => prevCount - 1);
   }
 
   return (
     <main className="container">
-      <img
-        onMouseEnter={handleMouseEnter}
-        src="https://picsum.photos/640/360"
-        alt="Placeholder image from Picsum"
-      />
-      {/* <button onClick={() => console.log("Clicked")}>Click me</button> */}
-      <button onClick={handleClick}>Click me</button>
+      <h1>How many times will Bob say "state" in this section?</h1>
+      <div className="counter">
+        <button onClick={minus} className="minus" aria-label="Decrease count">
+          –
+        </button>
+        <h2 className="count">{count}</h2>
+        <button onClick={add} className="plus" aria-label="Increase count">
+          +
+        </button>
+      </div>
     </main>
   );
 }
