@@ -29,9 +29,13 @@
 
 // export default App;
 
+import { useState } from "react";
+
 export default function App() {
-  const isGoingOut = true;
+  // const isGoingOut = true;
   // let answer = isGoingOut ? "Yes" : "No"; // 👈 Use ternary here
+
+  const [isGoingOut, setIsGoingOut] = useState(true);
 
   // Remove the code below 👇 once your ternary is done
   // if (isGoingOut === true) {
@@ -40,10 +44,16 @@ export default function App() {
   //   answer = "No";
   // }
 
+  function handleToggle() {
+    setIsGoingOut(!isGoingOut);
+  }
+
   return (
     <main>
       <h1 className="title">Do I feel like going out tonight?</h1>
-      <button className="value">{isGoingOut ? "Yes" : "No"}</button>
+      <button onClick={handleToggle} className="value">
+        {isGoingOut ? "Yes" : "No"}
+      </button>
     </main>
   );
 }
