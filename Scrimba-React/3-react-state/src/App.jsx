@@ -44,14 +44,14 @@ export default function App() {
   //   answer = "No";
   // }
 
-  function handleToggle() {
-    setIsGoingOut(!isGoingOut);
-  }
+  // function handleToggle() {
+  //   setIsGoingOut(!isGoingOut);
+  // }
 
   return (
     <main>
       <h1 className="title">Do I feel like going out tonight?</h1>
-      <button onClick={handleToggle} className="value">
+      <button onClick={() => setIsGoingOut(!isGoingOut)} className="value">
         {isGoingOut ? "Yes" : "No"}
       </button>
     </main>
