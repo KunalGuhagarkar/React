@@ -58,35 +58,91 @@
 //   );
 // }
 
-import { useState } from "react";
+// import { useState } from "react";
+
+// export default function App() {
+//   const [myFavoriteThings, setMyFavoriteThings] = useState([]);
+//   const allFavoriteThings = [
+//     "💦🌹",
+//     "😺",
+//     "💡🫖",
+//     "🔥🧤",
+//     "🟤🎁",
+//     "🐴",
+//     "🍎🥧",
+//     "🚪🔔",
+//     "🛷🔔",
+//     "🥩🍝",
+//   ];
+
+//   const thingsElements = myFavoriteThings.map((thing) => (
+//     <p key={thing}>{thing}</p>
+//   ));
+
+//   function addFavoriteThing() {
+//     setMyFavoriteThings(prevFavList => [...prevFavList, allFavoriteThings[prevFavList.length]]);
+//   }
+
+//   return (
+//     <main>
+//       <button onClick={addFavoriteThing}>Add item</button>
+//       <section aria-live="polite">{thingsElements}</section>
+//     </main>
+//   );
+// }
+
+import React from "react";
+import avatar from "./assets/avatar.png";
+import starFilled from "./assets/star.png";
+import starEmpty from "./assets/star-empty.png";
 
 export default function App() {
-  const [myFavoriteThings, setMyFavoriteThings] = useState([]);
-  const allFavoriteThings = [
-    "💦🌹",
-    "😺",
-    "💡🫖",
-    "🔥🧤",
-    "🟤🎁",
-    "🐴",
-    "🍎🥧",
-    "🚪🔔",
-    "🛷🔔",
-    "🥩🍝",
-  ];
+  const [contact, setContact] = React.useState({
+    firstName: "John",
+    lastName: "Doe",
+    phone: "+1 (212) 555-1212",
+    email: "itsmyrealname@example.com",
+    isFavorite: false,
+  });
 
-  const thingsElements = myFavoriteThings.map((thing) => (
-    <p key={thing}>{thing}</p>
-  ));
+  let starIcon = contact.isFavorite ? starFilled : starEmpty;
 
-  function addFavoriteThing() {
-    setMyFavoriteThings(prevFavList => [...prevFavList, allFavoriteThings[prevFavList.length]]);
+  function toggleFavorite() {
+    setContact((prevContact) => {
+      return { ...prevContact, isFavorite: !prevContact.isFavorite };
+    });
   }
 
   return (
     <main>
-      <button onClick={addFavoriteThing}>Add item</button>
-      <section aria-live="polite">{thingsElements}</section>
+      <article className="card">
+        <img
+          src={avatar}
+          className="avatar"
+          alt="User profile picture of John Doe"
+        />
+        <div className="info">
+          <button
+            onClick={toggleFavorite}
+            aria-pressed={contact.isFavorite}
+            aria-label={
+              contact.isFavorite ? "Remove From Favorites" : "Add To Favorites"
+            }
+            className="favorite-button"
+          >
+            <img
+              src={starIcon}
+              alt={contact.isFavorite ? "filled star icon" : "empty star icon"}
+              className="favorite"
+            />
+          </button>
+          <h2 className="name">
+            {contact.firstName} {contact.lastName}
+          </h2>
+          <p className="contact">{contact.phone}</p>
+          <p className="contact">{contact.email}</p>
+        </div>
+      </article>
     </main>
   );
 }
