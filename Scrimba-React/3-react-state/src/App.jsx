@@ -202,7 +202,7 @@ function App() {
             Part-Time
           </label>
           <label>
-            <input type="radio" name="employmentStatus" value="Full-time" />
+            <input type="radio" name="employmentStatus" value="Full-time" defaultChecked />
             Full-Time
           </label>
         </fieldset>
