@@ -156,12 +156,17 @@ function App() {
         <br />
         <input type="radio" />
         <br />
-        {/* <label>
+        <label>
           Email
           <input type="email" name="email" placeholder="joe@example.com" />
-        </label> */}
-        <label htmlFor="email">Email</label>
-          <input type="email" name="email" placeholder="jane@example.com" />
+        </label>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="jane@example.com"
+        />
       </form>
     </section>
   );
