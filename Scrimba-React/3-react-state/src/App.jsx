@@ -152,14 +152,6 @@ function App() {
     <section>
       <h1>Signup Form</h1>
       <form>
-        <input type="text" />
-        <br />
-        <input type="radio" />
-        <br />
-        <label>
-          Email
-          <input type="email" name="email" placeholder="joe@example.com" />
-        </label>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
@@ -169,7 +161,12 @@ function App() {
         />
         <br />
         <label htmlFor="password">Password:</label>
-        <input type="password" name="password" id="password" placeholder="xxxx" />
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="xxxx"
+        />
         <br />
 
         <button type="submit">Submit</button>
