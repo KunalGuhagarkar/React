@@ -148,7 +148,6 @@
 // }
 
 function App() {
-
   function handleSubmit(e) {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -157,7 +156,7 @@ function App() {
     console.log(email);
     const password = formData.get("password");
     console.log(password);
-    e.currentTarget.reset();
+    e.currentTarget.reset(); // resets the form (clears input fields)
   }
 
   return (
