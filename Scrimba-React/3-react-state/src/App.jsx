@@ -153,7 +153,9 @@ function App() {
       <h1>Signup Form</h1>
       <form>
         <input type="text" />
+        <br />
         <input type="radio" />
+        <br />
         <input type="email" name="email" />
       </form>
     </section>
