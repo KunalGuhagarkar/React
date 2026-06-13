@@ -170,6 +170,8 @@ function App() {
         <br />
         <label htmlFor="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="xxxx" />
+        <br />
+        <input type="submit" value="Click" />
       </form>
     </section>
   );
