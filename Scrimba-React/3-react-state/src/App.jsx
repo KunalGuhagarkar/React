@@ -148,10 +148,17 @@
 // }
 
 function App() {
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    console.log(formData);
+  }
+
   return (
     <section>
       <h1>Signup Form</h1>
-      <form>
+      <form onSubmit={handleSubmit} method="post">
         <label htmlFor="email">Email:</label>
         <input
           type="email"
