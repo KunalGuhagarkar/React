@@ -159,7 +159,9 @@ function App() {
           name="email"
           placeholder="jane@example.com"
         />
+
         <br />
+
         <label htmlFor="password">Password:</label>
         <input
           type="password"
@@ -167,6 +169,7 @@ function App() {
           id="password"
           placeholder="xxxx"
         />
+
         <br />
 
         <button type="submit">Submit</button>
