@@ -159,7 +159,7 @@ function App() {
   return (
     <section>
       <h1>Signup Form</h1>
-      <form action={handleSubmit} method="post">
+      <form action={handleSubmit}>
         <label htmlFor="email">Email:</label>
         <input
           type="email"
