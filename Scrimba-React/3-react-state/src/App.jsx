@@ -162,6 +162,7 @@ function App() {
       <form action={handleSubmit}>
         <label htmlFor="email">Email:</label>
         <input
+          defaultValue="jane@example.com"
           type="email"
           id="email"
           name="email"
@@ -172,6 +173,7 @@ function App() {
 
         <label htmlFor="password">Password:</label>
         <input
+          defaultValue="password123"
           type="password"
           name="password"
           id="password"
