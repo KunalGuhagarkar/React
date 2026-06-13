@@ -186,7 +186,8 @@ function App() {
         <textarea name="description" id="description"></textarea>
 
         <label>
-          <input type="radio" name="" id="" />
+          <input type="radio" />
+          Label Text
         </label>
 
         <button type="submit">Submit</button>
