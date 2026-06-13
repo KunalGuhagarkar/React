@@ -194,11 +194,11 @@ function App() {
             Unemployed
           </label>
           <label>
-            <input type="radio" name="employmentStatus" />
+            <input type="radio" name="employmentStatus" value="Part-time" />
             Part-Time
           </label>
           <label>
-            <input type="radio" name="employmentStatus" />
+            <input type="radio" name="employmentStatus" value="Full-time" />
             Full-Time
           </label>
         </fieldset>
