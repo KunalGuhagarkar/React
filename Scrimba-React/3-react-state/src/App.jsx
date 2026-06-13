@@ -168,7 +168,7 @@ function App() {
           placeholder="jane@example.com"
         />
         <br />
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="xxxx" />
       </form>
     </section>
