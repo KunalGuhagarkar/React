@@ -172,6 +172,7 @@ function App() {
         <input type="password" name="password" id="password" placeholder="xxxx" />
         <br />
         <input type="submit" value="Click" />
+        <button>Click Me</button>
       </form>
     </section>
   );
