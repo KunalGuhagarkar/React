@@ -189,15 +189,15 @@ function App() {
           <legend>Employee Status:</legend>
           <label>
             <input type="radio" />
-            Label Text
+            Unemployed
           </label>
           <label>
             <input type="radio" />
-            Label Text
+            Part-Time
           </label>
           <label>
             <input type="radio" />
-            Label Text
+            Full-Time
           </label>
         </fieldset>
 
