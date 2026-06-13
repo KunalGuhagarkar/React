@@ -185,18 +185,21 @@ function App() {
         <label htmlFor="description">Description:</label>
         <textarea name="description" id="description"></textarea>
 
-        <label>
-          <input type="radio" />
-          Label Text
-        </label>
-        <label>
-          <input type="radio" />
-          Label Text
-        </label>
-        <label>
-          <input type="radio" />
-          Label Text
-        </label>
+        <fieldset>
+          <legend>Employee Status:</legend>
+          <label>
+            <input type="radio" />
+            Label Text
+          </label>
+          <label>
+            <input type="radio" />
+            Label Text
+          </label>
+          <label>
+            <input type="radio" />
+            Label Text
+          </label>
+        </fieldset>
 
         <button type="submit">Submit</button>
       </form>
