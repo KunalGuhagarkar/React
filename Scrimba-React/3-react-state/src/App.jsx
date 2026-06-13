@@ -190,7 +190,7 @@ function App() {
         <fieldset>
           <legend>Employee Status:</legend>
           <label>
-            <input type="radio" name="employmentStatus" />
+            <input type="radio" name="employmentStatus" value="Unemployed" />
             Unemployed
           </label>
           <label>
