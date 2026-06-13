@@ -156,7 +156,10 @@ function App() {
         <br />
         <input type="radio" />
         <br />
-        <input type="email" name="email" />
+        <label>
+          Email
+          <input type="email" name="email" placeholder="joe@example.com" />
+        </label>
       </form>
     </section>
   );
