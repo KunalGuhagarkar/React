@@ -185,7 +185,11 @@ function App() {
         <br />
 
         <label htmlFor="description">Description:</label>
-        <textarea name="description" id="description"></textarea>
+        <textarea
+          name="description"
+          id="description"
+          defaultValue="This is a description"
+        ></textarea>
 
         <fieldset>
           <legend>Employee Status:</legend>
