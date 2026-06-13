@@ -1,64 +1,46 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #bdbdbd;
-    margin: 0;
-    font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 10px;
+  background-color: #2dd4bf;
+  color: #262626;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  padding-inline: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 4px;
 }
 
 input {
-    margin: 10px;
+  border-radius: 100px;
+  border: 1px solid #0d9488;
+  height: 2rem;
+  text-indent: 10px;
 }
 
-/* main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button {
+  border-radius: 100px;
+  border: 1px solid #0d9488;
+  padding: 10px 30px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.1s ease-in-out;
 }
 
-.card {
-    background-color: white;
-    width: 200px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    height: 350px;
+button:hover {
+  background-color: #115e59;
+  border-color: #042f2e;
+  color: white;
 }
-
-.card .avatar {
-    width: 100%;
-    padding: 10%;
-    padding-bottom: 0;
-}
-
-.card .name {
-    margin-block: 13px;
-    color: #333333;
-}
-
-.card .info {
-    padding: 10px;
-}
-
-.card .favorite {
-    width: 25px;
-    cursor: pointer;
-}
-
-.card .contact {
-    font-size: 0.75rem;
-    color: gray;
-    margin-block: 7px;
-}
-
-.card .favorite-button {
-    border: none;
-    background: transparent;
-}
-
-.card .favorite-button:active {
-    transform: none;
-    box-shadow: none;
-} */
