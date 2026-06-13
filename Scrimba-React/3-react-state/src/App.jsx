@@ -180,6 +180,9 @@ function App() {
 
         <br />
 
+        <label htmlFor="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+
         <button type="submit">Submit</button>
       </form>
     </section>
