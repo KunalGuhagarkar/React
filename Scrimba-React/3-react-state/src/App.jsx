@@ -185,6 +185,10 @@ function App() {
         <label htmlFor="description">Description:</label>
         <textarea name="description" id="description"></textarea>
 
+        <label>
+          <input type="radio" name="" id="" />
+        </label>
+
         <button type="submit">Submit</button>
       </form>
     </section>
