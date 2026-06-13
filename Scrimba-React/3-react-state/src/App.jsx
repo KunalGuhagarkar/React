@@ -146,3 +146,17 @@
 //     </main>
 //   );
 // }
+
+function App() {
+  return (
+    <section>
+      <h1>Signup Form</h1>
+      <form>
+        <input type="text" />
+        <input type="radio" />
+      </form>
+    </section>
+  );
+}
+
+export default App;
