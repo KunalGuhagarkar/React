@@ -189,6 +189,14 @@ function App() {
           <input type="radio" />
           Label Text
         </label>
+        <label>
+          <input type="radio" />
+          Label Text
+        </label>
+        <label>
+          <input type="radio" />
+          Label Text
+        </label>
 
         <button type="submit">Submit</button>
       </form>
