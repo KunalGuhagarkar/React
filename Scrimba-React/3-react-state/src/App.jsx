@@ -157,6 +157,7 @@ function App() {
     console.log(email);
     const password = formData.get("password");
     console.log(password);
+    e.currentTarget.reset();
   }
 
   return (
