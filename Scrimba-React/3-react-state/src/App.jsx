@@ -171,10 +171,10 @@ function App() {
         <label htmlFor="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="xxxx" />
         <br />
-        {/* <input type="submit" value="Click" /> */}
+        <input type="submit" value="Click" />
         <button type="button">Click Me</button>
+        <button type="submit">Click To Submit</button>
       </form>
-      <button type="submit">Click To Submit</button>
     </section>
   );
 }
