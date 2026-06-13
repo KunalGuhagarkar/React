@@ -8,6 +8,10 @@ body {
     font-family: "Inter", sans-serif;
 }
 
+input {
+    padding: 5px;
+}
+
 /* main {
     height: 100vh;
     display: flex;
