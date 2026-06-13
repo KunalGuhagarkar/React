@@ -148,21 +148,18 @@
 // }
 
 function App() {
-  function handleSubmit(e) {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+  function handleSubmit(formData) {
     console.log(formData);
     const email = formData.get("email");
     console.log(email);
     const password = formData.get("password");
     console.log(password);
-    e.currentTarget.reset(); // resets the form (clears input fields)
   }
 
   return (
     <section>
       <h1>Signup Form</h1>
-      <form onSubmit={handleSubmit} method="post">
+      <form action={handleSubmit} method="post">
         <label htmlFor="email">Email:</label>
         <input
           type="email"
