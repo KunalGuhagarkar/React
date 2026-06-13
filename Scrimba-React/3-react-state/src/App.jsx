@@ -154,6 +154,8 @@ function App() {
     console.log(email);
     const password = formData.get("password");
     console.log(password);
+    const radio = formData.get("employmentStatus");
+    console.log(radio);
   }
 
   return (
