@@ -154,6 +154,7 @@ function App() {
       <form>
         <input type="text" />
         <input type="radio" />
+        <input type="email" name="email" />
       </form>
     </section>
   );
