@@ -150,16 +150,17 @@
 function App() {
   function handleSubmit(formData) {
     console.log(formData);
-    const email = formData.get("email");
-    console.log(email);
-    const password = formData.get("password");
-    console.log(password);
-    const radio = formData.get("employmentStatus");
-    console.log(radio);
-    const checkbox = formData.getAll("dietaryRestrictions");
-    console.log(checkbox);
-    const select = formData.get("fav-color");
-    console.log(select);
+    // const email = formData.get("email");
+    // console.log(email);
+    // const password = formData.get("password");
+    // console.log(password);
+    // const radio = formData.get("employmentStatus");
+    // console.log(radio);
+    // const checkbox = formData.getAll("dietaryRestrictions");
+    // console.log(checkbox);
+    // const select = formData.get("fav-color");
+    // console.log(select);
+    console.log(Object.fromEntries(formData));
   }
 
   return (
