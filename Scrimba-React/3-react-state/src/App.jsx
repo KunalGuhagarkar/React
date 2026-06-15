@@ -158,6 +158,8 @@ function App() {
     console.log(radio);
     const checkbox = formData.getAll("dietaryRestrictions");
     console.log(checkbox);
+    const select = formData.get("fav-color");
+    console.log(select);
   }
 
   return (
@@ -240,7 +242,7 @@ function App() {
           </label>
         </fieldset>
 
-        <label htmlFor="">What is your favorite color?</label>
+        <label htmlFor="fav-color">What is your favorite color?</label>
         <select name="fav-color" id="fav-color">
           <option value="red">Red</option>
           <option value="blue">Blue</option>
