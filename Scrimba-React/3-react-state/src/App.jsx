@@ -156,7 +156,7 @@ function App() {
     console.log(password);
     const radio = formData.get("employmentStatus");
     console.log(radio);
-    const checkbox = formData.get("dietaryRestrictions");
+    const checkbox = formData.getAll("dietaryRestrictions");
     console.log(checkbox);
   }
 
