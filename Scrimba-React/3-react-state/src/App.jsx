@@ -212,6 +212,27 @@ function App() {
           </label>
         </fieldset>
 
+        <fieldset>
+          <legend>Dietary Restrictions:</legend>
+          <label>
+            <input type="checkbox" name="employmentStatus" value="Unemployed" />
+            Unemployed
+          </label>
+          <label>
+            <input type="checkbox" name="employmentStatus" value="Part-time" />
+            Part-Time
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="employmentStatus"
+              value="Full-time"
+              defaultChecked
+            />
+            Full-Time
+          </label>
+        </fieldset>
+
         <button type="submit">Submit</button>
       </form>
     </section>
