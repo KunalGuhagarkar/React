@@ -163,7 +163,7 @@ function App() {
     // console.log(Object.fromEntries(formData));
     const data = Object.fromEntries(formData);
     console.log(data);
-    const dietaryData = data.dietaryRestrictions;
+    const dietaryData = data.getAll("dietaryRestrictions");
     console.log(dietaryData);
   }
 
