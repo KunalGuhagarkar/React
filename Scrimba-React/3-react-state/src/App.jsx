@@ -243,7 +243,7 @@ function App() {
         </fieldset>
 
         <label htmlFor="fav-color">What is your favorite color?</label>
-        <select name="fav-color" id="fav-color">
+        <select name="fav-color" id="fav-color" defaultValue="" required>
           <option value="" disabled>-- Choose a color --</option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
