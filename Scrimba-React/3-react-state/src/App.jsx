@@ -149,7 +149,7 @@
 
 function App() {
   function handleSubmit(formData) {
-    console.log(formData);
+    // console.log(formData);
     // const email = formData.get("email");
     // console.log(email);
     // const password = formData.get("password");
@@ -160,7 +160,11 @@ function App() {
     // console.log(checkbox);
     // const select = formData.get("fav-color");
     // console.log(select);
-    console.log(Object.fromEntries(formData));
+    // console.log(Object.fromEntries(formData));
+    const data = Object.fromEntries(formData);
+    console.log(data);
+    const dietaryData = data.dietaryRestrictions;
+    console.log(dietaryData);
   }
 
   return (
