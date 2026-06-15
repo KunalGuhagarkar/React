@@ -163,7 +163,7 @@ function App() {
     // console.log(Object.fromEntries(formData));
     const data = Object.fromEntries(formData);
     console.log(data);
-    const dietaryData = data.getAll("dietaryRestrictions");
+    const dietaryData = formData.getAll("dietaryRestrictions");
     console.log(dietaryData);
   }
 
@@ -249,7 +249,9 @@ function App() {
 
         <label htmlFor="fav-color">What is your favorite color?</label>
         <select name="fav-color" id="fav-color" defaultValue="" required>
-          <option value="" disabled>-- Choose a color --</option>
+          <option value="" disabled>
+            -- Choose a color --
+          </option>
           <option value="red">Red</option>
           <option value="blue">Blue</option>
           <option value="green">Green</option>
