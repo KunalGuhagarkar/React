@@ -1,4 +1,4 @@
-export default function Joke(props) {
+export default function Jokes(props) {
   /**
    * Challenge:
    * - Create state `isShown` (boolean, default to `false`)

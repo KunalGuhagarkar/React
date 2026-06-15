@@ -267,12 +267,12 @@
 
 // export default App;
 
-import Joke from "./Joke";
-import jokesData from "./jokesData";
+import Jokes from "./components/Jokes";
+import jokesData from "./data/jokesData";
 
 export default function App() {
   const jokeElements = jokesData.map((joke) => {
-    return <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />;
+    return <Jokes key={joke.id} setup={joke.setup} punchline={joke.punchline} />;
   });
   return <div>{jokeElements}</div>;
 }
