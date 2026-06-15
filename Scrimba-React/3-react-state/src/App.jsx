@@ -219,7 +219,12 @@ function App() {
             Unemployed
           </label>
           <label>
-            <input type="checkbox" name="employmentStatus" value="Part-time" />
+            <input
+              type="checkbox"
+              name="employmentStatus"
+              value="Part-time"
+              defaultChecked
+            />
             Part-Time
           </label>
           <label>
@@ -227,7 +232,7 @@ function App() {
               type="checkbox"
               name="employmentStatus"
               value="Full-time"
-              defaultChecked
+              defaultChecked  
             />
             Full-Time
           </label>
