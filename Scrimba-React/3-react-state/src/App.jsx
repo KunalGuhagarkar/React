@@ -215,26 +215,26 @@ function App() {
         <fieldset>
           <legend>Dietary Restrictions:</legend>
           <label>
-            <input type="checkbox" name="employmentStatus" value="Unemployed" />
-            Unemployed
+            <input type="checkbox" name="employmentStatus" value="Kosher" />
+            Kosher
           </label>
           <label>
             <input
               type="checkbox"
               name="employmentStatus"
-              value="Part-time"
+              value="Vegan"
               defaultChecked
             />
-            Part-Time
+            Vegan
           </label>
           <label>
             <input
               type="checkbox"
               name="employmentStatus"
-              value="Full-time"
+              value="Gluten-Free"
               defaultChecked  
             />
-            Full-Time
+            Gluten-Free
           </label>
         </fieldset>
 
