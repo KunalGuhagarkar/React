@@ -165,7 +165,7 @@ function App() {
     console.log(data);
     const dietaryData = formData.getAll("dietaryRestrictions");
     console.log(dietaryData);
-    const allData = { ...data, dietaryData };
+    const allData = { ...data, dietaryRestrictions: dietaryData };
     console.log(allData);
   }
 
