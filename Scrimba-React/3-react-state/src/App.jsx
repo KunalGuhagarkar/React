@@ -156,6 +156,8 @@ function App() {
     console.log(password);
     const radio = formData.get("employmentStatus");
     console.log(radio);
+    const checkbox = formData.get("dietaryRestrictions");
+    console.log(checkbox);
   }
 
   return (
@@ -215,13 +217,13 @@ function App() {
         <fieldset>
           <legend>Dietary Restrictions:</legend>
           <label>
-            <input type="checkbox" name="employmentStatus" value="Kosher" />
+            <input type="checkbox" name="dietaryRestrictions" value="Kosher" />
             Kosher
           </label>
           <label>
             <input
               type="checkbox"
-              name="employmentStatus"
+              name="dietaryRestrictions"
               value="Vegan"
               defaultChecked
             />
@@ -230,9 +232,9 @@ function App() {
           <label>
             <input
               type="checkbox"
-              name="employmentStatus"
+              name="dietaryRestrictions"
               value="Gluten-Free"
-              defaultChecked  
+              defaultChecked
             />
             Gluten-Free
           </label>
