@@ -30,7 +30,7 @@ export default function Main() {
           <ul className="ingredients-list" aria-live="polite">
             {ingredientsListItems}
           </ul>
-          {ingredientsList.length >= 3 && (
+          {ingredientsList.length > 3 && (
             <div className="get-recipe-container">
               <div>
                 <h3>Ready for a recipe?</h3>
