@@ -267,6 +267,34 @@
 
 // export default App;
 
+// import Jokes from "./components/Jokes";
+// import jokesData from "./data/jokesData";
+
+// export default function App() {
+//   const jokeElements = jokesData.map((joke) => {
+//     return (
+//       <Jokes key={joke.id} setup={joke.setup} punchline={joke.punchline} />
+//     );
+//   });
+//   return <div>{jokeElements}</div>;
+// }
+
+// import React from "react";
+
+// export default function App() {
+//   const [unreadMessages, setUnreadMessages] = React.useState([]);
+
+//   return (
+//     <div>
+//       {unreadMessages.length > 0 && (
+//         <h1>You have {unreadMessages.length} unread messages</h1>
+//       )}
+
+//       {unreadMessages.length === 0 && <p>You have no unread messages</p>}
+//     </div>
+//   );
+// }
+
 import Jokes from "./components/Jokes";
 import jokesData from "./data/jokesData";
 
