@@ -43,9 +43,7 @@ export default function Main() {
                 <h3>Ready for a recipe?</h3>
                 <p>Generate a recipe from your list of ingredients.</p>
               </div>
-              <button onClick={() => setRecipeShown((prev) => !prev)}>
-                Get a recipe
-              </button>
+              <button onClick={() => setRecipeShown(true)}>Get a recipe</button>
             </div>
           )}
         </section>
