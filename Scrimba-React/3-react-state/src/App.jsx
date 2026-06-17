@@ -296,18 +296,18 @@
 //   );
 // }
 
-
 import { useState } from "react";
+import Count from "./components/Count";
 
 function App() {
   const [count, setCount] = useState(0);
 
   function add() {
-    setCount(prevCount => prevCount + 1);
+    setCount((prevCount) => prevCount + 1);
   }
 
   function minus() {
-    setCount(prevCount => prevCount - 1);
+    setCount((prevCount) => prevCount - 1);
   }
 
   return (
@@ -317,7 +317,7 @@ function App() {
         <button onClick={minus} className="minus" aria-label="Decrease count">
           –
         </button>
-        <h2 className="count">{count}</h2>
+        <Count number={count} />
         <button onClick={add} className="plus" aria-label="Increase count">
           +
         </button>
