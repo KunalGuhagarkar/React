@@ -279,19 +279,51 @@
 //   return <div>{jokeElements}</div>;
 // }
 
-import React from "react";
+// import React from "react";
 
-export default function App() {
-  const [messages, setMessages] = React.useState([]);
+// export default function App() {
+//   const [messages, setMessages] = React.useState([]);
+
+//   return (
+//     <div>
+//       {messages.length === 0 && <h1>You're all caught up!</h1>}
+//       {messages.length >= 1 && (
+//         <h1>
+//           You have {messages.length} {messages.length === 1 ? "message" : "messages"}
+//         </h1>
+//       )}
+//     </div>
+//   );
+// }
+
+
+import { useState } from "react";
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  function add() {
+    setCount(prevCount => prevCount + 1);
+  }
+
+  function minus() {
+    setCount(prevCount => prevCount - 1);
+  }
 
   return (
-    <div>
-      {messages.length === 0 && <h1>You're all caught up!</h1>}
-      {messages.length >= 1 && (
-        <h1>
-          You have {messages.length} {messages.length === 1 ? "message" : "messages"}
-        </h1>
-      )}
-    </div>
+    <main className="container">
+      <h1>How many times will Bob say "state" in this section?</h1>
+      <div className="counter">
+        <button onClick={minus} className="minus" aria-label="Decrease count">
+          –
+        </button>
+        <h2 className="count">{count}</h2>
+        <button onClick={add} className="plus" aria-label="Increase count">
+          +
+        </button>
+      </div>
+    </main>
   );
 }
+
+export default App;
