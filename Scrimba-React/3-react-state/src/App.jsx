@@ -369,3 +369,34 @@
 //   );
 // }
 
+// import Header from "./components/Header";
+// import Body from "./components/Body";
+
+// import { useState } from "react";
+
+// export default function App() {
+//   const [userName, setUserName] = useState("Joe");
+//   return (
+//     <main>
+//       <Header username={userName} />
+//       <Body username={userName} />
+//     </main>
+//   );
+// }
+
+import pads from "./data/pads";
+import Pad from "./components/Pad";
+
+import { useState } from "react";
+
+export default function App() {
+  const [padArr, setPadArr] = useState([...pads]);
+
+  return (
+    <main>
+      <div className="pad-container">
+        <Pad color={padArr} />
+      </div>
+    </main>
+  );
+}
