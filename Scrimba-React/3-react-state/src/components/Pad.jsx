@@ -4,7 +4,7 @@ export default function Pad({ color }) {
       {color.map((pad) => (
         <button
           style={{ backgroundColor: pad.color }}
-          className={pad.on && "on"}
+          className={pad.on ? "on" : undefined}
           key={pad.id}
         ></button>
       ))}
