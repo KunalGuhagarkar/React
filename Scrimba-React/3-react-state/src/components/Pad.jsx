@@ -1,13 +1,9 @@
-export default function Pad({ color }) {
+export default function Pad(props) {
   return (
-    <>
-      {color.map((pad) => (
-        <button
-          style={{ backgroundColor: pad.color }}
-          className={pad.on ? "on" : undefined}
-          key={pad.id}
-        ></button>
-      ))}
-    </>
+    <button
+      onClick={() => props.toggle(props.id)}
+      style={{ backgroundColor: props.color }}
+      className={props.on ? "on" : undefined}
+    ></button>
   );
 }
