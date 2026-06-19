@@ -16,10 +16,6 @@ export default function Main() {
     setRecipeShown((prev) => !prev);
   }
 
-  const ingredientsListItems = ingredientsList.map((item) => {
-    return <li key={item}>{item}</li>;
-  });
-
   function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
     setIngredientsList((prevIngredientList) => [
@@ -40,7 +36,6 @@ export default function Main() {
       {ingredientsList.length > 0 && (
         <IngredientsList
           ingredientsList={ingredientsList}
-          ingredientsListItems={ingredientsListItems}
           toggleRecipe={toggleRecipe}
         />
       )}

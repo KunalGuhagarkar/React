@@ -1,8 +1,8 @@
-function IngredientsList({
-  ingredientsList,
-  ingredientsListItems,
-  toggleRecipe,
-}) {
+function IngredientsList({ ingredientsList, toggleRecipe }) {
+  const ingredientsListItems = ingredientsList.map((item) => {
+    return <li key={item}>{item}</li>;
+  });
+
   return (
     <section>
       <h2>Ingredients on hand:</h2>
