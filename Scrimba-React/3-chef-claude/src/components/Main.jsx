@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ClaudeRecipe from "./ClaudeRecipe";
+import IngredientsList from "./IngredientsList";
 
 export default function Main() {
   const [ingredientsList, setIngredientsList] = useState([
@@ -10,6 +11,10 @@ export default function Main() {
   ]);
 
   const [recipeShown, setRecipeShown] = useState(false);
+
+  function toggleRecipe() {
+    setRecipeShown((prev) => !prev);
+  }
 
   const ingredientsListItems = ingredientsList.map((item) => {
     return <li key={item}>{item}</li>;
@@ -33,23 +38,11 @@ export default function Main() {
       </div>
 
       {ingredientsList.length > 0 && (
-        <section>
-          <h2>Ingredients on hand:</h2>
-          <ul className="ingredients-list" aria-live="polite">
-            {ingredientsListItems}
-          </ul>
-          {ingredientsList.length > 3 && (
-            <div className="get-recipe-container">
-              <div>
-                <h3>Ready for a recipe?</h3>
-                <p>Generate a recipe from your list of ingredients.</p>
-              </div>
-              <button onClick={() => setRecipeShown(!recipeShown)}>
-                Get a recipe
-              </button>
-            </div>
-          )}
-        </section>
+        <IngredientsList
+          ingredientsList={ingredientsList}
+          ingredientsListItems={ingredientsListItems}
+          toggleRecipe={toggleRecipe}
+        />
       )}
 
       {recipeShown && <ClaudeRecipe />}
