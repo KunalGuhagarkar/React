@@ -7,14 +7,10 @@ export default function Main() {
     imageUrl: "http://i.imgflip.com/1bij.jpg",
   });
 
-  function handleTopTextChange(event) {
+  function handleChange(event) {
     console.log(event.currentTarget.value);
+    console.log(event.currentTarget.name);
     setMeme({ ...meme, topText: event.currentTarget.value });
-  }
-
-  function handleBottomTextChange(event) {
-    console.log(event.currentTarget.value);
-    setMeme({ ...meme, bottomText: event.currentTarget.value });
   }
 
   return (
@@ -26,10 +22,10 @@ export default function Main() {
             type="text"
             placeholder="One does not simply"
             name="topText"
-            onChange={handleTopTextChange}
+            onChange={handleChange}
             value={meme.topText}
           />
-        </label>  
+        </label>
 
         <label>
           Bottom Text
@@ -37,7 +33,7 @@ export default function Main() {
             type="text"
             placeholder="Walk into Mordor"
             name="bottomText"
-            onChange={handleBottomTextChange}
+            onChange={handleChange}
             value={meme.bottomText}
           />
         </label>
