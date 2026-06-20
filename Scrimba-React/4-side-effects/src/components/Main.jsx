@@ -8,7 +8,8 @@ export default function Main() {
   });
 
   function handleChange(event) {
-    setMeme({ ...meme, topText: event.current.target });
+    console.log(event.currentTarget);
+    setMeme({ ...meme, topText: event.current });
   }
 
   return (
