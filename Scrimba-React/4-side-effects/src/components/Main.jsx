@@ -10,7 +10,7 @@ export default function Main() {
   function handleChange(event) {
     console.log(event.currentTarget.value);
     console.log(event.currentTarget.name);
-    setMeme({ ...meme, topText: event.currentTarget.value });
+    setMeme({ ...meme, [event.currentTarget.name]: event.currentTarget.value });
   }
 
   return (
