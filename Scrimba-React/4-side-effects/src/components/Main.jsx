@@ -7,9 +7,14 @@ export default function Main() {
     imageUrl: "http://i.imgflip.com/1bij.jpg",
   });
 
-  function handleChange(event) {
-    console.log(event.currentTarget);
-    setMeme({ ...meme, topText: event.current });
+  function handleTopTextChange(event) {
+    console.log(event.currentTarget.value);
+    setMeme({ ...meme, topText: event.currentTarget.value });
+  }
+
+  function handleBottomTextChange(event) {
+    console.log(event.currentTarget.value);
+    setMeme({ ...meme, bottomText: event.currentTarget.value });
   }
 
   return (
@@ -21,13 +26,18 @@ export default function Main() {
             type="text"
             placeholder="One does not simply"
             name="topText"
-            onChange={handleChange}
+            onChange={handleTopTextChange}
           />
         </label>
 
         <label>
           Bottom Text
-          <input type="text" placeholder="Walk into Mordor" name="bottomText" />
+          <input
+            type="text"
+            placeholder="Walk into Mordor"
+            name="bottomText"
+            onChange={handleBottomTextChange}
+          />
         </label>
         <button>Get a new meme image 🖼</button>
       </div>
