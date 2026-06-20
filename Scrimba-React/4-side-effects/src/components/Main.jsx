@@ -27,8 +27,9 @@ export default function Main() {
             placeholder="One does not simply"
             name="topText"
             onChange={handleTopTextChange}
+            value={meme.topText}
           />
-        </label>
+        </label>  
 
         <label>
           Bottom Text
@@ -37,6 +38,7 @@ export default function Main() {
             placeholder="Walk into Mordor"
             name="bottomText"
             onChange={handleBottomTextChange}
+            value={meme.bottomText}
           />
         </label>
         <button>Get a new meme image 🖼</button>
