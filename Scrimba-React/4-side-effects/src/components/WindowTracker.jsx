@@ -9,7 +9,7 @@ export default function WindowTracker() {
       setWidth(window.innerWidth);
     }
 
-    window.addEventListener("resize", watchWindowWidth());
+    window.addEventListener("resize", watchWindowWidth);
 
     return function () {
       window.removeEventListener("resize", watchWindowWidth);
