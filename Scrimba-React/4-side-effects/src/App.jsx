@@ -18,14 +18,11 @@ export default function App() {
   const [starWarsData, setStarWarsData] = useState({});
   const [count, setCount] = useState(0);
 
-  // useEffect(() => console.log("Effect function ran"), []);
-
   useEffect(() => {
-    console.log("Effect Ran");
     fetch("https://swapi.info/api/people/1")
       .then((res) => res.json())
       .then((data) => setStarWarsData(data));
-  }, []);
+  });
 
   console.log("Rendered!");
 
