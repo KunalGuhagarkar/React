@@ -19,7 +19,7 @@ export default function App() {
   const [count, setCount] = useState(0);
 
   // useEffect(() => console.log("Effect function ran"), []);
-  
+
   useEffect(() => {
     console.log("Effect Ran");
     fetch("https://swapi.info/api/people/1")
