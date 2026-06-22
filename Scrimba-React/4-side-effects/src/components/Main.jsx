@@ -9,8 +9,7 @@ export default function Main() {
 
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
-      .then((res) => res.json)
-      .then((data) => console.log(data));
+      .then((res) => console.log(res));
   }, []);
 
   function handleChange(event) {
