@@ -1,16 +1,16 @@
-// import Header from "./components/Header";
-// import Main from "./components/Main";
+import Header from "./components/Header";
+import Main from "./components/Main";
 
-// import "./App.css";
+import "./App.css";
 
-// export default function App() {
-//   return (
-//     <>
-//       <Header />
-//       <Main />
-//     </>
-//   );
-// }
+export default function App() {
+  return (
+    <>
+      <Header />
+      <Main />
+    </>
+  );
+}
 
 // import { useState, useEffect } from "react";
 
@@ -35,18 +35,18 @@
 //   );
 // }
 
-import { useState } from "react";
-import WindowTracker from "./components/WindowTracker";
+// import { useState } from "react";
+// import WindowTracker from "./components/WindowTracker";
 
-export default function App() {
-  const [show, setShow] = useState(true);
+// export default function App() {
+//   const [show, setShow] = useState(true);
 
-  return (
-    <main className="container">
-      <button onClick={() => setShow((prevShow) => !prevShow)}>
-        Toggle WindowTracker
-      </button>
-      {show && <WindowTracker />}
-    </main>
-  );
-}
+//   return (
+//     <main className="container">
+//       <button onClick={() => setShow((prevShow) => !prevShow)}>
+//         Toggle WindowTracker
+//       </button>
+//       {show && <WindowTracker />}
+//     </main>
+//   );
+// }
