@@ -22,7 +22,7 @@ export default function App() {
     fetch("https://swapi.info/api/people/1")
       .then((res) => res.json())
       .then((data) => setStarWarsData(data));
-  });
+  }, []);
 
   console.log("Rendered!");
 
