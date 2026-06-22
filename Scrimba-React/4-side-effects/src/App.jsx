@@ -1,16 +1,16 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+// import Header from "./components/Header";
+// import Main from "./components/Main";
 
-import "./App.css";
+// import "./App.css";
 
-export default function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-    </>
-  );
-}
+// export default function App() {
+//   return (
+//     <>
+//       <Header />
+//       <Main />
+//     </>
+//   );
+// }
 
 // import { useState, useEffect } from "react";
 
@@ -34,3 +34,14 @@ export default function App() {
 //     </div>
 //   );
 // }
+
+import WindowTracker from "./components/WindowTracker";
+
+export default function App() {
+  return (
+    <main className="container">
+      <button>Toggle WindowTracker</button>
+      <WindowTracker />
+    </main>
+  );
+}
