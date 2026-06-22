@@ -16,7 +16,7 @@ import { useState, useEffect } from "react";
 
 export default function App() {
   const [starWarsData, setStarWarsData] = useState({});
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     fetch(`https://swapi.info/api/people/${count}`)
