@@ -18,7 +18,7 @@ export default function Main() {
   function handleRandomMeme() {
     setMeme({
       ...meme,
-      url: allMemes[Math.floor(Math.random() * allMemes.length)].url,
+      imageUrl: allMemes[Math.floor(Math.random() * allMemes.length)].url,
     });
     console.log(allMemes[Math.floor(Math.random() * allMemes.length)].url);
   }
