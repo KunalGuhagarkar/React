@@ -16,10 +16,10 @@ export default function Main() {
   }, []);
 
   function handleRandomMeme() {
-    setMeme({
-      ...meme,
+    setMeme((prevMeme) => ({
+      ...prevMeme,
       imageUrl: allMemes[Math.floor(Math.random() * allMemes.length)].url,
-    });
+    }));
     console.log(allMemes[Math.floor(Math.random() * allMemes.length)].url);
   }
 
