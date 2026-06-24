@@ -1,16 +1,16 @@
-import Header from "./components/Header";
-import Main from "./components/Main";
+// import Header from "./components/Header";
+// import Main from "./components/Main";
 
-import "./App.css";
+// import "./App.css";
 
-export default function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-    </>
-  );
-}
+// export default function App() {
+//   return (
+//     <>
+//       <Header />
+//       <Main />
+//     </>
+//   );
+// }
 
 // import { useState, useEffect } from "react";
 
@@ -50,3 +50,20 @@ export default function App() {
 //     </main>
 //   );
 // }
+
+import { useRef } from "react";
+
+export default function App() {
+  const inputRef = useRef(null);
+
+  function handleClick() {
+    inputRef.current.focus();
+  }
+
+  return (
+    <>
+      <input type="text" ref={inputRef} />
+      <button onClick={handleClick}>Focus Input</button>
+    </>
+  );
+}
