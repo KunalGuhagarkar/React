@@ -55,15 +55,24 @@ import { useRef } from "react";
 
 export default function App() {
   const inputRef = useRef(null);
+  const countRef = useRef(0);
 
   function handleClick() {
     inputRef.current.focus();
+  }
+
+  function handleIncrementCountClick() {
+    console.log(countRef.current);
   }
 
   return (
     <>
       <input type="text" ref={inputRef} />
       <button onClick={handleClick}>Focus Input</button>
+      <br />
+      <br />
+      <h1>{countRef}</h1>
+      <button onClick={handleIncrementCountClick}>Increase Count</button>
     </>
   );
 }
