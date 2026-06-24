@@ -62,6 +62,7 @@ export default function App() {
   }
 
   function handleIncrementCountClick() {
+    countRef.current += 1;
     console.log(countRef.current);
   }
 
