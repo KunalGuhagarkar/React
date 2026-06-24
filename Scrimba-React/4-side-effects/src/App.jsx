@@ -71,8 +71,7 @@ export default function App() {
       <input type="text" ref={inputRef} />
       <button onClick={handleClick}>Focus Input</button>
       <br />
-      <br />
-      <h1 ref={countRef}>0</h1>
+      <br />  
       <button onClick={handleIncrementCountClick}>Increase Count</button>
     </>
   );
