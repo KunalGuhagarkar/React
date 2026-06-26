@@ -13,6 +13,6 @@ import "./App.css";
 
 export default class App extends Component {
   render() {
-    return <h1>Class Component</h1>;
+    return <h1>{this.props.type} Component</h1>;
   }
 }
