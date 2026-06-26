@@ -55,4 +55,6 @@ const me = new Hero(100);
 // console.log(me.hp);
 
 me.defeatEnemy(enemy);
-console.log()
+console.log(`Inventory: ${me.inventory}`);
+console.log(`Enemy's HP: ${enemy.hp}`);
+console.log(`enemy.alive: ${enemy.alive}`);
