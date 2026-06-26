@@ -19,7 +19,40 @@ class Character {
   }
 }
 
-const char = new Character();
-console.log(char.hp);
-char.updateHp(50);
-console.log(char.hp);
+// const char = new Character();
+// console.log(char.hp);
+// char.updateHp(50);
+// console.log(char.hp);
+
+class Enemy extends Character {
+  constructor(hp, lootToDrop) {
+    super(hp);
+    this.lootToDrop = lootToDrop;
+  }
+}
+
+class Hero extends Character {
+  constructor(hp) {
+    super(hp);
+  }
+
+  inventory = [];
+
+  defeatEnemy(enemy) {
+    if (enemy.lootToDrop) {
+      this.inventory.push(enemy.lootToDrop);
+    }
+    enemy.updateHp(enemy.hp * -1);
+  }
+}
+
+const enemy = new Enemy(100, "Sword of a Thousand Truths");
+const me = new Hero(100);
+
+// console.log(me.hp);
+// console.log(me.inventory);
+// me.updateHp(50);
+// console.log(me.hp);
+
+me.defeatEnemy(enemy);
+console.log()
