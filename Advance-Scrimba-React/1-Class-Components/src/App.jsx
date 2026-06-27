@@ -112,28 +112,34 @@
 
 import React from "react";
 
-export default function App() {
-  const [count, setCount] = React.useState(0);
+export default class App extends React.Component {
+  // const [count, setCount] = React.useState(0);
 
-  function add() {
-    setCount((prevCount) => prevCount + 1);
-  }
+  state = {
+    count: 0,
+  };
 
-  function subtract() {
-    setCount((prevCount) => prevCount - 1);
-  }
+  add = () => {
+    this.setState((prevCount) => prevCount + 1);
+  };
 
-  return (
-    <div className="counter">
-      <button className="counter--minus" onClick={subtract}>
-        –
-      </button>
-      <div className="counter--count">
-        <h1>{count}</h1>
+  subtract = () => {
+    this.setState((prevCount) => prevCount - 1);
+  };
+
+  render() {
+    return (
+      <div className="counter">
+        <button className="counter--minus" onClick={this.subtract}>
+          –
+        </button>
+        <div className="counter--count">
+          <h1>{this.count}</h1>
+        </div>
+        <button className="counter--plus" onClick={this.add}>
+          +
+        </button>
       </div>
-      <button className="counter--plus" onClick={add}>
-        +
-      </button>
-    </div>
-  );
+    );
+  }
 }
