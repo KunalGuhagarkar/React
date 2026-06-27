@@ -90,11 +90,13 @@ export default class App extends React.Component {
     goOut: "Yes",
   };
 
-  toggleGoOut() {
+  toggleGoOut = () => {
     this.setState((prevState) => {
-      return prevState === "Yes" ? "No" : "Yes";
+      return {
+        goOut: prevState.goOut === "Yes" ? "No" : "Yes",
+      };
     });
-  }
+  };
 
   render() {
     return (
