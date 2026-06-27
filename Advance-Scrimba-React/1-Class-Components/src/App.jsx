@@ -17,7 +17,7 @@
 //   }
 // }
 
-import { Component } from "react";
+// import { Component } from "react";
 
 // function App() {
 //   return (
@@ -28,26 +28,26 @@ import { Component } from "react";
 //   );
 // }
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
-        <Header username="Kunal" />
-        <Greeting />
-      </div>
-    );
-  }
-}
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Header username="Kunal" />
+//         <Greeting />
+//       </div>
+//     );
+//   }
+// }
 
-class Header extends Component {
-  render() {
-    return (
-      <header>
-        <p>Welcome, {this.props.username}</p>
-      </header>
-    );
-  }
-}
+// class Header extends Component {
+//   render() {
+//     return (
+//       <header>
+//         <p>Welcome, {this.props.username}</p>
+//       </header>
+//     );
+//   }
+// }
 
 // function Greeting() {
 //   const date = new Date();
@@ -64,19 +64,46 @@ class Header extends Component {
 //   return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
 // }
 
-class Greeting extends Component {
-  render() {
-    const date = new Date();
-    const hours = date.getHours();
-    let timeOfDay;
+// class Greeting extends Component {
+//   render() {
+//     const date = new Date();
+//     const hours = date.getHours();
+//     let timeOfDay;
 
-    if (hours < 12) {
-      timeOfDay = "morning";
-    } else if (hours >= 12 && hours < 17) {
-      timeOfDay = "afternoon";
-    } else {
-      timeOfDay = "night";
-    }
-    return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
+//     if (hours < 12) {
+//       timeOfDay = "morning";
+//     } else if (hours >= 12 && hours < 17) {
+//       timeOfDay = "afternoon";
+//     } else {
+//       timeOfDay = "night";
+//     }
+//     return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
+//   }
+// }
+
+import React from "react";
+
+export default class App extends React.Component {
+  // const [goOut, setGoOut] = React.useState("Yes")
+
+  state = {
+    goOut: "Yes",
+  };
+
+  toggleGoOut() {
+    this.setState((prevState) => {
+      return prevState === "Yes" ? "No" : "Yes";
+    });
+  }
+
+  render() {
+    return (
+      <div className="state">
+        <h1 className="state--title">Should I go out tonight?</h1>
+        <div className="state--value" onClick={this.toggleGoOut}>
+          <h1>{this.state.goOut}</h1>
+        </div>
+      </div>
+    );
   }
 }
