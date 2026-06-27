@@ -123,7 +123,7 @@ export default class App extends React.Component {
     console.log(this.state.count);
     this.setState((prevCount) => {
       return {
-        count: prevCount + 1,
+        count: prevCount.count + 1,
       };
     });
   };
@@ -132,7 +132,7 @@ export default class App extends React.Component {
     console.log(this.state.count);
     this.setState((prevCount) => {
       return {
-        count: prevCount - 1,
+        count: prevCount.count - 1,
       };
     });
   };
