@@ -120,11 +120,15 @@ export default class App extends React.Component {
   };
 
   add = () => {
-    return this.setState((prevCount) => prevCount + 1);
+    this.setState((prevCount) => {
+      return {
+        state: prevCount + 1,
+      };
+    });
   };
 
   subtract = () => {
-    return this.setState((prevCount) => prevCount - 1);
+    this.setState((prevCount) => prevCount - 1);
   };
 
   render() {
