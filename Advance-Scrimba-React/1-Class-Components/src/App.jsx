@@ -122,7 +122,7 @@ export default class App extends React.Component {
   add = () => {
     this.setState((prevCount) => {
       return {
-        state: prevCount + 1,
+        count: prevCount + 1,
       };
     });
   };
@@ -130,7 +130,7 @@ export default class App extends React.Component {
   subtract = () => {
     this.setState((prevCount) => {
       return {
-        state: prevCount - 1,
+        count: prevCount - 1,
       };
     });
   };
