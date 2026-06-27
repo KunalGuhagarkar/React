@@ -120,7 +120,6 @@ export default class App extends React.Component {
   };
 
   add = () => {
-    console.log(this.state.count);
     this.setState((prevCount) => {
       return {
         count: prevCount.count + 1,
@@ -129,7 +128,6 @@ export default class App extends React.Component {
   };
 
   subtract = () => {
-    console.log(this.state.count);
     this.setState((prevCount) => {
       return {
         count: prevCount.count - 1,
