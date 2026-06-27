@@ -30,10 +30,12 @@ import { Component } from "react";
 
 export default class App extends Component {
   render() {
-    <div>
-      <Header username="Kunal" />
-      <Greeting />
-    </div>;
+    return (
+      <div>
+        <Header username="Kunal" />
+        <Greeting />
+      </div>
+    );
   }
 }
 
