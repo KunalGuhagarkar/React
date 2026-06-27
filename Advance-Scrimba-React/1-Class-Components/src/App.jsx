@@ -1,5 +1,5 @@
 // import { Component } from "react";
-// import "./App.css";
+import "./App.css";
 
 // function App() {
 //   return (
@@ -113,8 +113,6 @@
 import React from "react";
 
 export default class App extends React.Component {
-  // const [count, setCount] = React.useState(0);
-
   state = {
     count: 0,
   };
