@@ -28,7 +28,7 @@ import { Component } from "react";
 //   );
 // }
 
-class App extends Component {
+export default class App extends Component {
   render() {
     <div>
       <Header username="Kunal" />
@@ -78,5 +78,3 @@ class Greeting extends Component {
     return <h1>Good {timeOfDay} to you, sir or madam!</h1>;
   }
 }
-
-export default App;
