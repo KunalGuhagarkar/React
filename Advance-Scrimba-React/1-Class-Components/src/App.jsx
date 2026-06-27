@@ -128,7 +128,11 @@ export default class App extends React.Component {
   };
 
   subtract = () => {
-    this.setState((prevCount) => prevCount - 1);
+    this.setState((prevCount) => {
+      return {
+        state: prevCount - 1,
+      };
+    });
   };
 
   render() {
@@ -138,7 +142,7 @@ export default class App extends React.Component {
           –
         </button>
         <div className="counter--count">
-          <h1>{this.count}</h1>
+          <h1>{this.state.count}</h1>
         </div>
         <button className="counter--plus" onClick={this.add}>
           +
