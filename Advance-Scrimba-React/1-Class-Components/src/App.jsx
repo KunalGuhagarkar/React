@@ -153,11 +153,12 @@ import "./App.css";
 import React from "react";
 
 export default class App extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             goOut: "Yes",
         };
+        this.username = this.props.username;
     }
 
     toggleGoOut = () => {
@@ -175,6 +176,7 @@ export default class App extends React.Component {
                 <div className="state--value" onClick={this.toggleGoOut}>
                     <h1>{this.state.goOut}</h1>
                 </div>
+                <h1>Username: {this.props.username}</h1>
             </div>
         );
     }
