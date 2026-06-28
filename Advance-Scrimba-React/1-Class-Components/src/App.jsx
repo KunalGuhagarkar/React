@@ -176,7 +176,7 @@ export default class App extends React.Component {
                 <div className="state--value" onClick={this.toggleGoOut}>
                     <h1>{this.state.goOut}</h1>
                 </div>
-                <h1>Username: {this.props.username}</h1>
+                <h1>Username: {this.username}</h1>
             </div>
         );
     }
