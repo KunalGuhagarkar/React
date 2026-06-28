@@ -190,15 +190,17 @@ export default class App extends React.Component {
             count: 0,
         };
 
+        this.add = this.add.bind(this);
+        this.subtract = this.subtract.bind(this);
     }
 
-    // add = () => {
-    //     this.setState((prevState) => ({ count: prevState.count + 1 }));
-    // };
+    add() {
+        this.setState((prevState) => ({ count: prevState.count + 1 }));
+    }
 
-    // subtract = () => {
-    //     this.setState((prevState) => ({ count: prevState.count - 1 }));
-    // };
+    subtract() {
+        this.setState((prevState) => ({ count: prevState.count - 1 }));
+    }
 
     render() {
         return (
