@@ -110,41 +110,68 @@ import "./App.css";
 //   }
 // }
 
+// import React from "react";
+
+// export default class App extends React.Component {
+//     state = {
+//         count: 0,
+//     };
+
+//     add = () => {
+//         this.setState((prevCount) => {
+//             return {
+//                 count: prevCount.count + 1,
+//             };
+//         });
+//     };
+
+//     subtract = () => {
+//         this.setState((prevCount) => {
+//             return {
+//                 count: prevCount.count - 1,
+//             };
+//         });
+//     };
+
+//     render() {
+//         return (
+//             <div className="counter">
+//                 <button className="counter--minus" onClick={this.subtract}>
+//                     –
+//                 </button>
+//                 <div className="counter--count">
+//                     <h1>{this.state.count}</h1>
+//                 </div>
+//                 <button className="counter--plus" onClick={this.add}>
+//                     +
+//                 </button>
+//             </div>
+//         );
+//     }
+// }
+
 import React from "react";
 
 export default class App extends React.Component {
     state = {
-        count: 0,
+        goOut: "Yes",
     };
 
-    add = () => {
-        this.setState((prevCount) => {
+    toggleGoOut = () => {
+        this.setState((prevState) => {
             return {
-                count: prevCount.count + 1,
-            };
-        });
-    };
-
-    subtract = () => {
-        this.setState((prevCount) => {
-            return {
-                count: prevCount.count - 1,
+                goOut: prevState.goOut === "Yes" ? "No" : "Yes",
             };
         });
     };
 
     render() {
         return (
-            <div className="counter">
-                <button className="counter--minus" onClick={this.subtract}>
-                    –
-                </button>
-                <div className="counter--count">
-                    <h1>{this.state.count}</h1>
+            <div className="state">
+                <h1 className="state--title">Should I go out tonight?</h1>
+                <div className="state--value" onClick={this.toggleGoOut}>
+                    <h1>{this.state.goOut}</h1>
                 </div>
-                <button className="counter--plus" onClick={this.add}>
-                    +
-                </button>
             </div>
         );
     }
