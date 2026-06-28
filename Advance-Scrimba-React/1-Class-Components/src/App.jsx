@@ -153,9 +153,12 @@ import "./App.css";
 import React from "react";
 
 export default class App extends React.Component {
-    state = {
-        goOut: "Yes",
-    };
+    constructor() {
+        super();
+        this.state = {
+            goOut: "Yes",
+        };
+    }
 
     toggleGoOut = () => {
         this.setState((prevState) => {
