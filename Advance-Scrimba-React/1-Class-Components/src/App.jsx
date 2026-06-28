@@ -158,6 +158,7 @@ export default class App extends React.Component {
         this.state = {
             goOut: "Yes",
         };
+        this.toggleGoOut = this.toggleGoOut.bind(this);
     }
 
     toggleGoOut() {
