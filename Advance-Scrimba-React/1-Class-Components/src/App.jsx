@@ -184,17 +184,21 @@ import "./App.css";
 
 import React from "react";
 export default class App extends React.Component {
-    state = {
-        count: 0,
-    };
+    constructor() {
+        super();
+        this.state = {
+            count: 0,
+        };
 
-    add = () => {
-        this.setState((prevState) => ({ count: prevState.count + 1 }));
-    };
+    }
 
-    subtract = () => {
-        this.setState((prevState) => ({ count: prevState.count - 1 }));
-    };
+    // add = () => {
+    //     this.setState((prevState) => ({ count: prevState.count + 1 }));
+    // };
+
+    // subtract = () => {
+    //     this.setState((prevState) => ({ count: prevState.count - 1 }));
+    // };
 
     render() {
         return (
