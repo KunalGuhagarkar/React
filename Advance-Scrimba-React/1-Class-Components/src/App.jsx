@@ -160,13 +160,13 @@ export default class App extends React.Component {
         };
     }
 
-    toggleGoOut = () => {
+    toggleGoOut() {
         this.setState((prevState) => {
             return {
                 goOut: prevState.goOut === "Yes" ? "No" : "Yes",
             };
         });
-    };
+    }
 
     render() {
         return (
