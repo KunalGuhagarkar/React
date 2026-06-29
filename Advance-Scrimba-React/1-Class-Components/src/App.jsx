@@ -300,7 +300,7 @@ import "./App.css";
 import React from "react";
 
 class App extends React.Component {
-    state = this.setState(JSON.parse(localStorage.getItem("localData"))) || {
+    state = JSON.parse(localStorage.getItem("localData")) || {
         firstName: "",
         lastName: "",
         email: "",
