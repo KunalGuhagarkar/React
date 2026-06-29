@@ -182,39 +182,80 @@ import "./App.css";
 //     }
 // }
 
+// import React from "react";
+// export default class App extends React.Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             count: 0,
+//         };
+
+//         this.add = this.add.bind(this);
+//         this.subtract = this.subtract.bind(this);
+//     }
+
+//     add() {
+//         this.setState((prevState) => ({ count: prevState.count + 1 }));
+//     }
+
+//     subtract() {
+//         this.setState((prevState) => ({ count: prevState.count - 1 }));
+//     }
+
+//     render() {
+//         return (
+//             <div className="counter">
+//                 <button className="counter--minus" onClick={this.subtract}>
+//                     –
+//                 </button>
+//                 <div className="counter--count">
+//                     <h1>{this.state.count}</h1>
+//                 </div>
+//                 <button className="counter--plus" onClick={this.add}>
+//                     +
+//                 </button>
+//             </div>
+//         );
+//     }
+// }
+
 import React from "react";
-export default class App extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            count: 0,
-        };
 
-        this.add = this.add.bind(this);
-        this.subtract = this.subtract.bind(this);
+export default function App() {
+    const [contact, setContact] = React.useState({
+        firstName: "John",
+        lastName: "Doe",
+        phone: "+1 (719) 555-1212",
+        email: "itsmyrealname@example.com",
+        isFavorite: false,
+    });
+
+    let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png";
+
+    function toggleFavorite() {
+        setContact((prevContact) => ({
+            ...prevContact,
+            isFavorite: !prevContact.isFavorite,
+        }));
     }
 
-    add() {
-        this.setState((prevState) => ({ count: prevState.count + 1 }));
-    }
-
-    subtract() {
-        this.setState((prevState) => ({ count: prevState.count - 1 }));
-    }
-
-    render() {
-        return (
-            <div className="counter">
-                <button className="counter--minus" onClick={this.subtract}>
-                    –
-                </button>
-                <div className="counter--count">
-                    <h1>{this.state.count}</h1>
+    return (
+        <main>
+            <article className="card">
+                <img src="./images/user.png" className="card--image" />
+                <div className="card--info">
+                    <img
+                        src={`../images/${starIcon}`}
+                        className="card--favorite"
+                        onClick={toggleFavorite}
+                    />
+                    <h2 className="card--name">
+                        {contact.firstName} {contact.lastName}
+                    </h2>
+                    <p className="card--contact">{contact.phone}</p>
+                    <p className="card--contact">{contact.email}</p>
                 </div>
-                <button className="counter--plus" onClick={this.add}>
-                    +
-                </button>
-            </div>
-        );
-    }
+            </article>
+        </main>
+    );
 }
