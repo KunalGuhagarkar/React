@@ -321,7 +321,16 @@ class App extends React.Component {
               });
     };
 
+    componentDidMount() {
+        console.log("Mount");
+    }
+
+    componentDidUpdate() {
+        console.log("Update");
+    }
+
     render() {
+        console.log("Render");
         return (
             <form>
                 <input
