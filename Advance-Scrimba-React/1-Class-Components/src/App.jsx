@@ -234,13 +234,14 @@ export default class App extends React.Component {
 
     toggleFavorite = () => {
         this.setState((prevContact) => ({
-            isFavorite: !prevContact.isFavorite,
+            ...prevContact.contact,
+            isFavorite: !prevContact.contact.isFavorite,
         }));
     };
 
     render() {
         console.log(this.state.contact);
-        let starIcon = this.state.isFavorite
+        let starIcon = this.state.contact.isFavorite
             ? "star-filled.png"
             : "star-empty.png";
         return (
