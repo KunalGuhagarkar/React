@@ -239,6 +239,7 @@ export default class App extends React.Component {
     };
 
     render() {
+        console.log(this.state.contact);
         let starIcon = this.state.isFavorite
             ? "star-filled.png"
             : "star-empty.png";
