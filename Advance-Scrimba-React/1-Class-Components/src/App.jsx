@@ -322,16 +322,11 @@ class App extends React.Component {
     };
 
     componentDidMount() {
-        console.log("Mount");
-        this.setState({...JSON.parse(localStorage.getItem("localData"))});
+        this.setState({ ...JSON.parse(localStorage.getItem("localData")) });
     }
 
     componentDidUpdate() {
-        console.log("Update");
-        console.log(this.state);
         localStorage.setItem("localData", JSON.stringify(this.state));
-        // const localData = localStorage.getItem("localData");
-        // console.log(JSON.parse(localData).firstName);
     }
 
     render() {
