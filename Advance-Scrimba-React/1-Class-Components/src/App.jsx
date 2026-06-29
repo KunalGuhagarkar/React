@@ -330,7 +330,7 @@ class App extends React.Component {
         console.log(this.state);
         localStorage.setItem("localData", {...this.state});
         const localData = localStorage.getItem("localData");
-        console.log(localData);
+        console.log(localData.firstName);
     }
 
     render() {
