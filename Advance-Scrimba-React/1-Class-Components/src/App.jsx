@@ -277,8 +277,8 @@ import React from "react";
 
 export default class App extends React.Component {
     state = {
-        character: {}
-    }
+        character: {},
+    };
 
     componentDidMount() {
         console.log("componentDidMount");
@@ -286,8 +286,6 @@ export default class App extends React.Component {
 
     render() {
         console.log("render");
-        return (
-            <h1>Hello</h1>
-        )
+        return <h1>Hello</h1>;
     }
 }
