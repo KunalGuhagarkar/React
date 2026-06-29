@@ -284,7 +284,7 @@ export default class App extends React.Component {
         console.log("componentDidMount");
         fetch("https://swapi.info/api/people/1")
             .then((res) => res.json())
-            .then((data) => console.log(data));
+            .then((data) => <h1>{data.name}</h1>);
     }
 
     render() {
