@@ -15,6 +15,7 @@ export default class WindowTracker extends React.Component {
 
     componentWillUnmount() {
         window.removeEventListener("resize", this.watchWidth);
+        // Disconnect any subscriptions
     }
 
     render() {
