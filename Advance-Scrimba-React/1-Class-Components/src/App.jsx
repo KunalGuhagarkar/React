@@ -222,14 +222,6 @@ import "./App.css";
 import React from "react";
 
 export default class App extends React.Component {
-    // const [contact, setContact] = React.useState({
-    //     firstName: "John",
-    //     lastName: "Doe",
-    //     phone: "+1 (719) 555-1212",
-    //     email: "itsmyrealname@example.com",
-    //     isFavorite: false,
-    // });
-
     state = {
         contact: {
             firstName: "John",
@@ -242,9 +234,9 @@ export default class App extends React.Component {
 
     toggleFavorite = () => {
         this.setState((prevContact) => ({
-            isFavorite: prevContact.isFavorite ? false : true,
+            ...prevContact,
+            isFavorite: !prevContact.isFavorite,
         }));
-        console.log(this.state.contact.isFavorite);
     };
 
     render() {
