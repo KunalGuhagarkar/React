@@ -14,6 +14,6 @@ export default class WindowTracker extends React.Component {
     }
 
     render() {
-        return <h1>Window width: {this.state.windowWidth}</h1>;
+        return <h1>Window width: {this.state.windowWidth}px</h1>;
     }
 }
