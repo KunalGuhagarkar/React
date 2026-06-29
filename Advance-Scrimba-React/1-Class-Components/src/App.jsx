@@ -219,56 +219,57 @@ import "./App.css";
 //     }
 // }
 
-import React from "react";
+// import React from "react";
 
-export default class App extends React.Component {
-    state = {
-        contact: {
-            firstName: "John",
-            lastName: "Doe",
-            phone: "+1 (719) 555-1212",
-            email: "itsmyrealname@example.com",
-            isFavorite: false,
-        },
-    };
+// export default class App extends React.Component {
+//     state = {
+//         contact: {
+//             firstName: "John",
+//             lastName: "Doe",
+//             phone: "+1 (719) 555-1212",
+//             email: "itsmyrealname@example.com",
+//             isFavorite: false,
+//         },
+//     };
 
-    toggleFavorite = () => {
-        this.setState((prevContact) => ({
-            contact: {
-                ...prevContact.contact,
-                isFavorite: !prevContact.contact.isFavorite,
-            },
-        }));
-    };
+//     toggleFavorite = () => {
+//         this.setState((prevContact) => ({
+//             contact: {
+//                 ...prevContact.contact,
+//                 isFavorite: !prevContact.contact.isFavorite,
+//             },
+//         }));
+//     };
 
-    render() {
-        console.log(this.state.contact);
-        let starIcon = this.state.contact.isFavorite
-            ? "star-filled.png"
-            : "star-empty.png";
-        return (
-            <main>
-                <article className="card">
-                    <img src="./src/assets/user.png" className="card--image" />
-                    <div className="card--info">
-                        <img
-                            src={`./src/assets/${starIcon}`}
-                            className="card--favorite"
-                            onClick={this.toggleFavorite}
-                        />
-                        <h2 className="card--name">
-                            {this.state.contact.firstName}{" "}
-                            {this.state.contact.lastName}
-                        </h2>
-                        <p className="card--contact">
-                            {this.state.contact.phone}
-                        </p>
-                        <p className="card--contact">
-                            {this.state.contact.email}
-                        </p>
-                    </div>
-                </article>
-            </main>
-        );
-    }
-}
+//     render() {
+//         console.log(this.state.contact);
+//         let starIcon = this.state.contact.isFavorite
+//             ? "star-filled.png"
+//             : "star-empty.png";
+//         return (
+//             <main>
+//                 <article className="card">
+//                     <img src="./src/assets/user.png" className="card--image" />
+//                     <div className="card--info">
+//                         <img
+//                             src={`./src/assets/${starIcon}`}
+//                             className="card--favorite"
+//                             onClick={this.toggleFavorite}
+//                         />
+//                         <h2 className="card--name">
+//                             {this.state.contact.firstName}{" "}
+//                             {this.state.contact.lastName}
+//                         </h2>
+//                         <p className="card--contact">
+//                             {this.state.contact.phone}
+//                         </p>
+//                         <p className="card--contact">
+//                             {this.state.contact.email}
+//                         </p>
+//                     </div>
+//                 </article>
+//             </main>
+//         );
+//     }
+// }
+
