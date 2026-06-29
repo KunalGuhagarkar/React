@@ -488,25 +488,24 @@ import "./App.css";
 //     }
 // }
 
+import React from "react";
+import WindowTracker from "./components/WindowTracker";
 
-import React from "react"
-
-export default class WindowTracker extends React.Component {
+export default class App extends React.Component {
     state = {
-        windowWidth: window.innerWidth
-    }
-    
-    watchWidth = () => {
-        this.setState({windowWidth: window.innerWidth})
-    }
-    
-    componentDidMount() {
-        window.addEventListener("resize", this.watchWidth)
-    }
-    
+        show: true,
+    };
+
+    toggle = () => {
+        this.setState((prevState) => ({ show: !prevState.show }));
+    };
+
     render() {
         return (
-            <h1>Window width: {this.state.windowWidth}</h1>
-        )
+            <div className="container">
+                <button onClick={this.toggle}>Toggle WindowTracker</button>
+                {this.state.show && <WindowTracker />}
+            </div>
+        );
     }
 }
