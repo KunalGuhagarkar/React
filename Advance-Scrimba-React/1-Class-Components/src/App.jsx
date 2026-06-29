@@ -273,3 +273,16 @@ import "./App.css";
 //     }
 // }
 
+import React from "react";
+
+export default class App extends React.Component {
+    state = {
+        character: {}
+    }
+
+    render() {
+        return (
+            <h1>Hello</h1>
+        )
+    }
+}
