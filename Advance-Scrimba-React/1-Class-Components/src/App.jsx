@@ -241,6 +241,7 @@ export default class App extends React.Component {
     };
 
     toggleFavorite = () => {
+        console.log("Toggle Clicked")
         this.setState((prevContact) => ({
             ...prevContact.contact,
             isFavorite: !prevContact.contact.isFavorite,
