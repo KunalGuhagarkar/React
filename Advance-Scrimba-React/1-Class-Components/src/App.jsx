@@ -221,41 +221,54 @@ import "./App.css";
 
 import React from "react";
 
-export default function App() {
-    const [contact, setContact] = React.useState({
-        firstName: "John",
-        lastName: "Doe",
-        phone: "+1 (719) 555-1212",
-        email: "itsmyrealname@example.com",
-        isFavorite: false,
-    });
+export default class App extends React.Component {
+    // const [contact, setContact] = React.useState({
+    //     firstName: "John",
+    //     lastName: "Doe",
+    //     phone: "+1 (719) 555-1212",
+    //     email: "itsmyrealname@example.com",
+    //     isFavorite: false,
+    // });
 
-    let starIcon = contact.isFavorite ? "star-filled.png" : "star-empty.png";
+    state = {
+        contact: {
+            firstName: "John",
+            lastName: "Doe",
+            phone: "+1 (719) 555-1212",
+            email: "itsmyrealname@example.com",
+            isFavorite: false,
+        },
+    };
 
-    function toggleFavorite() {
-        setContact((prevContact) => ({
-            ...prevContact,
+    toggleFavorite = () => {
+        this.setState((prevContact) => ({
+            ...prevContact.contact,
             isFavorite: !prevContact.isFavorite,
         }));
-    }
+    };
 
-    return (
-        <main>
-            <article className="card">
-                <img src="./src/assets/user.png" className="card--image" />
-                <div className="card--info">
-                    <img
-                        src={`./src/assets/${starIcon}`}
-                        className="card--favorite"
-                        onClick={toggleFavorite}
-                    />
-                    <h2 className="card--name">
-                        {contact.firstName} {contact.lastName}
-                    </h2>
-                    <p className="card--contact">{contact.phone}</p>
-                    <p className="card--contact">{contact.email}</p>
-                </div>
-            </article>
-        </main>
-    );
+    render() {
+        let starIcon = this.state.contact.isFavorite
+            ? "star-filled.png"
+            : "star-empty.png";
+        return (
+            <main>
+                <article className="card">
+                    <img src="./src/assets/user.png" className="card--image" />
+                    <div className="card--info">
+                        <img
+                            src={`./src/assets/${starIcon}`}
+                            className="card--favorite"
+                            onClick={toggleFavorite}
+                        />
+                        <h2 className="card--name">
+                            {contact.firstName} {contact.lastName}
+                        </h2>
+                        <p className="card--contact">{contact.phone}</p>
+                        <p className="card--contact">{contact.email}</p>
+                    </div>
+                </article>
+            </main>
+        );
+    }
 }
