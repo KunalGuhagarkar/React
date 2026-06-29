@@ -8,38 +8,53 @@ body {
     background-color: #262626;
     color: #D9D9D9;
     padding: 20px;
+    height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.counter {
+    display: flex;
+    align-items: flex-end;
+}
+
+.counter > button {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #737373;
+    color: #D9D9D9;
+}
+
+.counter > button:hover {
+    background-color: #404040;
+    color: #D9D9D9;
+}
+
+.counter > button:focus {
+    outline: none;
+}
+
+.counter--count {
+    background-color: white;
+    font-size: .75rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #262626;
 }
 
-input, textarea {
-    margin-bottom: 10px;
-    font-family: 'Inter', sans-serif;
+.counter--plus {
+    margin-left: -10px;
 }
 
-input[type="text"], input[type="email"] {
-    width: 100%;
-    border-radius: 3px;
-    border: none;
-    height: 30px;
-    margin-bottom: 10px;
-    text-indent: 5px;
-}
-
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 7px;
-}
-
-textarea {
-    width: 100%;
-    border-radius: 3px;
-    border: none;
-    height: 70px;
-    margin-bottom: 10px;
-    text-indent: 5px;
-}
-
-label.favColor {
-    display: block;
+.counter--minus {
+    margin-right: -10px;
+    z-index: 1;
 }
