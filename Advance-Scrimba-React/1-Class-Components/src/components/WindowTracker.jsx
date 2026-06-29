@@ -13,6 +13,10 @@ export default class WindowTracker extends React.Component {
         window.addEventListener("resize", this.watchWidth);
     }
 
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.watchWidth);
+    }
+
     render() {
         return <h1>Window width: {this.state.windowWidth}px</h1>;
     }
