@@ -284,11 +284,17 @@ export default class App extends React.Component {
         console.log("componentDidMount");
         fetch("https://swapi.info/api/people/1")
             .then((res) => res.json())
-            .then((data) => console.log(data));
+            .then((data) =>
+                this.setState({
+                    character: {
+                        name: data.name,
+                    },
+                }),
+            );
     }
 
     render() {
         console.log("render");
-        return <h1>Hello</h1>;
+        return <h1>{this.state.character.name}</h1>;
     }
 }
