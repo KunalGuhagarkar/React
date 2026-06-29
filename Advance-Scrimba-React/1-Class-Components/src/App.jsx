@@ -461,6 +461,13 @@ export default class App extends React.Component {
         this.getStarWarsCharacter(this.state.count);
     }
 
+    componentDidUpdate(prevProps, prevState) {
+        console.log("Update");
+        if (prevState.count !== this.state.count) {
+            this.getStarWarsCharacter(this.state.count);
+        }
+    }
+
     render() {
         return (
             <>
