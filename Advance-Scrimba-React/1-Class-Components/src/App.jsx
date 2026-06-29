@@ -242,10 +242,10 @@ export default function App() {
     return (
         <main>
             <article className="card">
-                <img src="./images/user.png" className="card--image" />
+                <img src="./src/assets/user.png" className="card--image" />
                 <div className="card--info">
                     <img
-                        src={`../images/${starIcon}`}
+                        src={`./src/assets/${starIcon}`}
                         className="card--favorite"
                         onClick={toggleFavorite}
                     />
