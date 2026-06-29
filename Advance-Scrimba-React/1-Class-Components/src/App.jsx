@@ -327,6 +327,7 @@ class App extends React.Component {
 
     componentDidUpdate() {
         console.log("Update");
+        localStorage.setItem("localData", this.state);
     }
 
     render() {
