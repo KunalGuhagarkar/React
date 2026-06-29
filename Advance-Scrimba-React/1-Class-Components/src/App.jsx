@@ -280,7 +280,12 @@ export default class App extends React.Component {
         character: {}
     }
 
+    componentDidMount() {
+        console.log("componentDidMount");
+    }
+
     render() {
+        console.log("render");
         return (
             <h1>Hello</h1>
         )
