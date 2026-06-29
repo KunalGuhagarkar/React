@@ -259,13 +259,18 @@ export default class App extends React.Component {
                         <img
                             src={`./src/assets/${starIcon}`}
                             className="card--favorite"
-                            onClick={toggleFavorite}
+                            onClick={this.toggleFavorite}
                         />
                         <h2 className="card--name">
-                            {contact.firstName} {contact.lastName}
+                            {this.state.contact.firstName}{" "}
+                            {this.state.contact.lastName}
                         </h2>
-                        <p className="card--contact">{contact.phone}</p>
-                        <p className="card--contact">{contact.email}</p>
+                        <p className="card--contact">
+                            {this.state.contact.phone}
+                        </p>
+                        <p className="card--contact">
+                            {this.state.contact.email}
+                        </p>
                     </div>
                 </article>
             </main>
