@@ -1,11 +1,37 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
+// import App from "./App.jsx";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import { BrowserRouter } from "react-router-dom";
+import Home from "./components/Home";
+import About from "./components/About";
+import Vans from "./components/Vans";
 
-createRoot(document.getElementById("root")).render(
-    <BrowserRouter>
-        <App />
-    </BrowserRouter>,
-);
+import "./server";
+
+function App() {
+    return (
+        <BrowserRouter>
+            <nav>
+                <Link to="/">
+                    <h1>#VANLIFE</h1>
+                </Link>
+
+                <div className="links-container">
+                    <Link to="/about">About</Link>
+                    <Link to="/vans">Vans</Link>
+                </div>
+            </nav>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/vans" element={<Vans />} />
+            </Routes>
+            <footer>
+                <p>@2022 #VANLIFE</p>
+            </footer>
+        </BrowserRouter>
+    );
+}
+
+createRoot(document.getElementById("root")).render(<App />);
