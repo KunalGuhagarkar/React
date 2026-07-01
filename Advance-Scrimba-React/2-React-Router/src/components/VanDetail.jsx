@@ -6,7 +6,7 @@ export default function VanDetail() {
     console.log(params);
 
     useEffect(() => {
-        
+        fetch(`/api/vans/${}`)
     })
 
     return <h1>Van Detail page goes here</h1>;
