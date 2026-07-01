@@ -6,8 +6,10 @@ export default function VanDetail() {
     console.log(params);
 
     useEffect(() => {
-        fetch(`/api/vans/${}`)
-    })
+        fetch(`/api/vans/${params.id}`)
+            .then((res) => res.json())
+            .then((data) => console.log(data));
+    });
 
     return <h1>Van Detail page goes here</h1>;
 }
