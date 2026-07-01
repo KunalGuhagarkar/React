@@ -12,7 +12,7 @@ function Vans() {
 
     const vanElements = vans.map((van) => {
         return (
-            <Link to={`/vans/${van.id}`}>
+            <Link to={`/vans/${van.id}/${van.type}`}>
                 <div key={van.id} className="van-tile">
                     <img src={van.imageUrl} />
                     <div className="van-info">

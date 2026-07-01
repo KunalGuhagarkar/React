@@ -24,7 +24,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/vans" element={<Vans />} />
-                <Route path="/vans/:id" element={<VanDetail />} />
+                <Route path="/vans/:id/:type" element={<VanDetail />} />
             </Routes>
             <footer>
                 <p>@2022 #VANLIFE</p>
