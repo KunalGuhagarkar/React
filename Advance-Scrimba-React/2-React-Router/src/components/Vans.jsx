@@ -10,8 +10,6 @@ function Vans() {
             .then((data) => setVans(data.vans));
     }, []);
 
-    console.log(vans);
-
     const vanElements = vans.map((van) => {
         return (
             <Link to={`/vans/${van.id}`}>
