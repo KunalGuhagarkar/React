@@ -12,8 +12,8 @@ function Vans() {
 
     const vanElements = vans.map((van) => {
         return (
-            <Link to={`/vans/${van.id}/${van.type}`}>
-                <div key={van.id} className="van-tile">
+            <div key={van.id} className="van-tile">
+                <Link to={`/vans/${van.id}/${van.type}`}>
                     <img src={van.imageUrl} />
                     <div className="van-info">
                         <h3>{van.name}</h3>
@@ -25,8 +25,8 @@ function Vans() {
                     <i className={`van-type ${van.type} selected`}>
                         {van.type}
                     </i>
-                </div>
-            </Link>
+                </Link>
+            </div>
         );
     });
 
