@@ -9,6 +9,7 @@ function Header() {
                 </Link>
 
                 <div className="links-container">
+                    <Link to="/host">Host</Link>
                     <Link to="/about">About</Link>
                     <Link to="/vans">Vans</Link>
                 </div>
