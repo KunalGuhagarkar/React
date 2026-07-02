@@ -10,16 +10,18 @@ import VanDetail from "./components/VanDetail";
 function App() {
     return (
         <BrowserRouter>
-            <nav>
-                <Link to="/">
-                    <h1>#VANLIFE</h1>
-                </Link>
+            <header>
+                <nav>
+                    <Link to="/">
+                        <h1>#VANLIFE</h1>
+                    </Link>
 
-                <div className="links-container">
-                    <Link to="/about">About</Link>
-                    <Link to="/vans">Vans</Link>
-                </div>
-            </nav>
+                    <div className="links-container">
+                        <Link to="/about">About</Link>
+                        <Link to="/vans">Vans</Link>
+                    </div>
+                </nav>
+            </header>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
