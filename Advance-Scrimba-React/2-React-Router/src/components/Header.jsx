@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 function Header() {
     const activeLink = {
         fontWeight: "bold",
-        TextDecoration: "underline",
+        textDecoration: "underline",
         color: "#161616",
     };
 
@@ -16,16 +16,16 @@ function Header() {
 
                 <div className="links-container">
                     <NavLink
-                        to="/about"
-                        style={({ isActive }) => (isActive ? activeLink : null)}
-                    >
-                        About
-                    </NavLink>
-                    <NavLink
                         to="/host"
                         style={({ isActive }) => (isActive ? activeLink : null)}
                     >
                         Host
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        style={({ isActive }) => (isActive ? activeLink : null)}
+                    >
+                        About
                     </NavLink>
                     <NavLink
                         to="/vans"
