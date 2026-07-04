@@ -10,6 +10,7 @@ import Layout from "./components/Layout";
 import Dashboard from "./components/Host/Dashboard";
 import Income from "./components/Host/Income";
 import Reviews from "./components/Host/Reviews";
+import HostLayout from "./components/Host/HostLayout";
 
 function App() {
     return (
@@ -17,7 +18,8 @@ function App() {
             <Routes>
                 <Route element={<Layout />}>
                     <Route path="/" element={<Home />} />
-                    <Route path="/host" element={<Dashboard />}>
+                    <Route path="/host" element={<HostLayout />}>
+                        <Route path="/host" element={<Dashboard />} />
                         <Route path="/host/income" element={<Income />} />
                         <Route path="/host/reviews" element={<Reviews />} />
                     </Route>

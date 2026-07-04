@@ -357,3 +357,20 @@ i[class*="van-type-"] {
 .van-detail .link-button:active {
     transform: scale(0.98);
 }
+
+.host-nav {
+    display: flex;
+}
+
+.host-nav a {
+    text-decoration: none;
+    color: #4D4D4D;
+    font-weight: 500;
+    padding: 5px 20px;
+}
+
+.host-nav a:hover {
+    color: #161616;
+    text-decoration: underline;
+    font-weight: 600;
+}
