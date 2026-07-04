@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Header() {
+    const activeLink = {
+        fontWeight: "bold",
+        TextDecoration: "underline",
+        color: "#161616",
+    };
+
     return (
         <header>
             <nav>
@@ -9,9 +15,24 @@ function Header() {
                 </Link>
 
                 <div className="links-container">
-                    <Link to="/host">Host</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/vans">Vans</Link>
+                    <NavLink
+                        to="/about"
+                        style={({ isActive }) => (isActive ? activeLink : null)}
+                    >
+                        About
+                    </NavLink>
+                    <NavLink
+                        to="/host"
+                        style={({ isActive }) => (isActive ? activeLink : null)}
+                    >
+                        Host
+                    </NavLink>
+                    <NavLink
+                        to="/vans"
+                        style={({ isActive }) => (isActive ? activeLink : null)}
+                    >
+                        Vans
+                    </NavLink>
                 </div>
             </nav>
         </header>
