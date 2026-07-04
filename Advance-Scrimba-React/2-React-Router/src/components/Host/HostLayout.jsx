@@ -12,6 +12,7 @@ export default function HostLayout() {
             <div className="host-nav">
                 <NavLink
                     to="/host"
+                    end
                     style={({ isActive }) => (isActive ? activeLink : null)}
                 >
                     Dashboard
