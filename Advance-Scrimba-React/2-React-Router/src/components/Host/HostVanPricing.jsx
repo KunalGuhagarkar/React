@@ -3,5 +3,5 @@ import { useOutletContext } from "react-router-dom";
 export default function HostVanPricing() {
     const { currentVan } = useOutletContext();
 
-    return <h1>${(currentVan.price).toFixed(2)}/day</h1>;
+    return <h1>${currentVan.price.toFixed(2)}/day</h1>;
 }
