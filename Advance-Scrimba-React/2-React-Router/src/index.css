@@ -273,13 +273,10 @@ i[class*="van-type-"] {
     padding: 7px 14px;
 }
 
-/* Container Layout */
-.van-detail-container {
-    padding: 27px;
-}
-
 /* Back Button Styling */
-.van-detail-container .back-button {
+.back-button {
+    margin-top: 30px;
+    margin-left: 50px;
     color: #161616;
     text-decoration: none;
     display: inline-flex;
@@ -287,11 +284,11 @@ i[class*="van-type-"] {
     transition: opacity 0.2s ease;
 }
 
-.van-detail-container .back-button:hover {
+.back-button:hover {
     opacity: 0.8;
 }
 
-.van-detail-container .back-button span {
+.back-button span {
     text-decoration: underline;
 }
 
@@ -371,6 +368,118 @@ i[class*="van-type-"] {
 }
 
 .host-nav a:hover {
+    color: #161616;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.host-van-link-wrapper {
+    color: unset;
+    text-decoration: unset;
+}
+
+.host-vans-list {
+    padding-inline: 26px;
+}
+
+.host-vans-title {
+    padding-inline: 26px;
+}
+
+.host-van-single {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 15px;
+    padding-block: 18px;
+    padding-left: 24px;
+}
+
+.host-van-single > img {
+    height: 70px;
+    border-radius: 5px;
+    margin-right: 17px;
+}
+
+.host-van-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-block: 10px;
+}
+
+.host-van-info p {
+    margin-block: 10px;
+}
+
+.host-van-detail-layout-container {
+    background-color: white;
+    padding: 24px;
+    margin: 30px 26px;
+}
+
+.host-van-detail {
+    display: flex;
+    align-items: center;
+}
+
+.host-van-detail > img {
+    height: 160px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.host-van-detail-info-text > h3 {
+    margin-top: 24px;
+    margin-bottom: 5px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.host-van-detail-info-text > h4 {
+    font-size: 20px;
+    margin-block: 0;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.back-button:hover {
+    color: #161616;
+    transform: translateX(-3px);
+}
+
+.back-button span {
+    text-decoration: underline;
+}
+
+.back-button:hover span {
+    text-decoration-thickness: 2px;
+}
+
+.host-detail-nav {
+    display: flex;
+}
+
+.host-detail-nav a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #4d4d4d;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.host-detail-nav a:hover {
     color: #161616;
     text-decoration: underline;
     font-weight: 600;
