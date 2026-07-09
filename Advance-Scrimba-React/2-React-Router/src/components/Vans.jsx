@@ -33,7 +33,9 @@ function Vans() {
     const vanSet = new Set();
     vanSet.map(van => vanSet.add(van.type));
 
-    const filterButtons = vanSet.map((van) => {
+    console.log(vanSet);
+
+    const filterButtons = vans.map((van) => {
         return (
             <button>{van.type}</button>
         );
