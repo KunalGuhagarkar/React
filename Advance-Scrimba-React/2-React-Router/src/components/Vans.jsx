@@ -31,7 +31,7 @@ function Vans() {
     });
 
     const filterButtons = vans.map((van) => {
-        <h1>{van.type}</h1>;
+        console.log(van.type);
     });
 
     return (
