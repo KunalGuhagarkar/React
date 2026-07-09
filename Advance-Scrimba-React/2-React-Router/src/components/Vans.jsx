@@ -31,14 +31,13 @@ function Vans() {
     });
 
     const vanSet = new Set();
-    vanSet.map(van => vanSet.add(van.type));
-
-    console.log(vanSet);
 
     const filterButtons = vans.map((van) => {
-        return (
-            <button>{van.type}</button>
-        );
+        
+        if (vanSet.add(van.type)) {
+            return <button>{van.type}</button>
+        }
+        
     });
 
     return (
