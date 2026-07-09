@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 function Vans() {
     const [vans, setVans] = useState([]);
+    const [searchParams, setSearchParams] = useSearchParams();
 
     useEffect(() => {
         fetch("/api/vans")
@@ -30,12 +31,12 @@ function Vans() {
         );
     });
 
-    const vanSet = new Set();
+    const vanSet = new Set(vans.map((van) => van.type));
 
-    vans.map((van) => vanSet.add(van.type));
-
-    const filterButtons = [...vanSet].map((van, index) => {
-        return <button key={index}>{van}</button>;
+    const filterButtons = [...vanSet].map((van) => {
+        setSearchParams(`?type=${van}`);
+        console.log(searchParams);
+        return <button key={van}>{van}</button>;
     });
 
     return (
