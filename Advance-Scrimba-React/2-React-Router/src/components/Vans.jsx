@@ -5,6 +5,9 @@ function Vans() {
     const [vans, setVans] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
 
+    const typeFilter = searchParams.get("type");
+    console.log(typeFilter);
+
     useEffect(() => {
         fetch("/api/vans")
             .then((res) => res.json())
