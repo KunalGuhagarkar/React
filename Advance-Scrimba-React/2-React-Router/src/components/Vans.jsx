@@ -32,18 +32,18 @@ function Vans() {
 
     const vanSet = new Set();
 
-    vans.map(van => vanSet.add(van.type));
+    vans.map((van) => vanSet.add(van.type));
 
     const filterButtons = () => {
-        for(const van of vanSet) {
-            <button>{van}</button>
+        for (const van of vanSet) {
+            <button>{van}</button>;
         }
-};
+    };
 
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
-            <div>{filterButtons}</div>
+            {filterButtons}
             <div className="van-list">{vanElements}</div>
         </div>
     );
