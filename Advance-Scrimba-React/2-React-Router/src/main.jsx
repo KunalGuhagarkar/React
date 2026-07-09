@@ -1,9 +1,9 @@
 import { createRoot } from "react-dom/client";
-// import "./index.css";
-// import App from "./App.jsx";
+import "./index.css";
+import App from "./App.jsx";
 import "./server";
 
-// createRoot(document.getElementById("root")).render(<App />);
+createRoot(document.getElementById("root")).render(<App />);
 
 // import React from "react";
 // import "./App.css";
@@ -91,58 +91,57 @@ import "./server";
 
 // ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
+// import {
+//     BrowserRouter,
+//     Routes,
+//     Route,
+//     Link,
+//     useSearchParams,
+// } from "react-router-dom";
 
-import {
-    BrowserRouter,
-    Routes,
-    Route,
-    Link,
-    useSearchParams,
-} from "react-router-dom";
+// const swCharacters = [
+//     { name: "Luke Skywalker", type: "Jedi" },
+//     { name: "Darth Vader", type: "Sith" },
+//     { name: "Emperor Palpatine", type: "Sith" },
+//     { name: "Yoda", type: "Jedi" },
+// ];
 
-const swCharacters = [
-    { name: "Luke Skywalker", type: "Jedi" },
-    { name: "Darth Vader", type: "Sith" },
-    { name: "Emperor Palpatine", type: "Sith" },
-    { name: "Yoda", type: "Jedi" },
-];
+// function HomePage() {
 
-function HomePage() {
+//     const [searchParams, setSearchParams] = useSearchParams();
+//     console.log(searchParams.get("type"));
+//     console.log(searchParams.toString());
 
-    const [searchParams, setSearchParams] = useSearchParams();
-    console.log(searchParams.get("type"));
-    console.log(searchParams.toString());
+//     const charEls = swCharacters.map((char) => (
+//         <div key={char.name}>
+//             <h3
+//                 style={{
+//                     color: char.type.toLowerCase() === "jedi" ? "blue" : "red",
+//                 }}
+//             >
+//                 Name: {char.name}
+//             </h3>
+//             <p>Type: {char.type}</p>
+//             <hr />
+//         </div>
+//     ));
 
-    const charEls = swCharacters.map((char) => (
-        <div key={char.name}>
-            <h3
-                style={{
-                    color: char.type.toLowerCase() === "jedi" ? "blue" : "red",
-                }}
-            >
-                Name: {char.name}
-            </h3>
-            <p>Type: {char.type}</p>
-            <hr />
-        </div>
-    ));
+//     return (
+//         <main>
+//             <h2>Home</h2>
+//             {charEls}
+//         </main>
+//     );
+// }
 
-    return (
-        <main>
-            <h2>Home</h2>
-            {charEls}
-        </main>
-    );
-}
+// function App() {
+//     return (
+//         <BrowserRouter>
+//             <Routes>
+//                 <Route path="/characters" element={<HomePage />} />
+//             </Routes>
+//         </BrowserRouter>
+//     );
+// }
 
-function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/characters" element={<HomePage />} />
-            </Routes>
-        </BrowserRouter>
-    );
-}
-
-createRoot(document.getElementById("root")).render(<App />);
+// createRoot(document.getElementById("root")).render(<App />);
