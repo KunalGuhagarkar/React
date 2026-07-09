@@ -34,9 +34,11 @@ function Vans() {
 
     vans.map(van => vanSet.add(van.type));
 
-    console.log(vanSet);
-
-    const filterButtons = 1;
+    const filterButtons = () => {
+        for(const van of vanSet) {
+            <button>{van}</button>
+        }
+};
 
     return (
         <div className="van-list-container">
