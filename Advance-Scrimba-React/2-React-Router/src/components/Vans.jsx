@@ -38,12 +38,13 @@ function Vans() {
         return <button key={van}>{van}</button>;
     });
 
-    console.log(searchParams.get("type"));
+    
 
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
             {filterButtons}
+            {console.log(searchParams)}
             <div className="van-list">{vanElements}</div>
         </div>
     );
