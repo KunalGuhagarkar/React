@@ -33,8 +33,8 @@ function Vans() {
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
-            {vans.map(van => {
-                <button>{van.type}</button>
+            {vans.map((van) => {
+                <button>{van.type}</button>;
             })}
             <div className="van-list">{vanElements}</div>
         </div>
