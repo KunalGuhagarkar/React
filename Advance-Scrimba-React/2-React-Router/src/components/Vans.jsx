@@ -35,7 +35,7 @@ function Vans() {
 
     const filterButtons = [...vanSet].map((van) => {
         setSearchParams(`?type=${van}`);
-        console.log(searchParams);
+        console.log(searchParams.get("type"));
         return <button key={van}>{van}</button>;
     });
 
