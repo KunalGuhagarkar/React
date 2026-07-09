@@ -30,12 +30,14 @@ function Vans() {
         );
     });
 
+    const filterButtons = vans.map((van) => {
+        <button>{van.type}</button>;
+    });
+
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
-            {vans.map((van) => {
-                <button>{van.type}</button>;
-            })}
+            {filterButtons}
             <div className="van-list">{vanElements}</div>
         </div>
     );
