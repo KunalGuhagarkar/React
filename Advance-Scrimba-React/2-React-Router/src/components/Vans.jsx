@@ -34,9 +34,9 @@ function Vans() {
 
     const filterButtons = vans.map((van) => {
         
-        if (vanSet.add(van.type)) {
-            return <button>{van.type}</button>
-        }
+        return (
+            <button>{vanSet.add(van.type)}</button>
+        );
         
     });
 
