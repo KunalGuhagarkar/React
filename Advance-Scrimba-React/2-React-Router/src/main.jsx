@@ -107,12 +107,14 @@ createRoot(document.getElementById("root")).render(<App />);
 // ];
 
 // function HomePage() {
-
 //     const [searchParams, setSearchParams] = useSearchParams();
-//     console.log(searchParams.get("type"));
-//     console.log(searchParams.toString());
+//     const typeFilter = searchParams.get("type");
 
-//     const charEls = swCharacters.map((char) => (
+//     const filterDisplayCharacters = typeFilter
+//         ? swCharacters.filter((char) => typeFilter === char.type.toLowerCase())
+//         : swCharacters;
+
+//     const charEls = filterDisplayCharacters.map((char) => (
 //         <div key={char.name}>
 //             <h3
 //                 style={{
