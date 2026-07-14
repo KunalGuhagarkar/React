@@ -131,6 +131,18 @@ createRoot(document.getElementById("root")).render(<App />);
 //     return (
 //         <main>
 //             <h2>Home</h2>
+//             <div>
+//                 <Link style={{ marginLeft: "5px" }} to=".">
+//                     Clear
+//                 </Link>
+//                 <Link style={{ marginLeft: "5px" }} to="?type=sith">
+//                     Sith
+//                 </Link>
+//                 <Link style={{ marginLeft: "5px" }} to="?type=jedi">
+//                     Jedi
+//                 </Link>
+//             </div>
+//             <hr />
 //             {charEls}
 //         </main>
 //     );

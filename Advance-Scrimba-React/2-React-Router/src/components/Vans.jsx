@@ -6,7 +6,6 @@ function Vans() {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const typeFilter = searchParams.get("type");
-    console.log(typeFilter);
 
     useEffect(() => {
         fetch("/api/vans")
@@ -14,7 +13,11 @@ function Vans() {
             .then((data) => setVans(data.vans));
     }, []);
 
-    const vanElements = vans.map((van) => {
+    const displayFilterVans = typeFilter
+        ? vans.filter((van) => typeFilter === van.type)
+        : vans;
+
+    const vanElements = displayFilterVans.map((van) => {
         return (
             <div key={van.id} className="van-tile">
                 <Link to={`/vans/${van.id}`}>
@@ -34,27 +37,9 @@ function Vans() {
         );
     });
 
-    const handleClick = (event) => {
-        setSearchParams(`?type=${event.target.textContent}`);
-        console.log(event.target.textContent);
-        console.log(searchParams.get("type"));
-    };
-
-    const filterVans = vans.some((van, index, self) => {
-        console.log(index);
-        console.log(self);
-    });
-
-    console.log(filterVans);
-
-    const filterButtons = vans.map((van) => {
-        return <button onClick={handleClick}>{van.type}</button>;
-    });
-
     return (
         <div className="van-list-container">
             <h1>Explore our van options</h1>
-            {filterButtons}
             <div className="van-list">{vanElements}</div>
         </div>
     );
