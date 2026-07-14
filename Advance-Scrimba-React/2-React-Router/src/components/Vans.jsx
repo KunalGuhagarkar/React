@@ -40,7 +40,10 @@ function Vans() {
         console.log(searchParams.get("type"));
     };
 
-    const filterVans = vans.some((van) => van.type);
+    const filterVans = vans.some((van, index, self) => {
+        console.log(index);
+        console.log(self);
+    });
 
     console.log(filterVans);
 
