@@ -14,7 +14,23 @@ function Vans() {
             .then((data) => setVans(data.vans));
     }, []);
 
-    const vanElements = vans.map((van) => {
+    const vanSet = new Set(vans.map((van) => van.type));
+
+    const handleClick = (event) => {
+        setSearchParams(`?type=${event.target.textContent}`);
+        console.log(event.target.textContent);
+        console.log(searchParams.get("type"));
+    };
+
+    const filterButtons = [...vanSet].map((van) => {
+        return (
+            <button onClick={handleClick} key={van}>
+                {van}
+            </button>
+        );
+    });
+
+    const vanElements = vanSet.map((van) => {
         return (
             <div key={van.id} className="van-tile">
                 <Link to={`/vans/${van.id}`}>
@@ -31,22 +47,6 @@ function Vans() {
                     </i>
                 </Link>
             </div>
-        );
-    });
-
-    const vanSet = new Set(vans.map((van) => van.type));
-
-    const handleClick = (event) => {
-        setSearchParams(`?type=${event.target.textContent}`);
-        console.log(event.target.textContent);
-        console.log(searchParams.get("type"));
-    };
-
-    const filterButtons = [...vanSet].map((van) => {
-        return (
-            <button onClick={handleClick} key={van}>
-                {van}
-            </button>
         );
     });
 
