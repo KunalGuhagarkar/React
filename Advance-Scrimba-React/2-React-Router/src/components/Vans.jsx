@@ -40,6 +40,10 @@ function Vans() {
         console.log(searchParams.get("type"));
     };
 
+    const filterVans = vans.filter(van => van.type);
+
+    console.log(filterVans);
+
     const filterButtons = vans.map((van) => {
         return (
             <button onClick={handleClick}>
