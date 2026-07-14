@@ -40,9 +40,7 @@ function Vans() {
         console.log(searchParams.get("type"));
     };
 
-    const filterVans = vans.filter(
-        (van) => !van.includes(van.type) && van.push(van.type),
-    );
+    const filterVans = vans.some((van) => van.type);
 
     console.log(filterVans);
 
