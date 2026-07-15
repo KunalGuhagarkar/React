@@ -42,14 +42,15 @@ function Vans() {
         <div className="van-list-container">
             <h1>Explore our van options</h1>
             <div className="van-list-filter-buttons">
+                {typeFilter && (
+                    <button
+                        className="van-type clear-filters"
+                        onClick={() => setSearchParams({})}
+                    >
+                        All Vans
+                    </button>
+                )}
 
-                {}
-                <button
-                    className="van-type clear-filters"
-                    onClick={() => setSearchParams({})}
-                >
-                    All Vans
-                </button>
                 <button
                     className="van-type simple"
                     onClick={() => setSearchParams({ type: "simple" })}
