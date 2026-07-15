@@ -52,7 +52,7 @@ function Vans() {
                 )}
 
                 <button
-                    className="van-type simple"
+                    className={`van-type simple ${typeFilter == "simple" ? "selected" : ""}`}
                     onClick={() => setSearchParams({ type: "simple" })}
                 >
                     Simple
