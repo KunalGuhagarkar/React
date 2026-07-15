@@ -6,6 +6,7 @@ function Vans() {
     const [searchParams, setSearchParams] = useSearchParams();
 
     const typeFilter = searchParams.get("type");
+    console.log(typeFilter);
 
     useEffect(() => {
         fetch("/api/vans")
@@ -41,6 +42,8 @@ function Vans() {
         <div className="van-list-container">
             <h1>Explore our van options</h1>
             <div className="van-list-filter-buttons">
+
+                {}
                 <button
                     className="van-type clear-filters"
                     onClick={() => setSearchParams({})}
