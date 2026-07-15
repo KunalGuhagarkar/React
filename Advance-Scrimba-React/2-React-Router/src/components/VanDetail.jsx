@@ -6,7 +6,7 @@ export default function VanDetail() {
     const [van, setVan] = useState(null);
 
     const location = useLocation();
-    console.log(location.state);
+    console.log(location.state.search);
 
     useEffect(() => {
         fetch(`/api/vans/${params.id}`)
@@ -16,7 +16,7 @@ export default function VanDetail() {
 
     return (
         <div className="van-detail-container">
-            <Link to={""} relative="path" className="back-button">
+            <Link to={location.state.search} relative="path" className="back-button">
                 &larr; <span>Back to all vans</span>
             </Link>
             {van ? (
