@@ -41,20 +41,6 @@ function Vans() {
         <div className="van-list-container">
             <h1>Explore our van options</h1>
             <div className="van-list-filter-buttons">
-                <Link className="van-type clear-filters" to=".">
-                    All Vans
-                </Link>
-                <Link className="van-type simple" to="?type=simple">
-                    Simple
-                </Link>
-                <Link className="van-type rugged" to="?type=rugged">
-                    Rugged
-                </Link>
-                <Link className="van-type luxury" to="?type=luxury">
-                    Luxury
-                </Link>
-            </div>
-            <div className="van-list-filter-buttons">
                 <button
                     className="van-type clear-filters"
                     onClick={() => setSearchParams({})}
