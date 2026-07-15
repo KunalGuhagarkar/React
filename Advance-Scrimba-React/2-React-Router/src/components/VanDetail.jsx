@@ -27,8 +27,7 @@ export default function VanDetail() {
             >
                 &larr;{" "}
                 <span>
-                    Back to {location.state?.type ? location.state.type : "all"}{" "}
-                    vans
+                    Back to {location.state?.type ? location.state.type : "all"} vans
                 </span>
             </Link>
             {van ? (
