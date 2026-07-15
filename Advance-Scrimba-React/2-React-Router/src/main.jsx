@@ -128,19 +128,26 @@ createRoot(document.getElementById("root")).render(<App />);
 //         </div>
 //     ));
 
+//     const handleClick = (event) => {
+//         console.log(event.currentTarget.value);
+//         event.currentTarget.value
+//             ? setSearchParams({ type: event.currentTarget.value })
+//             : setSearchParams({});
+//     };
+
 //     return (
 //         <main>
 //             <h2>Home</h2>
 //             <div>
-//                 <Link style={{ marginLeft: "5px" }} to=".">
-//                     Clear
-//                 </Link>
-//                 <Link style={{ marginLeft: "5px" }} to="?type=sith">
+//                 <button onClick={handleClick} value="">
+//                     Clear Filter
+//                 </button>
+//                 <button onClick={handleClick} value="sith">
 //                     Sith
-//                 </Link>
-//                 <Link style={{ marginLeft: "5px" }} to="?type=jedi">
+//                 </button>
+//                 <button onClick={handleClick} value="jedi">
 //                     Jedi
-//                 </Link>
+//                 </button>
 //             </div>
 //             <hr />
 //             {charEls}
