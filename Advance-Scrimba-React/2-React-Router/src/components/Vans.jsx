@@ -25,7 +25,7 @@ function Vans() {
                     to={van.id}
                     state={{
                         search: searchParams.toString(),
-                        type: searchParams.get("type"),
+                        type: typeFilter,
                     }}
                 >
                     <img src={van.imageUrl} />
