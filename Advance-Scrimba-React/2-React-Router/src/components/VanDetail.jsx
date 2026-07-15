@@ -17,7 +17,7 @@ export default function VanDetail() {
     return (
         <div className="van-detail-container">
             <Link
-                to={location.state.search ? `${location.state.search}` : ".."}
+                to={location.state.search ? `../${location.state.search}` : ".."}
                 relative="path"
                 className="back-button"
             >
