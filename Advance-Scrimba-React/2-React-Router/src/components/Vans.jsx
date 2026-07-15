@@ -21,7 +21,7 @@ function Vans() {
     const vanElements = displayFilterVans.map((van) => {
         return (
             <div key={van.id} className="van-tile">
-                <Link to={`${van.id}`}>
+                <Link to={van.id}>
                     <img src={van.imageUrl} />
                     <div className="van-info">
                         <h3>{van.name}</h3>
