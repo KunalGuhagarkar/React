@@ -58,13 +58,13 @@ function Vans() {
                     Simple
                 </button>
                 <button
-                    className="van-type rugged"
+                    className={`van-type rugged ${typeFilter === "rugged" ? "selected" : ""}`}
                     onClick={() => setSearchParams({ type: "rugged" })}
                 >
                     Rugged
                 </button>
                 <button
-                    className="van-type luxury"
+                    className={`van-type luxury ${typeFilter === "luxury" ? "selected" : ""}`}
                     onClick={() => setSearchParams({ type: "luxury" })}
                 >
                     Luxury
