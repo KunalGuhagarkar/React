@@ -18,7 +18,7 @@ export default function VanDetail() {
         <div className="van-detail-container">
             <Link
                 to={
-                    location.state.search
+                    location.state?.search
                         ? `../?${location.state.search}`
                         : ".."
                 }
