@@ -128,24 +128,60 @@ createRoot(document.getElementById("root")).render(<App />);
 //         </div>
 //     ));
 
-//     const handleClick = (event) => {
-//         console.log(event.currentTarget.value);
-//         event.currentTarget.value
-//             ? setSearchParams({ type: event.currentTarget.value })
-//             : setSearchParams({});
-//     };
+//     // const handleClick = (event) => {
+//     //     console.log(event.currentTarget.value);
+//     //     event.currentTarget.value
+//     //         ? setSearchParams({ type: event.currentTarget.value })
+//     //         : setSearchParams({});
+//     // };
+
+//     function genNewSearchParamString(key, value) {
+//         const sp = new URLSearchParams(searchParams);
+//         if (value == null) {
+//             sp.delete(key);
+//         } else {
+//             sp.set(key, value);
+//         }
+
+//         return `?${sp.toString()}`;
+//     }
+
+//     function handleFilterChange(key, value) {
+//         setSearchParams((prev) => {
+//             if (value == null) {
+//                 prev.delete(key);
+//             } else {
+//                 prev.set(key, value);
+//             }
+//             return prev;
+//         });
+//     }
 
 //     return (
 //         <main>
 //             <h2>Home</h2>
 //             <div>
-//                 <button onClick={handleClick} value="">
+//                 <Link to={genNewSearchParamString("type", "jedi")}>Jedi</Link>
+//                 <Link to={genNewSearchParamString("type", "sith")}>Sith</Link>
+//                 <Link to={genNewSearchParamString("type", null)}>Clear</Link>
+//             </div>
+//             <div>
+//                 <button
+//                     onClick={() => handleFilterChange("type", null)}
+//                     value=""
+//                 >
 //                     Clear Filter
 //                 </button>
-//                 <button onClick={handleClick} value="sith">
+//                 <button
+//                     onClick={() => handleFilterChange("type", "sith")}
+//                     value="sith"
+//                 >
 //                     Sith
 //                 </button>
-//                 <button onClick={handleClick} value="jedi">
+//                 <button
+//                     onClick={() => handleFilterChange("type", "jedi")}
+//                     value="jedi"
+//                 >
 //                     Jedi
 //                 </button>
 //             </div>
