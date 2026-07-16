@@ -61,7 +61,7 @@ function Vans() {
     }
 
     if (error) {
-        return <h1>Error Occured</h1>;
+        return <h1>There was an Error: {error.message}</h1>;
     }
 
     return (
