@@ -6,6 +6,7 @@ function Vans() {
     const [vans, setVans] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
     const [loading, setLoading] = useState(false);
+    const [error, setError] = useState(null);
 
     const typeFilter = searchParams.get("type");
     console.log(searchParams.toString());
@@ -13,11 +14,15 @@ function Vans() {
     useEffect(() => {
         async function loadVans() {
             setLoading(true);
-            const data = await getVans();
-            setVans(data);
-            setLoading(false);
+            try {
+                const data = await getVans();
+                setVans(data);
+            } catch (err) {
+                setError(err);
+            } finally {
+                setLoading(false);
+            }
         }
-
         loadVans();
     }, []);
 
@@ -53,6 +58,10 @@ function Vans() {
 
     if (loading) {
         return <h1>Loading...</h1>;
+    }
+
+    if (error) {
+        return <h1>Error Occured</h1>;
     }
 
     return (
