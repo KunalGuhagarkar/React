@@ -489,6 +489,11 @@ i[class*="van-type-"] {
     margin: 50px;
 }
 
+.not-found-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
 .not-found-container button {
     width: 100%;
     padding: 10px;
