@@ -22,7 +22,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route path="*" element={<h1>Oink 404 Page</h1>} />
+                    <Route path="*" element={<h1>404 Page not found!</h1>} />
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="vans" element={<Vans />} />
