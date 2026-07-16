@@ -488,3 +488,7 @@ i[class*="van-type-"] {
 .not-found-container {
     margin: 50px;
 }
+
+.not-found-container button {
+    width: 100%;
+}
