@@ -16,13 +16,14 @@ import HostVansDetail from "./components/Host/HostVansDetail";
 import HostVanPricing from "./components/Host/HostVanPricing";
 import HostVanInfo from "./components/Host/HostVanInfo";
 import HostVanPhotos from "./components/Host/HostVanPhotos";
+import NotFound from "./components/NotFound";
 
 function App() {
     return (
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Layout />}>
-                    <Route path="*" element={<h1>404 Page not found!</h1>} />
+                    <Route path="*" element={<NotFound />} />
                     <Route index element={<Home />} />
                     <Route path="about" element={<About />} />
                     <Route path="vans" element={<Vans />} />
