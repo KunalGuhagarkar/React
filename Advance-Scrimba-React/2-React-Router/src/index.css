@@ -485,3 +485,6 @@ i[class*="van-type-"] {
     font-weight: 600;
 }
 
+.not-found-container {
+    margin: 50px;
+}
