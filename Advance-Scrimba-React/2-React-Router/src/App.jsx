@@ -1,8 +1,6 @@
 // import "./App.css";
 
 import {
-    BrowserRouter,
-    Routes,
     Route,
     RouterProvider,
     createBrowserRouter,
@@ -11,7 +9,7 @@ import {
 
 import Home from "./components/Home";
 import About from "./components/About";
-import Vans from "./components/Vans";
+import Vans, { loader as vanPageLoader } from "./components/Vans";
 import VanDetail from "./components/VanDetail";
 import Layout from "./components/Layout";
 import Dashboard from "./components/Host/Dashboard";
@@ -24,13 +22,14 @@ import HostVanPricing from "./components/Host/HostVanPricing";
 import HostVanInfo from "./components/Host/HostVanInfo";
 import HostVanPhotos from "./components/Host/HostVanPhotos";
 import NotFound from "./components/NotFound";
+import Error from "./components/Error";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />} errorElement={<Error />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="vans" element={<Vans />} />
+            <Route path="vans" element={<Vans />} loader={vanPageLoader} />
             <Route path="vans/:id" element={<VanDetail />} />
 
             <Route path="host" element={<HostLayout />}>
@@ -50,13 +49,7 @@ const router = createBrowserRouter(
 );
 
 function App() {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <RouterProvider router={router} />
-            </Routes>
-        </BrowserRouter>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;

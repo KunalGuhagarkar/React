@@ -1,7 +1,7 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
 import "./server";
+import App from "./App.jsx";
 
 createRoot(document.getElementById("root")).render(<App />);
 
@@ -213,16 +213,17 @@ createRoot(document.getElementById("root")).render(<App />);
 //     Route,
 // } from "react-router-dom";
 
-// function HomePage() {
-//     return (
-//         <main>
-//             <h1>Home page</h1>
-//         </main>
-//     );
-// }
+// import Home, { loader as homePageLoader } from "./components/Loader/Home";
 
 // const router = createBrowserRouter(
-//     createRoutesFromElements(<Route path="/" element={<HomePage />} />),
+//     createRoutesFromElements(
+//         <Route
+//             path="/"
+//             element={<Home />}
+//             loader={homePageLoader}
+//             errorElement={<h1>This is an Error</h1>}
+//         />,
+//     ),
 // );
 
 // function App() {
