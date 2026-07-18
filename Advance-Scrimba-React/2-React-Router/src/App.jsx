@@ -23,6 +23,7 @@ import HostVanInfo from "./components/Host/HostVanInfo";
 import HostVanPhotos from "./components/Host/HostVanPhotos";
 import NotFound from "./components/NotFound";
 import Error from "./components/Error";
+import Login from "./components/Login";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -31,6 +32,7 @@ const router = createBrowserRouter(
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} loader={vanPageLoader} />
             <Route path="vans/:id" element={<VanDetail />} />
+            <Route path="login" element={<Login />} />
 
             <Route path="host" element={<HostLayout />}>
                 <Route index element={<Dashboard />} />
