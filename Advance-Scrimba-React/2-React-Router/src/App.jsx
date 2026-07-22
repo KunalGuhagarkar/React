@@ -50,7 +50,9 @@ const router = createBrowserRouter(
                     const userLoggedIn = false;
 
                     if (!userLoggedIn) {
-                        throw redirect("/login");
+                        const response = redirect("/login");
+                        response.body = true;
+                        throw response;
                     }
                     return null;
                 }}
