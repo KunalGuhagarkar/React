@@ -48,10 +48,10 @@ const router = createBrowserRouter(
                     index
                     element={<Dashboard />}
                     loader={async () => {
-                        const userLoggedIn = true;
+                        const userLoggedIn = false;
 
                         if (!userLoggedIn) {
-                            throw redirect();
+                            throw redirect('.');
                         }
                         return null;
                     }}
