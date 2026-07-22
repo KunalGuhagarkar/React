@@ -57,9 +57,27 @@ const router = createBrowserRouter(
                     }}
                 />
                 <Route path="vans/:id" element={<HostVansDetail />}>
-                    <Route index element={<HostVanInfo />} />
-                    <Route path="pricing" element={<HostVanPricing />} />
-                    <Route path="photos" element={<HostVanPhotos />} />
+                    <Route
+                        index
+                        element={<HostVanInfo />}
+                        loader={async () => {
+                            return null;
+                        }}
+                    />
+                    <Route
+                        path="pricing"
+                        element={<HostVanPricing />}
+                        loader={async () => {
+                            return null;
+                        }}
+                    />
+                    <Route
+                        path="photos"
+                        element={<HostVanPhotos />}
+                        loader={async () => {
+                            return null;
+                        }}
+                    />
                 </Route>
                 <Route path="reviews" element={<Reviews />} />
             </Route>
