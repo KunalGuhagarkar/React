@@ -35,9 +35,27 @@ const router = createBrowserRouter(
             <Route path="login" element={<Login />} />
 
             <Route path="host" element={<HostLayout />}>
-                <Route index element={<Dashboard />} />
-                <Route path="income" element={<Income />} />
-                <Route path="vans" element={<HostVans />} />
+                <Route
+                    index
+                    element={<Dashboard />}
+                    loader={async () => {
+                        return null;
+                    }}
+                />
+                <Route
+                    path="income"
+                    element={<Income />}
+                    loader={async () => {
+                        return null;
+                    }}
+                />
+                <Route
+                    path="vans"
+                    element={<HostVans />}
+                    loader={async () => {
+                        return null;
+                    }}
+                />
                 <Route path="vans/:id" element={<HostVansDetail />}>
                     <Route index element={<HostVanInfo />} />
                     <Route path="pricing" element={<HostVanPricing />} />
