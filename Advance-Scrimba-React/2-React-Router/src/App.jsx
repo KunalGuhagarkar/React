@@ -3,7 +3,7 @@ import {
     RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
-    redirect
+    redirect,
 } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -51,7 +51,7 @@ const router = createBrowserRouter(
                         const userLoggedIn = false;
 
                         if (!userLoggedIn) {
-                            throw redirect()
+                            throw redirect("/login");
                         }
                         return null;
                     }}
