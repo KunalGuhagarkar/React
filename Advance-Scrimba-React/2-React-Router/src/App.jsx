@@ -3,7 +3,6 @@ import {
     RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
-    redirect,
 } from "react-router-dom";
 
 import Home from "./components/Home";
@@ -30,6 +29,8 @@ import NotFound from "./components/NotFound";
 import Error from "./components/Error";
 import Login from "./components/Login";
 
+import { requireAuth } from "./utils";
+
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Layout />} errorElement={<Error />}>
@@ -43,20 +44,7 @@ const router = createBrowserRouter(
             />
             <Route path="login" element={<Login />} />
 
-            <Route
-                path="host"
-                element={<HostLayout />}
-                loader={async () => {
-                    const userLoggedIn = false;
-
-                    if (!userLoggedIn) {
-                        const response = redirect("/login");
-                        response.body = true;
-                        throw response;
-                    }
-                    return null;
-                }}
-            >
+            <Route path="host" element={<HostLayout />} loader={requireAuth}>
                 <Route
                     index
                     element={<Dashboard />}
