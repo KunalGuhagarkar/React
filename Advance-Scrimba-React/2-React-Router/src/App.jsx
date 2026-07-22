@@ -43,16 +43,22 @@ const router = createBrowserRouter(
             />
             <Route path="login" element={<Login />} />
 
-            <Route path="host" element={<HostLayout />}>
+            <Route
+                path="host"
+                element={<HostLayout />}
+                loader={async () => {
+                    const userLoggedIn = false;
+
+                    if (!userLoggedIn) {
+                        throw redirect("login");
+                    }
+                    return null;
+                }}
+            >
                 <Route
                     index
                     element={<Dashboard />}
                     loader={async () => {
-                        const userLoggedIn = false;
-
-                        if (!userLoggedIn) {
-                            throw redirect('login');
-                        }
                         return null;
                     }}
                 />
