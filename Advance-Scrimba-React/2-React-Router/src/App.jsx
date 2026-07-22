@@ -1,23 +1,28 @@
-// import "./App.css";
-
 import {
     Route,
     RouterProvider,
     createBrowserRouter,
     createRoutesFromElements,
+    redirect
 } from "react-router-dom";
 
 import Home from "./components/Home";
 import About from "./components/About";
 import Vans, { loader as vanPageLoader } from "./components/Vans";
-import VanDetail from "./components/VanDetail";
+import VanDetail, {
+    loader as vanDetailPageLoader,
+} from "./components/VanDetail";
 import Layout from "./components/Layout";
 import Dashboard from "./components/Host/Dashboard";
 import Income from "./components/Host/Income";
 import Reviews from "./components/Host/Reviews";
 import HostLayout from "./components/Host/HostLayout";
-import HostVans from "./components/Host/HostVans";
-import HostVansDetail from "./components/Host/HostVansDetail";
+import HostVans, {
+    loader as hostVansLoaderPage,
+} from "./components/Host/HostVans";
+import HostVansDetail, {
+    loader as HostVansDetailLoaderPage,
+} from "./components/Host/HostVansDetail";
 import HostVanPricing from "./components/Host/HostVanPricing";
 import HostVanInfo from "./components/Host/HostVanInfo";
 import HostVanPhotos from "./components/Host/HostVanPhotos";
@@ -31,7 +36,11 @@ const router = createBrowserRouter(
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} loader={vanPageLoader} />
-            <Route path="vans/:id" element={<VanDetail />} />
+            <Route
+                path="vans/:id"
+                element={<VanDetail />}
+                loader={vanDetailPageLoader}
+            />
             <Route path="login" element={<Login />} />
 
             <Route path="host" element={<HostLayout />}>
@@ -39,6 +48,11 @@ const router = createBrowserRouter(
                     index
                     element={<Dashboard />}
                     loader={async () => {
+                        const userLoggedIn = false;
+
+                        if (!userLoggedIn) {
+                            throw redirect()
+                        }
                         return null;
                     }}
                 />
@@ -52,16 +66,12 @@ const router = createBrowserRouter(
                 <Route
                     path="vans"
                     element={<HostVans />}
-                    loader={async () => {
-                        return null;
-                    }}
+                    loader={hostVansLoaderPage}
                 />
                 <Route
                     path="vans/:id"
                     element={<HostVansDetail />}
-                    loader={async () => {
-                        return null;
-                    }}
+                    loader={HostVansDetailLoaderPage}
                 >
                     <Route
                         index
