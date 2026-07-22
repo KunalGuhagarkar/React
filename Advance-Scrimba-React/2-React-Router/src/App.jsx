@@ -47,10 +47,7 @@ const router = createBrowserRouter(
             <Route
                 path="host"
                 element={<HostLayout />}
-                loader={async () => {
-                    await requireAuth();
-                    return null;
-                }}
+                loader={async () => await requireAuth()}
             >
                 <Route
                     index
