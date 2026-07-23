@@ -1,12 +1,29 @@
-html, body {
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
-    padding: 10px;
-    background-color: #FFF7ED;
-    color: #161616;
+    padding: 20px;
 }
 
-a, button {
-    margin-right: 15px;
-    color: #161616;
+input[type="text"], input[type="email"] {
+    margin-bottom: 15px;
+    height: 30px;
+    text-indent: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
 }
 
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.75rem;
+}
+
+textarea {
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
+    
+}
