@@ -4,13 +4,14 @@ import {
     createBrowserRouter,
     createRoutesFromElements,
     Route,
-    redirect,
 } from "react-router-dom";
 import "./index.css";
 
 import Layout from "./components/Layout";
 import AuthRequired from "./components/AuthRequired";
-import Login from "./components/Login";
+import Login, { loginLoader } from "./components/Login";
+
+import { requireAuth } from "./utils";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -27,27 +28,19 @@ const router = createBrowserRouter(
                 path="protected"
                 element={<h1>Super secret info here</h1>}
                 loader={async () => {
-                    const rand = Math.random() * 2;
-                    setTimeout(() => {
-                        console.log("TimeOut protected");
-                    }, rand);
-                    return null;
+                    await requireAuth();
                 }}
             >
                 <Route
                     path="nested"
                     element={<h1>Nested Protected Route</h1>}
                     loader={async () => {
-                        const rand = Math.random() * 2;
-                        setTimeout(() => {
-                            console.log("TimeOut nested protected");
-                        }, rand);
                         return null;
                     }}
                 />
             </Route>
 
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login />} loader={loginLoader} />
         </Route>,
     ),
 );

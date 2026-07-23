@@ -6,7 +6,7 @@ export default function AuthRequired() {
     // If the user is not logged in
     if (!isLoggedIn) {
         // Redirect them to the /login route
-        return <Navigate to="/login" />
+        return <Navigate to="/login" />;
     }
     // Otherwise:
     return <Outlet />;
