@@ -1,21 +1,45 @@
-import { useSearchParams, useLoaderData } from "react-router-dom";
-
-export function loginLoader({ request }) {
-    const url = new URL(request.url).searchParams.get("message");
-    return url;
-}
+import React from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Login() {
-    // const [searchParams, setSearchParams] = useSearchParams();
-    // const message = searchParams.get("message");
-    // console.log(message);
+    const [formData, setFormData] = React.useState({ email: "", password: "" })
+    const navigate = useNavigate()
+    
+    function handleChange(e) {
+        const { name, value } = e.target
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value
+            }
+        })
+    }
 
-    const message = useLoaderData();
-
+    function handleSubmit(e) {
+        e.preventDefault()
+        console.log(formData)
+        // loginUser(formData)
+        navigate("/protected")
+    }
     return (
-        <>
-            {message && <h2>{message}</h2>}
-            <h1>Login Page goes here!</h1>
-        </>
-    );
+        <form onSubmit={handleSubmit}>
+            <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                value={formData.email}
+                onChange={handleChange}
+            />
+            <br />
+            <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                value={formData.password}
+                onChange={handleChange}
+            />
+            <br />
+            <button>Log in</button>
+        </form>
+    )
 }
