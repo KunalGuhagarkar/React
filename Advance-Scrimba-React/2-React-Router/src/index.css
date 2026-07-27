@@ -549,3 +549,11 @@ i[class*="van-type-"] {
     color: white;
     font-family: "Inter", sans-serif;
 }
+
+.login-form > button:disabled {
+    background-color: red;
+}
+
+.red {
+    color: red;
+}
