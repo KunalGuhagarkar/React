@@ -8,6 +8,10 @@ function Header() {
         color: "#161616",
     };
 
+    function fakeLogOut() {
+        localStorage.removeItem("isLoggedIn");
+    }
+
     return (
         <header>
             <nav>
@@ -35,13 +39,10 @@ function Header() {
                         Vans
                     </NavLink>
                     <Link to="/login">
-                        <img
-                            src={imageUrl}
-                            alt="login-icon"
-                            width={25}
-                        />
+                        <img src={imageUrl} alt="login-icon" width={25} />
                     </Link>
                 </div>
+                <button onClick={fakeLogOut}>X</button>
             </nav>
         </header>
     );
