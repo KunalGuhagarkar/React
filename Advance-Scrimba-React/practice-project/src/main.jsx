@@ -79,7 +79,7 @@ import "./index.css";
 import Layout from "./components/Layout";
 import Login, { action as loginAction } from "./components/Login";
 
-const router = createBrowserRouter(
+const router = createBrowserRouter( 
     createRoutesFromElements(
         <Route path="/" element={<Layout />}>
             <Route index element={<h1>Home page</h1>} />
@@ -87,7 +87,7 @@ const router = createBrowserRouter(
                 path="protected"
                 element={<h1>Super secret info here</h1>}
                 loader={async () => {
-                    const isLoggedIn = false;
+                    const isLoggedIn = true;
                     if (!isLoggedIn) {
                         throw redirect("/login");
                     }
