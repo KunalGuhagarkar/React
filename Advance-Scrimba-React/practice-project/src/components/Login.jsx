@@ -21,10 +21,13 @@ export async function action({ request }) {
     const email = formData.get("email");
     const password = formData.get("password");
 
+    const pathname =
+        new URL(request.url).searchParams.get("redirectTo") || "/protected";
+
     try {
         const userStatus = await fakeLoginUser({ email, password });
         console.log(userStatus);
-        return redirect("/protected");
+        return redirect(pathname);
     } catch (error) {
         return error.message;
     }
@@ -33,7 +36,6 @@ export async function action({ request }) {
 export default function Login() {
     const error = useActionData();
     const navigation = useNavigation();
-    console.log(navigation.state);
     return (
         <Form method="post">
             <h1>Login</h1>
