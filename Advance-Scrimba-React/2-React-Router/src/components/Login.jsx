@@ -1,7 +1,5 @@
-import React from "react";
 import {
-    Navigate,
-    useNavigate,
+    useNavigation,
     useLoaderData,
     Form,
     redirect,
@@ -36,23 +34,7 @@ export default function Login() {
     const [status, setStatus] = useState("idle");
     const error = useActionData();
     const message = useLoaderData();
-    const navigate = useNavigate();
-
-    function handleSubmit(e) {
-        e.preventDefault();
-
-        setStatus("submitting");
-        loginUser(loginFormData)
-            .then((data) => {
-                navigate("/host", { replace: true });
-                setError(null);
-            })
-            .catch((err) => {
-                console.log(err);
-                setError(err);
-            })
-            .finally(() => setStatus("idle"));
-    }
+    const navigation = useNavigation();
 
     return (
         <div className="login-container">
@@ -62,8 +44,10 @@ export default function Login() {
             <Form method="post" className="login-form" replace>
                 <input name="email" type="email" placeholder="Email address" />
                 <input name="password" type="password" placeholder="Password" />
-                <button disabled={status === "submitting"}>
-                    {status === "submitting" ? "Logging in..." : "Log in"}
+                <button disabled={navigation.state === "submitting"}>
+                    {navigation.state === "submitting"
+                        ? "Logging in..."
+                        : "Log in"}
                 </button>
             </Form>
         </div>
