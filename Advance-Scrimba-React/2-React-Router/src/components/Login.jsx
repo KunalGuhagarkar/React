@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import { loginUser } from "../api";
-import { useState } from "react";
+import { requireAuth } from "../utils";
 
 export function loader({ request }) {
     return new URL(request.url).searchParams.get("message");
@@ -18,11 +18,14 @@ export async function action({ request }) {
     const email = formData.get("email");
     const password = formData.get("password");
 
+    const pathname = new URL(request.url).searchParams.get("redirectTo") || "/host";
+    console.log(pathname);
+
     try {
         const data = await loginUser({ email, password });
         console.log(data);
         localStorage.setItem("isLoggedIn", true);
-        const response = redirect("/host");
+        const response = redirect(pathname);
         response.body = true;
         return response;
     } catch (error) {
@@ -31,7 +34,6 @@ export async function action({ request }) {
 }
 
 export default function Login() {
-    const [status, setStatus] = useState("idle");
     const error = useActionData();
     const message = useLoaderData();
     const navigation = useNavigation();
