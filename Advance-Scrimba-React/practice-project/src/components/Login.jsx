@@ -1,7 +1,11 @@
-import React from "react";
-import { useNavigate, Form, useActionData, redirect } from "react-router-dom";
+import { Form, useActionData, redirect, useNavigation } from "react-router-dom";
+
+function sleep(ms) {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 async function fakeLoginUser(creds) {
+    await sleep(1000);
     if (creds.email === "b@b.com" && creds.password === "p123") {
         localStorage.setItem("loggedin", true);
         return {
@@ -28,7 +32,8 @@ export async function action({ request }) {
 
 export default function Login() {
     const error = useActionData();
-    console.log(error);
+    const navigation = useNavigation();
+    console.log(navigation.state);
     return (
         <Form method="post">
             <h1>Login</h1>
@@ -37,7 +42,9 @@ export default function Login() {
             <br />
             <input type="password" name="password" placeholder="Password" />
             <br />
-            <button>Log in</button>
+            <button disabled={navigation.state === "submitting"}>
+                {navigation.state === "submitting" ? "Logging In..." : "Log In"}
+            </button>
         </Form>
     );
 }
