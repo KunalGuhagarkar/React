@@ -14,18 +14,20 @@ export default function Weather() {
     return (
         <section className="weather-container">
             <h1>Weather in Salt Lake City</h1>
-            <Await resolve={loaderData.weather}>
-                {(loadedWeatherData) => {
-                    console.log(loadedWeatherData);
-                    const iconUrl = `http://openweathermap.org/img/wn/${loadedWeatherData.weather[0].icon}@2x.png`;
-                    return (
-                        <>
-                            <h3>{loadedWeatherData.main.temp}ºF</h3>
-                            <img src={iconUrl} />
-                        </>
-                    );
-                }}
-            </Await>
+            <Suspense fallback={<h2>Loading weather...</h2>}>
+                <Await resolve={loaderData.weather}>
+                    {(loadedWeatherData) => {
+                        console.log(loadedWeatherData);
+                        const iconUrl = `http://openweathermap.org/img/wn/${loadedWeatherData.weather[0].icon}@2x.png`;
+                        return (
+                            <>
+                                <h3>{loadedWeatherData.main.temp}ºF</h3>
+                                <img src={iconUrl} />
+                            </>
+                        );
+                    }}
+                </Await>
+            </Suspense>
         </section>
     );
 }
