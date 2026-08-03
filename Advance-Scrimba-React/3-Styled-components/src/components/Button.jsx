@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background-color: white;
+    background-color: ${({ primary }) => (primary ? "red" : "white")};
     display: flex;
     justify-content: center;
     padding: 5px;
@@ -10,5 +10,5 @@ const StyledButton = styled.button`
 `;
 
 export default function Button({ text, primary }) {
-    return <StyledButton>{text}</StyledButton>;
+    return <StyledButton primary={primary}>{text}</StyledButton>;
 }
