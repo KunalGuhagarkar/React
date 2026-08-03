@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Button from "./Button";
 
 const Title = styled.h1`
-    color: #aac9f0;
+    color: #aaecf0;
 `;
 
 const Section = styled.div`
