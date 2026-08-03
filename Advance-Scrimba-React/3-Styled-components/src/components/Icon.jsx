@@ -9,5 +9,5 @@ const Circle = styled.div`
 `;
 
 export default function Icon({ primary }) {
-    return <Circle primary={primary}></Circle>;
+    return <Circle primary={primary} />;
 }
