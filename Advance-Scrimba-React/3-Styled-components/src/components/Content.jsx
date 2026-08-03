@@ -3,6 +3,9 @@ import styled from "styled-components";
 // Importing Button Component
 import Button from "./Button";
 
+// Importing Icon Component
+import Icon from "./Icon";
+
 const Title = styled.h1`
     color: #aaecf0;
 `;
@@ -23,6 +26,7 @@ export default function Content() {
             <Title>Section</Title>
             <Button primary text="Me First">Click Me</Button>
             <Button text="Me Second">Click Me</Button>
+            <Icon />
         </Section>
     );
 }
