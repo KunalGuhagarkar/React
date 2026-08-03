@@ -16,6 +16,7 @@ const Section = styled.div`
 
 const Button = styled.button`
     background-color: white;
+    margin-top: 5px;
 `
 
 export default function Content() {
