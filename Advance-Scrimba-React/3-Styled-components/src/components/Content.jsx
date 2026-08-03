@@ -8,7 +8,7 @@ const Title = styled.h1`
 `;
 
 const Section = styled.div`
-    background-color: #f0d1aa;
+    background-color: #aac9f0;
     display: flex;
     flex-direction: column;
     justify-content: center;
