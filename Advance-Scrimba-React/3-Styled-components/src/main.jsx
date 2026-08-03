@@ -16,7 +16,7 @@ import "./App.css";
 
 import styled from "styled-components";
 
-const Title = styled.h1`
+const WeekdayTitle = styled.div`
     display: flex;
     justify-content: center;
     width: 50px;
@@ -40,28 +40,28 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <Title>Progress Tracker</Title>
+                <h1>Progress Tracker</h1>
                 <div>
                     <Section>
-                        <Title>M</Title>
+                        <WeekdayTitle>M</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>T</Title>
+                        <WeekdayTitle>T</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>W</Title>
+                        <WeekdayTitle>W</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>T</Title>
+                        <WeekdayTitle>T</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>F</Title>
+                        <WeekdayTitle>F</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>S</Title>
+                        <WeekdayTitle>S</WeekdayTitle>
                     </Section>
                     <Section>
-                        <Title>S</Title>
+                        <WeekdayTitle>S</WeekdayTitle>
                     </Section>
                 </div>
             </>
