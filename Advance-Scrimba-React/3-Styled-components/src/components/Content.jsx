@@ -7,6 +7,7 @@ const Title = styled.h1`
 const Section = styled.div`
     background-color: #f0d1aa;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     color: #f0aeaa;
     border-radius: 15px;
