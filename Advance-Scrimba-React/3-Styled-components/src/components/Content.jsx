@@ -6,8 +6,8 @@ const Title = styled.h1`
 
 export default function Content() {
     return (
-        <div className="section">
+        <Section>
             <Title>Section</Title>
-        </div>
+        </Section>
     );
 }
