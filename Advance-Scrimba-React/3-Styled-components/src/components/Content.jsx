@@ -15,6 +15,7 @@ const Section = styled.div`
 `;
 
 const Button = styled.button`
+    display: flex;
     background-color: white;
     margin-top: 5px;
 `
