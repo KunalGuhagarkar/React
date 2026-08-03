@@ -20,29 +20,11 @@ const Section = styled.div`
     color: #ff6961;
 `;
 
-export default function Sections() {
+export default function Sections({ text }) {
     return (
         <>
             <Section>
-                <WeekdayTitle>M</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>T</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>W</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>T</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>F</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>S</WeekdayTitle>
-            </Section>
-            <Section>
-                <WeekdayTitle>S</WeekdayTitle>
+                <WeekdayTitle>{text}</WeekdayTitle>
             </Section>
         </>
     );
