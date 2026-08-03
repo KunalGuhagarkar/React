@@ -16,6 +16,11 @@ import "./App.css";
 
 import styled from "styled-components";
 
+const Title = styled.h1`
+    font-family: sans-serif;
+    color: #b19cd9;
+`;
+
 const WeekdayTitle = styled.div`
     display: flex;
     justify-content: center;
@@ -40,7 +45,7 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <h1>Progress Tracker</h1>
+                <Title>Progress Tracker</Title>
                 <div>
                     <Section>
                         <WeekdayTitle>M</WeekdayTitle>
