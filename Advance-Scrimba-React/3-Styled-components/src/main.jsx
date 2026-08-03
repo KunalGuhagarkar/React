@@ -14,7 +14,7 @@ import { createRoot } from "react-dom/client";
 
 import "./App.css";
 
-import Sections from "./components/project-components/Section";
+import Sections from "./components/project-components/Sections";
 
 import styled from "styled-components";
 
@@ -28,7 +28,13 @@ class Main extends React.Component {
             <>
                 <Title>Progress Tracker</Title>
                 <div>
-                    <Sections />
+                    <Sections text="M" />
+                    <Sections text="T" />
+                    <Sections text="W" />
+                    <Sections text="T" />
+                    <Sections text="F" />
+                    <Sections text="S" />
+                    <Sections text="S" />
                 </div>
             </>
         );
