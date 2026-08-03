@@ -43,25 +43,25 @@ class Main extends React.Component {
                 <Title>Progress Tracker</Title>
                 <div>
                     <Section>
-                        <div className="weekday-title">M</div>
+                        <Title>M</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">T</div>
+                        <Title>T</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">W</div>
+                        <Title>W</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">T</div>
+                        <Title>T</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">F</div>
+                        <Title>F</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">S</div>
+                        <Title>S</Title>
                     </Section>
                     <Section>
-                        <div className="weekday-title">S</div>
+                        <Title>S</Title>
                     </Section>
                 </div>
             </>
