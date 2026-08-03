@@ -9,7 +9,6 @@ const Section = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     color: #f0aeaa;
     border-radius: 15px;
 `;
