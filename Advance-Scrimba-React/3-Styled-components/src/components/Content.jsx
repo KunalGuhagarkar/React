@@ -29,7 +29,7 @@ export default function Content() {
             </Button>
             <Button text="Me Second">Click Me</Button>
             <Icon primary />
-            <Icon secondary />
+            <Icon />
         </Section>
     );
 }
