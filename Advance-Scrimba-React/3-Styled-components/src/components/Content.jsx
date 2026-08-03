@@ -16,8 +16,12 @@ const Section = styled.div`
 
 const Button = styled.button`
     background-color: white;
-    margin-top: 5px;
-`
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+`;
 
 export default function Content() {
     return (
