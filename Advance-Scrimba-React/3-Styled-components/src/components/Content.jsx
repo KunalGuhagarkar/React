@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import Button from "./Button";
+
 const Title = styled.h1`
     color: #aac9f0;
 `;
@@ -14,14 +16,7 @@ const Section = styled.div`
     border-radius: 15px;
 `;
 
-const Button = styled.button`
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 15px;
-`;
+
 
 export default function Content() {
     return (
