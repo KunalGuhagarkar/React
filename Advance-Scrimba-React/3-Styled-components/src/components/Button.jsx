@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-    background-color: ${({ primary }) => (primary ? "red" : "white")};
+    background-color: ${({ primary }) => (primary ? "red" : "blue")};
     display: flex;
     justify-content: center;
     padding: 5px;
