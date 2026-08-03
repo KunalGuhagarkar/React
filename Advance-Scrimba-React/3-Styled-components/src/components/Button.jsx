@@ -9,6 +9,6 @@ const StyledButton = styled.button`
     border-radius: 15px;
 `;
 
-export default function Button({ text }) {
+export default function Button({ text, primary }) {
     return <StyledButton>{text}</StyledButton>;
 }
