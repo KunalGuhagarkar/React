@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Importing Button Component
 import Button from "./Button";
 
 const Title = styled.h1`
