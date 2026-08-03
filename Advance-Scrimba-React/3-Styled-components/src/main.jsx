@@ -12,7 +12,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-class Main extends React {
+class Main extends React.Component {
     render() {
         return (
             <>
