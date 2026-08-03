@@ -12,7 +12,16 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-import './App.css';
+import "./App.css";
+
+import styled from "styled-components";
+
+const Title = styled.h1`
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    border-right: solid 3px lightgrey;
+`;
 
 
 
@@ -20,7 +29,7 @@ class Main extends React.Component {
     render() {
         return (
             <>
-                <h1>Progress Tracker</h1>
+                <Title>Progress Tracker</Title>
                 <div>
                     <div className="section">
                         <div className="weekday-title">M</div>
