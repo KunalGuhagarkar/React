@@ -12,6 +12,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
+import './App.css';
 class Main extends React.Component {
     render() {
         return (
