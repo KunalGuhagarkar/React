@@ -12,6 +12,10 @@ const Section = styled.div`
     border-radius: 15px;
 `;
 
+const Button = styled.button`
+    background-color: white;
+`
+
 export default function Content() {
     return (
         <Section>
