@@ -7,6 +7,6 @@ const Circle = styled.div`
     background-color: red;
 `;
 
-export default function Icon() {
-    return <Circle></Circle>;
+export default function Icon({ primary, secondary }) {
+    return <Circle primary={primary} secondary={secondary}></Circle>;
 }
