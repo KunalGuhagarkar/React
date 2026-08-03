@@ -24,9 +24,12 @@ export default function Content() {
     return (
         <Section>
             <Title>Section</Title>
-            <Button primary text="Me First">Click Me</Button>
+            <Button primary text="Me First">
+                Click Me
+            </Button>
             <Button text="Me Second">Click Me</Button>
-            <Icon />
+            <Icon primary />
+            <Icon secondary />
         </Section>
     );
 }
