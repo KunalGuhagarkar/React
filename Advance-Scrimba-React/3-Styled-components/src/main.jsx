@@ -23,7 +23,18 @@ const Title = styled.h1`
     border-right: solid 3px lightgrey;
 `;
 
-
+const Section = styled.div`
+    background-color: #ffffff;
+    border: solid 3px grey;
+    margin: 4px;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    font-size: 40px;
+    color: #ff6961;
+`;
 
 class Main extends React.Component {
     render() {
@@ -31,27 +42,27 @@ class Main extends React.Component {
             <>
                 <Title>Progress Tracker</Title>
                 <div>
-                    <div className="section">
+                    <Section>
                         <div className="weekday-title">M</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">T</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">W</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">T</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">F</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">S</div>
-                    </div>
-                    <div className="section">
+                    </Section>
+                    <Section>
                         <div className="weekday-title">S</div>
-                    </div>
+                    </Section>
                 </div>
             </>
         );
