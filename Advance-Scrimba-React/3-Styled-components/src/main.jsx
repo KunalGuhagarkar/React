@@ -10,7 +10,7 @@
 // )
 
 import React from "react";
-import {createRoot} from "react-dom/client";
+import { createRoot } from "react-dom/client";
 
 class Main extends React.Component {
     render() {
@@ -45,4 +45,4 @@ class Main extends React.Component {
     }
 }
 
-createRoot.render(<Main />, document.getElementById("root"));
+createRoot(document.getElementById("root")).render(<Main />);
