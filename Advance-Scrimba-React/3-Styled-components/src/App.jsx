@@ -1,5 +1,6 @@
 import "./App.css";
 import Content from "./components/Content";
+import Icon from "./components/Icon";
 
 function App() {
     return (
