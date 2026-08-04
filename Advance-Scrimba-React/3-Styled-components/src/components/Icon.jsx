@@ -9,7 +9,7 @@ const Circle = styled.div`
     border: ${({ border }) => border || "solid 3px blue"};
 
     &:hover {
-        background-color: "pink";
+        background-color: pink;
     }
 `;
 
