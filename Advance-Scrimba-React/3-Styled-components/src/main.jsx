@@ -29,13 +29,13 @@ class Main extends React.Component {
             <>
                 <Title>Progress Tracker</Title>
                 <div>
-                    <Sections text="M" />
-                    <Sections text="T" />
-                    <Sections text="W" />
-                    <Sections text="T" />
-                    <Sections text="F" />
-                    <Sections text="S" />
-                    <Sections text="S" />
+                    <Sections text="M" progress="10" />
+                    <Sections text="T" progress="10"/>
+                    <Sections text="W" progress="10"/>
+                    <Sections text="T" progress="10"/>
+                    <Sections text="F" progress="10"/>
+                    <Sections text="S" progress="10"/>
+                    <Sections text="S" progress="10"/>
                 </div>
             </>
         );
