@@ -9,6 +9,10 @@ const StyledButton = styled.button`
     border-radius: 15px;
 `;
 
+function ReversedButton(props) {
+    return <StyledButton {...props} children={props.children.split("").reverse()} />;
+}
+
 export default function Button({ text, primary }) {
-    return <StyledButton primary={primary}>{text}</StyledButton>;
+    return <StyledButton as={ReversedButton} primary={primary}>{text}</StyledButton>;
 }

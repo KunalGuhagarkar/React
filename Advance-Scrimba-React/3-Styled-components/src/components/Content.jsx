@@ -38,17 +38,15 @@ function ReversedParagraph(props) {
     );
 }
 
-function ReversedButton(props) {
-    return <Button {...props} children={props.children.split("").reverse()} />;
-}
+
 
 export default function Content() {
     return (
         <Section>
             <Title>Section</Title>
             <SubTitle>I'm a Sub Title</SubTitle>
-            <Button as={ReversedButton} primary text="Me First" />
-            <Button as={ReversedButton} text="Me Second" />
+            <Button primary text="Me First" />
+            <Button text="Me Second" />
             <Icon primary />
             <Icon />
             <ParagraphTitle as={ReversedParagraph}>
