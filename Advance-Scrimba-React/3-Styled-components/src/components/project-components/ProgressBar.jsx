@@ -7,6 +7,6 @@ const StyledProgressBar = styled.div`
 
 export default function ProgressBar({ progressValue }) {
     return (
-        <StyledProgressBar progressValue={progressValue}></StyledProgressBar>
+        <StyledProgressBar progressvalue={progressValue}></StyledProgressBar>
     );
 }

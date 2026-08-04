@@ -9,7 +9,6 @@
 //   </StrictMode>,
 // )
 
-
 // Project
 import React from "react";
 import { createRoot } from "react-dom/client";
@@ -30,13 +29,13 @@ class Main extends React.Component {
             <>
                 <Title>Progress Tracker</Title>
                 <div>
-                    <Sections text="M" progressValue={10} />
-                    <Sections text="T" progressValue={20} />
-                    <Sections text="W" progressValue={30} />
-                    <Sections text="T" progressValue={40} />
-                    <Sections text="F" progressValue={50} />
-                    <Sections text="S" progressValue={60} />
-                    <Sections text="S" progressValue={70} />
+                    <Sections text="M" progressValue="10" />
+                    <Sections text="T" progressValue="20" />
+                    <Sections text="W" progressValue="30" />
+                    <Sections text="T" progressValue="40" />
+                    <Sections text="F" progressValue="50" />
+                    <Sections text="S" progressValue="60" />
+                    <Sections text="S" progressValue="70" />
                 </div>
             </>
         );
