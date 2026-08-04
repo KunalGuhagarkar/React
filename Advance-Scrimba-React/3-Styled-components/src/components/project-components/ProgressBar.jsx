@@ -6,7 +6,9 @@ const StyledProgressbar = styled.div`
             ? "red"
             : progress > 20 && progress <= 50
               ? "orange"
-              : "green"};
+              : progress > 50 && progress < 80
+                ? "yellow"
+                : "green"};
     width: ${({ progress }) => `${progress}%`};
 `;
 
