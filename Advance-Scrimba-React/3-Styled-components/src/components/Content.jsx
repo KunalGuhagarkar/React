@@ -38,8 +38,6 @@ function ReversedParagraph(props) {
     );
 }
 
-
-
 export default function Content() {
     return (
         <Section>
