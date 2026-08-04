@@ -25,7 +25,7 @@ const Section = styled.div`
     color: #f90c00;
 `;
 
-export default function Sections({ text }) {
+export default function Sections({ text, progress }) {
     return (
         <>
             <Section>
@@ -34,7 +34,7 @@ export default function Sections({ text }) {
                 ) : (
                     <WeekdayTitle>{text}</WeekdayTitle>
                 )}
-                <ProgressBar />
+                <ProgressBar progress={progress} />
             </Section>
         </>
     );
