@@ -10,6 +10,11 @@ const Title = styled.h1`
     color: #aaecf0;
 `;
 
+// Extending Styles
+const SubTitle = styled(Title)`
+    font-size: 14px;
+`
+
 const Section = styled.div`
     background-color: #aac9f0;
     display: flex;
@@ -24,6 +29,7 @@ export default function Content() {
     return (
         <Section>
             <Title>Section</Title>
+            <SubTitle>Sub Title</SubTitle>
             <Button primary text="Me First">
                 Click Me
             </Button>
