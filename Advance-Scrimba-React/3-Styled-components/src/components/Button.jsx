@@ -26,6 +26,7 @@ export default function Button({ text, primary }) {
     return (
         <StyledButton as={ReversedButton} primary={primary}>
             {text}
+            <p className="subtext">This is sub text</p>
         </StyledButton>
     );
 }
