@@ -7,6 +7,10 @@ const StyledButton = styled.button`
     padding: 5px;
     margin: 5px;
     border-radius: 15px;
+
+    &:hover {
+        background-color: grey;
+    }
 `;
 
 function ReversedButton(props) {
