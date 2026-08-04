@@ -28,7 +28,11 @@ export default function Sections({ text }) {
     return (
         <>
             <Section>
-                <WeekendTitle>{text}</WeekendTitle>
+                {text === "S" ? (
+                    <WeekendTitle>{text}</WeekendTitle>
+                ) : (
+                    <WeekdayTitle>{text}</WeekdayTitle>
+                )}
             </Section>
         </>
     );
