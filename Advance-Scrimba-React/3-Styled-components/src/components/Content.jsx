@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 // Importing Button Component
 import Button from "./Button";
@@ -6,8 +6,20 @@ import Button from "./Button";
 // Importing Icon Component
 import Icon from "./Icon";
 
+// Adding Animations
+const fadeIn = keyframes`
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+`;
+
 const Title = styled.h1`
     color: #aaecf0;
+    animation: 5s ${fadeIn}
 `;
 
 // Extending Styles
