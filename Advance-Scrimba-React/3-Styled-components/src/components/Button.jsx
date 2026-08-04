@@ -11,6 +11,10 @@ const StyledButton = styled.button`
     &:hover {
         background-color: grey;
     }
+    
+    .subtext {
+        font-size: 10px;
+    }
 `;
 
 function ReversedButton(props) {
