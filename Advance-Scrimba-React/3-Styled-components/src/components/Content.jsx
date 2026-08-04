@@ -47,12 +47,8 @@ export default function Content() {
         <Section>
             <Title>Section</Title>
             <SubTitle>I'm a Sub Title</SubTitle>
-            <Button as={ReversedButton} primary text="Me First">
-                Click Me
-            </Button>
-            <Button as={ReversedButton} text="Me Second">
-                Click Me
-            </Button>
+            <Button as={ReversedButton} primary text="Me First" />
+            <Button as={ReversedButton} text="Me Second" />
             <Icon primary />
             <Icon />
             <ParagraphTitle as={ReversedParagraph}>
