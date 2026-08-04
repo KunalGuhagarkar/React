@@ -6,20 +6,29 @@ import Button from "./Button";
 // Importing Icon Component
 import Icon from "./Icon";
 
-// Adding Animations
+// Adding Fade In Animation
 const fadeIn = keyframes`
     0% {
         opacity: 0;
     }
-    
     100% {
         opacity: 1;
     }
 `;
 
+// Adding Rotating Animation
+const rotate = keyframes`
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+`;
+
 const Title = styled.h1`
     color: #aaecf0;
-    animation: 5s ${fadeIn} ease-in;
+    animation: 3s ${rotate} ease-in;
 `;
 
 // Extending Styles
