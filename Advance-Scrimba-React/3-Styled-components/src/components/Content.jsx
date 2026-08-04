@@ -33,7 +33,7 @@ function ReversedParagraph(props) {
     return (
         <ParagraphTitle
             {...props}
-            children={props.children.split("").reverse()}
+            children={props.children.split('').reverse()}
         />
     );
 }
