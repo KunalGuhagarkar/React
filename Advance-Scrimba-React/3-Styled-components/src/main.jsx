@@ -1,44 +1,46 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+// import { StrictMode } from 'react'
+// import { createRoot } from 'react-dom/client'
+// import './index.css'
+// import App from './App.jsx'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// createRoot(document.getElementById('root')).render(
+//   <StrictMode>
+//     <App />
+//   </StrictMode>,
+// )
 
-// import React from "react";
-// import { createRoot } from "react-dom/client";
 
-// import "./App.css";
+// Project
+import React from "react";
+import { createRoot } from "react-dom/client";
 
-// import Sections from "./components/project-components/Sections";
+import "./App.css";
 
-// import styled from "styled-components";
+import Sections from "./components/project-components/Sections";
 
-// const Title = styled.h1`
-//     color: #b19cd9;
-// `;
+import styled from "styled-components";
 
-// class Main extends React.Component {
-//     render() {
-//         return (
-//             <>
-//                 <Title>Progress Tracker</Title>
-//                 <div>
-//                     <Sections text="M" />
-//                     <Sections text="T" />
-//                     <Sections text="W" />
-//                     <Sections text="T" />
-//                     <Sections text="F" />
-//                     <Sections text="S" />
-//                     <Sections text="S" />
-//                 </div>
-//             </>
-//         );
-//     }
-// }
+const Title = styled.h1`
+    color: #b19cd9;
+`;
 
-// createRoot(document.getElementById("root")).render(<Main />);
+class Main extends React.Component {
+    render() {
+        return (
+            <>
+                <Title>Progress Tracker</Title>
+                <div>
+                    <Sections text="M" />
+                    <Sections text="T" />
+                    <Sections text="W" />
+                    <Sections text="T" />
+                    <Sections text="F" />
+                    <Sections text="S" />
+                    <Sections text="S" />
+                </div>
+            </>
+        );
+    }
+}
+
+createRoot(document.getElementById("root")).render(<Main />);
