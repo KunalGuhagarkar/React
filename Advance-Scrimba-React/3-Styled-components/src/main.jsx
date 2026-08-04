@@ -30,12 +30,12 @@ class Main extends React.Component {
                 <Title>Progress Tracker</Title>
                 <div>
                     <Sections text="M" progress="10" />
-                    <Sections text="T" progress="10"/>
-                    <Sections text="W" progress="10"/>
-                    <Sections text="T" progress="10"/>
-                    <Sections text="F" progress="10"/>
-                    <Sections text="S" progress="10"/>
-                    <Sections text="S" progress="10"/>
+                    <Sections text="T" progress="20"/>
+                    <Sections text="W" progress="40"/>
+                    <Sections text="T" progress="60"/>
+                    <Sections text="F" progress="80"/>
+                    <Sections text="S" progress="90"/>
+                    <Sections text="S" progress="30"/>
                 </div>
             </>
         );
