@@ -11,24 +11,24 @@ const StyledButton = styled.button`
     &:hover {
         background-color: grey;
     }
-    
+
     .subtext {
         font-size: 10px;
     }
 `;
 
-function ReversedButton(props) {
-    return (
-        <StyledButton
-            {...props}
-            children={props.children.split("").reverse()}
-        />
-    );
-}
+// function ReversedButton(props) {
+//     return (
+//         <StyledButton
+//             {...props}
+//             children={props.children.split("").reverse()}
+//         />
+//     );
+// }
 
 export default function Button({ text, primary }) {
     return (
-        <StyledButton as={ReversedButton} primary={primary}>
+        <StyledButton primary={primary}>
             {text}
             <p className="subtext">This is sub text</p>
         </StyledButton>
