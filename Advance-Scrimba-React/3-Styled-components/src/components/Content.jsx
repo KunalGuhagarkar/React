@@ -19,7 +19,7 @@ const fadeIn = keyframes`
 
 const Title = styled.h1`
     color: #aaecf0;
-    animation: 5s ${fadeIn}
+    animation: 5s ${fadeIn} ease-in;
 `;
 
 // Extending Styles
