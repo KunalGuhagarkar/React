@@ -1,3 +1,5 @@
+import ProgressBar from "./ProgressBar";
+
 import styled from "styled-components";
 
 const WeekdayTitle = styled.div`
@@ -33,6 +35,7 @@ export default function Sections({ text }) {
                 ) : (
                     <WeekdayTitle>{text}</WeekdayTitle>
                 )}
+                <ProgressBar />
             </Section>
         </>
     );
