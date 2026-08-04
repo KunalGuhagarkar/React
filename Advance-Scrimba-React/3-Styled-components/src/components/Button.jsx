@@ -3,6 +3,7 @@ import styled from "styled-components";
 const StyledButton = styled.button`
     background-color: ${({ primary }) => (primary ? "red" : "blue")};
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 5px;
     margin: 5px;
