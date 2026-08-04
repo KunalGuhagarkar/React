@@ -6,5 +6,5 @@ const StyledProgressbar = styled.div`
 `
 
 export default function ProgressBar() {
-    return <StyledProgressbar></StyledProgressbar>;
+    return <StyledProgressbar />;
 }
