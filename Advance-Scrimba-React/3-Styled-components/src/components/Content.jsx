@@ -29,6 +29,15 @@ const Section = styled.div`
     border-radius: 15px;
 `;
 
+function ReversedParagraph(props) {
+    return (
+        <ParagraphTitle
+            {...props}
+            children={props.children.split("").reverse()}
+        />
+    );
+}
+
 export default function Content() {
     return (
         <Section>
@@ -41,6 +50,7 @@ export default function Content() {
             <Icon primary />
             <Icon />
             <ParagraphTitle>This is a Paragraph Title</ParagraphTitle>
+            <ReversedParagraph />
         </Section>
     );
 }
