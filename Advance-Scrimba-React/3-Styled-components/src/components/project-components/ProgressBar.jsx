@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledProgressBar = styled.div`
-    background-color: ${({ progressValue }) => console.log(progressValue) }
+    background-color: ${({ progressvalue }) => progressvalue > 50 ? "red" : "green" }
     width: ${({ progressValue }) => `${progressValue}%`};
 `;
 
