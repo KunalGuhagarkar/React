@@ -45,7 +45,7 @@ export default function Content() {
             <SubTitle>I'm a Sub Title</SubTitle>
             <Button primary text="Me First" />
             <Button text="Me Second" />
-            <Icon primary border="solid 3px" />
+            <Icon primary border="solid 3px red" />
             <Icon />
             <ParagraphTitle as={ReversedParagraph}>
                 This is a Paragraph Title
