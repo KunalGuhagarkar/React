@@ -7,6 +7,10 @@ const WeekdayTitle = styled.div`
     border-right: solid 3px lightgrey;
 `;
 
+const WeekendTitle = styled(WeekdayTitle)`
+    color: blue;
+`;
+
 const Section = styled.div`
     background-color: #ffffff;
     border: solid 3px grey;
@@ -24,7 +28,7 @@ export default function Sections({ text }) {
     return (
         <>
             <Section>
-                <WeekdayTitle>{text}</WeekdayTitle>
+                <WeekendTitle>{text}</WeekendTitle>
             </Section>
         </>
     );
