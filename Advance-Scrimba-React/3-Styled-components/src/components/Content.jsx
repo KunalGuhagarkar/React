@@ -29,7 +29,7 @@ export default function Content() {
     return (
         <Section>
             <Title>Section</Title>
-            <SubTitle>Sub Title</SubTitle>
+            <SubTitle>I'm a Sub Title</SubTitle>
             <Button primary text="Me First">
                 Click Me
             </Button>
