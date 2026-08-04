@@ -33,7 +33,7 @@ function ReversedParagraph(props) {
     return (
         <ParagraphTitle
             {...props}
-            children={props.children.split('').reverse()}
+            children={props.children.split("").reverse()}
         />
     );
 }
@@ -49,8 +49,9 @@ export default function Content() {
             <Button text="Me Second">Click Me</Button>
             <Icon primary />
             <Icon />
-            <ParagraphTitle as={ReversedParagraph}>This is a Paragraph Title</ParagraphTitle>
-            
+            <ParagraphTitle as={ReversedParagraph}>
+                This is a Paragraph Title
+            </ParagraphTitle>
         </Section>
     );
 }
