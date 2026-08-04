@@ -13,7 +13,11 @@ const Title = styled.h1`
 // Extending Styles
 const SubTitle = styled(Title)`
     font-size: 14px;
-`
+`;
+
+const ParagraphTitle = styled(SubTitle)`
+    color: grey;
+`;
 
 const Section = styled.div`
     background-color: #aac9f0;
@@ -36,6 +40,7 @@ export default function Content() {
             <Button text="Me Second">Click Me</Button>
             <Icon primary />
             <Icon />
+            <ParagraphTitle>This is a Paragraph Title</ParagraphTitle>
         </Section>
     );
 }
