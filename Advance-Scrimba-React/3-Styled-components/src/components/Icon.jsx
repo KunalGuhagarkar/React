@@ -7,6 +7,10 @@ const Circle = styled.div`
     border-radius: 50%;
     background-color: ${({ primary }) => (primary ? "green" : "yellow")};
     border: ${({ border }) => border || "solid 3px blue"};
+
+    &:hover {
+        background-color: "pink";
+    }
 `;
 
 export default function Icon({ primary, border }) {
