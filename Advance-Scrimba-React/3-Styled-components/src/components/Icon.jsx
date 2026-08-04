@@ -6,7 +6,7 @@ const Circle = styled.div`
     height: 25px;
     border-radius: 50%;
     background-color: ${({ primary }) => (primary ? "green" : "yellow")};
-    border: ${({ border }) => border && border};
+    border: ${({ border }) => border ? border : "blue"};
 `;
 
 export default function Icon({ primary, border }) {
