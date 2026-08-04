@@ -1,13 +1,10 @@
 import styled from "styled-components";
 
 const StyledProgressBar = styled.div`
-    background-color: 'red';
-    width: 20;
+    width: 50px;
+    background-color: "red";
 `;
 
-export default function ProgressBar({ progressValue }) {
-    console.log(progressValue);
-    return (
-        <StyledProgressBar />
-    );
+export default function ProgressBar() {
+    return <StyledProgressBar></StyledProgressBar>;
 }
