@@ -5,9 +5,10 @@ const Circle = styled.div`
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: ${({ primary }) => primary ? "green" : "yellow"};
+    background-color: ${({ primary }) => (primary ? "green" : "yellow")};
+    border: ${({ border }) => border && border};
 `;
 
-export default function Icon({ primary }) {
-    return <Circle primary={primary} />;
+export default function Icon({ primary, border }) {
+    return <Circle primary={primary} border={border} />;
 }
