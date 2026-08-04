@@ -1,6 +1,5 @@
-import ProgressBar from "./ProgressBar";
-
 import styled from "styled-components";
+import ProgressBar from "./ProgressBar";
 
 const WeekdayTitle = styled.div`
     display: flex;
@@ -23,7 +22,7 @@ const Section = styled.div`
     display: flex;
     justify-content: left;
     font-size: 40px;
-    color: #ff6961;
+    color: #f90c00;
 `;
 
 export default function Sections({ text }) {
