@@ -118,7 +118,10 @@ export default function UseState() {
     });
 
     function handleFormDataChange(e) {
-        console.log(e.target.name);
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [e.target.name]: e.target.value,
+        }));
     }
 
     return (
