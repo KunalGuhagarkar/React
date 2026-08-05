@@ -3,6 +3,7 @@ button {
     height: 30px;
     border-radius: 5px;
     border-style: none;
+    margin: 5px;
 }
 
 .active {
