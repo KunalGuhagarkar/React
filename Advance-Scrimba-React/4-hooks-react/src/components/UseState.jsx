@@ -62,16 +62,20 @@
 import { useState } from "react";
 
 export default function UseState() {
-    const [counter, setCounter] = useState();
+    const [counter, setCounter] = useState(0);
+
+    function handleIncrement() {
+        setCounter((prevCount) => prevCount + 1);
+    }
+
+    function handleDecrement() {
+        setCounter((prevCount) => prevCount - 1);
+    }
 
     return (
         <>
-            <button>
-                Increment
-            </button>
-            <button>
-                Decrement
-            </button>
+            <button>Increment</button>
+            <button>Decrement</button>
         </>
     );
 }
