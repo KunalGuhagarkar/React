@@ -210,9 +210,22 @@
 // Resetting Form using key
 import {useState} from 'react';
 
+export function FormComponent() {
 
+    const [name, setName] = useState("Kunal");
+
+    return (
+        <>
+            <input type="text" value={name} />
+            <p>Hello, {name}</p>
+        </>
+    );
+}
 
 export default function UseState() {
+
+
+
     return (
         <div>
 
