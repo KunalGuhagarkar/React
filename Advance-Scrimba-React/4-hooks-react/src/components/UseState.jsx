@@ -180,9 +180,13 @@ function TodoComponent({ item }) {
 
 export default function UseState() {
     const [todo, setTodo] = useState(todoList);
+    const [newItem, setNewItem] = useState("")
 
     return (
         <>
+            <input type="text" value={newItem} />
+            <button>Add</button>
+
             <div>
                 <h1>To Do List:</h1>
                 {todo.map((item, index) => (
