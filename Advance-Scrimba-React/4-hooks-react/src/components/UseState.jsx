@@ -35,6 +35,7 @@ export default function UseState() {
     return (
         <>
             <button onClick={toggleNameHandler}>Toggle Info</button>
+            {toggle ? <h1>Important Information</h1> : null}
         </>
     );
 }
