@@ -22,25 +22,21 @@
 //     );
 // }
 
+// Toggle Visibility
 import { useState } from "react";
 
 export default function UseState() {
-    const [name, setName] = useState("");
+    
+    const [toggle, setToggle] = useState(false);
 
-    const handleNameChange = (e) => {
-        setName(e.target.value);
-    };
+    function toggleNameHandler() {
+        toggle ? setToggle(!toggle) : setToggle(toggle);
+    }
 
     return (
         <>
-            <input
-                type="text"
-                placeholder="Enter Name"
-                value={name}
-                onChange={handleNameChange}
-            />
+            <button onClick={toggleNameHandler}>Toggle Info</button>
 
-            <h1>Name is {name}</h1>
         </>
     );
 }
