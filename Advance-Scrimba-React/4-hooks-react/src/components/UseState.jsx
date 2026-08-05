@@ -169,7 +169,13 @@ function todoList() {
 }
 
 function TodoComponent({ item }) {
-    return <input type="checkbox" name={item} />;
+    return (
+        <>
+            <input type="checkbox" name={item} />
+            <label>{item}</label>
+            <br />
+        </>
+    );
 }
 
 export default function UseState() {
