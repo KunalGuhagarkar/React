@@ -129,6 +129,9 @@ export default function UseState() {
                 <br />
                 Email:
                 <input type="email" value={form.email} />
+
+                <h1>Form Data:</h1>
+                <h3>Full Name: {form.firstname} {form.lastName}</h3>
             </div>
         </>
     );
