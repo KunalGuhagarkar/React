@@ -46,11 +46,14 @@ import { useState } from "react";
 export default function UseState() {
     const [active, setActive] = useState(false);
 
-    
-
     return (
         <>
-            <button className={active ? 'active' : 'inactive'} onClick={() => setActive(!active)}>Click Me</button>
+            <button
+                className={active ? "active" : "inactive"}
+                onClick={() => setActive(!active)}
+            >
+                Click Me
+            </button>
         </>
     );
 }
