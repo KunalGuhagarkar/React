@@ -59,6 +59,30 @@
 // }
 
 // Counters
+// import { useState } from "react";
+
+// export default function UseState() {
+//     const [counter, setCounter] = useState(0);
+
+//     function handleIncrement() {
+//         setCounter((prevCount) => prevCount + 1);
+//     }
+
+//     function handleDecrement() {
+//         setCounter((prevCount) => prevCount - 1);
+//     }
+
+//     return (
+//         <>
+//             <h1>Counter: {counter}</h1>
+//             <button onClick={handleIncrement}>Increment</button>
+//             <button onClick={handleDecrement}>Decrement</button>
+//         </>
+//     );
+// }
+
+// Updating state based on the previous state
+
 import { useState } from "react";
 
 export default function UseState() {
