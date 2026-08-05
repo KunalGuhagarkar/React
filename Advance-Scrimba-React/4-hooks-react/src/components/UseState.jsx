@@ -113,7 +113,7 @@ import { useState } from "react";
 export default function UseState() {
     const [form, setFormData] = useState({
         firstname: "Kunal",
-        lastName: "Guhagarkar",
+        lastname: "Guhagarkar",
         email: "kunal@gmail.com",
     });
 
@@ -139,7 +139,7 @@ export default function UseState() {
                 Last Name:
                 <input
                     type="text"
-                    value={form.lastName}
+                    value={form.lastname}
                     name="lastname"
                     onChange={handleFormDataChange}
                 />
@@ -154,7 +154,7 @@ export default function UseState() {
                 />
                 <h1>Form Data:</h1>
                 <h3>
-                    Full Name: {form.firstname} {form.lastName}
+                    Full Name: {form.firstname} {form.lastname}
                 </h3>
                 <h3>Email: {form.email}</h3>
             </div>
