@@ -29,7 +29,7 @@ export default function UseState() {
     const [toggle, setToggle] = useState(false);
 
     function toggleNameHandler() {
-        toggle && setToggle(!toggle);
+        toggle ? setToggle(!toggle) : setToggle(!toggle);
     }
 
     return (
