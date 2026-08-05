@@ -23,19 +23,34 @@
 // }
 
 // Toggle Visibility
+// import { useState } from "react";
+
+// export default function UseState() {
+//     const [toggle, setToggle] = useState(false);
+
+//     function toggleNameHandler() {
+//         setToggle((prevtoggle) => !prevtoggle);
+//     }
+
+//     return (
+//         <>
+//             <button onClick={toggleNameHandler}>Toggle Info</button>
+//             {toggle ? <h1>Important Information</h1> : null}
+//         </>
+//     );
+// }
+
+// Dynamic Styling
 import { useState } from "react";
 
 export default function UseState() {
-    const [toggle, setToggle] = useState(false);
+    const [active, setActive] = useState(false);
 
-    function toggleNameHandler() {
-        setToggle((prevtoggle) => !prevtoggle);
-    }
+    
 
     return (
         <>
-            <button onClick={toggleNameHandler}>Toggle Info</button>
-            {toggle ? <h1>Important Information</h1> : null}
+            <button onClick={() => setActive(!active)}>Click Me</button>
         </>
     );
 }
