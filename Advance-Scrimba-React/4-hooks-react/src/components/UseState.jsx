@@ -118,9 +118,7 @@ export default function UseState() {
     });
 
     function handleFormDataChange(e) {
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-        }));
+        console.log(e.target.name);
     }
 
     return (
