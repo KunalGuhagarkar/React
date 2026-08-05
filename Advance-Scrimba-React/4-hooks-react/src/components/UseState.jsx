@@ -192,6 +192,7 @@ export default function UseState() {
 
     return (
         <>
+            Add Item:
             <input type="text" value={newItem} onChange={handleNewItem} />
             <button onClick={todoItemAddHandler}>Add</button>
 
