@@ -162,47 +162,49 @@
 //     );
 // }
 
-import { useState } from "react";
+// import { useState } from "react";
 
-function todoList() {
-    return ["Buy Milk", "Buy Tea", "Buy Bread"];
-}
+// function todoList() {
+//     return ["Buy Milk", "Buy Tea", "Buy Bread"];
+// }
 
-function TodoComponent({ item }) {
-    return (
-        <>
-            <input type="checkbox" name={item} />
-            <label>{item}</label>
-            <br />
-        </>
-    );
-}
+// function TodoComponent({ item }) {
+//     return (
+//         <>
+//             <input type="checkbox" name={item} />
+//             <label>{item}</label>
+//             <br />
+//         </>
+//     );
+// }
 
-export default function UseState() {
-    const [todo, setTodo] = useState(todoList);
-    const [newItem, setNewItem] = useState("");
+// export default function UseState() {
+//     const [todo, setTodo] = useState(todoList);
+//     const [newItem, setNewItem] = useState("");
 
-    function handleNewItem(e) {
-        setNewItem(e.target.value);
-    }
+//     function handleNewItem(e) {
+//         setNewItem(e.target.value);
+//     }
 
-    function todoItemAddHandler() {
-        setTodo((prevTodo) => [...todo, newItem]);
-        setNewItem("");
-    }
+//     function todoItemAddHandler() {
+//         setTodo((prevTodo) => [...todo, newItem]);
+//         setNewItem("");
+//     }
 
-    return (
-        <>
-            <label>Add Item: </label>
-            <input type="text" value={newItem} onChange={handleNewItem} />
-            <button onClick={todoItemAddHandler}>Add</button>
+//     return (
+//         <>
+//             <label>Add Item: </label>
+//             <input type="text" value={newItem} onChange={handleNewItem} />
+//             <button onClick={todoItemAddHandler}>Add</button>
 
-            <div>
-                <h1>To Do List:</h1>
-                {todo.map((item, index) => (
-                    <TodoComponent key={index} item={item} />
-                ))}
-            </div>
-        </>
-    );
-}
+//             <div>
+//                 <h1>To Do List:</h1>
+//                 {todo.map((item, index) => (
+//                     <TodoComponent key={index} item={item} />
+//                 ))}
+//             </div>
+//         </>
+//     );
+// }
+
+
