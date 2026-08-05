@@ -111,5 +111,17 @@
 import { useState } from "react";
 
 export default function UseState() {
-    return ();
+    const [form, setFormData] = useState({
+        firstname: "Kunal",
+        lastName: "Guhagarkar",
+        email: 'kunal@gmail.com',
+    })
+    return (
+        <>
+            <div>
+                Name:
+                <input type="text" value={form.firstname} />
+            </div>
+        </>
+    );
 }
