@@ -229,9 +229,13 @@ export default function UseState() {
 
     const [version, setVersion] = useState(0);
 
+    function handleReset() {
+        setVersion(prevVersion => prevVersion + 1);
+    }
+
     return (
         <div>
-            <button>Reset</button>
+            <button onClick={handleReset}>Reset</button>
             <br />
             <br />
             <FormComponent key={version} />
