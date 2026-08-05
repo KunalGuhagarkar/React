@@ -165,24 +165,17 @@
 
 import { useState } from "react";
 
-export default function UseState() {
-    const [form, setFormData] = useState({
-        firstname: "Kunal",
-        lastname: "Guhagarkar",
-        email: "kunal@gmail.com",
-    });
+function todoList () {
+    return ['Buy Milk', 'Buy Tea', 'Buy Bread'];
+}
 
-    function handleFormDataChange(e) {
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            [e.target.name]: e.target.value,
-        }));
-    }
+export default function UseState() {
+    const [todo, setTodo] = useState(todoList);
 
     return (
         <>
             <div>
-                
+                <h1>{todo}</h1>
             </div>
         </>
     );
