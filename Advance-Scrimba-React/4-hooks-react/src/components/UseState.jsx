@@ -87,7 +87,11 @@ import { useState } from "react";
 export default function UseState() {
     const [age, setAge] = useState(23);
 
-    
+    const handleIncreaseAge = () => {
+        setAge(prevAge => prevAge + 1);
+        setAge(prevAge => prevAge + 1);
+        setAge(prevAge => prevAge + 1);
+    }
 
     return (
         <>
