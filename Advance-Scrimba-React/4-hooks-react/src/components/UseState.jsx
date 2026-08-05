@@ -208,10 +208,9 @@
 // }
 
 // Resetting Form using key
-import {useState} from 'react';
+import { useState } from "react";
 
 export function FormComponent() {
-
     const [name, setName] = useState("Kunal");
 
     function handleNameChange(e) {
@@ -227,12 +226,12 @@ export function FormComponent() {
 }
 
 export default function UseState() {
-
-
-
     return (
         <div>
-
+            <button>Reset</button>
+            <br />
+            <br />
+            <FormComponent />
         </div>
     );
 }
