@@ -108,6 +108,61 @@
 // }
 
 // Updating objects and arrays in state
+// import { useState } from "react";
+
+// export default function UseState() {
+//     const [form, setFormData] = useState({
+//         firstname: "Kunal",
+//         lastname: "Guhagarkar",
+//         email: "kunal@gmail.com",
+//     });
+
+//     function handleFormDataChange(e) {
+//         setFormData((prevFormData) => ({
+//             ...prevFormData,
+//             [e.target.name]: e.target.value,
+//         }));
+//     }
+
+//     return (
+//         <>
+//             <div>
+//                 First Name:
+//                 <input
+//                     type="text"
+//                     value={form.firstname}
+//                     name="firstname"
+//                     onChange={handleFormDataChange}
+//                 />
+//                 <br />
+//                 <br />
+//                 Last Name:
+//                 <input
+//                     type="text"
+//                     value={form.lastname}
+//                     name="lastname"
+//                     onChange={handleFormDataChange}
+//                 />
+//                 <br />
+//                 <br />
+//                 Email:
+//                 <input
+//                     type="email"
+//                     value={form.email}
+//                     name="email"
+//                     onChange={handleFormDataChange}
+//                 />
+//                 <h1>Form Data:</h1>
+//                 <h3>
+//                     Full Name: {form.firstname} {form.lastname}
+//                 </h3>
+//                 <h3>Email: {form.email}</h3>
+//             </div>
+//         </>
+//     );
+// }
+
+
 import { useState } from "react";
 
 export default function UseState() {
@@ -127,36 +182,7 @@ export default function UseState() {
     return (
         <>
             <div>
-                First Name:
-                <input
-                    type="text"
-                    value={form.firstname}
-                    name="firstname"
-                    onChange={handleFormDataChange}
-                />
-                <br />
-                <br />
-                Last Name:
-                <input
-                    type="text"
-                    value={form.lastname}
-                    name="lastname"
-                    onChange={handleFormDataChange}
-                />
-                <br />
-                <br />
-                Email:
-                <input
-                    type="email"
-                    value={form.email}
-                    name="email"
-                    onChange={handleFormDataChange}
-                />
-                <h1>Form Data:</h1>
-                <h3>
-                    Full Name: {form.firstname} {form.lastname}
-                </h3>
-                <h3>Email: {form.email}</h3>
+                
             </div>
         </>
     );
