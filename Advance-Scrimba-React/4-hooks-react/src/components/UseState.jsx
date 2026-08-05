@@ -132,6 +132,7 @@ export default function UseState() {
 
                 <h1>Form Data:</h1>
                 <h3>Full Name: {form.firstname} {form.lastName}</h3>
+                <h3>Email: {form.email}</h3>
             </div>
         </>
     );
