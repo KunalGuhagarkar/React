@@ -50,7 +50,7 @@ export default function UseState() {
 
     return (
         <>
-            <button onClick={() => setActive(!active)}>Click Me</button>
+            <button className={active ? 'active' : 'inactive'} onClick={() => setActive(!active)}>Click Me</button>
         </>
     );
 }
