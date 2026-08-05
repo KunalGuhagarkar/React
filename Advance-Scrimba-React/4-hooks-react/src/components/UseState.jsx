@@ -231,6 +231,7 @@ export default function UseState() {
 
     function handleReset() {
         setVersion(prevVersion => prevVersion + 1);
+        console.log(version);
     }
 
     return (
