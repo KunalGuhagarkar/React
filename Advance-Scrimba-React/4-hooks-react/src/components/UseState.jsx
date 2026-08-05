@@ -214,9 +214,13 @@ export function FormComponent() {
 
     const [name, setName] = useState("Kunal");
 
+    function handleNameChange(e) {
+        setName(e.target.value);
+    }
+
     return (
         <>
-            <input type="text" value={name} />
+            <input type="text" value={name} onChange={handleNameChange} />
             <p>Hello, {name}</p>
         </>
     );
