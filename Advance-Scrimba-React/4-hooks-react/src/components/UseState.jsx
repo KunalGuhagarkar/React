@@ -119,8 +119,15 @@ export default function UseState() {
     return (
         <>
             <div>
-                Name:
+                First Name: 
                 <input type="text" value={form.firstname} />
+
+                Last Name: 
+                <input type="text" value={form.lastName} />
+
+                Email: 
+                <input type="email" value={form.email} />
+
             </div>
         </>
     );
