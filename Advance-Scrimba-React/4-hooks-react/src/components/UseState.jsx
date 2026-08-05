@@ -82,27 +82,34 @@
 // }
 
 // Updating state based on the previous state
+// import { useState } from "react";
+
+// export default function UseState() {
+//     const [age, setAge] = useState(23);
+
+//     // const handleIncreaseAge = () => {
+//     //     setAge(prevAge => prevAge + 1);
+//     //     setAge(prevAge => prevAge + 1);
+//     //     setAge(prevAge => prevAge + 1);
+//     // }
+
+//     const handleIncreaseAge = () => {
+//         setAge(age + 1);
+//         setAge(age + 1);
+//         setAge(age + 1);
+//     };
+
+//     return (
+//         <>
+//             <h1>Age: {age}</h1>
+//             <button onClick={handleIncreaseAge}>Age + 3</button>
+//         </>
+//     );
+// }
+
+// Updating objects and arrays in state
 import { useState } from "react";
 
 export default function UseState() {
-    const [age, setAge] = useState(23);
-
-    // const handleIncreaseAge = () => {
-    //     setAge(prevAge => prevAge + 1);
-    //     setAge(prevAge => prevAge + 1);
-    //     setAge(prevAge => prevAge + 1);
-    // }
-
-    const handleIncreaseAge = () => {
-        setAge(age + 1);
-        setAge(age + 1);
-        setAge(age + 1);
-    };
-
-    return (
-        <>
-            <h1>Age: {age}</h1>
-            <button onClick={handleIncreaseAge}>Age + 3</button>
-        </>
-    );
+    return ();
 }
