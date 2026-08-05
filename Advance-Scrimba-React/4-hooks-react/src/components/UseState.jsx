@@ -117,7 +117,7 @@ export default function UseState() {
         email: "kunal@gmail.com",
     });
 
-    function handleFormDataChange() {
+    function handleFormDataChange(e) {
         setFormData((prevFormData) => ({
             ...prevFormData,
         }));
