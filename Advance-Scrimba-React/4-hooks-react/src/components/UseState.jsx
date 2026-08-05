@@ -75,8 +75,8 @@ export default function UseState() {
     return (
         <>
             <h1>{counter}</h1>
-            <button>Increment</button>
-            <button>Decrement</button>
+            <button onClick={handleIncrement}>Increment</button>
+            <button onClick={handleDecrement}>Decrement</button>
         </>
     );
 }
