@@ -169,6 +169,10 @@ function todoList () {
     return ['Buy Milk', 'Buy Tea', 'Buy Bread'];
 }
 
+function TodoComponent({item}) {
+    return <input type="checkbox" name={item} />
+}
+
 export default function UseState() {
     const [todo, setTodo] = useState(todoList);
 
