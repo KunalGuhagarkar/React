@@ -162,15 +162,14 @@
 //     );
 // }
 
-
 import { useState } from "react";
 
-function todoList () {
-    return ['Buy Milk', 'Buy Tea', 'Buy Bread'];
+function todoList() {
+    return ["Buy Milk", "Buy Tea", "Buy Bread"];
 }
 
-function TodoComponent({item}) {
-    return <input type="checkbox" name={item} />
+function TodoComponent({ item }) {
+    return <input type="checkbox" name={item} />;
 }
 
 export default function UseState() {
@@ -179,7 +178,8 @@ export default function UseState() {
     return (
         <>
             <div>
-                <h1>{todo}</h1>
+                <h1>To Do List:</h1>
+                
             </div>
         </>
     );
