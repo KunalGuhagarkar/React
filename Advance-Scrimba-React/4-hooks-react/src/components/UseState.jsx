@@ -118,22 +118,27 @@ export default function UseState() {
     });
 
     function handleFormDataChange() {
-        
+        setFormData(prevFormData => {
+            ({
+                ...prevFormData,
+
+            })
+        })
     }
 
     return (
         <>
             <div>
                 First Name:
-                <input type="text" value={form.firstname} />
+                <input type="text" value={form.firstname} name="firstname" />
                 <br />
                 <br />
                 Last Name:
-                <input type="text" value={form.lastName} />
+                <input type="text" value={form.lastName} name="lastname" />
                 <br />
                 <br />
                 Email:
-                <input type="email" value={form.email} />
+                <input type="email" value={form.email} name="email" />
 
                 <h1>Form Data:</h1>
                 <h3>Full Name: {form.firstname} {form.lastName}</h3>
