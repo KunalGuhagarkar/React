@@ -226,12 +226,15 @@ export function FormComponent() {
 }
 
 export default function UseState() {
+
+    const [version, setVersion] = useState(0);
+
     return (
         <div>
             <button>Reset</button>
             <br />
             <br />
-            <FormComponent />
+            <FormComponent key={version} />
         </div>
     );
 }
