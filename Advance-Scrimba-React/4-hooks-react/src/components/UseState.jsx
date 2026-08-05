@@ -188,6 +188,7 @@ export default function UseState() {
 
     function todoItemAddHandler() {
         setTodo((prevTodo) => [...todo, newItem]);
+        setNewItem("");
     }
 
     return (
