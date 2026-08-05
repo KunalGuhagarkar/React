@@ -26,17 +26,15 @@
 import { useState } from "react";
 
 export default function UseState() {
-    
     const [toggle, setToggle] = useState(false);
 
     function toggleNameHandler() {
-        toggle ? setToggle(!toggle) : setToggle(toggle);
+        toggle && setToggle(!toggle);
     }
 
     return (
         <>
             <button onClick={toggleNameHandler}>Toggle Info</button>
-
         </>
     );
 }
