@@ -114,20 +114,21 @@ export default function UseState() {
     const [form, setFormData] = useState({
         firstname: "Kunal",
         lastName: "Guhagarkar",
-        email: 'kunal@gmail.com',
-    })
+        email: "kunal@gmail.com",
+    });
     return (
         <>
             <div>
-                First Name: 
+                First Name:
                 <input type="text" value={form.firstname} />
-
-                Last Name: 
+                <br />
+                <br />
+                Last Name:
                 <input type="text" value={form.lastName} />
-
-                Email: 
+                <br />
+                <br />
+                Email:
                 <input type="email" value={form.email} />
-
             </div>
         </>
     );
