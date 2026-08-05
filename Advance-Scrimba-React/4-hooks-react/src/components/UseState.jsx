@@ -186,10 +186,14 @@ export default function UseState() {
         setNewItem(e.target.value);
     }
 
+    function todoItemAddHandler() {
+        setTodo(prevTodo => [...todo, newItem]);
+    }
+
     return (
         <>
             <input type="text" value={newItem} onChange={handleNewItem} />
-            <button>Add</button>
+            <button onClick={todoItemAddHandler}>Add</button>
 
             <div>
                 <h1>To Do List:</h1>
