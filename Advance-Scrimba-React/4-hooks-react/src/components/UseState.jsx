@@ -41,6 +41,24 @@
 // }
 
 // Dynamic Styling
+// import { useState } from "react";
+
+// export default function UseState() {
+//     const [active, setActive] = useState(false);
+
+//     return (
+//         <>
+//             <button
+//                 className={active ? "active" : "inactive"}
+//                 onClick={() => setActive(!active)}
+//             >
+//                 {active ? "Active" : "Inactive"}
+//             </button>
+//         </>
+//     );
+// }
+
+// Counters
 import { useState } from "react";
 
 export default function UseState() {
