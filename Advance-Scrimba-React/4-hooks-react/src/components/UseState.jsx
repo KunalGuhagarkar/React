@@ -97,7 +97,7 @@ export default function UseState() {
         setAge(age + 1);
         setAge(age + 1);
         setAge(age + 1);
-    }
+    };
 
     return (
         <>
