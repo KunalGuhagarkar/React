@@ -180,11 +180,15 @@ function TodoComponent({ item }) {
 
 export default function UseState() {
     const [todo, setTodo] = useState(todoList);
-    const [newItem, setNewItem] = useState("")
+    const [newItem, setNewItem] = useState("");
+
+    function handleNewItem(e) {
+        setNewItem(e.target.value);
+    }
 
     return (
         <>
-            <input type="text" value={newItem} />
+            <input type="text" value={newItem} onChange={handleNewItem} />
             <button>Add</button>
 
             <div>
