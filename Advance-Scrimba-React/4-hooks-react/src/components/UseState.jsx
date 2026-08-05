@@ -179,7 +179,9 @@ export default function UseState() {
         <>
             <div>
                 <h1>To Do List:</h1>
-                
+                {todo.map((item) => (
+                    <TodoComponent item={item} />
+                ))}
             </div>
         </>
     );
