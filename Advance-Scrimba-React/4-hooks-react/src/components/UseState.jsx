@@ -96,7 +96,7 @@ export default function UseState() {
     return (
         <>
             <h1>Age: {age}</h1>
-            <button onClick={handleIncreaseAge}>Increase Age</button>
+            <button onClick={handleIncreaseAge}>Age + 3</button>
         </>
     );
 }
