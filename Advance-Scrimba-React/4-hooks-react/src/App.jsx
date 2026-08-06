@@ -6,7 +6,7 @@ import UseReducer from "./components/UseReducer";
 function App() {
     return (
         <div>
-            <h1>useState Hook</h1>
+            <h1>React Hooks</h1>
             {/* <UseState /> */}
             <UseReducer />
         </div>
