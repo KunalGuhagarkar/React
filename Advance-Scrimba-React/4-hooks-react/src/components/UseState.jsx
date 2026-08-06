@@ -245,15 +245,19 @@
 // }
 
 // Storing information from previous renders
-import { useState } from "react"
+import { useState } from "react";
 
-
-
+function CountLabel({ count }) {
+    return <h1>{count}</h1>;
+}
 
 export default function UseState() {
+    const [count, setCount] = useState(0);
+
     return (
         <>
             <h1>{count}</h1>
+            <CountLabel count={count} />
         </>
-    )
+    );
 }
