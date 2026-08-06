@@ -256,7 +256,6 @@ export default function UseState() {
 
     return (
         <>
-            <h1>{count}</h1>
             <CountLabel count={count} />
         </>
     );
