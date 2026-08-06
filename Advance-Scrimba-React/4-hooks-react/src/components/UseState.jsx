@@ -248,7 +248,20 @@
 import { useState } from "react";
 
 function CountLabel({ count }) {
-    return <h1>{count}</h1>;
+    const [prevCount, setPrevCount] = useState(count);
+    const [trend, setTrend] = useState(null);
+
+    if (prevCount !== count) {
+        setPrevCount(count);
+        setTrend(count > prevCount ? "Increasing" : "Decreasing");
+    }
+
+    return (
+        <>
+            <h1>{count}</h1>
+            {trend && <p>Count is {trend}</p>}
+        </>
+    );
 }
 
 export default function UseState() {
