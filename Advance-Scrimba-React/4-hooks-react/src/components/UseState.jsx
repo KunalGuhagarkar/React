@@ -254,9 +254,15 @@ function CountLabel({ count }) {
 export default function UseState() {
     const [count, setCount] = useState(0);
 
+    function countClickHandler(e) {
+        console.log(e.target);
+    }
+
     return (
         <>
             <CountLabel count={count} />
+            <button onClick={countClickHandler}>+</button>
+            <button onClick={countClickHandler}>-</button>
         </>
     );
 }
