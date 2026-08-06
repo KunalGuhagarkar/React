@@ -208,38 +208,40 @@
 // }
 
 // Resetting Form using key
-import { useState } from "react";
+// import { useState } from "react";
 
-export function FormComponent() {
-    const [name, setName] = useState("Kunal");
+// export function FormComponent() {
+//     const [name, setName] = useState("Kunal");
 
-    function handleNameChange(e) {
-        setName(e.target.value);
-    }
+//     function handleNameChange(e) {
+//         setName(e.target.value);
+//     }
 
-    return (
-        <>
-            <input type="text" value={name} onChange={handleNameChange} />
-            <p>Hello, {name}</p>
-        </>
-    );
-}
+//     return (
+//         <>
+//             <input type="text" value={name} onChange={handleNameChange} />
+//             <p>Hello, {name}</p>
+//         </>
+//     );
+// }
 
-export default function UseState() {
+// export default function UseState() {
 
-    const [version, setVersion] = useState(0);
+//     const [version, setVersion] = useState(0);
 
-    function handleReset() {
-        setVersion(prevVersion => prevVersion + 1);
-        console.log(version);
-    }
+//     function handleReset() {
+//         setVersion(prevVersion => prevVersion + 1);
+//         console.log(version);
+//     }
 
-    return (
-        <div>
-            <button onClick={handleReset}>Reset</button>
-            <br />
-            <br />
-            <FormComponent key={version} />
-        </div>
-    );
-}
+//     return (
+//         <div>
+//             <button onClick={handleReset}>Reset</button>
+//             <br />
+//             <br />
+//             <FormComponent key={version} />
+//         </div>
+//     );
+// }
+
+// Storing information from previous renders
