@@ -245,3 +245,15 @@
 // }
 
 // Storing information from previous renders
+import { useState } from "react"
+
+
+
+
+export default function UseState() {
+    return (
+        <>
+            <h1>{count}</h1>
+        </>
+    )
+}
