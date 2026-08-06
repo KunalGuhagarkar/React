@@ -255,14 +255,14 @@ export default function UseState() {
     const [count, setCount] = useState(0);
 
     function countClickHandler(e) {
-        console.log(e.target);
+        console.log(e.target.value);
     }
 
     return (
         <>
             <CountLabel count={count} />
-            <button onClick={countClickHandler}>+</button>
-            <button onClick={countClickHandler}>-</button>
+            <button onClick={countClickHandler} value="+">+</button>
+            <button onClick={countClickHandler} value="-">-</button>
         </>
     );
 }
