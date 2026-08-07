@@ -69,11 +69,11 @@ function reducer(state, action) {
 
     switch (action.type) {
         case "increment_age":
-            return { age: state.age + 1 };
+            return { ...state, age: state.age + 1 };
 
         case "name_change":
-            return { name: state.name };
-            
+            return { ...state, name: state.name };
+
         default:
             return state;
     }
