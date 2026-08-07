@@ -87,8 +87,8 @@ export default function UseReducer() {
         dispatch({ type: "increment_age" });
     }
 
-    function handleNameChange() {
-        dispatch({ type: "name_change" });
+    function handleNameChange(e) {
+        dispatch({ type: "name_change", nextName: e.target.value });
     }
 
     return (
