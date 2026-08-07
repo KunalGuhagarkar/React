@@ -1,13 +1,10 @@
 import { useReducer } from "react";
 
-function reducer() {}
+function reducer(state, action) {
+    // ...
+}
 
 export default function UseReducer() {
     const [state, reducer] = useReducer(reducer, { age: 23 });
-
-    return (
-        <>
-            <h3>Hello from useReducer</h3>
-        </>
-    );
+    // ...
 }
