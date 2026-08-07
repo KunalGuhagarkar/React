@@ -1,3 +1,10 @@
+import { useReducer } from "react";
+
+
+function reducer() {
+
+}
+
 export default function UseReducer() {
     return (
         <>
