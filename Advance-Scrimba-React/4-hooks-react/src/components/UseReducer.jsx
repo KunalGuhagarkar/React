@@ -42,8 +42,6 @@
 import { useReducer } from "react";
 
 function reducer(state, action) {
-    console.log(state);
-    console.log(action);
     return { age: state.age + 1 };
 }
 
@@ -57,7 +55,7 @@ export default function UseReducer() {
     return (
         <>
             <button onClick={handleIncrementAgeClick}>
-                Increment Age by 1
+                Increment Age
             </button>
             <p>Age is: {state.age}</p>
         </>
