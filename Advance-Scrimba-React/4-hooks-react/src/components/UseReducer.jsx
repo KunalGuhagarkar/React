@@ -72,7 +72,7 @@ function reducer(state, action) {
             return { ...state, age: state.age + 1 };
 
         case "name_change":
-            return { ...state, name: state.name };
+            return { ...state, [action.nextName]: state.name };
 
         default:
             return state;
