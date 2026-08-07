@@ -3,15 +3,14 @@ import { useReducer } from "react";
 function reducer(state, action) {
     switch (action.type) {
         case "increment":
-            {
-                count: state.count + 1;
-            }
-            break;
+            return {
+                count: state.count + 1,
+            };
+
         case "decrement":
-            {
-                count: state.count - 1;
-            }
-            break;
+            return {
+                count: state.count - 1,
+            };
 
         default:
             break;
