@@ -38,6 +38,30 @@
 // }
 
 // Example 2
+// import { useReducer } from "react";
+
+// function reducer(state, action) {
+//     return { age: state.age + 1 };
+// }
+
+// export default function UseReducer() {
+//     const [state, dispatch] = useReducer(reducer, { age: 23 });
+
+//     function handleIncrementAgeClick() {
+//         dispatch();
+//     }
+
+//     return (
+//         <>
+//             <button onClick={handleIncrementAgeClick}>
+//                 Increment Age
+//             </button>
+//             <p>Age is: {state.age}</p>
+//         </>
+//     );
+// }
+
+// Example 3
 import { useReducer } from "react";
 
 function reducer(state, action) {
@@ -45,17 +69,20 @@ function reducer(state, action) {
 }
 
 export default function UseReducer() {
-    const [state, dispatch] = useReducer(reducer, { age: 23 });
+    const [state, dispatch] = useReducer(reducer, { age: 23, name: "Kunal" });
 
     function handleIncrementAgeClick() {
-        dispatch();
+        dispatch({ type: "increment_age" });
+    }
+
+    function handleNameChange() {
+        dispatch({ type: "name" });
     }
 
     return (
         <>
-            <button onClick={handleIncrementAgeClick}>
-                Increment Age
-            </button>
+            <button onClick={handleIncrementAgeClick}>Increment Age</button>
+            <input type="text" onChange={handleNameChange} />
             <p>Age is: {state.age}</p>
         </>
     );
