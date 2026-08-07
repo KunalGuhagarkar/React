@@ -37,21 +37,28 @@
 //     );
 // }
 
-
 // Example 2
 
 import { useReducer } from "react";
 
 function reducer(state, action) {
-
+    console.log(state);
+    console.log(action);
+    return { age: state.age + 1 };
 }
 
 export default function UseReducer() {
-    const [state, dispatch] = useReducer(reducer, {age: 23});
+    const [state, dispatch] = useReducer(reducer, { age: 23 });
+
+    function handleIncrementAgeClick() {
+        dispatch();
+    }
 
     return (
         <>
-            <button>Increment Age by 1</button>
+            <button onClick={handleIncrementAgeClick}>
+                Increment Age by 1
+            </button>
             <p>Age is: {state.age}</p>
         </>
     );
