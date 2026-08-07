@@ -95,7 +95,7 @@ export default function UseReducer() {
     return (
         <>
             <button onClick={handleIncrementAgeClick}>Increment Age</button>
-            <input type="text" onChange={handleNameChange} />
+            <input type="text" onChange={handleNameChange} value={state.name} />
             <p>Age is: {state.age}</p>
             <p>Name is: {state.name}</p>
         </>
