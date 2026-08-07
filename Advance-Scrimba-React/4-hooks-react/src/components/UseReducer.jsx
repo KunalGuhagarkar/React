@@ -65,6 +65,18 @@
 import { useReducer } from "react";
 
 function reducer(state, action) {
+    console.log(action);
+
+    switch (action.type) {
+        case "increment_age":
+            return { age: state.age + 1 };
+
+        case "name_change":
+            return { name: state.name };
+            
+        default:
+            return state;
+    }
     return { age: state.age + 1 };
 }
 
@@ -76,7 +88,7 @@ export default function UseReducer() {
     }
 
     function handleNameChange() {
-        dispatch({ type: "name" });
+        dispatch({ type: "name_change" });
     }
 
     return (
