@@ -88,6 +88,7 @@ export default function UseReducer() {
     }
 
     function handleNameChange(e) {
+        console.log(e.target.value);
         dispatch({ type: "name_change", nextName: e.target.value });
     }
 
