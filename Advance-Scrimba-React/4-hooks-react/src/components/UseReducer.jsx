@@ -26,7 +26,7 @@ export default function UseReducer() {
     }
 
     function decrement() {
-        return null;
+        dispatch({ type: "decrement" });
     }
 
     return (
