@@ -47,7 +47,7 @@ export default function UseEffect() {
         } else {
             connection.disconnect();
         }
-    }, [roomId, serverUrl]);
+    }, [chatToggle, roomId, serverUrl]);
 
     return (
         <>
