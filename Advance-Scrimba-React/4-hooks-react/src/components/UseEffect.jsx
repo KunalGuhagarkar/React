@@ -4,9 +4,9 @@ export default function UseEffect() {
     const [animalName, setAnimalName] = useState("");
     console.log("render");
 
-    // useEffect(() => {
-    //     console.log("render");
-    // }, [animalName]);
+    useEffect(() => {
+        console.log("Animal Changed");
+    }, [animalName]);
 
     return (
         <>
