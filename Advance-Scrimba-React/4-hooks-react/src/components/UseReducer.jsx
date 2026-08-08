@@ -62,41 +62,53 @@
 // }
 
 // Example 3
+// import { useReducer } from "react";
+
+// function reducer(state, action) {
+//     console.log(action);
+
+//     switch (action.type) {
+//         case "increment_age":
+//             return { ...state, age: state.age + 1 };
+
+//         case "name_change":
+//             return { ...state, name: action.nextName };
+
+//         default:
+//             return state;
+//     }
+//     return { age: state.age + 1 };
+// }
+
+// export default function UseReducer() {
+//     const [state, dispatch] = useReducer(reducer, { age: 23, name: "Kunal" });
+
+//     function handleIncrementAgeClick() {
+//         dispatch({ type: "increment_age" });
+//     }
+
+//     function handleNameChange(e) {
+//         dispatch({ type: "name_change", nextName: e.target.value });
+//     }
+
+//     return (
+//         <>
+//             <button onClick={handleIncrementAgeClick}>Increment Age</button>
+//             <input type="text" onChange={handleNameChange} value={state.name} />
+//             <p>Age is: {state.age}</p>
+//             <p>Name is: {state.name}</p>
+//         </>
+//     );
+// }
+
+
+// Avoiding recreating the initial state
 import { useReducer } from "react";
 
-function reducer(state, action) {
-    console.log(action);
+function createInitialState() {
 
-    switch (action.type) {
-        case "increment_age":
-            return { ...state, age: state.age + 1 };
-
-        case "name_change":
-            return { ...state, name: action.nextName };
-
-        default:
-            return state;
-    }
-    return { age: state.age + 1 };
 }
 
 export default function UseReducer() {
-    const [state, dispatch] = useReducer(reducer, { age: 23, name: "Kunal" });
-
-    function handleIncrementAgeClick() {
-        dispatch({ type: "increment_age" });
-    }
-
-    function handleNameChange(e) {
-        dispatch({ type: "name_change", nextName: e.target.value });
-    }
-
-    return (
-        <>
-            <button onClick={handleIncrementAgeClick}>Increment Age</button>
-            <input type="text" onChange={handleNameChange} value={state.name} />
-            <p>Age is: {state.age}</p>
-            <p>Name is: {state.name}</p>
-        </>
-    );
+    const [state, dispatch] = useReducer(reducer, createInitialState(username));
 }
