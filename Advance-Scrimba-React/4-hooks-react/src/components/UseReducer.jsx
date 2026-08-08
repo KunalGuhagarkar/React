@@ -105,8 +105,8 @@
 // Avoiding recreating the initial state
 import { useReducer } from "react";
 
-function createInitialState() {
-
+function createInitialState(username) {
+    return {username: 'Kunal'}
 }
 
 export default function UseReducer() {
