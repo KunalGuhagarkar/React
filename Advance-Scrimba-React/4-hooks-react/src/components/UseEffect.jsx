@@ -25,7 +25,7 @@ import { createConnection } from "./chat";
 
 export default function UseEffect() {
     const [serverUrl, setServerUrl] = useState("https://localhost:5432");
-    const [roomId, setRoomId] = useState("");
+    const [roomId, setRoomId] = useState("General");
     const [chatToggle, setChatToggle] = useState(false);
 
     function handleUrlChange(e) {
