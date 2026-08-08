@@ -42,7 +42,7 @@ export default function UseEffect() {
 
     useEffect(() => {
         createConnection(serverUrl, roomId).connect();
-    }, [roomId]);
+    }, [serverUrl, roomId]);
 
     return (
         <>
