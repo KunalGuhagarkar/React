@@ -38,6 +38,8 @@ export default function UseEffect() {
                 <option value="Music">Music</option>
             </select>
 
+            <button>Open Chat</button>
+
             <input type="text" value={serverUrl} onChange={handleUrlChange} />
         </>
     );
