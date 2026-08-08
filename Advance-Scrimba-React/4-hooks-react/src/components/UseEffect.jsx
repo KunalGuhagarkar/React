@@ -31,6 +31,13 @@ export default function UseEffect() {
 
     return (
         <>
+            <p>Choose Chat room:</p>
+            <select name="chat-room" id="chat-room">
+                <option value="General">General</option>
+                <option value="Travel">Travel</option>
+                <option value="Music">Music</option>
+            </select>
+
             <input type="text" value={serverUrl} onChange={handleUrlChange} />
         </>
     );
