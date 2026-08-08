@@ -42,7 +42,7 @@ export default function UseEffect() {
 
     useEffect(() => {
         createConnection(serverUrl, roomId).connect();
-    }, [serverUrl, roomId]);
+    }, [chatToggle]);
 
     return (
         <>
