@@ -37,12 +37,12 @@ export default function UseEffect() {
     }
 
     function handleRoomSelect(e) {
-        console.log(e.target.value);
+        setRoomId(e.target.value);
     }
 
     useEffect(() => {
         createConnection(serverUrl);
-    });
+    }, [roomId]);
 
     return (
         <>
