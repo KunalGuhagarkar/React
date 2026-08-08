@@ -122,7 +122,7 @@
 
 //     return (
 //         <>
-//             {console.log('Render')} 
+//             {console.log('Render')}
 //             <input
 //                 type="text"
 //                 onChange={handleUsernameChange}
@@ -137,6 +137,7 @@
 import { useReducer } from "react";
 
 function createInitialState(username) {
+    console.log("Initialization function called.");
     return { username: username };
 }
 
@@ -153,7 +154,6 @@ export default function UseReducer({ username }) {
 
     return (
         <>
-            {console.log('Render')} 
             <input
                 type="text"
                 onChange={handleUsernameChange}
