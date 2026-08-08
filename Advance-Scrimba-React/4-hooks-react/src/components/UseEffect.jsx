@@ -1,7 +1,9 @@
 export default function UseEffect() {
     return (
         <>
-            <h1>UseEffect Hook</h1>
+            <button>Lion</button>
+            <button>Tiger</button>
+            <button>Panther</button>
         </>
     );
 }
