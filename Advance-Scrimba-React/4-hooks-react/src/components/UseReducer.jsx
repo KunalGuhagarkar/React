@@ -105,7 +105,7 @@
 import { useReducer } from "react";
 
 function createInitialState(username) {
-    return { username: "Kunal" };
+    return { username: username };
 }
 
 function reducer(state, action) {
@@ -116,7 +116,7 @@ function handleUsernameChange(e) {
     dispatch({ new_username: e.target.value });
 }
 
-export default function UseReducer() {
+export default function UseReducer({username}) {
     const [state, dispatch] = useReducer(reducer, createInitialState(username));
 
     return (
