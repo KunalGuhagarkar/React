@@ -2,6 +2,7 @@ import { useState } from "react";
 
 export default function UseEffect() {
     const [animalName, setAnimalName] = useState("");
+    console.log("render");
 
     return (
         <>
