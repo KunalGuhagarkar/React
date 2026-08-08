@@ -47,6 +47,7 @@ export default function UseEffect() {
                 {chatToggle ? "Close Chat" : "Open Chat"}
             </button>
 
+            <br />
             {chatToggle && (
                 <input
                     type="text"
