@@ -32,6 +32,7 @@ export default function UseEffect() {
         setServerUrl(e.target.value);
     }
 
+
     function handleChatToggle() {
         setChatToggle((prevToggle) => !prevToggle);
     }
@@ -43,7 +44,7 @@ export default function UseEffect() {
     return (
         <>
             <label htmlFor="chat-room">Choose Chat room:</label>
-            <select name="chat-room" id="chat-room">
+            <select name="chat-room" id="chat-room" onSelect={handleRoomSelect}>
                 <option value="General">General</option>
                 <option value="Travel">Travel</option>
                 <option value="Music">Music</option>
