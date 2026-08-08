@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 
 // export default function UseEffect() {
 //     const [animalName, setAnimalName] = useState("");
@@ -20,3 +20,15 @@ import { useState, useEffect } from "react";
 // }
 
 // Example 2
+import { useState, useEffect } from "react";
+
+export default function UseEffect() {
+    const [serverUrl, setServerUrl] = useState();
+
+
+    return (
+        <>
+            <input type="text" value={} onChange={handleUrlChange} />
+        </>
+    );
+}
