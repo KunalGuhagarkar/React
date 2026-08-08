@@ -43,7 +43,9 @@ export default function UseEffect() {
                 <option value="Music">Music</option>
             </select>
 
-            <button onClick={handleChatToggle}>Open Chat</button>
+            <button onClick={handleChatToggle}>
+                {chatToggle ? "Close Chat" : "Open Chat"}
+            </button>
 
             {chatToggle && (
                 <input
