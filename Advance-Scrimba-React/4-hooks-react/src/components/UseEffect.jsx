@@ -36,7 +36,7 @@ export default function UseEffect() {
 
     return (
         <>
-            <p>Choose Chat room:</p>
+            <label htmlFor="chat-room">Choose Chat room:</label>
             <select name="chat-room" id="chat-room">
                 <option value="General">General</option>
                 <option value="Travel">Travel</option>
