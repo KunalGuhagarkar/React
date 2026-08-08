@@ -32,14 +32,17 @@ export default function UseEffect() {
         setServerUrl(e.target.value);
     }
 
-
     function handleChatToggle() {
         setChatToggle((prevToggle) => !prevToggle);
     }
 
+    function handleRoomSelect(e) {
+        console.log(e.target.value);
+    }
+
     useEffect(() => {
-        createConnection(serverUrl, )
-    })
+        createConnection(serverUrl);
+    });
 
     return (
         <>
