@@ -8,7 +8,7 @@ export function createConnection(serverUrl, roomId) {
 
         disconnect() {
             console.log(
-                `disconnected to url: ${serverUrl} with Room Id: ${roomId}`,
+                `Disconnected to url: ${serverUrl} with Room Id: ${roomId}`,
             );
         },
     };
