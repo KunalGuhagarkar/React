@@ -24,6 +24,7 @@ import { useState, useEffect } from "react";
 
 export default function UseEffect() {
     const [serverUrl, setServerUrl] = useState("https://localhost:5432");
+    const [chatToggle, setChatToggle] = useState(false);
 
     function handleUrlChange(e) {
         setServerUrl(e.target.value);
@@ -38,7 +39,7 @@ export default function UseEffect() {
                 <option value="Music">Music</option>
             </select>
 
-            <button>Open Chat</button>
+            <button onClick={}>Open Chat</button>
 
             <input type="text" value={serverUrl} onChange={handleUrlChange} />
         </>
