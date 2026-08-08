@@ -31,7 +31,7 @@ export default function UseEffect() {
     }
 
     function handleChatToggle() {
-        setChatToggle(!chatToggle);
+        setChatToggle((prevToggle) => !prevToggle);
     }
 
     return (
