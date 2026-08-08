@@ -1,7 +1,7 @@
 import "./App.css";
 
-import UseState from "./components/UseState";
-import UseReducer from "./components/UseReducer";
+// import UseState from "./components/UseState";
+// import UseReducer from "./components/UseReducer";
 import UseEffect from "./components/UseEffect";
 
 function App() {
