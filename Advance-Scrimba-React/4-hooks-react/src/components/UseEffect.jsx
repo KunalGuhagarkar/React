@@ -6,7 +6,7 @@ export default function UseEffect() {
 
     useEffect(() => {
         console.log("render");
-    }, [animalName]);
+    }, []);
 
     return (
         <>
