@@ -123,7 +123,6 @@ export default function UseReducer({ username }) {
 
     return (
         <>
-            {console.log('Render')}
             <input
                 type="text"
                 onChange={handleUsernameChange}
