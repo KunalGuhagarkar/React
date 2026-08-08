@@ -45,6 +45,7 @@ export default function UseEffect() {
         if (chatToggle) {
             connection.connect();
             connection.disconnect();
+            connection.connect();
         }
     }, [chatToggle]);
 
