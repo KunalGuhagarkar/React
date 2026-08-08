@@ -47,7 +47,7 @@ export default function UseEffect() {
     return (
         <>
             <label htmlFor="chat-room">Choose Chat room:</label>
-            <select name="chat-room" id="chat-room" onSelect={handleRoomSelect}>
+            <select name="chat-room" id="chat-room" onChange={handleRoomSelect}>
                 <option value="General">General</option>
                 <option value="Travel">Travel</option>
                 <option value="Music">Music</option>
