@@ -109,8 +109,12 @@ function createInitialState(username) {
     return {username: 'Kunal'}
 }
 
-function reducer() {
+function reducer(state, action) {
 
+}
+
+function handleUsernameChange(e) {
+    dispatch({ new_username: e.target.value })
 }
 
 export default function UseReducer() {
