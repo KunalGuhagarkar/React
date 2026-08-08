@@ -41,7 +41,7 @@ export default function UseEffect() {
     }
 
     useEffect(() => {
-        createConnection(serverUrl);
+        createConnection(serverUrl).connect();
     }, [roomId]);
 
     return (
