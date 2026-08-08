@@ -119,6 +119,7 @@ export default function UseReducer() {
     return (
         <>
             <input type="text" onChange={handleUsernameChange} value={state.username} />
+            <p>Username is: {state.username}</p>
         </>
     )
 }
