@@ -30,6 +30,10 @@ export default function UseEffect() {
         setServerUrl(e.target.value);
     }
 
+    function handleChatToggle() {
+        setChatToggle(!chatToggle);
+    }
+
     return (
         <>
             <p>Choose Chat room:</p>
@@ -39,7 +43,7 @@ export default function UseEffect() {
                 <option value="Music">Music</option>
             </select>
 
-            <button onClick={}>Open Chat</button>
+            <button onClick={handleChatToggle}>Open Chat</button>
 
             <input type="text" value={serverUrl} onChange={handleUrlChange} />
         </>
