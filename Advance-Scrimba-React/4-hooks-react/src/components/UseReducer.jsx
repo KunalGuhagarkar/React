@@ -134,32 +134,32 @@
 // }
 
 // 2. Passing the initializer function
-import { useReducer } from "react";
+// import { useReducer } from "react";
 
-function createInitialState(username) {
-    console.log("Initialization function called.");
-    return { username: username };
-}
+// function createInitialState(username) {
+//     console.log("Initialization function called.");
+//     return { username: username };
+// }
 
-function reducer(state, action) {
-    return { username: action.new_username };
-}
+// function reducer(state, action) {
+//     return { username: action.new_username };
+// }
 
-export default function UseReducer({ username }) {
-    const [state, dispatch] = useReducer(reducer, username, createInitialState);
+// export default function UseReducer({ username }) {
+//     const [state, dispatch] = useReducer(reducer, username, createInitialState);
 
-    function handleUsernameChange(e) {
-        dispatch({ new_username: e.target.value });
-    }
+//     function handleUsernameChange(e) {
+//         dispatch({ new_username: e.target.value });
+//     }
 
-    return (
-        <>
-            <input
-                type="text"
-                onChange={handleUsernameChange}
-                value={state.username}
-            />
-            <p>Username is: {state.username}</p>
-        </>
-    );
-}
+//     return (
+//         <>
+//             <input
+//                 type="text"
+//                 onChange={handleUsernameChange}
+//                 value={state.username}
+//             />
+//             <p>Username is: {state.username}</p>
+//         </>
+//     );
+// }
