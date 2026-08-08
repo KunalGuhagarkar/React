@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function UseEffect() {
     const [animalName, setAnimalName] = useState("");
-    console.log("render");
+    // console.log("render");
+
+    useEffect(() => {
+        console.log("render");
+    }, [animalName]);
 
     return (
         <>
