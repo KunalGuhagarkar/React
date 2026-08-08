@@ -103,37 +103,6 @@
 
 // Avoiding recreating the initial state
 // 1. Passing Initial state directly
-// import { useReducer } from "react";
-
-// function createInitialState(username) {
-//     return { username: username };
-// }
-
-// function reducer(state, action) {
-//     return { username: action.new_username };
-// }
-
-// export default function UseReducer({ username }) {
-//     const [state, dispatch] = useReducer(reducer, createInitialState(username));
-
-//     function handleUsernameChange(e) {
-//         dispatch({ new_username: e.target.value });
-//     }
-
-//     return (
-//         <>
-//             {console.log('Render')}
-//             <input
-//                 type="text"
-//                 onChange={handleUsernameChange}
-//                 value={state.username}
-//             />
-//             <p>Username is: {state.username}</p>
-//         </>
-//     );
-// }
-
-// 2. Passing the initializer function
 import { useReducer } from "react";
 
 function createInitialState(username) {
@@ -146,7 +115,7 @@ function reducer(state, action) {
 }
 
 export default function UseReducer({ username }) {
-    const [state, dispatch] = useReducer(reducer, username, createInitialState);
+    const [state, dispatch] = useReducer(reducer, createInitialState(username));
 
     function handleUsernameChange(e) {
         dispatch({ new_username: e.target.value });
@@ -154,6 +123,7 @@ export default function UseReducer({ username }) {
 
     return (
         <>
+            {console.log('Render')}
             <input
                 type="text"
                 onChange={handleUsernameChange}
@@ -163,3 +133,34 @@ export default function UseReducer({ username }) {
         </>
     );
 }
+
+// 2. Passing the initializer function
+// import { useReducer } from "react";
+
+// function createInitialState(username) {
+//     console.log("Initialization function called.");
+//     return { username: username };
+// }
+
+// function reducer(state, action) {
+//     return { username: action.new_username };
+// }
+
+// export default function UseReducer({ username }) {
+//     const [state, dispatch] = useReducer(reducer, username, createInitialState);
+
+//     function handleUsernameChange(e) {
+//         dispatch({ new_username: e.target.value });
+//     }
+
+//     return (
+//         <>
+//             <input
+//                 type="text"
+//                 onChange={handleUsernameChange}
+//                 value={state.username}
+//             />
+//             <p>Username is: {state.username}</p>
+//         </>
+//     );
+// }
