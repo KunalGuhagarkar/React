@@ -34,19 +34,19 @@ export default function UseEffect() {
 
     function handleChatToggle() {
         setChatToggle((prevToggle) => !prevToggle);
+
+        useEffect(() => {
+            const connection = createConnection(serverUrl, roomId);
+            if (chatToggle) {
+                connection.connect();
+                connection.disconnect();
+            }
+        }, [chatToggle]);
     }
 
     function handleRoomSelect(e) {
         setRoomId(e.target.value);
     }
-
-    useEffect(() => {
-        const connection = createConnection(serverUrl, roomId);
-        if (chatToggle) {
-            connection.connect();
-            connection.disconnect();
-        }
-    }, [chatToggle]);
 
     return (
         <>
