@@ -101,20 +101,19 @@
 //     );
 // }
 
-
 // Avoiding recreating the initial state
 import { useReducer } from "react";
 
 function createInitialState(username) {
-    return {username: 'Kunal'}
+    return { username: "Kunal" };
 }
 
 function reducer(state, action) {
-
+    return { username: action.new_username };
 }
 
 function handleUsernameChange(e) {
-    dispatch({ new_username: e.target.value })
+    dispatch({ new_username: e.target.value });
 }
 
 export default function UseReducer() {
@@ -122,8 +121,12 @@ export default function UseReducer() {
 
     return (
         <>
-            <input type="text" onChange={handleUsernameChange} value={state.username} />
+            <input
+                type="text"
+                onChange={handleUsernameChange}
+                value={state.username}
+            />
             <p>Username is: {state.username}</p>
         </>
-    )
+    );
 }
