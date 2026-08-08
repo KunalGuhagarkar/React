@@ -109,6 +109,16 @@ function createInitialState(username) {
     return {username: 'Kunal'}
 }
 
+function reducer() {
+
+}
+
 export default function UseReducer() {
     const [state, dispatch] = useReducer(reducer, createInitialState(username));
+
+    return (
+        <>
+            <input type="text" onChange={handleUsernameChange} value={state.username} />
+        </>
+    )
 }
