@@ -23,12 +23,15 @@
 import { useState, useEffect } from "react";
 
 export default function UseEffect() {
-    const [serverUrl, setServerUrl] = useState();
+    const [serverUrl, setServerUrl] = useState("https://localhost:5432");
 
+    function handleUrlChange(e) {
+        setServerUrl(e.target.value);
+    }
 
     return (
         <>
-            <input type="text" value={} onChange={handleUrlChange} />
+            <input type="text" value={serverUrl} onChange={handleUrlChange} />
         </>
     );
 }
