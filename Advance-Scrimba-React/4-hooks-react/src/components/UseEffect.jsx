@@ -40,14 +40,15 @@ export default function UseEffect() {
         setRoomId(e.target.value);
     }
 
-    useEffect(() => {
-        const connection = createConnection(serverUrl, roomId);
-        if (chatToggle) {
-            connection.connect();
-        } else {
-            connection.disconnect();
-        }
-    }, [chatToggle, roomId, serverUrl]);
+    chatToggle &&
+        useEffect(() => {
+            const connection = createConnection(serverUrl, roomId);
+            if (chatToggle) {
+                connection.connect();
+            } else {
+                connection.disconnect();
+            }
+        }, [roomId, serverUrl]);
 
     return (
         <>
