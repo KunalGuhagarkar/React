@@ -44,8 +44,6 @@ export default function UseEffect() {
         const connection = createConnection(serverUrl, roomId);
         if (chatToggle) {
             connection.connect();
-            connection.disconnect();
-            connection.connect();
         } else {
             connection.disconnect();
         }
