@@ -1,9 +1,9 @@
 export default function UseEffect() {
     return (
         <>
-            <button>Lion</button>
-            <button>Tiger</button>
-            <button>Panther</button>
+            <button onClick={() => setAnimalName("Lion")}>Lion</button>
+            <button onClick={() => setAnimalName("Tiger")}>Tiger</button>
+            <button onClick={() => setAnimalName("Panther")}>Panther</button>
         </>
     );
 }
