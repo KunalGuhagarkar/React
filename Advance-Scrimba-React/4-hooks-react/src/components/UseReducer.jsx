@@ -112,12 +112,12 @@ function reducer(state, action) {
     return { username: action.new_username };
 }
 
-function handleUsernameChange(e) {
-    dispatch({ new_username: e.target.value });
-}
-
-export default function UseReducer({username}) {
+export default function UseReducer({ username }) {
     const [state, dispatch] = useReducer(reducer, createInitialState(username));
+
+    function handleUsernameChange(e) {
+        dispatch({ new_username: e.target.value });
+    }
 
     return (
         <>
