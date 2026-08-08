@@ -45,7 +45,13 @@ export default function UseEffect() {
 
             <button onClick={handleChatToggle}>Open Chat</button>
 
-            <input type="text" value={serverUrl} onChange={handleUrlChange} />
+            {chatToggle && (
+                <input
+                    type="text"
+                    value={serverUrl}
+                    onChange={handleUrlChange}
+                />
+            )}
         </>
     );
 }
