@@ -76,9 +76,13 @@
 // }
 
 // Listening to global browser event
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function UseEffect() {
+    const [position, setPosition] = useState({x: 0, y: 0});
+
+    
+
     return (
         <div
             style={{
