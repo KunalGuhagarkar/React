@@ -3,6 +3,7 @@ import "./App.css";
 // import UseState from "./components/UseState";
 // import UseReducer from "./components/UseReducer";
 import UseEffect from "./components/UseEffect";
+import UseRef from "./components/UseRef";
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
             <h1>React Hooks</h1>
             {/* <UseState /> */}
             {/* <UseReducer username="Kunal" /> */}
-            <UseEffect />
+            {/* <UseEffect /> */}
+            <UseRef />
         </div>
     );
 }
