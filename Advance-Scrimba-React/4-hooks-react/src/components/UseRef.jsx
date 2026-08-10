@@ -39,13 +39,16 @@
 // }
 
 // Stopwatch
-import {useRef} from 'react';
+import { useRef } from "react";
 
 export default function UseRef() {
+
+    const timeRef = useRef();
+
     return (
         <>
             <h3>Time passed: timegoeshere...</h3>
-            <button>start</button>
+            <button onClick={handleStartTimer}>start</button>
             <button>stop</button>
         </>
     );
