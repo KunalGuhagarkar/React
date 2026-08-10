@@ -21,14 +21,14 @@
 // }
 
 // Click Counter using Alert
-import {useRef} from 'react';
+import { useRef } from "react";
 
 export default function UseRef() {
     const counterRef = useRef(0);
 
     function handleCounterAlert() {
         counterRef.current = counterRef.current + 1;
-        alert(counterRef.current);
+        alert(`The Count is: ${counterRef.current}`);
     }
 
     return (
