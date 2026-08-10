@@ -114,6 +114,7 @@
 
 // Triggering Animation
 import { useEffect, useRef } from "react";
+import { FadeInAnimation } from "./animation";
 
 export default function UseEffect() {
     return (
