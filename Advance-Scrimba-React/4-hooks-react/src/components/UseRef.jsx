@@ -48,6 +48,7 @@ export default function UseRef() {
     function handleStartTimer() {
         timeRef.current = setInterval(() => {
             secondRef.current = secondRef.current + 1;
+            console.log(secondRef.current);
         }, 1000);
     }
 
