@@ -54,7 +54,7 @@ export default function UseRef() {
 
     function handleStopTimer() {
         console.log('tried to stop')
-        clearTimeout();
+        clearTimeout(id);
     }
 
     return (
