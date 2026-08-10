@@ -46,7 +46,7 @@ export default function UseRef() {
 
     function handleStartTimer() {
         timeRef.current = setInterval(() => {
-            timeRef.current = new Date().getSeconds();
+            timeRef.current.timer = new Date().getSeconds();
         }, 1000);
     }
 
@@ -56,7 +56,7 @@ export default function UseRef() {
 
     return (
         <>
-            <h3>Time passed: {timeRef.current}</h3>
+            <h3>Time passed: {timeRef.current.timer}</h3>
             <button onClick={handleStartTimer}>start</button>
             <button onClick={handleStopTimer}>stop</button>
         </>
