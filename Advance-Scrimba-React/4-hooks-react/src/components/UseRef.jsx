@@ -27,7 +27,8 @@ export default function UseRef() {
     const counterRef = useRef(0);
 
     function handleCounterAlert() {
-        alert(counterRef.current + 1);
+        counterRef.current = counterRef.current + 1;
+        alert(counterRef.current);
     }
 
     return (
