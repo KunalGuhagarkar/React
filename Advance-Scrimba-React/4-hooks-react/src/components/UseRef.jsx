@@ -50,6 +50,10 @@ export default function UseRef() {
         }, 1000);
     }
 
+    function handleStopTimer() {
+        clearTimeout();
+    }
+
     return (
         <>
             <h3>Time passed: timegoeshere...</h3>
