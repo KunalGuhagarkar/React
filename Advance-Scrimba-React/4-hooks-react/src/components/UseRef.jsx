@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 export default function UseRef() {
     const [name, setName] = useState("");
     const inputRef = useRef();
-    
 
     return (
         <>
@@ -14,7 +13,7 @@ export default function UseRef() {
                 onChange={(e) => setName(e.target.value)}
             />
             <p>My name is {name}</p>
-            <button>Focus</button>
+            <button onClick={() => inputRef.current.focus()}>Focus</button>
         </>
     );
 }
