@@ -45,7 +45,9 @@ export default function UseRef() {
     const timeRef = useRef();
 
     function handleStartTimer() {
-        setInterval(console.log(new Date().getSeconds()), 1000);
+        setInterval(() => {
+            console.log('hello');
+        }, 1000);
     }
 
     return (
