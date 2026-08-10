@@ -145,5 +145,15 @@ function Welcome() {
 }
 
 export default function UseEffect() {
-    return <></>;
+    const [show, setShow] = useState(false);
+
+    return (
+        <>
+            <button onClick={() => setShow(!show)}>
+                {show ? "Remove" : "Show"}
+            </button>
+            <hr />
+            {show && <Welcome />}
+        </>
+    );
 }
