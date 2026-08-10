@@ -45,6 +45,11 @@ export default function UseRef() {
 
     const timeRef = useRef();
 
+    function handleStartTimer() {
+        const date = new Date().getSeconds();
+        console.log(date);
+    }
+
     return (
         <>
             <h3>Time passed: timegoeshere...</h3>
