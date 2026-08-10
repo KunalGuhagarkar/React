@@ -20,57 +20,59 @@
 // }
 
 // Example 2
-import { useState, useEffect } from "react";
-import { createConnection } from "./chat";
+// import { useState, useEffect } from "react";
+// import { createConnection } from "./chat";
 
-export default function UseEffect() {
-    const [serverUrl, setServerUrl] = useState("https://localhost:5432");
-    const [roomId, setRoomId] = useState("General");
-    const [chatToggle, setChatToggle] = useState(false);
+// export default function UseEffect() {
+//     const [serverUrl, setServerUrl] = useState("https://localhost:5432");
+//     const [roomId, setRoomId] = useState("General");
+//     const [chatToggle, setChatToggle] = useState(false);
 
-    function handleUrlChange(e) {
-        setServerUrl(e.target.value);
-    }
+//     function handleUrlChange(e) {
+//         setServerUrl(e.target.value);
+//     }
 
-    function handleChatToggle() {
-        setChatToggle((prevToggle) => !prevToggle);
-    }
+//     function handleChatToggle() {
+//         setChatToggle((prevToggle) => !prevToggle);
+//     }
 
-    function handleRoomSelect(e) {
-        setRoomId(e.target.value);
-    }
+//     function handleRoomSelect(e) {
+//         setRoomId(e.target.value);
+//     }
 
-    useEffect(() => {
-        if (!chatToggle) return;
+//     useEffect(() => {
+//         if (!chatToggle) return;
 
-        const connection = createConnection(serverUrl, roomId);
-        connection.connect();
-        return () => {
-            connection.disconnect();
-        };
-    }, [chatToggle, roomId, serverUrl]);
+//         const connection = createConnection(serverUrl, roomId);
+//         connection.connect();
+//         return () => {
+//             connection.disconnect();
+//         };
+//     }, [chatToggle, roomId, serverUrl]);
 
-    return (
-        <>
-            <label htmlFor="chat-room">Choose Chat room:</label>
-            <select name="chat-room" id="chat-room" onChange={handleRoomSelect}>
-                <option value="General">General</option>
-                <option value="Travel">Travel</option>
-                <option value="Music">Music</option>
-            </select>
+//     return (
+//         <>
+//             <label htmlFor="chat-room">Choose Chat room:</label>
+//             <select name="chat-room" id="chat-room" onChange={handleRoomSelect}>
+//                 <option value="General">General</option>
+//                 <option value="Travel">Travel</option>
+//                 <option value="Music">Music</option>
+//             </select>
 
-            <button onClick={handleChatToggle}>
-                {chatToggle ? "Close Chat" : "Open Chat"}
-            </button>
+//             <button onClick={handleChatToggle}>
+//                 {chatToggle ? "Close Chat" : "Open Chat"}
+//             </button>
 
-            <br />
-            {chatToggle && (
-                <input
-                    type="text"
-                    value={serverUrl}
-                    onChange={handleUrlChange}
-                />
-            )}
-        </>
-    );
-}
+//             <br />
+//             {chatToggle && (
+//                 <input
+//                     type="text"
+//                     value={serverUrl}
+//                     onChange={handleUrlChange}
+//                 />
+//             )}
+//         </>
+//     );
+// }
+
+// Listening to global browser event
