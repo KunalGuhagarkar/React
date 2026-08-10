@@ -58,7 +58,7 @@ export default function UseRef() {
         <>
             <h3>Time passed: timegoeshere...</h3>
             <button onClick={handleStartTimer}>start</button>
-            <button>stop</button>
+            <button onClick={handleStopTimer}>stop</button>
         </>
     );
 }
