@@ -15,7 +15,7 @@ export default function UseRef() {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
             />
-            <p>My name is {name} and it was {prevName}</p>
+            <p>My name is {name} and it was {prevName.current}</p>
         </>
     );
 }
