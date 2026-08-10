@@ -46,13 +46,12 @@ export default function UseRef() {
 
     function handleStartTimer() {
         timeRef.current = setInterval(() => {
-            timeRef.current = timeRef.current + 1
-            console.log(timeRef.current);
+            console.log(new Date().getSeconds());
         }, 1000);
     }
 
     function handleStopTimer() {
-        console.log('tried to stop')
+        console.log("tried to stop");
         clearTimeout(timeRef);
     }
 
