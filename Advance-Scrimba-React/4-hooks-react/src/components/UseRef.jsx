@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function UseRef() {
     const [name, setName] = useState("");
-    const renderCount = useRef(0);
+    const renderCount = useRef(1);
 
     useEffect(() => {
         renderCount.current = renderCount.current + 1;
