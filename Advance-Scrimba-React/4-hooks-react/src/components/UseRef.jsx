@@ -21,19 +21,32 @@
 // }
 
 // Click Counter using Alert
-import { useRef } from "react";
+// import { useRef } from "react";
+
+// export default function UseRef() {
+//     const counterRef = useRef(0);
+
+//     function handleCounterAlert() {
+//         counterRef.current = counterRef.current + 1;
+//         alert(`The Count is: ${counterRef.current}`);
+//     }
+
+//     return (
+//         <>
+//             <button onClick={handleCounterAlert}>Click Me</button>
+//         </>
+//     );
+// }
+
+// Stopwatch
+import {useRef} from 'react';
 
 export default function UseRef() {
-    const counterRef = useRef(0);
-
-    function handleCounterAlert() {
-        counterRef.current = counterRef.current + 1;
-        alert(`The Count is: ${counterRef.current}`);
-    }
-
     return (
         <>
-            <button onClick={handleCounterAlert}>Click Me</button>
+            <h3>Time passed: timegoeshere...</h3>
+            <button>start</button>
+            <button>stop</button>
         </>
     );
 }
