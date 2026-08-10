@@ -24,9 +24,15 @@
 import {useRef} from 'react';
 
 export default function UseRef() {
+    const counterRef = useRef(0);
+
+    function handleCounterAlert() {
+        alert(counterRef.current + 1);
+    }
+
     return (
         <>
-            <button>Click Me</button>
+            <button onClick={handleCounterAlert}>Click Me</button>
         </>
     );
 }
