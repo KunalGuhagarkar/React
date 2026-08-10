@@ -49,12 +49,10 @@ export default function UseRef() {
             console.log(new Date().getSeconds());
         }, 1000);
 
-        return id;
-    }
-
-    function handleStopTimer() {
-        console.log('tried to stop')
-        clearTimeout(id);
+        function handleStopTimer(id) {
+            console.log("tried to stop");
+            clearTimeout(id);
+        }
     }
 
     return (
