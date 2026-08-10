@@ -42,18 +42,18 @@
 import { useRef } from "react";
 
 export default function UseRef() {
-    const timeRef = useRef();
+    const timeRef = useRef(0);
 
     function handleStartTimer() {
         const id = setInterval(() => {
-            console.log(new Date().getSeconds());
+            timeRef.current = timeRef.current + 1;
         }, 1000);
     }
 
-    // function handleStopTimer(id) {
-    //     console.log('tried to stop')
-    //     clearTimeout(id);
-    // }
+    function handleStopTimer() {
+        console.log('tried to stop')
+        clearTimeout(id);
+    }
 
     return (
         <>
