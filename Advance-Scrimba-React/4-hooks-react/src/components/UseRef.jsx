@@ -48,11 +48,11 @@ export default function UseRef() {
         setInterval(() => {
             console.log(new Date().getSeconds());
         }, 1000);
-    }
 
-    function handleStopTimer() {
-        console.log('tried to stop')
-        clearTimeout();
+        function handleStopTimer() {
+            console.log("tried to stop");
+            clearTimeout();
+        }
     }
 
     return (
