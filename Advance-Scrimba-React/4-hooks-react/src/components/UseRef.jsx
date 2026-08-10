@@ -42,12 +42,10 @@
 import { useRef } from "react";
 
 export default function UseRef() {
-
     const timeRef = useRef();
 
     function handleStartTimer() {
-        const date = new Date().getSeconds();
-        console.log(date);
+        setInterval(console.log(new Date().getSeconds()), 1000);
     }
 
     return (
