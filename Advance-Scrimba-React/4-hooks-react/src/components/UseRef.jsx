@@ -45,14 +45,16 @@ export default function UseRef() {
     const timeRef = useRef();
 
     function handleStartTimer() {
-        setInterval(() => {
+        const id = setInterval(() => {
             console.log(new Date().getSeconds());
         }, 1000);
 
-        function handleStopTimer() {
-            console.log("tried to stop");
-            clearTimeout();
-        }
+        return id;
+    }
+
+    function handleStopTimer() {
+        console.log('tried to stop')
+        clearTimeout();
     }
 
     return (
