@@ -16,7 +16,7 @@ export default function UseRef() {
                 onChange={(e) => setName(e.target.value)}
             />
             <p>My name is {name}</p>
-            <p>Render Count is {renderCount}</p>
+            <p>Render Count is {renderCount.current}</p>
         </>
     );
 }
