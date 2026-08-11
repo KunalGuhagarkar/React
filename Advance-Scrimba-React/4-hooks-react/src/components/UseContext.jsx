@@ -28,11 +28,11 @@ function Form() {
 }
 
 function Panel({children}) {
-    const theme = useContext(ThemeContext);
+    const {theme, toggleTheme} = useContext(ThemeContext);
     return (
         <div>
             {children}
-            <button onClick={}>Toggle Theme</button>
+            <button onClick={toggleTheme}>Toggle Theme</button>
         </div>
     );
 }
