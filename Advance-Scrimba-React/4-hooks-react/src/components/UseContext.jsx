@@ -68,3 +68,11 @@ function Form() {
         </Panel>
     )
 }
+
+function Panel({children}) {
+    return (
+        <div>
+            {children}
+        </div>
+    )
+}
