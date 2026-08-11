@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, createContext } from "react";
 
 export default function UseContext() {
+
+    const theme = createContext('light');
+
     return (
         <>
-            <h1>useContext Hook</h1>
+            
         </>
     )
 }
