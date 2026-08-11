@@ -97,9 +97,11 @@ export default function UseRef() {
 
     return (
         <>
-            <button onClick={() => scrollIntoIndex(0)}>Goku</button>
-            <button onClick={() => scrollIntoIndex(1)}>Naruto</button>
-            <button onClick={() => scrollIntoIndex(2)}>Luffy</button>
+            <nav>
+                <button onClick={() => scrollIntoIndex(0)}>Goku</button>
+                <button onClick={() => scrollIntoIndex(1)}>Naruto</button>
+                <button onClick={() => scrollIntoIndex(2)}>Luffy</button>
+            </nav>
 
             <ul ref={animeRef}>
                 <li>
