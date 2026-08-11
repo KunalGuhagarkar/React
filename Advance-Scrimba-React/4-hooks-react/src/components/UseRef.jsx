@@ -84,10 +84,15 @@ import luffy from "../assets/luffy.avif";
 export default function UseRef() {
     const animeRef = useRef();
 
-    function scrollIntoView(index) {
+    function scrollIntoIndex(index) {
         const listNode = animeRef.current;
 
         const imageNode = listNode.querySelectorAll("li > img")[index];
+        imageNode.scrollIntoView({
+            behaviour: "smooth",
+            block: "nearest",
+            inline: "center",
+        });
     }
 
     return (
