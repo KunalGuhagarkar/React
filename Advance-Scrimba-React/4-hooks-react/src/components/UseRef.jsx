@@ -78,6 +78,8 @@
 import { useRef } from "react";
 
 import goku from '../assets/goku.avif';
+import naruto from '../assets/naruto.avif';
+import luffy from '../assets/luffy.avif';
 
 export default function UseRef() {
     const animeRef = useRef();
