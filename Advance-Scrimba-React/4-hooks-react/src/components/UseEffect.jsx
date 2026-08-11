@@ -158,32 +158,25 @@
 //     );
 // }
 
-// Controlling a modal dialog 
+// Controlling a modal dialog
 import { useRef, useEffect } from "react";
 
-function ModalDialogComponent() {
-    return (
-        <Dialog>
-            <p>Hello there...</p>
-            <button>Close Dialog</button>
-        </Dialog>
-    );
+function ModalDialogComponent({ children }) {
+    return <Dialog>{children}</Dialog>;
 }
 
 export default function UseEffect() {
-
     const dialogRef = useRef(null);
 
-    function handleOpenDialog() {
-
-    }
+    function handleOpenDialog() {}
 
     return (
         <>
             <button onClick={handleOpenDialog}>Open Dialog</button>
             <ModalDialogComponent>
-
+                <p>Hello there...</p>
+                <button>Close Dialog</button>
             </ModalDialogComponent>
         </>
-    )
+    );
 }
