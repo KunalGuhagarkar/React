@@ -75,7 +75,7 @@
 // }
 
 // Scrolling an Image into View
-import { useRef, useRef } from "react";
+import { useRef } from "react";
 
 export default function UseRef() {
     const animeRef = useRef();
