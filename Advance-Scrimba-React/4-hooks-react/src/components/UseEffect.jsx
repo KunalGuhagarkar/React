@@ -182,7 +182,7 @@ export default function UseEffect() {
     const [show, setShow] = useState(false);
 
     function handleOpenDialog() {
-        setShow((prevShow) => !prevShow);
+        setShow(true);
     }
 
     return (
@@ -191,7 +191,7 @@ export default function UseEffect() {
             {show && (
                 <ModalDialogComponent isOpen={show}>
                     <p>Hello there...</p>
-                    <button>Close Dialog</button>
+                    <button onClick={() => setShow(false)}>Close Dialog</button>
                 </ModalDialogComponent>
             )}
         </>
