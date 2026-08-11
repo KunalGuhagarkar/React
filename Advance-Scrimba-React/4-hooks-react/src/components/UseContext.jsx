@@ -72,11 +72,13 @@ function Form() {
 
     return (
         <Panel>
-            <input type="text" placeholder="Enter Name:" />
             {loginStatus ? (
                 <p>You're Loggin as {name}</p>
             ) : (
-                <button onClick={handleLogin}>Login as {name}</button>
+                <>
+                    <input type="text" placeholder="Enter Name:" />
+                    <button onClick={handleLogin}>Login as {name}</button>
+                </>
             )}
         </Panel>
     );
