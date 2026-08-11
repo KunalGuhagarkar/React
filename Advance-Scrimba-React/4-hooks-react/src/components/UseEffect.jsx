@@ -161,7 +161,21 @@
 // Controlling a modal dialog 
 import { useRef, useEffect } from "react";
 
+function ModalDialogComponent() {
+    return (
+        <Dialog>
+            <button>Close Dialog</button>
+        </Dialog>
+    );
+}
+
 export default function UseEffect() {
+
+    const dialogRef = useRef(null);
+
+    function handleOpenDialog() {
+
+    }
 
     return (
         <>
