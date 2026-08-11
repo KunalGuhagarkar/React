@@ -167,10 +167,15 @@ function ModalDialogComponent({ isOpen, children }) {
     useEffect(() => {
         if (!isOpen) return null;
 
-        
-    })
+        const dialog = dialogRef.current;
+        dialog.showModal();
 
-    return <Dialog>{children}</Dialog>;
+        return () => {
+            dialog.close();
+        };
+    }, [isOpen]);
+
+    return <dialog>{children}</dialog>;
 }
 
 export default function UseEffect() {
