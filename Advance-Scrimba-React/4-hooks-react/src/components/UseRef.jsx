@@ -89,7 +89,7 @@ export default function UseRef() {
 
         const imageNode = listNode.querySelectorAll("li > img")[index];
         imageNode.scrollIntoView({
-            behaviour: "smooth",
+            behavior: "smooth",
             block: "nearest",
             inline: "center",
         });
