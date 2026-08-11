@@ -12,7 +12,7 @@ export default function UseContext() {
     }
 
     return (
-        <ThemeContext value={theme}>
+        <ThemeContext value={theme, toggleTheme}>
             <Form />
         </ThemeContext>
     );
