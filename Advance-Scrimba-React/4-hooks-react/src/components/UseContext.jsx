@@ -7,7 +7,7 @@ export default function UseContext() {
 
     return (
         <ThemeContext value={theme}>
-
+            <Form />
         </ThemeContext>
     )
 }
