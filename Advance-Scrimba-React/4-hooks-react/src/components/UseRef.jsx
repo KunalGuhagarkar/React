@@ -126,7 +126,7 @@ import sampleVid from "../assets/samplevid.mp4";
 export default function UseRef() {
     return (
         <>
-            <video src={sampleVid}></video>
+            <video src={sampleVid} width='300px' controls />
         </>
     );
 }
