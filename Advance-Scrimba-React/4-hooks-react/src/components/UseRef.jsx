@@ -146,15 +146,19 @@
 //     );
 // }
 
-
 // Exposing a ref to your own Component
 import { useRef } from "react";
 
-function InputComponent({ref}) {
-    return <input ref={ref} type="text" placeholder="focus" />
+function InputComponent({ ref }) {
+    return <input ref={ref} type="text" placeholder="focus" />;
 }
 
 export default function UseRef() {
     const inputRef = useRef(null);
 
+    return (
+        <>
+            <InputComponent ref={inputRef} />
+        </>
+    );
 }
