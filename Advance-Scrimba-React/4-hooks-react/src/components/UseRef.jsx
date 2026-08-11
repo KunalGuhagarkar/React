@@ -75,45 +75,58 @@
 // }
 
 // Scrolling an Image into View
+// import { useRef } from "react";
+
+// import goku from "../assets/goku.avif";
+// import naruto from "../assets/naruto.avif";
+// import luffy from "../assets/luffy.avif";
+
+// export default function UseRef() {
+//     const animeRef = useRef(null);
+
+//     function scrollIntoIndex(index) {
+//         const listNode = animeRef.current;
+
+//         const imageNode = listNode.querySelectorAll("li > img")[index];
+//         imageNode.scrollIntoView({
+//             behavior: "smooth",
+//             block: "nearest",
+//             inline: "center",
+//         });
+//     }
+
+//     return (
+//         <>
+//             <nav>
+//                 <button onClick={() => scrollIntoIndex(0)}>Goku</button>
+//                 <button onClick={() => scrollIntoIndex(1)}>Naruto</button>
+//                 <button onClick={() => scrollIntoIndex(2)}>Luffy</button>
+//             </nav>
+
+//             <ul ref={animeRef}>
+//                 <li>
+//                     <img src={goku} alt="goku-image" width="500px" />
+//                 </li>
+//                 <li>
+//                     <img src={naruto} alt="naruto-image" width="500px" />
+//                 </li>
+//                 <li>
+//                     <img src={luffy} alt="luffy-image" width="500px" />
+//                 </li>
+//             </ul>
+//         </>
+//     );
+// }
+
+// Playing and Pausing a Video
 import { useRef } from "react";
 
-import goku from "../assets/goku.avif";
-import naruto from "../assets/naruto.avif";
-import luffy from "../assets/luffy.avif";
+import sampleVid from "../assets/samplevid.mp4";
 
 export default function UseRef() {
-    const animeRef = useRef(null);
-
-    function scrollIntoIndex(index) {
-        const listNode = animeRef.current;
-
-        const imageNode = listNode.querySelectorAll("li > img")[index];
-        imageNode.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "center",
-        });
-    }
-
     return (
         <>
-            <nav>
-                <button onClick={() => scrollIntoIndex(0)}>Goku</button>
-                <button onClick={() => scrollIntoIndex(1)}>Naruto</button>
-                <button onClick={() => scrollIntoIndex(2)}>Luffy</button>
-            </nav>
-
-            <ul ref={animeRef}>
-                <li>
-                    <img src={goku} alt="goku-image" width="500px" />
-                </li>
-                <li>
-                    <img src={naruto} alt="naruto-image" width="500px" />
-                </li>
-                <li>
-                    <img src={luffy} alt="luffy-image" width="500px" />
-                </li>
-            </ul>
+            <video src={sampleVid}></video>
         </>
     );
 }
