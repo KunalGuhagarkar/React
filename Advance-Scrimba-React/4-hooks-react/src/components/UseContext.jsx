@@ -34,7 +34,6 @@ function Panel({ children }) {
         <div
             style={{
                 backgroundColor: theme === "dark" ? "darkblue" : "white",
-                width: "500px",
                 padding: "50px"
             }}
         >
