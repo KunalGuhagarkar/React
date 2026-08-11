@@ -82,7 +82,7 @@ import naruto from "../assets/naruto.avif";
 import luffy from "../assets/luffy.avif";
 
 export default function UseRef() {
-    const animeRef = useRef();
+    const animeRef = useRef(null);
 
     function scrollIntoIndex(index) {
         const listNode = animeRef.current;
