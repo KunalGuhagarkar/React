@@ -164,6 +164,7 @@ import { useRef, useEffect } from "react";
 function ModalDialogComponent() {
     return (
         <Dialog>
+            <p>Hello there...</p>
             <button>Close Dialog</button>
         </Dialog>
     );
@@ -181,7 +182,7 @@ export default function UseEffect() {
         <>
             <button onClick={handleOpenDialog}>Open Dialog</button>
             <ModalDialogComponent>
-                
+
             </ModalDialogComponent>
         </>
     )
