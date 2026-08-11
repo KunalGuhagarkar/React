@@ -124,7 +124,7 @@ import { useRef } from "react";
 import sampleVid from "../assets/samplevid.mp4";
 
 export default function UseRef() {
-    const videoRef = useRef();
+    const videoRef = useRef(false);
 
     function handlePlayPause() {
         videoRef.current.paused
