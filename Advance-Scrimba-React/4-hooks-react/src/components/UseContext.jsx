@@ -63,8 +63,8 @@ export default function UseContext() {
 
 function Form() {
     return (
-        <>
+        <Panel>
             <input type="text" placeholder="Enter Name:" />
-        </>
+        </Panel>
     )
 }
