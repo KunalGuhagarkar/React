@@ -73,7 +73,7 @@ function Form() {
     return (
         <Panel>
             {loginStatus ? (
-                <p>You're Loggin as {name}</p>
+                <p>You're Logged in as {name}</p>
             ) : (
                 <>
                     <input type="text" placeholder="Enter Name:" />
