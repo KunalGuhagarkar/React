@@ -28,7 +28,7 @@ function Form() {
 }
 
 function Panel({children}) {
-
+    const theme = useContext(ThemeContext);
     return (
         <div>
             {children}
