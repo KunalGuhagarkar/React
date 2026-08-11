@@ -13,3 +13,8 @@ button {
 .inactive {
     background-color: red;
 }
+
+.anime-container {
+    display: flex;
+    gap: 5px;
+}
