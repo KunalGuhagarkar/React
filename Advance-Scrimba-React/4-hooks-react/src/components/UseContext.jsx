@@ -31,7 +31,7 @@ function Panel({ children }) {
     const { theme, toggleTheme } = useContext(ThemeContext);
 
     const themeStyle = theme === "dark" && {
-        backgroundColor: "darkgrey",
+        backgroundColor: darkgrey,
     };
 
     return (
