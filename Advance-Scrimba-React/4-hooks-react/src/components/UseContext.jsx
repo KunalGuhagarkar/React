@@ -67,7 +67,7 @@ function Form() {
     const [loginStatus, setLoginStatus] = useState(false);
 
     function handleLogin() {
-        
+        setLoginStatus((prevStatus) => !prevStatus);
     }
 
     return (
