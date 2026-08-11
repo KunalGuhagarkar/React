@@ -23,9 +23,17 @@ export default function UseContext() {
 
 function Form() {
     return (
-        <div>
+        <Panel>
             <input type="text" placeholder="Enter Name:" />
             <button>Login</button>
+        </Panel>
+    );
+}
+
+function Panel({children}) {
+    return (
+        <div>
+            {children}
         </div>
     );
 }
