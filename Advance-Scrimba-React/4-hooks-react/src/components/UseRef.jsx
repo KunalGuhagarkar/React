@@ -74,3 +74,25 @@
 //     );
 // }
 
+// Scrolling an Image into View
+import { useRef, useRef } from "react";
+
+export default function UseRef() {
+    const animeRef = useRef();
+
+    function scrollIntoView() {}
+
+    return (
+        <>
+            <button>Goku</button>
+            <button>Naruto</button>
+            <button>Luffy</button>
+
+            <div>
+                <img src="../assets/goku.avif" alt="goku-image" />
+                <img src="../assets/naruto.avif" alt="naruto-image" />
+                <img src="../assets/luffy.avif" alt="luffy-image" />
+            </div>
+        </>
+    );
+}
