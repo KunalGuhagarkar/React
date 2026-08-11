@@ -55,16 +55,18 @@ const LoginContext = createContext();
 
 export default function UseContext() {
     return (
-        <LoginContext value={"Kunal"}>
+        <LoginContext value={{name: "Kunal"}}>
             <Form />
         </LoginContext>
     );
 }
 
 function Form() {
+    const 
     return (
         <Panel>
             <input type="text" placeholder="Enter Name:" />
+            <button>Login as </button>
         </Panel>
     )
 }
