@@ -131,12 +131,14 @@ export default function UseRef() {
         videoRef.current.paused
             ? videoRef.current.play()
             : videoRef.current.pause();
+
+        setIsPlaying((prevStatus) => !prevStatus);
     }
 
     return (
         <>
             <button onClick={handlePlayPause}>
-                {isPlaying ? 'Pause' : 'Play'}
+                {isPlaying ? "Pause" : "Play"}
             </button>
             <video ref={videoRef} src={sampleVid} width="300px" controls />
         </>
