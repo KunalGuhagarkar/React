@@ -119,29 +119,42 @@
 // }
 
 // Playing and Pausing a Video
-import { useRef, useState } from "react";
+// import { useRef, useState } from "react";
 
-import sampleVid from "../assets/samplevid.mp4";
+// import sampleVid from "../assets/samplevid.mp4";
+
+// export default function UseRef() {
+//     const [isPlaying, setIsPlaying] = useState(false);
+//     const videoRef = useRef(null);
+
+//     function handlePlayPause() {
+//         videoRef.current.paused
+//             ? videoRef.current.play()
+//             : videoRef.current.pause();
+
+//         setIsPlaying((prevStatus) => !prevStatus);
+//     }
+
+//     return (
+//         <>
+//             <button onClick={handlePlayPause}>
+//                 {isPlaying ? "Pause" : "Play"}
+//             </button>
+//             <br />
+//             <video ref={videoRef} src={sampleVid} width="300px" />
+//         </>
+//     );
+// }
+
+
+// Exposing a ref to your own Component
+import { useRef } from "react";
+
+function InputComponent({ref}) {
+    return <input ref={ref} type="text" placeholder="focus" />
+}
 
 export default function UseRef() {
-    const [isPlaying, setIsPlaying] = useState(false);
-    const videoRef = useRef(null);
+    const inputRef = useRef(null);
 
-    function handlePlayPause() {
-        videoRef.current.paused
-            ? videoRef.current.play()
-            : videoRef.current.pause();
-
-        setIsPlaying((prevStatus) => !prevStatus);
-    }
-
-    return (
-        <>
-            <button onClick={handlePlayPause}>
-                {isPlaying ? "Pause" : "Play"}
-            </button>
-            <br />
-            <video ref={videoRef} src={sampleVid} width="300px" />
-        </>
-    );
 }
