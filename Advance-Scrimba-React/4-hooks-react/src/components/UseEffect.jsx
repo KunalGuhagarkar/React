@@ -180,6 +180,9 @@ export default function UseEffect() {
     return (
         <>
             <button onClick={handleOpenDialog}>Open Dialog</button>
+            <ModalDialogComponent>
+                
+            </ModalDialogComponent>
         </>
     )
 }
