@@ -161,8 +161,15 @@
 // Controlling a modal dialog
 import { useRef, useEffect, useState } from "react";
 
-function ModalDialogComponent({ children }) {
+function ModalDialogComponent({ isOpen, children }) {
     const dialogRef = useRef(null);
+
+    useEffect(() => {
+        if (!isOpen) return null;
+
+        
+    })
+
     return <Dialog>{children}</Dialog>;
 }
 
