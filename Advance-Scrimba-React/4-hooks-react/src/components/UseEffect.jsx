@@ -175,7 +175,7 @@ function ModalDialogComponent({ isOpen, children }) {
         };
     }, [isOpen]);
 
-    return <dialog>{children}</dialog>;
+    return <dialog ref={dialogRef}>{children}</dialog>;
 }
 
 export default function UseEffect() {
