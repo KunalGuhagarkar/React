@@ -177,7 +177,7 @@ export default function UseEffect() {
         <>
             <button onClick={handleOpenDialog}>Open Dialog</button>
             {show && (
-                <ModalDialogComponent>
+                <ModalDialogComponent isOpen={show}>
                     <p>Hello there...</p>
                     <button>Close Dialog</button>
                 </ModalDialogComponent>
