@@ -140,7 +140,8 @@ export default function UseRef() {
             <button onClick={handlePlayPause}>
                 {isPlaying ? "Pause" : "Play"}
             </button>
-            <video ref={videoRef} src={sampleVid} width="300px" controls />
+            <br />
+            <video ref={videoRef} src={sampleVid} width="300px" />
         </>
     );
 }
