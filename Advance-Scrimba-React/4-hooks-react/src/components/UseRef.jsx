@@ -77,6 +77,8 @@
 // Scrolling an Image into View
 import { useRef } from "react";
 
+import goku from '../assets/goku.avif';
+
 export default function UseRef() {
     const animeRef = useRef();
 
@@ -89,7 +91,7 @@ export default function UseRef() {
             <button>Luffy</button>
 
             <div>
-                <img src="../goku.avif" alt="goku-image" />
+                <img src={goku} alt="goku-image" />
                 <img src="assets/naruto.avif" alt="naruto-image" />
                 <img src="assets/luffy.avif" alt="luffy-image" />
             </div>
