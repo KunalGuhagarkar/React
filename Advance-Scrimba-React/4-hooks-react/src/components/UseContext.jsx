@@ -30,7 +30,13 @@ function Form() {
 function Panel({ children }) {
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <div>
+        <div
+            style={
+                theme === "dark" && {
+                    backgroundColor: "darkgrey",
+                }
+            }
+        >
             {children}
             <button onClick={toggleTheme}>{theme} Theme</button>
         </div>
