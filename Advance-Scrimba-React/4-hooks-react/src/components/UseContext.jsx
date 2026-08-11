@@ -22,6 +22,7 @@ function Form() {
     return (
         <Panel>
             <input type="text" placeholder="Enter Name:" />
+            <br /><br />
             <button>Login</button>
         </Panel>
     );
@@ -33,12 +34,13 @@ function Panel({ children }) {
     return (
         <div
             style={{
-                backgroundColor: theme === "dark" ? "darkblue" : "white",
+                backgroundColor: theme === "dark" ? "black" : "white",
                 padding: "50px",
                 textAlign: 'center'
             }}
         >
             {children}
+            <br /><br />
             <button onClick={toggleTheme}>{theme} Theme</button>
         </div>
     );
