@@ -92,7 +92,7 @@ export default function UseRef() {
             <button>Naruto</button>
             <button>Luffy</button>
 
-            <div>
+            <div className="anime-container">
                 <img src={goku} alt="goku-image" width="500px" />
                 <img src={naruto} alt="naruto-image" width="500px" />
                 <img src={luffy} alt="luffy-image" width="500px" />
