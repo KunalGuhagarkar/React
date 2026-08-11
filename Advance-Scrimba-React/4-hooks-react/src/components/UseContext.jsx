@@ -6,13 +6,13 @@ export default function UseContext() {
     const [theme, setTheme] = useState("light");
 
     const toggleTheme = () => {
-        setTheme(prevTheme => {
-            prevTheme === 'light' ? 'dark' : 'light'
-        })
-    }
+        setTheme((prevTheme) => {
+            return prevTheme === "light" ? "dark" : "light";
+        });
+    };
 
     return (
-        <ThemeContext value={theme, toggleTheme}>
+        <ThemeContext value={{ theme, toggleTheme }}>
             <Form />
         </ThemeContext>
     );
@@ -27,8 +27,8 @@ function Form() {
     );
 }
 
-function Panel({children}) {
-    const {theme, toggleTheme} = useContext(ThemeContext);
+function Panel({ children }) {
+    const { theme, toggleTheme } = useContext(ThemeContext);
     return (
         <div>
             {children}
