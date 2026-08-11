@@ -156,9 +156,14 @@ function InputComponent({ ref }) {
 export default function UseRef() {
     const inputRef = useRef(null);
 
+    function handleFocusInput() {
+        inputRef.current.focus();
+    }
+
     return (
         <>
             <InputComponent ref={inputRef} />
+            <button onClick={handleFocusInput}>Focus</button>
         </>
     );
 }
