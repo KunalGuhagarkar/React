@@ -127,13 +127,15 @@ export default function UseRef() {
     const videoRef = useRef(null);
 
     function handlePlayPause() {
-        console.log(videoRef.current.play());
+        videoRef.current.paused
+            ? videoRef.current.play()
+            : videoRef.current.pause();
     }
 
     return (
         <>
             <button onClick={handlePlayPause}>Play/Pause</button>
-            <video ref={videoRef} src={sampleVid} width='300px' controls />
+            <video ref={videoRef} src={sampleVid} width="300px" controls />
         </>
     );
 }
