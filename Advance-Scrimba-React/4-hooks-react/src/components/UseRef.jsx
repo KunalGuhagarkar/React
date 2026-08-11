@@ -127,7 +127,7 @@ export default function UseRef() {
     const videoRef = useRef(null);
 
     function handlePlayPause() {
-        console.log(videoRef.current);
+        console.log(videoRef.current.play());
     }
 
     return (
