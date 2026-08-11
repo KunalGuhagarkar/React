@@ -101,7 +101,7 @@ export default function UseRef() {
             <button onClick={() => scrollIntoIndex(1)}>Naruto</button>
             <button onClick={() => scrollIntoIndex(2)}>Luffy</button>
 
-            <ul>
+            <ul ref={animeRef}>
                 <li>
                     <img src={goku} alt="goku-image" width="500px" />
                 </li>
