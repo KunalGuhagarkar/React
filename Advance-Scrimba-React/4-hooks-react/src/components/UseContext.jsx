@@ -49,7 +49,7 @@
 // }
 
 // Example 2 Login
-import { useContext, createContext } from "react";
+import { useContext, createContext, useState } from "react";
 
 const LoginContext = createContext();
 
@@ -63,10 +63,17 @@ export default function UseContext() {
 
 function Form() {
     const { name } = useContext(LoginContext);
+
+    const [loginStatus, setLoginStatus] = useState(false);
+
+    function handleLogin() {
+        
+    }
+
     return (
         <Panel>
             <input type="text" placeholder="Enter Name:" />
-            <button>Login as {name}</button>
+            <button onClick={handleLogin}>Login as {name}</button>
         </Panel>
     );
 }
