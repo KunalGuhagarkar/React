@@ -159,3 +159,13 @@
 // }
 
 // Controlling a modal dialog 
+import { useRef, useEffect } from "react";
+
+export default function UseEffect() {
+
+    return (
+        <>
+            <button onClick={handleOpenDialog}>Open Dialog</button>
+        </>
+    )
+}
