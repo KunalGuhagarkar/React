@@ -93,9 +93,9 @@ export default function UseRef() {
             <button>Luffy</button>
 
             <div>
-                <img src={goku} alt="goku-image" />
-                <img src={naruto} alt="naruto-image" />
-                <img src={luffy} alt="luffy-image" />
+                <img src={goku} alt="goku-image" width="500px" />
+                <img src={naruto} alt="naruto-image" width="500px" />
+                <img src={luffy} alt="luffy-image" width="500px" />
             </div>
         </>
     );
