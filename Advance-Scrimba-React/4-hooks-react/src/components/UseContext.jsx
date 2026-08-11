@@ -32,7 +32,7 @@ function Panel({ children }) {
     return (
         <div>
             {children}
-            <button onClick={toggleTheme}>Toggle Theme</button>
+            <button onClick={toggleTheme}>{theme} Theme</button>
         </div>
     );
 }
