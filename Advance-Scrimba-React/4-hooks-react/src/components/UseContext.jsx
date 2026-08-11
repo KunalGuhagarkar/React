@@ -32,7 +32,7 @@ function Panel({ children }) {
 
     return (
         <div
-            style={{ backgroundColor: theme === "dark" ? "darkblue" : "white" }}
+            style={{ backgroundColor: theme === "dark" ? "darkblue" : "white", width: '500px' }}
         >
             {children}
             <button onClick={toggleTheme}>{theme} Theme</button>
