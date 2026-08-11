@@ -159,16 +159,19 @@
 // }
 
 // Controlling a modal dialog
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 
 function ModalDialogComponent({ children }) {
+    const dialogRef = useRef(null);
     return <Dialog>{children}</Dialog>;
 }
 
 export default function UseEffect() {
-    const dialogRef = useRef(null);
+    const [show, setShow] = useState(false);
 
-    function handleOpenDialog() {}
+    function handleOpenDialog() {
+        setShow((prevShow) => !prevShow);
+    }
 
     return (
         <>
