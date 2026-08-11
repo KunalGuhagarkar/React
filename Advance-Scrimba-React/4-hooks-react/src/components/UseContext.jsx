@@ -8,15 +8,6 @@ export default function UseContext() {
     return (
         <ThemeContext value={theme}>
             <Form />
-            <button
-                onClick={() =>
-                    setTheme((prevTheme) => {
-                        prevTheme === "light" ? "dark" : "light";
-                    })
-                }
-            >
-                Toggle Theme
-            </button>
         </ThemeContext>
     );
 }
