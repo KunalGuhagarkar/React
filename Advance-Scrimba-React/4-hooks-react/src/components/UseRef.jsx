@@ -94,8 +94,8 @@ export default function UseRef() {
 
             <div>
                 <img src={goku} alt="goku-image" />
-                <img src="assets/naruto.avif" alt="naruto-image" />
-                <img src="assets/luffy.avif" alt="luffy-image" />
+                <img src={naruto} alt="naruto-image" />
+                <img src={luffy} alt="luffy-image" />
             </div>
         </>
     );
