@@ -124,9 +124,16 @@ import { useRef } from "react";
 import sampleVid from "../assets/samplevid.mp4";
 
 export default function UseRef() {
+    const videoRef = useRef(null);
+
+    function handlePlayPause() {
+
+    }
+
     return (
         <>
-            <video src={sampleVid} width='300px' controls />
+            <button onClick={handlePlayPause}>Play/Pause</button>
+            <video ref={videoRef} src={sampleVid} width='300px' controls />
         </>
     );
 }
