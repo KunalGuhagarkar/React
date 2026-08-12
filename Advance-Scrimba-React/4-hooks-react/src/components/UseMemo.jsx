@@ -3,7 +3,7 @@ import { useMemo } from "react";
 function UseMemo() {
     return (
         <>
-            <h1>useMemo</h1>
+            <h1>useMemo Hook</h1>
         </>
     )
 }
