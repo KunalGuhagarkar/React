@@ -8,7 +8,7 @@ function UseMemo() {
 
     return (
         <>
-            <input type="text" value={number} />
+            <input type="text" value={number} onChange={handleNumberChange} />
             <button>Change Theme</button>
             <p>{doubleNum}</p>
         </>
