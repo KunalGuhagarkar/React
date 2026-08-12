@@ -20,7 +20,7 @@ function UseMemo() {
 }
 
 function slowFunction(num) {
-    for (let i = 0; i <= 100000; i++) {}
+    for (let i = 0; i <= 1000000000000000; i++) {}
     return num * 2;
 }
 
