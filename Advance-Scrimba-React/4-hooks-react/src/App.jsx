@@ -5,7 +5,7 @@ import "./App.css";
 // import UseEffect from "./components/UseEffect";
 // import UseRef from "./components/UseRef";
 // import UseContext from "./components/UseContext";
-import UseCallback from "./components/UseCallback";
+// import UseCallback from "./components/UseCallback";
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
             {/* <UseEffect /> */}
             {/* <UseRef /> */}
             {/* <UseContext /> */}
-            <UseCallback />
+            {/* <UseCallback /> */}
         </div>
     );
 }
