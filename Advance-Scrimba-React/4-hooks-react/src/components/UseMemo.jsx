@@ -3,9 +3,14 @@ import { useMemo } from "react";
 function UseMemo() {
     return (
         <>
-            <h1>useMemo Hook</h1>
+            
         </>
     )
+}
+
+function slowFunction(num) {
+    for(let i = 0; i < 100000000000; i++) {};
+    return num*2;
 }
 
 export default UseMemo;
