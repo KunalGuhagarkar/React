@@ -4,7 +4,9 @@ function UseMemo() {
     const [isDark, setIsDark] = useState(false);
     const [number, setNumber] = useState(0);
 
-    const doubleNum = slowFunction(number);
+    const doubleNum = useMemo(() => {
+        return slowFunction(number);
+    }, [number]);
 
     function handleNumberChange(e) {
         setNumber(e.target.value);
