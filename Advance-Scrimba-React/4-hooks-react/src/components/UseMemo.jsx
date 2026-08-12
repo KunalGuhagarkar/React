@@ -10,11 +10,15 @@ function UseMemo() {
         setNumber(e.target.value);
     }
 
+    function handleThemeChange() {
+        setIsDark(prevTheme=> !prevTheme);
+    }
+
     return (
         <>
             <input type="text" value={number} onChange={handleNumberChange} />
             <button onClick={handleThemeChange}>Change Theme</button>
-            <p>{doubleNum}</p>
+            <p style={style}>{doubleNum}</p>
         </>
     );
 }
