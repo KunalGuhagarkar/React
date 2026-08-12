@@ -4,11 +4,13 @@ function UseMemo() {
     const [isDark, setIsDark] = useState(false);
     const [number, setNumber] = useState(0);
 
+    const doubleNum = slowFunction(number);
+
     return (
         <>
             <input type="text" value={number} />
             <button>Change Theme</button>
-            <p>{slowFunction(number)}</p>
+            <p>{doubleNum}</p>
         </>
     );
 }
