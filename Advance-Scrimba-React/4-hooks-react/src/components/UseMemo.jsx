@@ -16,14 +16,16 @@ function UseMemo() {
         setIsDark((prevTheme) => !prevTheme);
     }
 
-    const style = {
-        backgroundColor: isDark ? "black" : "white",
-        color: isDark ? "white" : "black",
-    };
+    const style = useMemo(() => {
+        return {
+            backgroundColor: isDark ? "black" : "white",
+            color: isDark ? "white" : "black",
+        };
+    });
 
     useEffect(() => {
         console.log("Theme Changed");
-    }, [style])
+    }, [style]);
 
     return (
         <>
