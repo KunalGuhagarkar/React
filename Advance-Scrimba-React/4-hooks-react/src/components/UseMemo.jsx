@@ -21,7 +21,7 @@ function UseMemo() {
             backgroundColor: isDark ? "black" : "white",
             color: isDark ? "white" : "black",
         };
-    });
+    }, [isDark]);
 
     useEffect(() => {
         console.log("Theme Changed");
