@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 function UseMemo() {
     const [isDark, setIsDark] = useState(false);
@@ -20,6 +20,10 @@ function UseMemo() {
         backgroundColor: isDark ? "black" : "white",
         color: isDark ? "white" : "black",
     };
+
+    useEffect(() => {
+        console.log("Theme Changed");
+    }, [style])
 
     return (
         <>
