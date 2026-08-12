@@ -6,6 +6,10 @@ function UseMemo() {
 
     const doubleNum = slowFunction(number);
 
+    function handleNumberChange(e) {
+        setNumber(e.target.value);
+    }
+
     return (
         <>
             <input type="text" value={number} onChange={handleNumberChange} />
