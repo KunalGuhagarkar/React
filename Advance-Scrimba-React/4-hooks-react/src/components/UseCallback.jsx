@@ -22,6 +22,7 @@ export default function UseCallback() {
     return (
         <div style={style}>
             <input type="number" value={number} onChange={handleNumberChange} />
+            <button onClick={toggleTheme}>Toggle Theme</button>
         </div>
     );
 }
