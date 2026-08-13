@@ -5,6 +5,7 @@ function List({ numList }) {
 
     useEffect(() => {
         setNumberList(numList());
+        console.log('Updating Items');
     }, [numList])
 }
 
