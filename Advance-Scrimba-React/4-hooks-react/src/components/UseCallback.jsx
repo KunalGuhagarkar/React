@@ -8,7 +8,7 @@ function List({ numList }) {
         console.log("Updating Items");
     }, [numList]);
 
-    return numberList.map((num) => <p key={num}>{num}</p>);
+    return numberList.map((num, index) => <p key={index}>{num}</p>);
 }
 
 export default function UseCallback() {
