@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 function List({ numList }) {
     const [numberList, setNumberList] = useState([]);
@@ -17,17 +17,10 @@ export default function UseCallback() {
 
     const numberList = () => [number + 1, number + 2, number + 3];
 
-    // const style = {
-    //     backgroundColor: dark ? "black" : "white",
-    //     color: dark ? "white" : "black",
-    // };
-
-    const styleMemo = useMemo(() => {
-        return {
-            backgroundColor: dark ? "black" : "white",
-            color: dark ? "white" : "black",
-        };
-    }, [dark]);
+    const style = {
+        backgroundColor: dark ? "black" : "white",
+        color: dark ? "white" : "black",
+    };
 
     function toggleTheme() {
         setDark((prevTheme) => !prevTheme);
@@ -38,7 +31,7 @@ export default function UseCallback() {
     }
 
     return (
-        <div style={styleMemo}>
+        <div style={style}>
             <input type="number" value={number} onChange={handleNumberChange} />
             <button onClick={toggleTheme}>Toggle Theme</button>
             <List numList={numberList} />
