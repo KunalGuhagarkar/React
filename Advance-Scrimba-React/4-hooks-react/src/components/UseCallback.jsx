@@ -15,9 +15,13 @@ export default function UseCallback() {
         setDark(prevTheme => !prevTheme);
     }
 
-    return (
-        <div>
+    function handleNumberChange(e) {
+        setNumber(e.target.value);
+    }
 
+    return (
+        <div style={style}>
+            <input type="number" value={number} onChange={handleNumberChange} />
         </div>
     );
 }
