@@ -15,7 +15,10 @@ export default function UseCallback() {
     const [number, setNumber] = useState(1);
     const [dark, setDark] = useState(false);
 
-    const numberList = useMemo(() => [number + 1, number + 2, number + 3], [number]);
+    // For useMemo()
+    // const numberList = useMemo(() => [number + 1, number + 2, number + 3], [number]);
+
+    const numberList = () => [number + 1, number + 2, number + 3];
 
     const style = {
         backgroundColor: dark ? "black" : "white",
