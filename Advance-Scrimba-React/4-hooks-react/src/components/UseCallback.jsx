@@ -27,7 +27,7 @@ export default function UseCallback() {
     }
 
     function handleNumberChange(e) {
-        setNumber(Number(e.target.value));
+        setNumber(parseInt(e.target.value));
     }
 
     return (
