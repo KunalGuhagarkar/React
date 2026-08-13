@@ -5,7 +5,7 @@ function List({ numList }) {
 
     useEffect(() => {
         setNumberList(numList());
-    })
+    }, [numList])
 }
 
 export default function UseCallback() {
