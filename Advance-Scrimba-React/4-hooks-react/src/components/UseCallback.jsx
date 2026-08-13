@@ -27,7 +27,7 @@ export default function UseCallback() {
             backgroundColor: dark ? "black" : "white",
             color: dark ? "white" : "black",
         };
-    });
+    }, [styleMemo]);
 
     function toggleTheme() {
         setDark((prevTheme) => !prevTheme);
