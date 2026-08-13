@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState, useCallback } from "react";
 
 function List({ numList }) {
     const [numberList, setNumberList] = useState([]);
@@ -18,7 +18,10 @@ export default function UseCallback() {
     // For useMemo()
     // const numberList = useMemo(() => [number + 1, number + 2, number + 3], [number]);
 
-    const numberList = () => [number + 1, number + 2, number + 3];
+    const numberList = useCallback(
+        () => [number, number + 1, number + 2],
+        [number],
+    );
 
     const style = {
         backgroundColor: dark ? "black" : "white",
