@@ -1,6 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function List({ numList }) {}
+function List({ numList }) {
+    const [numberList, setNumberList] = useState();
+
+    useEffect(() => {
+        setNumberList(numList());
+    })
+}
 
 export default function UseCallback() {
     const [number, setNumber] = useState();
