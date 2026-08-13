@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 function List({ numList }) {
-    const [numberList, setNumberList] = useState();
+    const [numberList, setNumberList] = useState(numList);
 
     useEffect(() => {
         setNumberList(numList());
