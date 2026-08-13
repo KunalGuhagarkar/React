@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 function List({ numList }) {
     const [numberList, setNumberList] = useState([]);
 
-    useEffect(() => {
+    const numMemo = useMemo(() => {
         setNumberList(numList());
         console.log("Updating Items");
     }, [numList]);
