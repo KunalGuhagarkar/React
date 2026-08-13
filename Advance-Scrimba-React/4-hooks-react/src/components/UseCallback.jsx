@@ -11,6 +11,10 @@ export default function UseCallback() {
         color: dark ? 'white' : 'black'
     }
 
+    function toggleTheme() {
+        setDark(prevTheme => !prevTheme);
+    }
+
     return (
         <div>
 
