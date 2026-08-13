@@ -12,7 +12,7 @@ function List({ numList }) {
 }
 
 export default function UseCallback() {
-    const [number, setNumber] = useState(0);
+    const [number, setNumber] = useState();
     const [dark, setDark] = useState(false);
 
     const numberList = () => [number + 1, number + 2, number + 3];
@@ -32,7 +32,7 @@ export default function UseCallback() {
 
     return (
         <div style={style}>
-            <input type="number" value={number} onChange={handleNumberChange} />
+            <input type="text" value={number} onChange={handleNumberChange} />
             <button onClick={toggleTheme}>Toggle Theme</button>
             <List numList={numberList} />
         </div>
