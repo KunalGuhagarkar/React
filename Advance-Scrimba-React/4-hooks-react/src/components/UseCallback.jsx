@@ -1,24 +1,20 @@
 import { useState } from "react";
 
-
-function List({numList}) {
-
-}
+function List({ numList }) {}
 
 export default function UseCallback() {
-
     const [number, setNumber] = useState();
     const [dark, setDark] = useState(false);
 
-    const numberList = [number + 1, number + 2, number + 3];
+    const numberList = () => [number + 1, number + 2, number + 3];
 
     const style = {
-        backgroundColor: dark ? 'black' : 'white',
-        color: dark ? 'white' : 'black'
-    }
+        backgroundColor: dark ? "black" : "white",
+        color: dark ? "white" : "black",
+    };
 
     function toggleTheme() {
-        setDark(prevTheme => !prevTheme);
+        setDark((prevTheme) => !prevTheme);
     }
 
     function handleNumberChange(e) {
