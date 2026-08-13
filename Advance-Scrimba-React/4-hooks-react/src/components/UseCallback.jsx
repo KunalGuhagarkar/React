@@ -4,7 +4,7 @@ function List({ numList }) {
     const [numberList, setNumberList] = useState([]);
 
     useEffect(() => {
-        setNumberList(numList);
+        setNumberList(numList());
         console.log("Updating Items");
     }, [numList]);
 
