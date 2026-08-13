@@ -5,8 +5,10 @@ function List({ numList }) {
 
     useEffect(() => {
         setNumberList(numList());
-        console.log('Updating Items');
-    }, [numList])
+        console.log("Updating Items");
+    }, [numList]);
+
+    return numberList.map((num) => <p>{num}</p>);
 }
 
 export default function UseCallback() {
