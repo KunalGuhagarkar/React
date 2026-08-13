@@ -38,7 +38,7 @@ export default function UseCallback() {
     }
 
     return (
-        <div style={style}>
+        <div style={styleMemo}>
             <input type="number" value={number} onChange={handleNumberChange} />
             <button onClick={toggleTheme}>Toggle Theme</button>
             <List numList={numberList} />
