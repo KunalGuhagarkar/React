@@ -16,6 +16,7 @@ export default function CustomHook() {
     return (
         <>
             <h3>Custom Hook</h3>
+            <h4>{value}</h4>
         </>
     );
 }
