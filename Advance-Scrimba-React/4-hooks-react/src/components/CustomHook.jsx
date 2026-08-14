@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
-function useCustom() {
-    const [value, setValue] = useState("");
+function useCustom(initialValue = "") {
+    const [value, setValue] = useState(initialValue);
 
     useEffect(() => {
         setValue("updated");
