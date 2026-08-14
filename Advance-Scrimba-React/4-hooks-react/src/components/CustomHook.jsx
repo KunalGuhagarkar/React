@@ -7,11 +7,13 @@ function useCustom() {
     useEffect(() => {
         setValue('updated')
     }, []);
+
+    return value;
 }
 
 export default function CustomHook() {
 
-    useCustom();
+    const value = useCustom();
 
     return (
         <>
