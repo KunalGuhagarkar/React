@@ -5,8 +5,9 @@ import "./App.css";
 // import UseEffect from "./components/UseEffect";
 // import UseRef from "./components/UseRef";
 // import UseContext from "./components/UseContext";
-import UseCallback from "./components/UseCallback";
+// import UseCallback from "./components/UseCallback";
 // import UseMemo from "./components/UseMemo";
+import CustomHook from "./components/CustomHook";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             {/* <UseContext /> */}
             {/* <UseCallback /> */}
             {/* <UseMemo /> */}
+            <CustomHook />
         </div>
     );
 }
