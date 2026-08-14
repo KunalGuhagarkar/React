@@ -17,7 +17,7 @@ function App() {
             {/* <UseEffect /> */}
             {/* <UseRef /> */}
             {/* <UseContext /> */}
-            <UseCallback />
+            {/* <UseCallback /> */}
             {/* <UseMemo /> */}
         </div>
     );
