@@ -11,7 +11,7 @@ function useCustom(initialValue = "") {
 }
 
 export default function CustomHook() {
-    const value = useCustom();
+    const value = useCustom('Kunal');
 
     return (
         <>
